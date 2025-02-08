@@ -1,0 +1,2919 @@
+### **UNIVERSITY SCHOOL OF INFORMATION AND COMMUNICATION TECHNOLOGY**  
+**Department of Information Technology**  
+**Course Structure**  
+**B. TECH Information Technology (4 Year Programme)**  
+**2023-2027**  
+**Gautam Buddha University**  
+Gautam Budh Nagar, Greater Noida, Uttar Pradesh 201308
+
+---
+
+### **SEMESTER I**
+
+| **S.No.** | **Course Code** | **Course Name**                    | **L** | **T** | **P** | **Credits** | **Types**          |
+|-----------|-----------------|------------------------------------|-------|-------|-------|-------------|---------------------|
+| 1         | CS101           | Fundamentals of Computer Programming| 3     | 1     | 0     | 4           | CC1 / FC            |
+| 2         | MA101           | Engineering Mathematics-I          | 3     | 1     | 0     | 4           | GE1                 |
+| 3         | EE102           | Basic Electrical Engineering       | 3     | 1     | 0     | 4           | GE2                 |
+| 4         | ME101           | Engineering Mechanics              | 3     | 1     | 0     | 4           | GE3                 |
+| 5         | ES101           | Environmental Studies              | 3     | 1     | 0     | 4           | OE1 / AECC          |
+| 6         | EN151           | Language Lab                       | 0     | 0     | 2     | 1           | OE L1 / AECC        |
+| 7         | CS181           | Computer Programming Lab           | 0     | 0     | 2     | 1           | CC-L1 / SEC         |
+| 8         | EE104           | Basic Electrical Engineering Lab   | 0     | 0     | 2     | 1           | GE-L1               |
+| 9         | ME102           | Workshop Practice                  | 1     | 0     | 2     | 2           | GE-L2 / SEC         |
+| 10        | GP              | General Proficiency                | -     | -     | -     | Non-Credit  |                     |
+
+**Total Hours and Credits**: 16 (L) + 5 (T) + 8 (P) = **25 Credits**
+
+---
+
+### **SEMESTER II**
+
+| **S.No.** | **Course Code** | **Course Name**                    | **L** | **T** | **P** | **Credits** | **Types**          |
+|-----------|-----------------|------------------------------------|-------|-------|-------|-------------|---------------------|
+| 1         | EC181           | Basic Electronics Engineering      | 0     | 0     | 2     | 1           | GE-L5               |
+| 2         | GP              | General Proficiency                | -     | -     | -     | Non-Credit  |                     |
+
+**Total Hours and Credits**: 17 (L) + 4 (T) + 8 (P) = **25 Credits**
+
+---
+
+### **SEMESTER III**
+
+| **S.No.** | **Course Code** | **Course Name**                    | **L** | **T** | **P** | **Credits** | **Types**          |
+|-----------|-----------------|------------------------------------|-------|-------|-------|-------------|---------------------|
+| 1         | IT201           | Animation and Computer Graphics    | 3     | 0     | 0     | 3           | CC4                 |
+| 2         | IT203           | Operating System                   | 3     | 0     | 0     | 3           | CC5                 |
+| 3         | IT205           | Software Engineering               | 3     | 0     | 0     | 3           | CC6 / SEC           |
+| 4         | IT207           | System Design & Analysis Techniques| 3     | 0     | 0     | 3           | CC7                 |
+| 5         | IT209           | Web Technologies                   | 3     | 0     | 0     | 3           | CC8                 |
+| 6         | MA201           | Engineering Mathematics-III        | 3     | 1     | 0     | 4           | GE7                 |
+| 7         | IT281           | Animation & Computer Graphics Lab  | 0     | 0     | 3     | 2           | CC-L3               |
+| 8         | IT283           | Operating System Lab               | 0     | 0     | 3     | 2           | CC-L4 / SEC         |
+| 9         | IT285           | Web Technologies Lab I             | 0     | 0     | 3     | 2           | CC-L5 / SEC         |
+| 10        | GP              | General Proficiency                | -     | -     | -     | Non-Credit  |                     |
+
+**Total Hours and Credits**: 18 (L) + 1 (T) + 9 (P) = **25 Credits**
+
+---
+
+### **SEMESTER IV**
+
+| **S.No.** | **Course Code** | **Course Name**                                | **L** | **T** | **P** | **Credits** | **Types**          |
+|-----------|-----------------|------------------------------------------------|-------|-------|-------|-------------|---------------------|
+| 1         | IT202           | Data Structure                                  | 3     | 0     | 0     | 3           | CC9                 |
+| 2         | IT204           | Database Management System                     | 3     | 0     | 0     | 3           | CC10                |
+| 3         | IT206           | Web Development (PHP)                          | 3     | 0     | 0     | 3           | CC11 / SEC          |
+| 4         | IT208           | Discrete Structure                              | 3     | 0     | 0     | 3           | CC12                |
+| 5         | IT210           | Fundamentals of Digital Electronics Circuits    | 3     | 0     | 0     | 3           | CC8                 |
+| 6         | IT212           | Digital Communication & Coding                 | 3     | 1     | 0     | 4           | GE7                 |
+| 7         | IT282           | Data Structures Lab                             | 0     | 0     | 3     | 2           | CC-L3               |
+| 8         | IT284           | Database Management System Lab                 | 0     | 0     | 3     | 2           | CC-L4 / SEC         |
+| 9         | IT286           | Web Development PHP Lab                        | 0     | 0     | 3     | 2           | CC-L5 / SEC         |
+| 10        | IT288           | Digital Electronics Circuits Lab               | 0     | 0     | 3     | 2           | CC-L9               |
+| 11        | GP              | General Proficiency                             | -     | -     | -     | Non-Credit  |                     |
+
+**Total Hours and Credits**: 18 (L) + 1 (T) + 9 (P) = **25 Credits**
+
+---
+
+### **SEMESTER V**
+
+| **S.No.** | **Course Code** | **Course Name**                                | **L** | **T** | **P** | **Credits** | **Types**          |
+|-----------|-----------------|------------------------------------------------|-------|-------|-------|-------------|---------------------|
+| 1         | IT301           | Theory of Automata                              | 3     | 0     | 0     | 3           | CC11                |
+| 2         | IT303           | Computer Networks                               | 3     | 0     | 0     | 3           | CC12                |
+| 3         | IT305           | Compiler Design                                 | 3     | 1     | 0     | 4           | CC13                |
+| 4         | IT307           | Soft Computing Techniques                       | 3     | 0     | 0     | 3           | CC14 / SEC          |
+| 5         | IT315           | Elective 1                                      | 3     | 0     | 0     | 3           | E1 / DSE            |
+| 6         | IT319           | Elective 2                                      | 3     | 0     | 0     | 3           | E2 / DSE            |
+| 7         | IT381           | Computer Networks Lab                           | 0     | 0     | 3     | 2           | CC-L9               |
+| 8         | IT383           | Compiler Design Lab                            | 0     | 0     | 3     | 2           | CC-L10              |
+| 9         | IT385           | Soft Computing Techniques Lab                   | 0     | 0     | 3     | 2           | CC-L11 / SEC        |
+| 10        | GP              | General Proficiency                             | -     | -     | -     | Non-Credit  |                     |
+
+**Total Hours and Credits**: 18 (L) + 1 (T) + 9 (P) = **25 Credits**
+
+---
+
+### **SEMESTER VI**
+
+| **S.No.** | **Course Code** | **Course Name**                                | **L** | **T** | **P** | **Credits** | **Types**          |
+|-----------|-----------------|------------------------------------------------|-------|-------|-------|-------------|---------------------|
+| 1         | IT302           | Cloud Computing                                 | 3     | 0     | 0     | 3           |                     |
+| 2         | IT304           | Algorithm Design & Analysis                     | 3     | 0     | 0     | 3           |                     |
+| 3         | IT306           | Computer Organization                           | 3     | 1     | 0     | 3           |                     |
+| 4         | IT308           | Information and Network Security                | 3     | 0     | 0     | 4           |                     |
+| 5         | IT315           | Elective 1                                      | 3     | 0     | 0     | 3           |                     |
+| 6         | IT319           | Elective 2                                      | 3     | 0     | 0     | 3           |                     |
+| 7         | IT382           | Cloud Computing Lab                            | 0     | 0     | 3     | 2           |                     |
+| 8         | IT384           | Algorithm Design & Analysis Lab                 | 0     | 0     | 3     | 2           |                     |
+| 9         | IT386           | Information & Network Security Lab              | 0     | 0     | 3     | 2           |                     |
+| 10        | GP              | General Proficiency                             | -     | -     | -     | Non-Credit  |                     |
+
+**Total Hours and Credits**: 18 (L) + 1 (T) + 9 (P) = **25 Credits**
+
+---
+
+### **SEMESTER VII**
+
+| **S.No.** | **Course Code** | **Course Name**                                | **L** | **T** | **P** | **Credits** | **Types**          |
+|-----------|-----------------|------------------------------------------------|-------|-------|-------|-------------|---------------------|
+| 1         | MA401           | Modeling and Simulation                         | 3     | 0     | 0     | 3           |                     |
+| 2         | IT401           | Sensor Networks and IoT                        | 3     | 0     | 0     | 3           |                     |
+| 3         | IT403           | Soft Computing Techniques                       | 3     | 0     | 0     | 3           |                     |
+| 4         | IT405           | Big Data Analytics                              | 3     | 0     | 0     | 3           |                     |
+| 5         | IT Elective 5    | Elective 5                                      | 3     | 0     | 0     | 3           |                     |
+| 6         | IT481           | Sensor Networks and IoT Lab                    | 0     | 0     | 3     | 2           |                     |
+| 7         | IT491           | Industrial Training                             | 0     | 0     | 6     | 3           |                     |
+| 8         | IT493           | Minor Project                                   | 0     | 0     | 10    | 5           |                     |
+| 9         | GP              | General Proficiency                             | -     | -     | -     | Non-Credit  |                     |
+
+**Total Hours and Credits**: 15 (L) + 0 (T) + 19 (P) = **25 Credits**
+
+---
+
+### **SEMESTER VIII**
+
+| **S.No.** | **Course Code** | **Course Name**                                | **L** | **T** | **P** | **Credits** | **Types**          |
+|-----------|-----------------|------------------------------------------------|-------|-------|-------|-------------|---------------------|
+| 1         | IT490           | Seminar                                         | 0     | 0     | 3     | 2           |                     |
+| 2         | IT492           | Major Project                                   | 0     | 0     | 16    | 8           |                     |
+| 3         | IT494           | Internship                                      | 0     | 0     | 30    | 15          |                     |
+| 4         | GP              | General Proficiency                             | -     | -     | -     | Non-Credit  |                     |
+
+**Total Hours and Credits**: 0 (L) + 0 (T) + 49 (P) = **25 Credits**
+
+---
+### **FUNDAMENTALS OF COMPUTER PROGRAMMING**  
+- **Course Code**: CS101  
+- **Course Credits**: 4  
+- **Course Category**: CC  
+- **Course Year**: 1U  
+- **Course Semester**: 1U  
+- **Lectures + Tutorials (Hrs./Week)**: 03 + 02  
+- **Mid Sem. Exam Hours**: 1  
+- **Total No. of Lectures (L + T)**: 45 + 15  
+- **End Sem. Exam Hours**: 3  
+
+#### **Course Objectives**  
+1. To develop a fundamental understanding of computers, their components, and the programming environment.  
+2. To create programming logics and learn C programming concepts.  
+3. To design and develop algorithms and programs using different data declarations, initialization, and related operations.  
+4. To develop the ability to define and manage functions, arrays, structures, pointers, etc., based on program objectives.  
+5. To understand and develop C programs that handle computer files and perform various operations on them.
+
+#### **Course Outcomes**  
+By the end of the course, students should be able to:  
+1. Understand the fundamentals of computers.  
+2. Use various programming concepts and techniques.  
+3. Apply C programming fundamentals in real applications.  
+4. Use arrays, functions, structures, and unions in C programming.  
+5. Develop advanced C programs.
+
+---
+
+### **Unit Breakdown**
+
+#### **Unit I: Introduction to Computer and Programming Concepts**
+- Overview of computers, memory, input/output, storage units.  
+- Software types: system software, application software.  
+- Understanding the role of compilers, interpreters, and operating systems.  
+- Introduction to algorithm design, flowcharts, and pseudocode.
+
+#### **Unit II: Introduction to C Programming Language**
+- Features of C language, data types, operators, and control flow statements.  
+- Writing basic programs using loops (for, while, do-while) and conditionals (if, switch).
+
+#### **Unit III: Data Types and Structures**
+- Bitwise operators, arrays (1D and 2D), structure, union, and functions.  
+- Recursion, array of structures, and operations on arrays.  
+
+#### **Unit IV: Fundamentals of Pointers**
+- Introduction to pointers, their use, declaration, and operations in C.  
+- Passing parameters by value and reference.  
+- Dynamic memory allocation using pointers.
+
+#### **Unit V: File Handling in C and Enum**
+- File operations in C: defining, opening, reading, and closing files.  
+- File I/O operations like counting characters, spaces, and error handling.  
+- Introduction to enumerated data types (Enum).
+
+---
+
+#### **Text Books**  
+1. *C Programming*, Herbert Schildt  
+2. *C Programming Language*, 2nd Edition, by Brian W. Kernighan & Dennis M. Ritchie  
+
+#### **Reference Books**  
+1. *Programming in ANSI C*, E. Balagurusamy  
+2. *C Puzzle Book: Puzzles for the C Programming Language*, Alan R. Feuer  
+3. *Expert C Programming: Deep C Secrets*, Peter Van Der Linden  
+4. *Introduction to UNIX System*, Morgan Rachel  
+5. *C: A Reference Manual*, Samuel P. Harbison  
+6. *Programming Using the C Language*, Hutchison, R.C.  
+7. *Fundamentals of Computers and Programming with C*, A.K. Sharma  
+
+---
+
+### **COMPUTER PROGRAMMING LAB**  
+- **Course Code**: CS181  
+- **Course Credits**: 1  
+- **Course Category**: CCL  
+- **Course Year**: 1U  
+- **Course Semester**: 1U  
+- **Lectures + Tutorials (Hrs./Week)**: 02  
+- **Mid Sem. Exam Hours**: --  
+- **Total No. of Lectures (L + T)**: 10  
+- **End Sem. Exam Hours**: 2  
+
+#### **Course Objectives**  
+1. To develop an understanding of the C programming environment.  
+2. To create and debug programming logic using C.  
+3. To design algorithms and programs using data declarations and initialization.  
+4. To work with functions, arrays, structures, and pointers.  
+5. To handle computer files and perform operations on them.
+
+#### **Course Outcomes**  
+By the end of the course, students should be able to:  
+1. Understand C programming fundamentals.  
+2. Use various programming techniques in C.  
+3. Apply C data types, operators, and file I/O operations.  
+4. Use advanced features of C programming.
+
+#### **List of Experiments**  
+1. Find the sum of digits of a number.  
+2. Calculate factorial using recursion.  
+3. Find the reverse of a number.  
+4. Check whether the year is a leap year or not.  
+5. Calculate grade based on marks of 5 subjects.  
+6. Implement the above using switch-case.  
+7. Compute roots of a quadratic equation.  
+8. Compute string length using a while loop.  
+9. Print patterns using loops.  
+   - Example:  
+     ```
+     *
+     **
+     ***
+     ****
+     *****
+     ```  
+10. Multiply two matrices.  
+11. Demonstrate call by value vs. call by reference.  
+12. Check if a string is a palindrome.  
+13. Create a structure for a student with name, reg. no., and class. Compute its size.  
+14. Compute string length using pointers.  
+15. Create a file, input data, and display its contents.
+
+---
+
+### **Other Courses in Semester I**  
+
+#### **Engineering Mathematics - II**  
+- **Course Code**: MA102  
+- **Credits**: 4  
+- **Hours**: 4/week  
+- **Objective & Outcomes**: Develop strong mathematical foundations for various engineering applications.
+
+#### **Engineering Physics**  
+- **Course Code**: PH102  
+- **Credits**: 4  
+- **Hours**: 4/week  
+- **Objective & Outcomes**: Provide a deeper understanding of physical concepts relevant to engineering.
+
+#### **Object-Oriented Programming**  
+- **Course Code**: IT102  
+- **Credits**: 4  
+- **Hours**: 4/week  
+- **Objective & Outcomes**: Learn and implement object-oriented concepts in C++.
+
+---
+### **INTRODUCTION TO ARTIFICIAL INTELLIGENCE**
+- **Course Code**: CS105
+- **Course Credits**: 2
+- **Course Category**: CC
+- **Course Year**: 1U
+- **Course Semester**: 1U
+- **No. of Lectures + Tutorials (Hrs./Week)**: 02
+- **Mid Semester Exam Hours**: 1
+- **Total No. of Lectures (L + T)**: 30
+- **End Semester Exam Hours**: 3
+
+---
+
+### **Course Objectives**
+1. To introduce students to artificial intelligence.
+2. To familiarize students with the flow of AI projects.
+3. To introduce the various domains and applications of AI.
+4. To enable students to implement AI projects.
+
+---
+
+### **Course Outcomes**
+By the end of the course, students should be able to:
+1. Understand the evolution of artificial intelligence.
+2. Grasp the significant concepts of artificial intelligence.
+3. Understand the flow of AI projects.
+4. Be aware of the application areas of artificial intelligence.
+5. Implement artificial intelligence projects.
+
+---
+
+### **UNIT 1: Introduction**
+- Introduction to AI
+- Components of AI
+- Goals of AI
+- Types of AI
+- History of AI
+- Turing Test in AI
+- Advantages and Disadvantages of AI
+- Intelligence and Intelligent Systems
+- Comparison of various IS
+- Weak AI vs Strong AI
+- Mind-Body Problem in AI
+- Chinese Room Experiment in AI
+- Parallel and Distributed AI
+
+---
+
+### **UNIT 2: Agents in AI**
+- Intelligent Agents and Types of AI Agents
+- Simple Reflex Agent, Model-based Reflex Agent, Goal-based Agents
+- Utility-based Agents, Learning Agents
+- Structure of an AI Agent
+- Agent Environment in AI
+- Examples of Agents
+- Knowledge Engineering, Knowledge-based Systems, Knowledge Engineering Techniques
+- Knowledge Engineering Principles and Methodology
+
+---
+
+### **UNIT 3: Searching Techniques and AI Problems**
+- Searching in AI and Terminologies
+- Properties of Search Algorithms
+- Algorithms: Breadth-First Search, Depth-First Search, Best-First Search
+- Solving Problems: Tic-Tac-Toe, Water Jug Problem, Chess, Tower of Hanoi, Traveling Salesman, Monkey and Banana, Magic Square
+
+---
+
+### **UNIT 4: Knowledge Representation**
+- Definition and Types of Knowledge (Declarative, Procedural, Heuristic, Structural, etc.)
+- Knowledge Storage and Relation to Intelligence
+- AI Knowledge Cycle
+
+---
+
+### **UNIT 5: AI Techniques and Applications**
+- Introduction to Machine Learning, Deep Learning, Expert Systems, Natural Language Processing
+- AI Applications:
+  - AI in Social Media, Entertainment, Education
+  - AI in Drones, Automated Computer Support, Personalized Shopping
+  - AI in Finance, Smart Cars, Travel, Navigation, Smart Homes, Security, Healthcare, E-commerce
+
+---
+
+### **Text Books**:
+1. **Artificial Intelligence**, Elaine Reich, Tata McGraw Hill Publishing, 2008.
+2. **Artificial Intelligence**, Ela Kumar, IK Publishing.
+3. **Artificial Intelligence**, Peterson, Tata McGraw Hill, 2008.
+4. **Artificial Intelligence**, Russel & Norvig, Pearson Printice Hall, 2006.
+5. **Artificial Intelligence**, Winston, PHI Publication, 2006.
+6. **Artificial Intelligence - A Modern Approach** (3rd Edition), Stuart Russell & Peter Norvig.
+7. **Artificial Intelligence: The Basics**, Kevin Warwick.
+
+---
+
+### **OBJECT-ORIENTED PROGRAMMING LAB**
+- **Course Code**: IT181
+- **Course Credits**: 1
+- **Course Category**: CC
+- **Course Year**: 1U
+- **Course Semester**: 1U
+- **No. of Lectures + Tutorials (Hrs./Week)**: 02
+- **Total No. of Lectures (L + T)**: 15
+- **End Semester Exam Hours**: 2
+
+---
+
+### **Course Objectives**
+1. Understand object-oriented concepts like data abstraction and encapsulation.
+2. Solve real-world scenarios using a top-down approach.
+3. Learn various Java programming constructs.
+4. Practice object-oriented programming techniques using C++.
+
+---
+
+### **Course Outcomes**
+By the end of the course, students should be able to:
+1. Create programs using classes and objects in C++.
+2. Implement object-oriented programming concepts in C++.
+3. Develop applications using stream I/O and file I/O.
+4. Implement simple graphical user interfaces.
+5. Use templates and exception handling in object-oriented programs.
+
+---
+
+### **Suggested List of Experiments**:
+1. Implement class, command line arguments, and keyboard input in Java.
+2. Implement various data types: variables, constants, arrays, strings, etc.
+3. Use different operators: arithmetic, relational, logical, etc.
+4. Implement control statements (decision, loop, and branch).
+5. Implement sorting algorithms (Bubble Sort, Selection Sort, etc.).
+6. Implement methods, method overloading, and overriding.
+7. Use final variables, abstract classes, concrete methods.
+8. Implement OOP concepts like abstraction, polymorphism, encapsulation, inheritance.
+9. Exception handling with Try, Catch, Throw, Throws, and multiple catch statements.
+10. Use visibility controls: private, public, protected.
+11. Implement interfaces and interface extension/implementation.
+12. Multithreading in Java: thread class, runnable interface, synchronization.
+13. Create and use Java packages with various methods (e.g., Factorial, Fibonacci series).
+14. Display array-based results using an applet.
+15. Design web pages with applets and HTML.
+
+---
+
+### **Semester III Courses:**
+1. **IT201**: Animation and Computer Graphics - 3 credits
+2. **IT203**: Operating System - 3 credits
+3. **IT205**: Software Engineering - 3 credits
+4. **IT207**: System Design & Analysis Techniques - 3 credits
+5. **IT209**: Web Technologies - 3 credits
+6. **MA201**: Engineering Mathematics-III - 4 credits
+7. **IT281**: Animation & Computer Graphics Lab - 2 credits
+8. **IT283**: Operating System Lab - 2 credits
+9. **IT285**: Web Technologies Lab I - 2 credits
+10. **GP**: General Proficiency - Non Credit
+
+---
+
+**Total Hours and Credits**: 18 hours, 1 lab hour, 9 credits.
+
+---
+
+### Animation & Computer Graphics Theory  
+**Course Code:** IT 201  
+**Credits:** 3  
+**Category:** CC  
+**Year:** 2U  
+**Semester:** 3U  
+**Lectures/Tutorials per Week:** 03 + 00  
+**Mid Sem. Exam:** 1 Hour  
+**Total Lectures:** 45  
+**End Sem. Exam:** 3 Hours  
+
+#### Course Objectives:
+1. Understand the need for developing graphics applications.
+2. Learn algorithmic development of graphics primitives (line, circle, polygon, etc.).
+3. Learn the representation and transformation of graphical images.
+4. Get familiar with image fundamentals and animations.
+5. Apply efficient graphics techniques to solve engineering problems.
+
+#### Course Outcomes:
+1. Understand fundamental concepts in computer graphics (e.g., geometric transformations, illumination models).
+2. Explain basic computer graphics algorithms and evaluate them.
+3. Compare 2D and 3D graphics algorithms.
+4. Understand and evaluate graphics algorithms' performance.
+5. Use algorithms to model engineering problems.
+
+#### Units:
+- **Unit I:** Introduction to Computer Graphics (Applications, Graphics Systems, Video Devices, Primitives, Algorithms)
+- **Unit II:** 2D Geometrical Transforms (Translation, Scaling, Rotation, Reflection, Clipping Algorithms)
+- **Unit III:** 3D Object Representation & Transformation (Polygon Surfaces, Bezier Curves, 3D Transformations)
+- **Unit IV:** Visible Surface Detection Methods (Classification, Depth-Buffer, Scan-line, BSP-Tree, Anti-aliasing)
+- **Unit V:** Computer Animation (Principles, Techniques, Animation Tools, GIF, Web Animations)
+
+#### Reference Books:
+1. **Computer Graphics: Principles and Practice** – Foley, vanDam, Feiner, Hughes
+2. **Mathematical Elements of Graphics** – Roges
+3. **Computer Graphics** – Donald Hearn, M. Pauline Baker
+4. **Procedural Elements** – David Rogers
+5. **Principles of Computer Graphics** – Shalini Govil-pal
+
+---
+
+### Operating System  
+**Course Code:** IT 203  
+**Credits:** 3  
+**Category:** CC  
+**Year:** 2U  
+**Semester:** 3U  
+**Lectures/Tutorials per Week:** 03 + 00  
+**Mid Sem. Exam:** 1 Hour  
+**Total Lectures:** 45  
+**End Sem. Exam:** 3 Hours  
+
+#### Course Objectives:
+1. Understand the importance of operating systems.
+2. Learn about different types of operating systems and their services.
+3. Learn process scheduling and synchronization techniques.
+4. Understand memory management and secondary memory management.
+5. Understand security and protection in operating systems.
+
+#### Course Outcomes:
+1. Understand different services provided by operating systems.
+2. Learn real-life applications of operating systems.
+3. Understand process scheduling algorithms and memory management techniques.
+4. Implement protection mechanisms in operating systems.
+
+#### Units:
+- **Unit I:** Introduction to Operating Systems (Memory, Processor, Device Management)
+- **Unit II:** Process Management (Job Scheduling, Threading, Synchronization, Deadlocks)
+- **Unit III:** Memory & Storage Management (Memory Allocation, Virtual Memory, Paging)
+- **Unit IV:** UNIX/Linux OS (System Calls, Shell Programming, Linux Admin)
+- **Unit V:** Security & Protection (Design Principles, Authentication, Access Control)
+
+#### Text Books:
+1. **Operating Systems Concepts** – Galvin
+2. **Operating Systems Concepts** – James L Peterson
+3. **An Introduction to Operating Systems** – Deitel H. M.
+4. **Operating Systems** – S. Tanenbaum
+
+---
+
+### Software Engineering  
+**Course Code:** IT 205  
+**Credits:** 3  
+**Category:** CC  
+**Year:** 2U  
+**Semester:** 3U  
+**Lectures/Tutorials per Week:** 03 + 00  
+**Mid Sem. Exam:** 1 Hour  
+**Total Lectures:** 45  
+**End Sem. Exam:** 3 Hours  
+
+#### Course Objectives:
+1. Learn basic software engineering methods and practices.
+2. Understand software process models.
+3. Learn about software requirements and SRS documents.
+4. Understand the software design process.
+5. Understand software coding, testing, and maintenance.
+
+#### Course Outcomes:
+1. Understand the analysis and design of complex systems.
+2. Apply software engineering principles.
+3. Design and maintain large-scale software systems.
+4. Create efficient, reliable, and cost-effective software solutions.
+5. Perform independent research and analysis.
+
+#### Units:
+- **Unit I:** Introduction to Software Engineering (Software Process Models, Planning, Development)
+- **Unit II:** Requirement Analysis and Design (SRS, Requirements Engineering)
+- **Unit III:** Software Design Process (Architectural Design, Interface Design)
+- **Unit IV:** Software Life Cycle Models (Waterfall, Prototype, Spiral, RAD)
+- **Unit V:** Software Coding, Testing, and Maintenance (Unit Testing, Regression Testing, Maintenance Types)
+
+#### Reference Books:
+1. **An Integrated Approach to Software Engineering** – Pankaj Jalote
+2. **Software Engineering** – Ian Sommerville
+3. **Software Engineering: Practitioner's Approach** – Roger S. Pressman
+4. **Software Reliability, Testing, and Quality Assurance** – Nasib S. Gill
+
+---
+
+### System Design and Analysis Techniques  
+**Course Code:** IT 207  
+**Credits:** 3  
+**Category:** CC  
+**Year:** 2U  
+**Semester:** 3U  
+**Lectures/Tutorials per Week:** 03 + 00  
+**Mid Sem. Exam:** 1 Hour  
+**Total Lectures:** 45  
+**End Sem. Exam:** 3 Hours  
+
+#### Course Objectives:
+1. Understand system development and its phases.
+2. Learn the role of the systems analyst.
+3. Use tools for process and data modeling.
+4. Develop Requirements Definition Proposals for new systems.
+
+#### Course Outcomes:
+1. Understand the systems development life cycle.
+2. Develop information systems models.
+3. Create system project documentation.
+4. Analyze business problems and write requirements documents.
+5. Understand object-oriented methods (UML).
+
+#### Units:
+- **Unit I:** Data and Information (Types of Information, Management Structures)
+- **Unit II:** Systems Analysis and Design Life Cycle (Feasibility Analysis, System Implementation)
+- **Unit III:** Information Gathering (Strategies, Methods)
+- **Unit IV:** Feasibility Analysis (Cost Benefit Analysis, Payback Period)
+- **Unit V:** Tools for Systems Analysts (Data Flow Diagrams, Decision Tables)
+
+#### Text Books:
+1. **System Analysis and Design** – Elias M. Awad
+2. **System Analysis and Design** – Perry Edwards
+
+---
+
+### Web Technologies  
+**Course Code:** IT 209  
+**Credits:** 3  
+**Category:** CC  
+**Year:** 2U  
+**Semester:** 3U  
+**Lectures/Tutorials per Week:** 03 + 00  
+**Mid Sem. Exam:** 1 Hour  
+**Total Lectures:** 45  
+**End Sem. Exam:** 3 Hours  
+
+#### Course Objectives:
+1. Understand the history of the internet and web development.
+2. Learn to implement complete web applications.
+3. Learn HTML, CSS, and JavaScript for web development.
+4. Understand web hosting and SEO.
+
+#### Course Outcomes:
+1. Develop dynamic webpages using JavaScript and HTML.
+2. Build interactive web applications using CSS.
+3. Deploy real-time web applications.
+
+#### Units:
+- **Unit I:** Introduction (Web Development Process, Domains, Responsive Design)
+- **Unit II:** HTML (Basic Structure, Tags, Text Formatting, Multimedia)
+- **Unit III:** CSS (Creating Style Sheets, Box Model, Styling Elements)
+- **Unit IV:** JavaScript (Variables, Functions, Loops, Form Validation)
+- **Unit V:** Web Hosting (Types of Hosting, FTP, SEO Basics)
+
+#### Text Books:
+1. **Web Technologies** – Uttam Roy
+2. **Web Programming with HTML, XHTML, and CSS** – Jon Duckett
+3. **HTML, XHTML, and CSS Bible** – Steven M. Schafer
+
+---
+
+### Engineering Mathematics-III  
+**Course Code:** MA201  
+**Credits:** 4  
+**Category:** CC  
+**Year:** 2U  
+**Semester:** 3U  
+**Lectures/Tutorials per Week:** 03 + 01  
+**Mid Sem. Exam:** 1 Hour  
+**Total Lectures:** 45  
+**End Sem. Exam:** 3 Hours  
+
+---
+
+### Animation & Computer Graphics Lab
+- **Course Code**: IT 281  
+- **Course Credits**: 2  
+- **Course Category**: CCL  
+- **Course Year**: 2U  
+- **Course Semester**: 3U  
+- **Lectures & Tutorials**: 3 (3 hours/week)  
+- **Mid Sem Exam Hours**: -  
+- **Total No. of Lectures**: 10 (10 hours)  
+- **End Sem Exam Hours**: 3  
+
+#### Course Objectives:
+1. Learn algorithmic development of graphics primitives (line, circle, polygon, etc.).
+2. Learn the representation and transformation of graphical images.
+3. Familiarize with animation technology approaches, methods, and techniques.
+
+#### Course Outcomes:
+- Explain fundamental computer graphics concepts like transformations, illumination models, and rendering.
+- Compare and evaluate graphics algorithms.
+- Understand image fundamentals and animation.
+- Apply algorithms for engineering problems.
+
+#### List of Experiments:
+1. Create an animation to represent the growing moon.
+2. Simulate a ball bouncing on steps.
+3. Simulate cloud movement.
+4. Draw and animate fan blades.
+5. Display a background (e.g., tulip.jpg) with your name.
+6. Display a background with your name using a mask (e.g., garden.jpg).
+7. Create an animation with letters of "WELCOME" appearing one by one.
+8. Simulate a ball hitting another ball.
+9. Design a visiting card with graphics and text.
+10. Create a photographic image with a title, border, and institution name.
+11. Design a cover page for a book in your subject area.
+12. Extract and organize a flower image on a background.
+
+---
+
+### Operating System Lab
+- **Course Code**: IT 283  
+- **Course Credits**: 2  
+- **Course Category**: CCL  
+- **Course Year**: 2U  
+- **Course Semester**: 3U  
+- **Lectures & Tutorials**: 3 (3 hours/week)  
+- **Mid Sem Exam Hours**: -  
+- **Total No. of Lectures**: 10 (10 hours)  
+- **End Sem Exam Hours**: 3  
+
+#### Course Objectives:
+1. Learn file management and permission setup.
+2. Understand system processes and management.
+3. Implement OS algorithms (scheduling, page replacement, etc.).
+4. Apply concepts of deadlock and its prevention.
+
+#### Course Outcomes:
+- Implement and analyze performance of OS algorithms (CPU scheduling, page replacement, etc.).
+- Design projects with a positive impact on the environment or society.
+- Perform various file system operations.
+- Apply memory allocation and page replacement algorithms.
+- Apply process synchronization concepts (semaphores, message queues, etc.).
+
+#### List of Experiments:
+1. Program for file handling.
+2. Program for Dining Philosophers Problem.
+3. Program for Producer-Consumer Problem.
+4. First Come First Serve Algorithm.
+5. Shortest Job First Scheduling Algorithm.
+6. Round Robin Scheduling Method.
+7. Priority Scheduling Algorithm.
+8. Implement Fragmentation and Defragmentation.
+9. Simulate Banker's Algorithm for Deadlock Avoidance.
+10. Simulate Banker's Algorithm for Deadlock Prevention.
+
+---
+
+### Web Technologies Lab
+- **Course Code**: IT 285  
+- **Course Credits**: 2  
+- **Course Category**: CCL  
+- **Course Year**: 2U  
+- **Course Semester**: 3U  
+- **Labs & Tutorials**: 3 (3 hours/week)  
+- **Mid Sem Exam Hours**: -  
+- **Total No. of Labs**: 10  
+- **End Sem Exam Hours**: 3  
+
+#### Course Objectives:
+1. Learn to analyze and identify elements and attributes of web pages.
+2. Create web pages using XHTML and CSS.
+3. Understand ordered and unordered lists in HTML.
+4. Create a login form using HTML.
+
+#### Course Outcomes:
+- Display attributes and values using HTML.
+- Embed images in web pages.
+- Create registration and login forms.
+- Apply inline, internal, and external CSS to websites.
+
+#### List of Experiments:
+1. Display your education details in HTML.
+2. Display attributes and their values for HTML elements.
+3. Create a webpage with website links.
+4. Embed images in a web page.
+5. Create a registration form with user login validation.
+6. Create a login form and navigate to a profile page upon submission.
+7. Illustrate ordered and unordered lists.
+8. Create a frameset with header, navigation, and content.
+9. Create a website for your institute or department.
+10. Demonstrate inline CSS.
+11. Demonstrate internal CSS.
+12. Demonstrate external CSS.
+13. Create and validate a student record form.
+14. Design an entry form for student details.
+
+---
+
+### Semester IV Course Overview
+| **S.No.** | **Course Code** | **Course Name** | **L** | **T** | **P** | **Credits** | **Types** |
+|---|---|---|---|---|---|---|---|
+| 1 | IT202 | Data Structure | 3 | 0 | 0 | 3 | CC9 |
+| 2 | IT204 | Database Management System | 3 | 0 | 0 | 3 | CC10 |
+| 3 | IT206 | Web Development (PHP) | 3 | 0 | 0 | 3 | CC11 / SEC |
+| 4 | IT208 | Discrete Structure | 3 | 0 | 0 | 3 | CC12 |
+| 5 | IT210 | Fundamentals of Digital Electronics Circuits | 3 | 0 | 0 | 3 | CC8 |
+| 6 | IT212 | Digital Communication & Coding | 3 | 1 | 0 | 4 | GE7 |
+| 7 | IT282 | Data Structures Lab | 0 | 0 | 3 | 2 | CC-L3 |
+| 8 | IT284 | Database Management System Lab | 0 | 0 | 3 | 2 | CC-L4 / SEC |
+| 9 | IT286 | Web Development PHP Lab | 0 | 0 | 3 | 2 | CC-L5 / SEC |
+| 10 | IT288 | Digital Electronics Circuits Lab | 0 | 0 | 3 | 2 | CC-L9 |
+| 11 | GP | General Proficiency | - | - | - | Non Credit | - |
+
+- **Total Hours**: 18  
+- **Total Credits**: 25
+
+**DATA STRUCTURES**
+
+- **Course Code**: IT202  
+- **Credits**: 3  
+- **Category**: CC  
+- **Course Year**: 2U  
+- **Course Semester**: 3U  
+- **Lectures + Tutorials**: 3 hrs/week (3 + 0)  
+- **Mid Sem. Exam Hours**: 1  
+- **Total Lectures (L + T)**: 45 (45 + 0)  
+- **End Sem. Exam Hours**: 3  
+
+**Course Objectives:**
+1. Emphasize the importance of appropriate data structures in efficient algorithm development.
+2. Understand basic data structures like arrays, stacks, queues, hash tables, and linked lists.
+3. Analyze the performance of algorithms.
+4. Solve problems using graphs, trees, and heaps.
+5. Apply algorithmic design paradigms and methods of analysis.
+
+**Course Outcomes:**
+1. Define basic static and dynamic data structures with relevant algorithms.
+2. Select appropriate data structures and algorithms for simple programs.
+3. Identify bugs in programs and apply basic operations on data structures.
+4. Improve existing solutions using learned data structures and algorithms.
+5. Evaluate algorithms based on time and memory complexity.
+
+**Units:**
+- **Unit I**: Introduction to Data Structures, Hashing, Recursion, C Implementation.
+- **Unit II**: Stacks, Queues, Linked Lists, Circular Lists, Priority Queues.
+- **Unit III**: Binary Trees, Traversal, Expression Trees.
+- **Unit IV**: Sorting and Searching (Bubble, Quick, Merge, Binary Search).
+- **Unit V**: Graphs, Dijkstra's Algorithm, Spanning Trees, Minimum Spanning Tree, Kruskal's Algorithm.
+
+**Text Books:**
+1. Aaron M. Tenenbaum, Yeedidyah Langsam, Moshe J. Augenstein, *Data Structures using C*, Pearson Education.
+2. E. Balagurusamy, *Programming in ANSI C*, TMH.
+3. Robert L. Kruse, Bruce P. Leung Clovis L. Tondo, *Data Structures and Program Design in C*, Pearson Education.
+
+---
+
+**DATABASE MANAGEMENT SYSTEM**
+
+- **Course Code**: IT204  
+- **Credits**: 3  
+- **Category**: CC  
+- **Course Year**: 2U  
+- **Course Semester**: 3U  
+- **Lectures + Tutorials**: 3 hrs/week (3 + 0)  
+- **Mid Sem. Exam Hours**: 1  
+- **Total Lectures (L + T)**: 45 (45 + 0)  
+- **End Sem. Exam Hours**: 3  
+
+**Course Objectives:**
+1. Understand fundamental elements of relational database management systems.
+2. Learn about the relational data model, entity-relationship model, SQL, and relational algebra.
+3. Design ER models and convert them into relational tables.
+4. Write SQL queries and normalize databases.
+
+**Course Outcomes:**
+1. Understand database concepts and DBMS software.
+2. Model data using ER diagrams.
+3. Write SQL commands to create tables and query data.
+4. Execute advanced SQL queries.
+5. Explain transaction management design.
+
+**Units:**
+- **Unit I**: Database system vs. file system, ER model, relational model, transaction management.
+- **Unit II**: Relational algebra, relational calculus, querying relational data.
+- **Unit III**: Basic SQL queries, nested queries, set and comparison operators, outer joins.
+- **Unit IV**: Schema refinement, normal forms, BCNF, dependency preservation.
+- **Unit V**: Transaction management, ACID properties, concurrency control, crash recovery.
+
+**Text Books:**
+1. Elmasri Navrate, *Database Management System*, Pearson Education.
+2. Raghurama Krishnan, Johannes Gehrke, *Database Management Systems*, TMH.
+  
+---
+
+**WEB DEVELOPMENT (PHP)**
+
+- **Course Code**: IT206  
+- **Credits**: 3  
+- **Category**: CC  
+- **Course Year**: 2U  
+- **Course Semester**: 3U  
+- **Lectures + Tutorials**: 3 hrs/week (3 + 0)  
+- **Mid Sem. Exam Hours**: 1  
+- **Total Lectures (L + T)**: 45 (45 + 0)  
+- **End Sem. Exam Hours**: 3  
+
+**Course Objectives:**
+1. Introduce web fundamentals and create static web pages using HTML.
+2. Understand dynamic web pages using JavaScript.
+3. Introduce MySQL for backend database management with PHP.
+4. Understand CSS for styling web pages.
+
+**Course Outcomes:**
+1. Use DHTML and AJAX, and learn JQuery basics.
+2. Understand web security vulnerabilities and mitigation.
+3. Use PHP and MySQL for database-driven web applications.
+4. Design HTML pages with basic JavaScript for interactivity.
+
+**Units:**
+- **Unit I**: Introduction to WWW, HTTP, web development life cycle, and CMS like Wordpress and Joomla.
+- **Unit II**: HTML5, CSS, JavaScript basics, forms, and validation.
+- **Unit III**: PHP, dynamic linking, file handling, error handling.
+- **Unit IV**: MVC pattern, configuring CodeIgniter, model-view-controller interactions.
+- **Unit V**: MySQL database integration with PHP.
+
+**Text Books:**
+1. Robin Nixon, *Learning PHP, MySQL & JavaScript with JQuery, CSS & HTML5*, O'Reilly.
+2. Jennifer Niederst Robbins, *Learning Web Design: A Beginner's Guide*, O'Reilly.
+
+---
+
+**DISCRETE MATHEMATICS**
+
+- **Course Code**: IT208  
+- **Credits**: 3  
+- **Category**: CC  
+- **Course Year**: 2U  
+- **Course Semester**: 3U  
+- **Lectures + Tutorials**: 3 hrs/week (3 + 0)  
+- **Mid Sem. Exam Hours**: 1  
+- **Total Lectures (L + T)**: 45 (45 + 0)  
+- **End Sem. Exam Hours**: 3  
+
+**Course Objectives:**
+1. Simplify and evaluate basic logic statements using truth tables and logical properties.
+2. Express logical sentences using predicates and quantifiers.
+3. Apply set operations and solve problems using inclusion-exclusion.
+4. Analyze functions, perform composition, and understand their properties.
+5. Apply proof methods such as contradiction and induction.
+
+**Course Outcomes:**
+1. Express logic sentences using predicates and logical connectives.
+2. Apply rules of inference, proof by contradiction, and induction.
+3. Evaluate Boolean functions using Boolean algebra.
+4. Solve problems using tree and graph algorithms.
+
+**Units:**
+- **Unit I**: Mathematical logic, truth tables, normal forms, predicates, and inference.
+- **Unit II**: Set theory, binary relations, algebraic structures, functions, and recursion.
+- **Unit III**: Combinatorics, counting principles, binomial and multinomial theorems.
+- **Unit IV**: Recurrence relations, generating functions, solving recurrence relations.
+- **Unit V**: Graph theory, DFS, BFS, planar graphs, and Hamiltonian graphs.
+
+**Text Books:**
+1. Ralph P. Grimaldi, *Discrete and Combinatorial Mathematics*, Pearson Education.
+2. Trembly J.P., Manohar P., *Discrete Mathematical Structures*, TMH.
+
+---
+
+**FUNDAMENTALS OF DIGITAL ELECTRONICS CIRCUITS**
+
+- **Course Code**: IT210  
+- **Credits**: 3  
+- **Category**: CC  
+- **Course Year**: 2U  
+- **Course Semester**: 3U  
+- **Lectures + Tutorials**: 3 hrs/week (3 + 0)  
+- **Mid Sem. Exam Hours**: 1  
+- **Total Lectures (L + T)**: 45 (45 + 0)  
+- **End Sem. Exam Hours**: 3  
+
+**Course Objectives:**
+1. Simplify basic logic statements using truth tables and logical properties.
+2. Use predicates, quantifiers, and logical connectives.
+3. Apply set operations, Venn diagrams, and inclusion-exclusion.
+4. Perform function composition and analyze functions' properties.
+5. Apply proof methods like contradiction, cases, and induction.
+
+**Course Outcomes:**
+1. Express logic sentences using logical connectives.
+2. Evaluate Boolean functions and simplify expressions using Boolean algebra.
+3. Apply rules of inference and induction.
+4. Use graph algorithms for solving problems.
+
+**Units:**
+- **Unit I**: Binary arithmetic, Boolean algebra, Karnaugh maps, logic gates, and half/full adders.
+- **Unit II**: Linear wave shaping circuits, multivibrators, D/A and A/D converters.
+- **Unit III**: Logic families, TTL, CMOS, gated flip-flops, interfacing TTL to MOS.
+- **Unit IV**: Shift registers, counters, and combinational circuit design.
+- **Unit V**: Semiconductor memories, ROM, PLA, multiplexers, and demultiplexers.
+
+**Text Books:**
+1. Tocci, *Digital Systems Principles & Applications*.
+2. M. Mano, *Digital Logic & Computer Design*, PHI.
+3. Dr. A K Gautam, *Digital Electronics*, Khanna Publications.
+
+### **Digital Communication & Coding**  
+- **Course Code:** IT212  
+- **Credits:** 2  
+- **Category:** CCL  
+- **Year/Semester:** 1st Year / 1st Semester  
+- **Lectures/Tutorials:** 2 hours/week  
+- **Mid-Sem Exam Hours:** 1 hour  
+- **Total Lectures:** 30 hours  
+- **End Sem Exam Hours:** 3 hours  
+
+**Course Objectives:**  
+1. Understand the building blocks of a digital communication system.  
+2. Prepare a mathematical background for communication signal analysis.  
+3. Analyze signal flow in a digital communication system.  
+4. Analyze error performance in the presence of noise and interference.  
+5. Understand the concept of spread spectrum communication systems.
+
+**Course Outcomes:**  
+By the end of this course, students should be able to:  
+1. Understand and analyze waveform coding techniques.  
+2. Analyze the performance of digital communication systems in terms of error rate and spectral efficiency.  
+3. Perform time and frequency domain analysis of signals.  
+4. Design digital communication systems.  
+5. Understand the working of spread spectrum communication systems.
+
+**Units Overview:**  
+- **Unit I:** Sampling of signals, Sampling theorem, Aliasing, Pulse Amplitude Modulation (PAM), Time Division Multiplexing (TDM), and more.  
+- **Unit II:** Pulse Code Modulation (PCM), Quantization, Companding, Delta Modulation, and comparison of various systems.  
+- **Unit III:** Digital Modulation Techniques: ASK, BPSK, QPSK, etc.  
+- **Unit IV:** Error probability and bit error rate, comparison of modulation techniques.  
+- **Unit V:** Line Coding, HDB and B8ZS signaling, Inter-symbol interference.
+
+---
+
+### **Data Structure Lab**  
+- **Course Code:** IT284  
+- **Credits:** 2  
+- **Category:** CCL  
+- **Year/Semester:** 2nd Year / 4th Semester  
+- **Labs:** 3 hours/week  
+- **End Sem Exam Hours:** 2 hours  
+
+**Course Objectives:**  
+1. Introduce data structures through Abstract Data Types (ADT).  
+2. Implement data structure algorithms.  
+3. Represent real-world data structures.  
+4. Develop applications using data structure algorithms.  
+5. Compute the complexity of various algorithms.
+
+**Course Outcomes:**  
+By the end of this course, students should be able to:  
+1. Select appropriate data structures for specific problems.  
+2. Implement searching, insertion, deletion, and traversal operations.  
+3. Implement Linear and Non-Linear data structures.  
+4. Apply sorting and searching techniques for given problems.  
+5. Design advanced data structures using non-linear structures.
+
+**Lab Experiments Overview:**  
+- Run-time analysis of Fibonacci series  
+- Study and implementation of arrays, searching, sorting algorithms  
+- Link list operations  
+- Stack and Queue implementation  
+- Binary Tree and Binary Search Tree implementation  
+- Graph representation and traversing algorithms  
+- Hash Table implementation
+
+---
+
+### **Database Management System Lab**  
+- **Course Code:** IT284  
+- **Credits:** 2  
+- **Category:** CC-P  
+- **Year/Semester:** 2nd Year / 4th Semester  
+- **Labs:** 3 hours/week  
+- **End Sem Exam Hours:** 3 hours  
+
+**Course Objectives:**  
+1. Understand basic database concepts and data models.  
+2. Use constraints and relational algebra operations.  
+3. Learn about normalization and database design.  
+4. Understand concurrency control and transaction management.
+
+**Course Outcomes:**  
+By the end of this course, students should be able to:  
+1. Design and create relational database systems.  
+2. Use advanced SQL queries and operations.  
+3. Design commercial relational databases using SQL.  
+4. Analyze storage and recovery techniques for database systems.
+
+**Lab Experiments Overview:**  
+- Introduction to MySQL and data types  
+- SQL commands (DML, DDL, and Transaction Control)  
+- Join operations, group by, and aggregation  
+- Procedures, triggers, and views
+
+---
+
+### **Web Development Using PHP Lab**  
+- **Course Code:** IT286  
+- **Credits:** 2  
+- **Category:** CC-P  
+- **Year/Semester:** 2nd Year / 4th Semester  
+- **Labs:** 3 hours/week  
+- **End Sem Exam Hours:** 3 hours  
+
+**Course Objectives:**  
+1. Understand web client/server solutions using PHP.  
+2. Analyze and design real-time web applications.  
+3. Use PHP for dynamic effects and form validation.  
+4. Develop and deploy web applications on cloud/web servers.
+
+**Course Outcomes:**  
+By the end of this course, students should be able to:  
+1. Develop dynamic web pages using JavaScript and DHTML.  
+2. Work with XML documents and PHP.  
+3. Connect Java programs to databases using PHP.  
+4. Create server-side applications to process and store form data.
+
+**Lab Experiments Overview:**  
+- String handling, array handling, form handling in PHP  
+- File and exception handling  
+- Database connectivity (MS-Access, MySQL)  
+- OOP concepts and web page design using PHP
+
+---
+
+### **Digital Electronic Circuits Lab**  
+- **Course Code:** IT288  
+- **Credits:** 2  
+- **Category:** CC-P  
+- **Year/Semester:** 2nd Year / 4th Semester  
+- **Labs:** 3 hours/week  
+- **End Sem Exam Hours:** 3 hours  
+
+**Course Objectives:**  
+1. Understand digital logic and circuits.  
+2. Design and analyze digital circuits.  
+3. Troubleshoot and construct digital circuits.  
+4. Analyze and design simple sequential circuits.
+
+**Course Outcomes:**  
+By the end of this course, students should be able to:  
+1. Understand digital electronics fundamentals.  
+2. Design and analyze combinational and sequential circuits.  
+3. Identify requirements and propose cost-effective solutions.
+
+**Lab Experiments Overview:**  
+- De-Morgan's theorem, full adder, half adder design  
+- Logic circuits using decoder and multiplexer  
+- Design of parity checker, flip-flops, RAM circuits  
+- Testing CMOS, TTL ICs, and interfacing.
+
+---
+
+### **Semester V Courses (Theory and Labs)**  
+- **Theory of Automata (IT301)**  
+- **Computer Networks (IT303)**  
+- **Compiler Design (IT305)**  
+- **Soft Computing Techniques (IT307)**  
+- **Elective 1 & 2 (IT315, IT319)**  
+- **Computer Networks Lab (IT381)**  
+- **Compiler Design Lab (IT383)**  
+- **Soft Computing Techniques Lab (IT385)**  
+
+The syllabus and course details for these subjects are comprehensive, including objectives, outcomes, and unit-wise topics.
+
+Soft Computing Techniques
+
+Course Code:
+IT307
+Course Credits:
+3
+Course Category:
+CC
+Course (U / P)
+U
+Course Year (U / P):
+3U
+Course Semester (U / P):
+5U
+No. of Lectures + Tutorials (Hrs/Week):
+03 + 00
+Mid Sem. Exam Hours:
+1
+Total No. of Lectures (L + T):
+45 + 00
+End Sem. Exam Hours:
+3
+
+COURSE OBJECTIVES
+1 Develop the skills to gain a basic understanding of neural network theory and fuzzy logic theory.
+2 Introduce students to artificial neural networks and fuzzy theory from an engineering perspective.
+3 Understanding of various learning paradigms.
+4 Develop the skills to gain understanding applications of soft computing.
+5 Understanding the concept of genetic algorithm.
+
+COURSE OUTCOMES
+At the end of the course the students should be able to:
+1 Comprehend the fuzzy logic and the concept of fuzziness involved in various systems and fuzzy set theory.
+2 Understand the concepts of fuzzy sets, knowledge representation using fuzzy rules and fuzzy inference system.
+3To understand the fundamental theory and concepts of neural networks and neural network architectures.
+4 Understand appropriate learning rules for each of the architectures and working of genetic algorithm.
+5 Reveal different applications of these models to solve engineering and other problems.
+UNIT I	FUZZY LOGIC
+Introduction to fuzzy logic, classical and fuzzy sets, overview of fuzzy sets, membership function, fuzzy rule generation, operations on fuzzy sets: complement, intersection, union, combinations on operations, aggregation operation.
+UNIT II	FUZZY ARITHMETIC
+Fuzzy numbers, linguistic variables, arithmetic operations on intervals & numbers, uncertainty based information, information and uncertainty, no specificity of fuzzy and crisp sets, fuzziness of fuzzy sets.
+UNIT III NEURAL NETWORK
+Overview of biological neurons, computational neurons, mathematical models of neurons, ANN  architecture, single layer and multilayer architectures, activation function, threshold value, self learning and forced learning algorithms, feed forward and feedback architectures.
+UNIT IV LEARNING FUNDAMENTALS
+
+Learning paradigms, supervised and unsupervised learning, reinforced learning, ANN training, algorithms perceptions, training rules, delta, back propagation algorithm, multilayer perceptron model, Hopfield networks, associative memories, applications of artificial neural networks,
+UNIT V  GENETIC ALGORITHMS
+History of genetic algorithm, terminology of genetic algorithm, biological background, creation of offspring, working principles of genetic algorithms, fitness function, reproduction: Roulette wheel selection, Boltzmann selection, crossover mutation, inversion, deletion, and duplication, generation cycle.
+
+Reference Books:
+
+   1. Artificial Neural Networks: An introduction to ANN Theory and Practice, Peteus J. Braspenning, PHI publication, 2005.
+   2. Fuzzy Logic: A spectrum of Theoretical and Practical issues, Paul P. Wang, pearson publication 2004.
+   3. Fuzzy Sets, Fuzzy logic, and Fuzzy Systems: Selected Papers- Lotfi Asker Zadeh, George J. Kilr, Bo yuan, 2005.
+   4. Foundations of Fuzzy logic and Soft Computing: 12th International Fuzzy conference proceeding, 2005.
+5. Neural Networks Theory, Particia Melin, Oxford University press, 2003.
+
+
+
+COMPUTER BASED NUMERICAL & STATISTICAL TECHNIQUES
+
+Course Code:
+IT315
+Course Credits:
+3
+Course Category:
+E1
+Course (U / P)
+U
+Course Year (U / P):
+3U
+Course Semester (U / P):
+5U
+No. of Lectures + Tutorials (Hrs/Week):
+03 + 00
+Mid Sem. Exam Hours:
+1
+Total No. of Lectures (L + T):
+45 + 00
+End Sem. Exam Hours:
+3
+
+COURSE OBJECTIVES
+1 Present the basic of Computer Based Numerical & Statistical Techniques
+2 Helps in learning step by step approach.
+3 Understanding of Methods.
+4 Understanding of learning the process and application
+5 Understanding of Computer Based Numerical & Statistical Techniques.
+
+COURSE OUTCOMES
+At the end of the course the students should be able to:
+1 Will have basic knowledge and understanding of Computer Based Numerical & Statistical Techniques.
+2 Apply methods.
+3 learn various techniques.
+4 Practical Approach
+
+
+
+UNIT-I
+Floating point Arithmetic: Representation of floating point numbers, Operations, Normalization, Pitfalls of floating point representation, Errors in numerical computation Iterative Methods: Zeros of a single transcendental equation and zeros of polynomial using Bisection Method, Iteration Method, Regula-Falsi method, Newton Raphson method, Secant method, Rate of convergence of iterative methods.
+
+UNIT-II
+Simultaneous Linear Equations: Solutions of system of Linear equations, Gauss Elimination direct method and pivoting, Ill Conditioned system of equations, Refinement of solution. Gauss Seidel iterative method, Rate of Convergence Interpolation and approximation: Finite Differences, Difference tables Polynomial Interpolation: Newton's forward and backward formula Central Difference Formulae: Gauss forward and backward formula, Stirling's, Bessel's, Everett's formula. Interpolation with unequal intervals: Lagrange's Interpolation, Newton
+
+Divided difference formula, Hermite's Interpolation Approximation of function by Taylor's series and Chebyshev polynomial.
+
+UNIT-III
+Numerical Differentiation and Integration: Introduction, Numerical Differentiation, Numerical Integration, Trapezoidal rule, Simpson's rules, Boole's Rule, Weddle's Rule Euler- Maclaurin Formula Solution of differential equations: Picard's Method, Euler's Method, Taylor's Method, Runge-Kutta methods, Predictor-corrector method, Automatic error monitoring, stability of solution.
+
+UNIT-IV
+Curve fitting, Cubic Spline and Approximation: Method of least squares, fitting of straight lines, polynomials, exponential curves etc. Frequency Chart: Different frequency charts like Histogram, Frequency curve, Pi-chart. Regression analysis: Linear and Non-linear regression, Multiple regression.
+
+UNIT-V
+Time series and forcasting: Moving averages, smoothening of curves, forecasting models and methods. Statistical Quality Controls methods Testing of Hypothesis: Test of significance, Chi-square test, t-test, ANOVA, F-Test Application to medicine, agriculture etc.
+
+References Books:
+[1] Rajaraman V., "Computer Oriented Numerical Methods", PHI
+[2] Gerald & Wheatley, "Applied Numerical Analyses", AW
+[3] Jain, Iyengar and Jain, "Numerical Methods for Scientific and Engineering Computations", New Age Int.
+[4] Grewal B. S., "Numerical methods in Engineering and Science", Khanna Publishers, Delhi
+[5] T. Veerarajan, T Ramachandran, "Theory and Problems in Numerical Methods", TMH
+[6] Pradip Niyogi, "Numerical Analysis and Algorithms", TMH
+[7] Francis Scheld, "Numerical Analysis", TMH
+[8] Gupta S. P., "Statistical Methods", Sultan and Sons
+
+
+
+SOFTWARE PROJECT MANAGEMENT
+
+Course Code:
+IT319
+Course Credits:
+3
+Course Category:
+E2
+Course (U / P)
+U
+Course Year (U / P):
+3U
+Course Semester (U / P):
+5U
+No. of Lectures + Tutorials (Hrs/Week):
+03 +
+00
+Mid Sem. Exam Hours:
+1
+Total No. of Lectures (L
++ T):
+45 +
+00
+End Sem. Exam Hours:
+3
+
+COURSE OBJECTIVES
+1 Present the basic software project management approach
+2 Helps in learning step by step.
+3 Understanding of Methods.
+4 Understanding of learning the process and application
+5 Understanding of paradigms of software project management techniques.
+
+COURSE OUTCOMES
+At the end of the course the students should be able to:
+1 Will have basic knowledge and understanding of software project management.
+2 Apply methods.
+3 learn various techniques.
+4 Practical Approach
+
+
+UNIT-I: INTRODUCTION AND SOFTWARE PROJECT PLANNING
+Fundamentals of Software Project Management (SPM), Need Identification, Vision and Scope document, Project Management Cycle, SPM Objectives, Management Spectrum, SPM Framework, Software Project Planning, Planning Objectives, Project Plan, Types of project plan, Structure of a Software Project Management Plan, Software project estimation, Estimation methods, Estimation models, Decision process.
+
+UNIT-II: PROJECT ORGANIZATION AND SCHEDULING
+Project Elements, Work Breakdown Structure (WBS), Types of WBS, Functions, Activities and Tasks, Project Lifecycle and Product Life Cycle, Ways to Organize Personnel, Project schedule, Scheduling Objectives, Building the project schedule, Scheduling terminology and techniques, Network Diagrams: PERT, CPM, Bar Charts: Milestone Charts, Gantt Charts.
+
+UNIT-III: PROJECT MONITORING AND CONTROL
+Dimensions of Project Monitoring & Control, Earned Value Analysis, Earned Value Indicators: Budgeted Cost for Work Scheduled (BCWS), Cost Variance (CV), Schedule
+
+Variance (SV), Cost Performance Index (CPI), Schedule Performance Index (SPI), Interpretation of Earned Value Indicators, Error Tracking, Software Reviews, Types of Review: Inspections, Desk checks, Walkthroughs, Code Reviews, Pair Programming.
+
+UNIT-IV: SOFTWARE QUALITY ASSURANCE AND TESTING
+Testing Objectives, Testing Principles, Test Plans, Test Cases, Types of Testing, Levels of Testing, Test Strategies, Program Correctness, Program Verification & validation, Testing Automation & Testing Tools, Concept of Software Quality, Software Quality Attributes, Software Quality Metrics, and Indicators, The SEI Capability Maturity Model CMM), SQA Activities, Formal SQA Approaches: Proof of correctness, Statistical quality assurance, Cleanroom process.
+
+UNIT-V: PROJECT MANAGEMENT AND PROJECT MANAGEMENT TOOLS
+Software Configuration Management: Software Configuration Items and tasks, Baselines, Plan for Change, Change Control, Change Requests Management, Version Control, Risk Management: Risks and risk types, Risk Breakdown Structure (RBS), Risk Management Process: Risk identification, Risk analysis, Risk planning, Risk monitoring, Cost Benefit Analysis, Software Project Management Tools: CASE Tools, Planning and Scheduling Tools, MS-Project.
+
+Textbooks:
+[1]. M. Cotterell, Software Project Management, Tata McGraw-Hill Publication. [2]. Royce, Software Project Management, Pearson Education
+Reference Books:
+[3]. Kieron Conway, Software Project Management, Dreamtech Press [4]. S. A. Kelkar, Software Project Management, PHI Publication.
+[5]. Harold R. Kerzner, Project Management "A Systems Approach to Planning, Scheduling, and Controlling" Wiley.
+
+
+
+
+
+COMPUTER NETWORK LAB
+
+Course Code:
+IT381
+Course Credits:
+2
+Course Category:
+E2
+Course (U / P)
+U
+Course Year (U / P):
+3U
+Course Semester (U / P):
+5U
+No. of Lectures + Tutorials (Hrs/Week):
+03 +
+00
+Mid Sem. Exam Hours:
+
+Total No. of Lectures (L
++ T):
+10 +
+00
+End Sem. Exam Hours:
+3
+
+COURSE OBJECTIVES
+1 The objective of this lab course is to get practical knowledge of working principles of various communication protocols
+
+
+3.Implementing various network algorithms such as error control, error detection, routing, and security related algorithms.
+4 Understanding of learning the process and application
+5 The objective of this lab course is to get practical knowledge of working
+
+COURSE OUTCOMES
+At the end of the course the students should be able to:
+1 Understand the practical approach to network communication protocols.
+
+2 Understand network layers, structure/format and role of each network layer
+3 learn various techniques.
+4 Practical Approach
+
+
+List of Experiments:
+
+1. Introduction to transmission media(CAT5, OFC, COAXIAL CABLE Wireless)
+
+2. Introduces network interfaces(Wired and Wireless)
+
+3. Configure and installing a Ethernet(10/100)
+
+4. Performance evaluation of Ethernet(10/100)
+
+5. Topology design(Ring, Bus)
+
+6. Generation of data packet and measurement(CBR, VBR, Poison)
+
+7. Router configuration
+
+8. Switch configuration
+
+9. Server configuration
+
+10. Congestion control of network
+
+11. QoS of network
+
+12. Protocols and the configuration
+
+13. Wireless systems
+
+14. S3curity (WEP, WPA)
+
+
+
+COMPILER DESIGN LAB
+
+Course Code:
+IT383
+Course Credits:
+2
+Course Category:
+CCL
+Course (U / P)
+U
+Course Year (U / P):
+3U
+Course Semester (U / P):
+5U
+No. of Lectures + Tutorials (Hrs/Week):
+03 +
+00
+Mid Sem. Exam Hours:
+0
+Total No. of Lectures (L
++ T):
+10 +
+00
+End Sem. Exam Hours:
+3
+
+COURSE OBJECTIVES
+1 The objective of this lab course is to get teach the students the basic techniques that underlie the practice of Compiler Construction.
+2 The objective of this lab course is to introduce the theory and tools that can be standard employed in order to perform syntax-directed translation of a high-level programming language into an executable code.
+3 Implementing various syntax-directed code
+4 Understanding of learning the process and application
+5 Understanding of paradigms
+
+COURSE OUTCOMES
+At the end of the course the students should be able to:
+1 Understand the practical approach to introduce the major concept areas of language translation and compiler design
+
+2 Develop an awareness of the function and complexity of modern compilers.
+3 learn various techniques.
+4 Practical Approach
+
+
+List of Experiments:
+15. Define LEX and YACC tools in detail.
+16. Write a program to check whether a string belongs to the grammar or not.
+17. Write a program to generate a parse tree.
+18. WAP to convert regular expression into NFA.
+19. WAP to generate tokens for a given grammar.
+20. Write a program to find leading terminals.
+21. Write a program to find trailing terminals.
+22. Write a program to compute FIRST of non-terminals.
+
+23. Write a program to compute FOLLOW of non-terminals.
+24. Write a program to check whether a grammar is left recursive and remove left recursion.
+25. Write a program to remove left factoring.
+26. Write a program to check whether a grammar is Operator precedence.
+27. Write a Program to implement Push Down Automata.
+28. Write a program to implement Thomson's construct
+
+Here’s the text formatted for readability:
+
+---
+
+### Soft Computing Techniques Lab
+
+**Course Code:** IT385  
+**Course Credits:** 2  
+**Course Category:** CCL  
+**Course (U/P):** U  
+**Course Year (U/P):** 3U  
+**Course Semester (U/P):** 5U  
+**No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+**Mid Sem. Exam Hours:** 0  
+**Total No. of Lectures (L+T):** 10 + 00  
+**End Sem. Exam Hours:** 3  
+
+#### COURSE OBJECTIVES
+This course will enable students to:  
+1. Develop the skills to gain a basic understanding of neural network theory and fuzzy logic theory.  
+2. Introduce students to artificial neural networks and fuzzy theory from an engineering perspective.  
+3. Design and develop soft computing algorithms for solving real-time problems.  
+4. Learn neural networks with backpropagation and without preparation.  
+5. Study genetic algorithms, their applications, and advances.  
+
+#### COURSE OUTCOMES
+By the end of the course, students should be able to:  
+1. Understand components of Soft Computing and differentiate between hard and soft computing.  
+2. Understand the difference between learning and programming, and explore practical applications of Neural Networks (NN).  
+3. Understand the concepts of fuzzy sets, knowledge representation using fuzzy rules, approximate reasoning, fuzzy inference systems, and fuzzy logic.  
+4. Understand appropriate learning rules for each architecture and learn several neural network paradigms and their applications.  
+5. Understand the basics of genetic algorithms, use of GA operators, and their applications.
+
+#### List of Experiments:
+1. Implementation of operations and properties of classical sets.  
+2. Implementation of operations and properties of fuzzy sets.  
+3. Implementation of Cartesian Product and Fuzzy Cartesian Product.  
+4. Implementation of composition of classical and fuzzy relations.  
+5. Implementing a simple perceptron model to show the effect of inputs, weights, and bias on decision boundary.  
+6. Training the simple perceptron to show its limitation to solve only linearly separable boundary problems.  
+7. Design, implement, and train a feedforward ANN to solve a pattern recognition problem.  
+8. Implementation of adaptive filters using ANN.  
+9. Implementing SGA to solve function optimization problems in a given range.  
+10. Implementation of genetic operators for permutation representation.  
+11. Implementation of Roulette Wheel Selection.  
+12. Implementation of Stochastic Universal Sampling.  
+13. Implementation of Rank Selection.  
+14. Implementation of Tournament Selection.  
+15. Illustrate the effect of Sigma Scaling.
+
+---
+
+### Cloud Computing
+
+**Course Code:** IT302  
+**Course Credits:** 3  
+**Course Category:** CC  
+**Course (U/P):** U  
+**Course Year (U/P):** 3U  
+**Course Semester (U/P):** 6U  
+**No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+**Mid Sem. Exam Hours:** 1  
+**Total No. of Lectures (L+T):** 45 + 00  
+**End Sem. Exam Hours:** 3  
+
+#### COURSE OBJECTIVES
+1. Introduce students to the foundation of cloud computing.  
+2. Provide a sound foundation of Cloud Computing for students so they can adopt Cloud Computing services in real-life scenarios.  
+3. Enable students to explore important cloud computing-driven commercial systems and applications.  
+4. Expose students to frontier areas of Cloud Computing and information systems, enabling further study and research.
+
+#### COURSE OUTCOMES
+By the end of the course, students should be able to:  
+1. Explain the core concepts of the cloud computing paradigm, including its characteristics, advantages, and challenges.  
+2. Apply fundamental concepts in data centers to understand trade-offs in power, efficiency, and cost.  
+3. Identify resource management fundamentals such as resource abstraction, sharing, and sandboxing.  
+4. Analyze various cloud programming models and apply them to solve problems in the cloud.
+
+#### Unit Details:
+- **Unit 1:** Introduction to Cloud Computing (SAAS, PAAS, IAAS, cloud service models)  
+- **Unit 2:** Introduction to Cloud Technologies (SOAP, REST, AJAX, mashups, virtualization)  
+- **Unit 3:** Data in the Cloud (Relational databases, GFS, HDFS, MapReduce, cloud security)  
+- **Unit 4:** Issues in Cloud Computing (Real-time applications, QoS, dependability, data migration)  
+- **Unit 5:** Cloud Platforms (Xen Cloud, Eucalyptus, Nimbus, TPlatform)
+
+**Text Books:**  
+[1] Judith Hurwitz, R.Bloor, M.Kanfman, F.Halper, *Cloud Computing for Dummies* (Wiley India Edition)  
+
+**Reference Books:**  
+[2] Gautam Shroff, *Enterprise Cloud Computing* (Cambridge)  
+[3] Ronald Krutz and Russell Dean Vines, *Cloud Security* (Wiley-India)
+
+---
+
+### Analysis & Design of Algorithms
+
+**Course Code:** IT304  
+**Course Credits:** 3  
+**Course Category:** CC  
+**Course (U/P):** U  
+**Course Year (U/P):** 3U  
+**Course Semester (U/P):** 6U  
+**No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+**Mid Sem. Exam Hours:** 1  
+**Total No. of Lectures (L+T):** 45 + 00  
+**End Sem. Exam Hours:** 3  
+
+#### COURSE OBJECTIVES
+1. Analyze the asymptotic performance of algorithms.  
+2. Write rigorous correctness proofs for algorithms.  
+3. Demonstrate familiarity with major algorithms and data structures.  
+4. Apply important algorithmic design paradigms and methods of analysis.  
+5. Synthesize efficient algorithms for common engineering design situations.
+
+#### COURSE OUTCOMES
+By the end of the course, students should be able to:  
+1. Argue the correctness of algorithms using inductive proofs.  
+2. Explain major graph algorithms and their analyses, employing graphs to model engineering problems.  
+3. Describe and synthesize divide-and-conquer algorithms.  
+4. Synthesize dynamic-programming algorithms and analyze them.  
+5. Analyze worst-case running times of algorithms using asymptotic analysis.
+
+#### Unit Details:
+- **Unit 1:** Basic Concepts of Algorithms (Asymptotic notations, efficiency classes)  
+- **Unit 2:** Mathematical Aspects and Analysis of Algorithms (Recursive algorithms, Fibonacci numbers)  
+- **Unit 3:** Analysis of Sorting and Searching Algorithms (Merge sort, Quick sort, BFS, DFS)  
+- **Unit 4:** Algorithmic Techniques (Dynamic programming, Greedy methods)  
+- **Unit 5:** Algorithm Design Methods (Backtracking, Branch and bound, Knapsack problem)
+
+**Text Books:**  
+[1] Anany Levitin, *Introduction to the Design and Analysis of Algorithms*, Pearson Education, 2003  
+
+**Reference Books:**  
+[2] T.H. Cormen, C.E. Leiserson, R.L. Rivest, C. Stein, *Introduction to Algorithms*, PHI Pvt. Ltd., 2001  
+[3] Sara Baase, Allen Van Gelder, *Computer Algorithms: Introduction to Design and Analysis*, Pearson Education, 2003  
+
+---
+
+### Computer Organization
+
+**Course Code:** IT306  
+**Course Credits:** 3  
+**Course Category:** CC  
+**Course (U/P):** U  
+**Course Year (U/P):** 1U  
+**Course Semester (U/P):** 6U  
+**No. of Lectures + Tutorials (Hrs/Week):** 03  
+**Mid Sem. Exam Hours:** 1  
+**Total No. of Lectures (L+T):** 45  
+**End Sem. Exam Hours:** 3  
+
+#### COURSE OBJECTIVES
+1. Discuss basic computer arithmetic and number systems.  
+2. Understand register transfer logic and microoperations.  
+3. Explain different types of processor design.  
+4. Learn input-output organization.  
+5. Summarize memory organization.
+
+#### COURSE OUTCOMES
+By the end of the course, students should be able to:  
+1. Define different number systems and operations with binary, including 2's complement.  
+2. Understand processor design architecture.  
+3. Analyze input-output organizations and techniques.
+
+#### Unit Details:
+- **Unit 1:** Computer Arithmetic and Number Systems  
+- **Unit 2:** Register Transfer and Micro-Operations  
+- **Unit 3:** Processor Design  
+- **Unit 4:** Input-Output Organization  
+- **Unit 5:** Memory Organization
+
+**Text Books:**  
+[1] Patterson, *Computer Organization and Design*, Elsevier Pub., 2009  
+[2] William Stallings, *Computer Organization*, PHI  
+
+**Reference Books:**  
+[3] Vravice, Hamacher & Zaky, *Computer Organization*, TMH  
+[4] Mano, *Computer System Architecture*, PHI  
+
+--- 
+Here’s the course information formatted in a more readable way:
+
+---
+
+### **Information & Network Security**
+
+**Course Code**: IT308  
+**Course Credits**: 4  
+**Course Category**: C  
+**Course Year**: 3U  
+**Course Semester**: 3U  
+**Lectures + Tutorials (Hrs/Week)**: 03 + 02  
+**Mid-Sem Exam Hours**: 1  
+**Total No. of Lectures (L + T)**: 45 + 15  
+**End-Sem Exam Hours**: 3  
+
+#### **Course Objectives**:
+1. Develop a fundamental understanding of data, information, and security requirements.
+2. Create awareness of information security vulnerabilities, threats, principles, assets, and risk management.
+3. Learn encryption algorithms and related cryptographic operations.
+4. Understand entity authentication requirements and web security protocols and applications.
+5. Understand information security policies, violations, cybercrimes, laws, and standards.
+
+#### **Course Outcomes**:
+At the end of this course, students should be able to:
+1. Understand the fundamentals of information and security requirements.
+2. Understand security principles and risk management procedures.
+3. Understand cryptographic algorithms and their applications.
+4. Understand network and web security protocols, malicious codes, firewalls, etc.
+5. Understand policies, standards, cybercrimes, and relevant laws.
+
+#### **Unit Breakdown**:
+- **Unit I**: Introduction to Information Security  
+  Topics: Information security, CIA triad, risk management, cryptography, classical encryption techniques.
+  
+- **Unit II**: Cryptography  
+  Topics: Stream and block ciphers, DES, AES, RSA, DHKE algorithm, modular arithmetic.
+  
+- **Unit III**: Message Authentication  
+  Topics: Hash functions, message authentication code, digital signatures, key management.
+  
+- **Unit IV**: Network Security  
+  Topics: Authentication applications (Kerberos, PGP), IP security, firewalls, system security, and intrusion detection.
+  
+- **Unit V**: Information Security Standards & Laws  
+  Topics: Information security policies, ISO 27001, cyber warfare, cyber crimes, IT Act 2000.
+
+#### **Textbooks**:
+1. William Stallings, "Cryptography and Network Security: Principles and Practice", Pearson Education.
+2. Behrouz A. Frouzan, "Cryptography and Network Security", Tata McGraw Hill.
+
+---
+
+### **Computer-Based Numerical & Statistical Techniques**
+
+**Course Code**: IT315  
+**Course Credits**: 3  
+**Course Category**: CC  
+**Course Year**: 1U  
+**Course Semester**: 6U  
+**Lectures + Tutorials (Hrs/Week)**: 03  
+**Mid-Sem Exam Hours**: 1  
+**Total No. of Lectures (L + T)**: 45  
+**End-Sem Exam Hours**: 3  
+
+#### **Course Objectives**:
+1. Understand the numerical methods for basic problems in numerical analysis.
+2. Learn the implementation of numerical methods using computers.
+3. Explore statistical methods and their applications.
+4. Study numerical methods for various applications.
+5. Summarize and apply different numerical and statistical techniques.
+
+#### **Course Outcomes**:
+Students should be able to:
+1. Understand numerical methods for analysis.
+2. Implement these methods using computers.
+3. Learn to trace and analyze errors in numerical methods.
+
+#### **Unit Breakdown**:
+- **Unit I**: Floating Point Arithmetic and Iterative Methods  
+  Topics: Representation of floating-point numbers, errors, Bisection, Newton-Raphson method.
+  
+- **Unit II**: Simultaneous Linear Equations & Interpolation  
+  Topics: Gauss Elimination, Gauss-Seidel method, polynomial interpolation.
+  
+- **Unit III**: Numerical Differentiation & Integration  
+  Topics: Trapezoidal rule, Simpson's rule, Euler’s method, Runge-Kutta methods.
+  
+- **Unit IV**: Curve Fitting and Regression Analysis  
+  Topics: Least squares method, fitting exponential curves, linear and nonlinear regression.
+  
+- **Unit V**: Time Series & Forecasting  
+  Topics: Moving averages, smoothing of curves, forecasting models, statistical hypothesis testing.
+
+#### **Textbooks**:
+1. Rajaraman V., "Computer-Oriented Numerical Methods", PHI.
+2. Gerald & Wheatley, "Applied Numerical Analyses", AW.
+
+---
+
+### **Cloud Computing Lab**
+
+**Course Code**: IT382  
+**Course Credits**: 2  
+**Course Category**: CCL  
+**Course Year**: 3U  
+**Course Semester**: 6U  
+**Lectures + Tutorials (Hrs/Week)**: 03 + 00  
+**Total No. of Lectures (L + T)**: 10 + 00  
+**End-Sem Exam Hours**: 3  
+
+#### **Course Objectives**:
+1. Introduce the foundation of cloud computing.
+2. Equip students to adopt cloud computing services and tools.
+3. Expose students to commercial cloud applications.
+4. Provide foundational knowledge for future study and research in cloud computing.
+
+#### **Course Outcomes**:
+At the end of this course, students should be able to:
+1. Explain core concepts of cloud computing, its advantages, and challenges.
+2. Apply concepts in datacenters, understanding power, efficiency, and cost trade-offs.
+3. Identify resource management fundamentals and their role in cloud infrastructure.
+4. Analyze cloud programming models and apply them to cloud-based problems.
+
+#### **List of Experiments**:
+1. Study NIST model of cloud computing.
+2. Install and configure Virtualbox/VMware with various OS.
+3. Create simple programs using a C compiler in the virtual machine.
+4. Install Google App Engine and create simple web apps.
+5. Understand different types of virtualization, implement scalability.
+6. Implement IaaS using Open Stack/Eucalyptus.
+7. Simulate identity management in private cloud.
+8. Use storage as a service for remote file access.
+9. Implement security for web servers and data storage.
+10. Deploy web applications on commercial clouds like AWS, Azure.
+
+---
+
+### **ANALYSIS & DESIGN OF ALGORITHMS LAB**
+
+**Course Code:** IT384  
+**Course Credits:** 2  
+**Course Category:** CCL  
+**Course Year:** 3U  
+**Course Semester:** 6U  
+**No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+**Mid Sem. Exam Hours:** -  
+**Total No. of Lectures (L + T):** 10 + 00  
+**End Sem. Exam Hours:** 3  
+
+#### **Course Objectives:**
+1. Analyze the asymptotic performance of algorithms.
+2. Write rigorous correctness proofs for algorithms.
+3. Demonstrate familiarity with major algorithms and data structures.
+4. Apply important algorithmic design paradigms and methods of analysis.
+5. Synthesize efficient algorithms in common engineering design situations.
+
+#### **Course Outcomes:**
+At the end of the course, students should be able to:
+1. Argue the correctness of algorithms using inductive proofs and invariants.
+2. Explain major graph algorithms, their analyses, and employ graphs to model engineering problems.
+3. Describe and synthesize divide-and-conquer algorithms and solve recurrences.
+4. Describe and synthesize dynamic-programming algorithms and analyze them.
+5. Analyze the worst-case running times of algorithms using asymptotic analysis.
+
+#### **List of Experiments:**
+1. Implement the minimum cost spanning tree algorithm.
+2. Implement the single-source shortest path algorithm.
+3. Implement the optimal binary search tree algorithm.
+4. Implement the Job sequencing with deadlines algorithm.
+5. Implement the sum of subsets problem algorithm.
+6. Implement the traveling salesperson problem algorithm.
+7. Implement the knapsack problem algorithm.
+8. Implement the n-queen problem algorithm.
+9. Implement the graph coloring algorithm.
+10. Implement the all-pairs shortest path algorithm.
+11. Implement and analyze all types of sorting techniques.
+12. Implement matrix multiplication.
+
+---
+
+### **INFORMATION & NETWORK SECURITY LAB**
+
+**Course Code:** IT386  
+**Course Credits:** 2  
+**Course Category:** CC  
+**Course Year:** 3U  
+**Course Semester:** 5U  
+**No. of Lab (Hrs/Week):** 03 + 00  
+**Mid Sem. Exam Hours:** 0  
+**Total No. of Lab Sessions (L + T):** 12 + 00  
+**End Sem. Exam Hours:** 3  
+
+#### **Course Objectives:**
+1. Learn different cipher techniques.
+2. Implement the DES and RSA algorithms.
+3. Implement MD5 and SHA-1 algorithms.
+4. Use network security tools and vulnerability assessment tools.
+
+#### **Course Outcomes:**
+At the end of the course, students should be able to:
+1. Develop code for classical encryption techniques.
+2. Build cryptosystems using symmetric and public key encryption algorithms.
+3. Construct code for authentication algorithms.
+4. Develop signature schemes using Digital Signature Standard.
+5. Demonstrate network security systems using open-source tools.
+
+#### **List of Experiments:**
+1. Perform encryption/decryption using substitution techniques:
+   - Caesar Cipher
+   - Playfair Cipher
+2. Perform encryption/decryption using substitution techniques:
+   - Hill Cipher
+   - Vigenère Cipher
+3. Perform encryption/decryption using transposition techniques:
+   - Rail fence- Row & Column Transformation
+4. Apply the DES algorithm for practical applications.
+5. Apply the AES algorithm for practical applications.
+6. Implement the RSA algorithm using HTML and JavaScript.
+7. Implement the Diffie-Hellman Key Exchange algorithm.
+8. Calculate the message digest using the SHA-1 algorithm.
+9. Implement the Digital Signature Standard.
+10. Demonstrate Intrusion Detection System (IDS) using Snort or other software.
+
+---
+
+### **SEMESTER VII**
+
+| S.No | Course Code | Course Name                              | L  | T  | P  | Credits | Types |
+|------|-------------|------------------------------------------|----|----|----|---------|-------|
+| 1    | MA401       | Modeling and Simulation                   | 3  | 0  | 0  | 3       | U     |
+| 2    | IT401       | Sensor Networks and IoT                  | 3  | 0  | 0  | 3       | U     |
+| 3    | IT403       | Soft Computing Techniques                 | 3  | 0  | 0  | 3       | U     |
+| 4    | IT405       | Big Data Analytics                        | 3  | 0  | 0  | 3       | U     |
+| 5    | Elective 5  |                                          | 3  | 0  | 0  | 3       | U     |
+| 6    | IT481       | Sensor Networks and IoT Lab              | 0  | 0  | 3  | 2       | P     |
+| 7    | IT491       | Industrial Training                       | 0  | 0  | 6  | 3       | P     |
+| 8    | IT493       | Minor Project                            | 0  | 0  | 10 | 5       | P     |
+| 9    | GP          | General Proficiency                       | -  | -  | -  | Non-Credit |       |
+
+**Total Hours and Credits:** 15 + 0 + 19 = 25
+
+---
+
+### **Modeling and Simulation (MA401)**
+
+**Course Credits:** 3  
+**Course Category:** C  
+**Course Year:** 3U  
+**Course Semester:** 7U  
+**No. of Lectures + Tutorials (Hrs/Week):** 03  
+**Mid Sem. Exam Hours:** 1  
+**Total No. of Lectures (L + T):** 45  
+**End Sem. Exam Hours:** 3  
+
+#### **Course Objectives:**
+1. Introduce various system simulation and modeling techniques.
+2. Cover modeling, design, simulation, planning, verification, and validation.
+3. Develop simulation skills to solve real-world problems.
+
+#### **Course Outcomes:**
+At the end of the course, students should be able to:
+1. Understand different modeling terms and analyze data.
+2. Apply mathematical models in simulation.
+3. Verify the assumptions made during simulation.
+4. Make predictions based on simulation results.
+5. Understand the need for policies, standards, cybersecurity laws, and crimes.
+
+---
+
+### **Sensor Networks and IoT (IT401)**
+
+**Course Credits:** 3  
+**Course Category:** CC  
+**Course Year:** 4U  
+**Course Semester:** 7U  
+**No. of Lectures + Tutorials (Hrs/Week):** 3 + 0  
+**Mid Sem. Exam Hours:** 1  
+**Total No. of Lectures (L + T):** 45  
+**End Sem. Exam Hours:** 3  
+
+#### **Course Objectives:**
+1. Understand various concepts of Sensor Networks and IoT.
+2. Learn the architectures of Sensor Networks and IoT.
+3. Analyze protocols used in this domain.
+4. Explore application conceptualization in Sensor Networks and IoT.
+
+#### **Course Outcomes:**
+At the end of the course, students should be able to:
+1. Differentiate between traditional, ad-hoc, and wireless sensor networks and IoT.
+2. Apply concepts in modern-day networks.
+3. Explore research domains in Sensor Networks and IoT.
+4. Develop architectures for IoT-based applications.
+
+#### **Units Overview:**
+
+**Unit I: Introduction to Wireless Sensor Networks (WSN)**  
+- Single node architecture: hardware and software components.
+- Typical network architectures and different sensor node types.
+
+**Unit II: Communication Protocols and Support Processes**  
+- Physical, MAC, Link, Routing, and Transport layer protocols.
+- Clustering, Data Aggregation, Localization, and more.
+
+**Unit III: Basics of IoT and Architecture**  
+- Building blocks of IoT and M2M communication.
+- Role of sensor networks in IoT, IoT connectivity, and 5G.
+
+**Unit IV: IoT Protocols and Computing**  
+- Layered description of IoT protocols.
+- Data analytics, Fog, Edge, and Cloud computing for IoT.
+
+**Unit V: Sensor and IoT Applications**  
+- Applications in Environmental monitoring, Smart Homes, Healthcare, Transportation, and more.
+- Challenges & Open Research Issues in Sensor Networks and IoT.
+
+#### **Textbooks:**
+- Holger Karl and Andreas Willig, "Protocols and Architectures for Wireless Sensor Networks," Wiley, 2005.
+- Arshdeep Bahga and Vijay Madisetti, "Internet of Things: A Hands-on Approach," Universities Press, 2014.
+---
+
+**SOFT Computing Techniques**  
+- **Course Code**: IT-403  
+- **Course Credits**: 3  
+- **Course Category**: CC  
+- **Course Year**: 4U  
+- **Course Semester**: 7U  
+- **Lectures + Tutorials (Hrs/Week)**: 03 + 00  
+- **Mid Sem Exam Hours**: 1  
+- **Total Lectures (L + T)**: 45 + 00  
+- **End Sem Exam Hours**: 3  
+
+**Course Objectives**:
+1. Provide an introduction to the basic principles, techniques, and applications of soft computing.
+2. Develop skills to understand neural network theory and fuzzy logic theory.
+3. Introduce artificial neural networks and fuzzy theory from an engineering perspective.
+4. Provide the mathematical background for neural network optimization.
+5. Familiarize students with current research problems and methods in Soft Computing.
+
+**Course Outcomes**:
+At the end of the course, students should be able to:
+1. Describe human intelligence and AI.
+2. Explain how intelligent systems work.
+3. Apply basics of Fuzzy logic and neural networks.
+4. Discuss fuzzy sets, fuzzy logic, and heuristics.
+5. Understand genetic algorithms and other random search methods.
+
+**Units**:
+- **Unit I**: Neural Network - Overview, biological neurons, computational neurons, ANN architecture, learning algorithms.
+- **Unit II**: Learning Fundamentals - Supervised, unsupervised, reinforced learning, ANN training, algorithms.
+- **Unit III**: Fuzzy Logic - Classical vs fuzzy sets, membership function, fuzzy rule generation.
+- **Unit IV**: Fuzzy Arithmetic - Fuzzy numbers, linguistic variables, operations, uncertainty.
+- **Unit V**: Genetic Algorithms - History, terminology, fitness function, reproduction, crossover mutation.
+
+---
+
+**Big Data Analytics**  
+- **Course Code**: IT-405  
+- **Course Credits**: 3  
+- **Course Category**: CC  
+- **Course Year**: 4U  
+- **Course Semester**: 7U  
+- **Lectures + Tutorials (Hrs/Week)**: 03 + 00  
+- **Mid Sem Exam Hours**: 1  
+- **Total Lectures (L + T)**: 45 + 00  
+- **End Sem Exam Hours**: 3  
+
+**Course Objectives**:
+1. Understand the Big Data Platform and use cases.
+2. Provide an overview of Apache Hadoop.
+3. Introduce HDFS concepts and interfacing.
+4. Hands-on with the Hadoop Ecosystem.
+5. Apply analytics on structured and unstructured data.
+
+**Course Outcomes**:
+At the end of the course, students should be able to:
+1. Identify Big Data and its business implications.
+2. List the components of Hadoop and its ecosystem.
+3. Access and process data on distributed file systems.
+4. Manage job execution in the Hadoop environment.
+5. Develop Big Data solutions using Hadoop.
+
+**Units**:
+- **Unit I**: Big Data - Definition, trends, applications (e.g., web analytics, marketing, healthcare).
+- **Unit II**: NoSQL - Aggregate data models, sharding, consistency, and MapReduce.
+- **Unit III**: Basics of Hadoop - Data format, HDFS, Java interfaces, compression, serialization.
+- **Unit IV**: MapReduce - Workflows, YARN, job scheduling, and task execution.
+- **Unit V**: Hadoop Tools - HBase, Cassandra, Pig, Hive, and integration with Hadoop.
+
+---
+
+**Graph Theory & Algorithms**  
+- **Course Code**: IT-407  
+- **Course Credits**: 3  
+- **Course Category**: CC  
+- **Course Year**: 4U  
+- **Course Semester**: 7U  
+- **Lectures + Tutorials (Hrs/Week)**: 03 + 00  
+- **Mid Sem Exam Hours**: 1  
+- **Total Lectures (L + T)**: 45 + 00  
+- **End Sem Exam Hours**: 3  
+
+**Course Objectives**:
+1. Understand concepts like vertex and edge connectivity in graphs.
+2. Explore geometric duals in planar graphs.
+3. Learn about digraphs, Euler, and Hamiltonian digraphs.
+4. Study graph matrices (incidence, adjacency, cycle matrix).
+5. Introduce the concept of coloring in graphs.
+
+**Course Outcomes**:
+At the end of the course, students should be able to:
+1. Understand and explain basic graph theory concepts.
+2. Apply mathematical logic in graph theory.
+3. Compute maximum flow in networks.
+4. Identify maximum matching in bipartite graphs.
+
+**Units**:
+- **Unit I**: Introduction to graphs, subgraphs, Euler and Hamiltonian paths, bipartite graphs.
+- **Unit II**: Trees, spanning trees, Kruskal’s and Prim’s Algorithms, connectivity.
+- **Unit III**: Planarity, Euler tours, Hamiltonian cycles.
+- **Unit IV**: Directed graphs, vertex coloring, edge coloring.
+- **Unit V**: Extremal problems like Ramsey's theorem and applications.
+
+---
+
+**Mobile Computing**  
+- **Course Code**: IT-412  
+- **Course Credits**: 3  
+- **Course Category**: CC  
+- **Course Year**: 4U  
+- **Course Semester**: 7U  
+- **Lectures + Tutorials (Hrs/Week)**: 03 + 00  
+- **Mid Sem Exam Hours**: 1  
+- **Total Lectures (L + T)**: 45 + 00  
+- **End Sem Exam Hours**: 3  
+
+**Course Objectives**:
+1. Understand mobile applications and embedded systems design.
+2. Learn Android and iOS technologies.
+3. Explore advanced design concepts.
+
+**Course Outcomes**:
+At the end of the course, students should be able to:
+1. Understand the basics of mobile applications.
+2. Understand embedded systems OS.
+3. Explore Android and iOS technologies.
+
+**Units**:
+- **Unit I**: Introduction to mobile apps, embedded systems, publishing, and delivery.
+- **Unit II**: Basics of embedded systems design, UI, touch events, and quality constraints.
+- **Unit III**: Advanced design with multimedia, GPS, and social media.
+- **Unit IV**: Android - Development environment, architecture, SQLite, Google Maps.
+- **Unit V**: iOS - Objective-C, UI, Core Data, CoreLocation, Swift features.
+
+---
+
+**Sensor Network & IoT Lab**  
+- **Course Code**: IT481  
+- **Course Credits**: 2  
+- **Course Category**: CC  
+- **Course Year**: 3U  
+- **Course Semester**: 5U  
+- **Lab Hours/Week**: 03 + 00  
+- **Total Lab Sessions**: 10 + 00  
+- **End Sem Exam Hours**: 3  
+
+**Course Objectives**:
+1. Learn different sensors, networks, and protocols.
+2. Implement network topologies and wireless sensor networks.
+
+**Course Outcomes**:
+At the end of the course, students should be able to:
+1. Understand IoT concepts and protocols.
+2. Design IoT applications and analyze performance.
+3. Implement basic IoT applications on embedded platforms.
+
+---
+
+**Industrial Training**  
+- **Course Code**: IT491  
+- **Course Credits**: 5  
+- **Course Category**: CC  
+- **Course Year**: 4U  
+- **Course Semester**: 7U  
+- **No. of Lectures**: -  
+- **Mid Sem Exam Hours**: 0  
+- **End Sem Exam Hours**: -  
+
+---
+
+Here’s the content you provided in a more readable form:
+
+---
+
+### **MINOR PROJECT**
+
+- **Course Code**: IT493
+- **Course Credits**: 5
+- **Course Category**: CC
+- **Course Type**: P (Practical)
+- **Course Year**: 4U
+- **Course Semester**: 7U
+- **Number of Lectures (Hrs/Week)**: -
+- **Mid-Semester Exam Hours**: 0
+- **Total Number of Lectures (L+T)**: -
+- **End Semester Exam Hours**: -
+
+#### **Course Objectives**:
+
+*Details not provided*
+
+#### **Course Outcomes**:
+
+*Details not provided*
+
+---
+
+### **SEMESTER-VIII**
+
+| S.No. | Course Code | Course Name                  | L | T | P | Credits | Types |
+|-------|-------------|------------------------------|---|---|---|---------|-------|
+| 1     | IT490       | Seminar                       | 0 | 0 | 3 | 2       |       |
+| 2     | IT492       | Major Project                 | 0 | 0 | 16| 8       |       |
+| 3     | IT494       | Internship                    | 0 | 0 | 30| 15      |       |
+| 4     | IT490       | Seminar                       | 0 | 0 | 3 | 2       |       |
+| 5     | GP          | General Proficiency           | - | - | - | Non-Credit |       |
+
+**Total Hours and Credits**: 0 | 0 | 49 | 25
+
+---
+
+### **SEMINAR**
+
+- **Course Code**: IT490
+- **Course Credits**: 2
+- **Course Category**: CC
+- **Course Type**: P (Practical)
+- **Course Year**: 4U
+- **Course Semester**: 8U
+- **Number of Lectures (Hrs/Week)**: -
+- **Mid-Semester Exam Hours**: 0
+- **Total Number of Lectures (L+T)**: -
+- **End Semester Exam Hours**: -
+
+#### **Course Objectives**:
+
+*Details not provided*
+
+#### **Course Outcomes**:
+
+*Details not provided*
+
+---
+
+### **MAJOR PROJECT**
+
+- **Course Code**: IT492
+- **Course Credits**: 8
+- **Course Category**: CC
+- **Course Type**: P (Practical)
+- **Course Year**: 4U
+- **Course Semester**: 8U
+- **Number of Lectures (Hrs/Week)**: -
+- **Mid-Semester Exam Hours**: 0
+- **Total Number of Lectures (L+T)**: -
+- **End Semester Exam Hours**: -
+
+#### **Course Objectives**:
+
+*Details not provided*
+
+#### **Course Outcomes**:
+
+*Details not provided*
+
+---
+
+### **INTERNSHIP**
+
+- **Course Code**: IT494
+- **Course Credits**: 15
+- **Course Category**: CC
+- **Course Type**: P (Practical)
+- **Course Year**: 4U
+- **Course Semester**: 8U
+- **Number of Lectures (Hrs/Week)**: -
+- **Mid-Semester Exam Hours**: 0
+- **Total Number of Lectures (L+T)**: -
+- **End Semester Exam Hours**: -
+
+#### **Course Objectives**:
+
+*Details not provided*
+
+#### **Course Outcomes**:
+
+*Details not provided*
+
+---
+
+### **ELECTIVES**
+
+| S.No. | Course Code | Course Name                        | L | T | P | Credits | Types |
+|-------|-------------|------------------------------------|---|---|---|---------|-------|
+| 1     | IT309       | IT Forensics                       | 3 | 0 | 0 | 3       | E1    |
+| 2     | IT311       | Advanced Communication Systems     | 3 | 0 | 0 | 3       | E1    |
+| 3     | IT313       | Bio-Informatics                    | 3 | 0 | 0 | 3       | E1    |
+| 4     | IT315       | Computer Based Numerical & Statistical Techniques | 3 | 0 | 0 | 3       | E1    |
+| 5     | IT317       | Data Compression                   | 3 | 0 | 0 | 3       | E2    |
+| 6     | IT319       | Software Project Management        | 3 | 0 | 0 | 3       | E2    |
+| 7     | IT321       | Information Retrieval System       | 3 | 0 | 0 | 3       | E2    |
+| 8     | IT323       | Android                            | 3 | 0 | 0 | 3       | E2    |
+| 9     | IT310       | Digital Image Processing           | 3 | 0 | 0 | 3       | E3    |
+| 10    | IT312       | Distributed Data Bases             | 3 | 0 | 0 | 3       | E3    |
+| 11    | IT314       | Expert Systems                     | 3 | 0 | 0 | 3       | E3    |
+| 12    | IT316       | High Speed Networks                | 3 | 0 | 0 | 3       | E3    |
+| 13    | IT318       | Computer Security                  | 3 | 0 | 0 | 3       | E4    |
+| 14    | IT320       | Management Information System      | 3 | 0 | 0 | 3       | E4    |
+| 15    | IT322       | Evolutionary Computation           | 3 | 0 | 0 | 3       | E4    |
+| 16    | IT324       | Information Retrieval and Management | 3 | 0 | 0 | 3       | E4    |
+| 17    | IT407       | Graph Theory and Algorithms        | 3 | 0 | 0 | 3       | E5    |
+| 18    | IT409       | Mobile Computing                   | 3 | 0 | 0 | 3       | E5    |
+| 19    | IT411       | Data Warehousing and Data Mining   | 3 | 0 | 0 | 3       | E5    |
+| 20    | IT413       | Visual Basic using ASP.NET         | 3 | 0 | 0 | 3       | E5    |
+
+---
+
+### **OPEN ELECTIVES**
+
+| S.No. | Course Code | Course Name                          | L | T | P | Credits | Types |
+|-------|-------------|--------------------------------------|---|---|---|---------|-------|
+| 1     | ES101       | Environmental Studies                 | 3 | 1 | 0 | 4       | OE1   |
+| 2     | SS102       | History of Science & Technology       | 3 | 0 | 0 | 3       | OE1   |
+| 3     | BSC101      | Human Values & Buddhist Ethics        | 3 | 0 | 0 | 3       | OE1   |
+| 4     | BSC201      | Introduction to Buddhist Meditation: Theories & Practices | 3 | 0 | 0 | 3       | OE1   |
+| 5     | BSC305      | Buddhist Art & Architecture           | 3 | 0 | 0 | 3       | OE1   |
+
+---
+
+### **ELECTIVES (IT Forensics)**
+
+- **Course Code**: IT309
+- **Course Credits**: 3
+- **Course Category**: CC
+- **Course Type**: P (Practical)
+- **Course Year**: 3U
+- **Course Semester**: 5U
+- **No. of Lab Hours/Week**: 3 + 0
+- **Mid-Semester Exam Hours**: 0
+- **Total Lab Sessions (L + T)**: 45 + 0
+- **End Semester Exam Hours**: 3
+
+#### **Course Objectives**:
+1. Learn different sensors, networks, and protocols.
+2. Implement different network topologies.
+3. Implement various wireless sensor networks.
+
+#### **Course Outcomes**:
+By the end of the course, students should be able to:
+1. Understand the concepts of the Internet of Things (IoT).
+2. Analyze basic protocols in wireless sensor networks.
+3. Design IoT applications in different domains and analyze their performance.
+4. Implement basic IoT applications on embedded platforms.
+
+#### **Unit Breakdown**:
+
+- **Unit I**: Overview of Biometrics, Biometric Identification, Verification, Enrollment, System Security.
+- **Unit II**: Information Hiding (Steganography) – Techniques and Security.
+- **Unit III**: Survey of Steganographic Techniques and Steganalysis.
+- **Unit IV**: Watermarking and Copyright Protection – Techniques and Applications.
+- **Unit V**: Computer Forensics – Evidence Collection, Data Recovery, Digital Evidence Preservation.
+
+#### **Text Books**:
+1. Katzendbisser, Petitcolas, *Information Hiding Techniques for Steganography and Digital Watermarking*, Artech House.
+2. Peter Wayner, *Disappearing Cryptography: Information Hiding, Steganography, and Watermarking 2/e*, Elsevier.
+
+#### **Reference Books**:
+1. Bolle, Connell et al., *Guide to Biometrics*, Springer.
+2. John Vecca, *Computer Forensics: Crime Scene Investigation*, Firewall Media.
+3. Christopher L.T. Brown, *Computer Evidence: Collection and Preservation*, Firewall Media.
+
+--- 
+
+### Advanced Communication Systems
+**Course Code**: IT311  
+**Course Credits**: 3  
+**Course Category**: CC  
+**Course Year**: 3U  
+**Course Semester**: 5U  
+**Lab (Hrs/Week)**: 03 + 00  
+**Mid-Sem Exam Hours**: 1  
+**End-Sem Exam Hours**: 3  
+
+**Course Objectives**:
+1. To learn about different communication systems like digital, optical, and satellite.
+2. To implement these systems.
+3. To understand different spectrums and techniques.
+
+**Course Outcomes**:
+By the end of the course, students should be able to:
+1. Understand various communication systems.
+2. Analyze basic digital systems and the utility of methods like modulation and demodulation.
+3. Design different communication systems based on requirements.
+
+**Units**:
+1. **Introduction**: Overview of the electromagnetic spectrum, types of communication systems, wireless vs wired systems.
+2. **Digital Communication Systems**: Baseband and band pass modulation techniques, link analysis, system trade-offs.
+3. **Satellite Communication Systems**: Satellite history, INTELSAT, INSAT, VSAT, GSM, GPS, and other satellite services.
+4. **Optical Communication Systems**: Fiber optics, modulation techniques, optical detection, and communication systems.
+5. **Advanced Communication Networks**: Mobile, wireless, optical, and hybrid communication networks.
+
+**Textbooks**:
+1. Bernard Sklar, *Digital Communication*.
+2. Simon Haykin, *Digital Communication*.
+
+---
+
+### Bio-Informatics
+**Course Code**: IT313  
+**Course Credits**: 3  
+**Course Category**: CC  
+**Course Year**: 3U  
+**Course Semester**: 5U  
+**Lab (Hrs/Week)**: 03 + 00  
+**Mid-Sem Exam Hours**: 1  
+**End-Sem Exam Hours**: 3  
+
+**Course Objectives**:
+1. To understand cell biology and genetics.
+2. To analyze DNA and RNA structures.
+3. To learn Perl basics.
+
+**Course Outcomes**:
+By the end of the course, students should be able to:
+1. Understand the concepts of cell biology, DNA, RNA, and genomes.
+2. Analyze macromolecular compounds, algorithms, and sequences.
+3. Design general data retrieval techniques.
+
+**Units**:
+1. **Bioinformatics Overview**: Data integration, bioinformatics tools, molecular biology concepts.
+2. **DNA/RNA**: Structure, replication, transcription, and protein interactions.
+3. **Perl Basics**: Applications for bioinformatics, Linux OS, biological databases.
+4. **Genome**: Genomic sequencing, gene expression, SNP, and data retrieval techniques.
+5. **Macromolecular Structures**: Sequence alignment, graphical models, phylogenetics, and BLAST.
+
+**Textbooks**:
+1. D. E. Krane & M. L. Raymer, *Fundamental Concepts of Bioinformatics*.
+2. Rastogi, Mendiratta, & Rastogi, *Bioinformatics: Methods & Applications*.
+
+---
+
+### Computer Based Numerical & Statistical Techniques
+**Course Code**: IT315  
+**Course Credits**: 3  
+**Course Category**: E1  
+**Course Year**: 3U  
+**Course Semester**: 5U  
+**Lab (Hrs/Week)**: 03 + 00  
+**Mid-Sem Exam Hours**: 1  
+**End-Sem Exam Hours**: 3  
+
+**Course Objectives**:
+1. To understand numerical methods for basic problems in numerical analysis.
+2. To implement numerical methods using a computer.
+3. To understand statistical methods and their applications.
+
+**Course Outcomes**:
+By the end of the course, students should be able to:
+1. Trace errors in numerical methods.
+2. Apply statistical methods to various problems.
+3. Discuss concepts of numerical methods for different applications.
+
+**Units**:
+1. **Floating Point Arithmetic**: Representation, errors, and iterative methods for solving equations.
+2. **Simultaneous Linear Equations**: Gauss elimination, iterative methods like Gauss-Seidel.
+3. **Numerical Differentiation and Integration**: Methods like Trapezoidal, Simpson’s rules, Runge-Kutta methods.
+4. **Curve Fitting and Regression**: Least squares, linear/non-linear regression, multiple regression.
+5. **Time Series and Statistical Quality Control**: Forecasting, hypothesis testing, ANOVA.
+
+**Textbooks**:
+1. Rajaraman V., *Computer Oriented Numerical Methods*.
+2. Gerald & Wheatley, *Applied Numerical Analyses*.
+
+---
+
+### Data Compression
+**Course Code**: IT317  
+**Course Credits**: 3  
+**Course Category**: E2  
+**Course Year**: 3U  
+**Course Semester**: 5U  
+**Lectures (Hrs/Week)**: 03 + 00  
+**Mid-Sem Exam Hours**: 1  
+**End-Sem Exam Hours**: 3  
+
+**Course Objectives**:
+1. To present the basics of data compression.
+2. To understand various compression methods and applications.
+
+**Course Outcomes**:
+By the end of the course, students should be able to:
+1. Understand the fundamentals of data compression.
+2. Apply different compression methods.
+3. Learn and implement various compression techniques.
+
+**Units**:
+1. **Compression Techniques**: Lossless and lossy compression, Huffman coding, and adaptive Huffman coding.
+2. **Coding Algorithms**: Huffman codes, Golomb codes, Tunstall codes, and applications in image and text compression.
+3. **Dictionary Techniques**: LZ77, LZ78, file compression techniques.
+4. **Quantization**: Scalar and vector quantization, Linde-Buzo-Gray algorithm.
+5. **Applications**: Image, audio compression, and predictive coding.
+
+**Textbooks**:
+1. Khalid Sayood, *Introduction to Data Compression*.
+2. Drozdek, *Elements of Data Compression*.
+
+---
+
+### Software Project Management
+**Course Code**: IT319  
+**Course Credits**: 3  
+**Course Category**: E2  
+**Course Year**: 3U  
+**Course Semester**: 5U  
+**Lectures (Hrs/Week)**: 03 + 00  
+**Mid-Sem Exam Hours**: 1  
+**End-Sem Exam Hours**: 3  
+
+**Course Objectives**:
+1. To understand the basics of software project management.
+2. To learn project planning, scheduling, monitoring, and control.
+
+**Course Outcomes**:
+By the end of the course, students should be able to:
+1. Understand software project management processes.
+2. Apply project estimation, planning, and scheduling techniques.
+3. Learn software quality assurance and risk management.
+
+**Units**:
+1. **Project Planning**: Fundamentals, planning objectives, and estimation models.
+2. **Project Scheduling**: Work breakdown structure, scheduling techniques, network diagrams.
+3. **Monitoring and Control**: Earned value analysis, software reviews, and tracking errors.
+4. **Quality Assurance and Testing**: Testing methods, principles, and SQA approaches.
+5. **Project Management Tools**: Configuration management, risk management, and software tools.
+
+**Textbooks**:
+1. M. Cotterell, *Software Project Management*.
+2. Royce, *Software Project Management*.
+
+---
+
+### Information Retrieval Systems
+**Course Code**: IT321  
+**Course Credits**: 3  
+**Course Category**: E2  
+**Course Year**: 3U  
+**Course Semester**: 5U  
+**Lectures (Hrs/Week)**: 03 + 00  
+**Mid-Sem Exam Hours**: 1  
+**End-Sem Exam Hours**: 3  
+
+**Course Objectives**:
+1. To understand standard models of information retrieval (IR).
+2. To learn about Web indexing, retrieval, and related techniques.
+3. To explore how AI, NLP, and visualization integrate with IR.
+
+**Course Outcomes**:
+By the end of the course, students should be able to:
+1. Understand IR techniques used in search engines and e-commerce.
+2. Develop real-world applications using IR techniques.
+3. Implement and test a standard IR system.
+
+**Units**:
+1. **Basic Concepts**: IR system, text analysis, indexing, classification.
+2. **IR Models**: Boolean model, vector model, fuzzy set model, and performance evaluation.
+3. **Ontology & Distributed IR**: Creating ontologies, distributed and parallel IR techniques.
+4. **Multimedia IR**: Representing and indexing multimedia data, feature extraction.
+5. **Web Search and Mining**: Web crawlers, search engines, and data mining.
+
+**Textbooks**:
+1. Yates & Neto, *Modern Information Retrieval*.
+2. I. Witten, A. Moffat, and T. Bell, *Managing Gigabytes*.
+
+---
+
+
+### ANDROID (IT323)
+
+**Course Credits:** 3  
+**Course Category:** E2  
+**Course Year:** 3U  
+**Course Semester:** 5U  
+**Lecture Hours/Week:** 3  
+**Total No. of Lectures:** 45  
+**Mid-Semester Exam Hours:** 1  
+**End-Semester Exam Hours:** 3
+
+#### COURSE OBJECTIVES:
+- Present the basics of Android development.
+- Learn step by step through practical examples.
+- Understand key methods in Android development.
+- Gain hands-on experience with Android applications and their processes.
+- Explore Android techniques and paradigms.
+
+#### COURSE OUTCOMES:
+By the end of the course, students will be able to:
+1. Understand the basics of Android technology.
+2. Apply Android methods effectively.
+3. Learn various Android development techniques.
+4. Utilize a practical approach to build Android applications.
+
+#### Units:
+1. **Introduction to Android:**
+   - Android versions, features, devices, market, and SDK.
+   - Development environment setup (Java, Eclipse IDE, Android Virtual Devices).
+2. **Android Architecture and Example App:**
+   - Android software stack, Linux kernel, Dalvik VM, and libraries.
+   - Creating a new Android project, configuring settings, and running the app.
+3. **Android Software Development:**
+   - Java SE, Dalvik VM, directory structure, XML, AndroidManifest.xml.
+4. **Android Framework:**
+   - Application components (Activities, Services, Broadcast Receivers, Content Providers).
+5. **UI and Controls in Android:**
+   - Buttons, images, lists, spinners, notifications, Google Maps, databases, and web services.
+
+---
+
+### DIGITAL IMAGE PROCESSING (IT310)
+
+**Course Credits:** 3  
+**Course Category:** E3  
+**Course Year:** 3U  
+**Course Semester:** 6U  
+**Lecture Hours/Week:** 3  
+**Total No. of Lectures:** 45  
+**Mid-Semester Exam Hours:** 1  
+**End-Semester Exam Hours:** 3
+
+#### COURSE OBJECTIVES:
+- Study image fundamentals and mathematical transforms.
+- Learn image enhancement and restoration techniques.
+- Study compression techniques and segmentation.
+
+#### COURSE OUTCOMES:
+By the end of the course, students will be able to:
+1. Understand the fundamentals of digital image processing.
+2. Analyze images in the frequency domain.
+3. Evaluate enhancement and restoration techniques.
+4. Categorize various compression methods.
+5. Interpret compression standards.
+
+#### Units:
+1. **Image Fundamentals and Transforms:**
+   - Image sampling, quantization, geometric transformations, Fourier Transform, DFT, etc.
+2. **Image Enhancement:**
+   - Grey level transformation, histogram equalization, spatial and frequency domain filters.
+3. **Image Restoration and Compression:**
+   - Image degradation models, noise models, filtering, and image compression techniques (Huffman, LZW).
+4. **Image Segmentation and Representation:**
+   - Edge detection, thresholding, region-based segmentation, texture, and Fourier descriptors.
+
+---
+
+### DISTRIBUTED DATABASE (IT312)
+
+**Course Credits:** 3  
+**Course Category:** E3  
+**Course Year:** 3U  
+**Course Semester:** 6U  
+**Lecture Hours/Week:** 3  
+**Total No. of Lectures:** 45  
+**Mid-Semester Exam Hours:** 1  
+**End-Semester Exam Hours:** 3
+
+#### COURSE OBJECTIVES:
+- Study distributed database fundamentals.
+- Learn protocols, transactions, and data distribution techniques.
+
+#### COURSE OUTCOMES:
+By the end of the course, students will be able to:
+1. Understand fundamental concepts of distributed databases.
+2. Analyze transaction schedules and test serializability.
+3. Categorize data distribution and replication techniques.
+4. Manage distributed transactions and recoveries.
+
+#### Units:
+1. **Transaction and Schedules:**
+   - Concurrent execution, serializability, recoverable and cascadeless schedules.
+2. **Locking Protocols:**
+   - Lock-based and timestamp-based protocols, locking systems.
+3. **Distributed Transactions and Data Distribution:**
+   - Fragmentation, replication, commit protocols, and distributed locking.
+4. **Recovery Issues in Distributed Databases:**
+   - Log-based recovery, recovery with concurrent transactions, orphan and inconsistent message issues.
+5. **Distributed Query Processing:**
+   - Multiway joins, cost-based query optimization, protocols for deadlock detection, and replication techniques.
+
+---
+
+### EXPERT SYSTEMS (IT314)
+
+**Course Credits:** 3  
+**Course Category:** E3  
+**Course Year:** 4U  
+**Course Semester:** 6U  
+**Lecture Hours/Week:** 3  
+**Total No. of Lectures:** 45  
+**Mid-Semester Exam Hours:** 1  
+**End-Semester Exam Hours:** 3
+
+#### COURSE OBJECTIVES:
+- Study expert system fundamentals and techniques.
+- Learn fuzzy logic and uncertainty handling in expert systems.
+
+#### COURSE OUTCOMES:
+By the end of the course, students will be able to:
+1. Understand expert system concepts.
+2. Apply logic and reasoning techniques (propositional logic, predicate logic).
+3. Handle uncertainty and use fuzzy logic for decision-making.
+4. Develop and manage expert systems.
+
+#### Units:
+1. **Expert System Fundamentals:**
+   - Problem domain, knowledge representation, rule-based systems, logic, and knowledge representation.
+2. **Representation Techniques:**
+   - Semantic nets, frames, logic systems, and inference methods.
+3. **Uncertainty in Expert Systems:**
+   - Classical and subjective probabilities, Markov chains, fuzzy logic.
+4. **Fuzzy Logic in Expert Systems:**
+   - Commercial applications of fuzzy logic, handling uncertainty in inference chains.
+5. **Development Stages of Expert Systems:**
+   - Life cycle, errors in development, role of knowledge engineers, life cycle models.
+
+---
+
+### HIGHSPEED NETWORKS (IT316)
+
+**Course Credits:** 3  
+**Course Category:** E3  
+**Course Year:** 3U  
+**Course Semester:** 6U  
+**Lecture Hours/Week:** 3  
+**Total No. of Lectures:** 45  
+**Mid-Semester Exam Hours:** 1  
+**End-Semester Exam Hours:** 3
+
+#### COURSE OBJECTIVES:
+- Study high-speed networking fundamentals.
+- Learn about ATM, TCP, congestion control, and traffic management.
+
+#### COURSE OUTCOMES:
+By the end of the course, students will be able to:
+1. Understand high-speed network technologies and protocols.
+2. Evaluate queuing models and congestion control methods.
+3. Learn about integrated services architecture and data flow protocols.
+
+#### Units:
+1. **Frame Relay and ATM Networks:**
+   - ATM architecture, cell structure, service categories, and high-speed LANs (Fast Ethernet, Wi-Fi).
+2. **Queuing Analysis:**
+   - Single-server queues, congestion control, traffic management.
+3. **TCP Flow and Congestion Control:**
+   - TCP flow control, congestion algorithms, retransmission.
+4. **Integrated Services Architecture:**
+   - Components, services, and queuing disciplines.
+5. **RSVP and MPLS:**
+   - RSVP protocols, RTCP, MPLS label switching, RTP protocol.
+
+---
+
+**COMPUTER SECURITY**
+
+- **Course Code**: IT318  
+- **Course Credits**: 3  
+- **Course Category**: E4  
+- **Course Year**: 3U  
+- **Course Semester**: 6U  
+- **Lectures/Tutorials**: 03 + 00 hours/week  
+- **Mid Sem. Exam**: 1 hour  
+- **Total No. of Lectures**: 45  
+- **End Sem. Exam**: 3 hours  
+
+**Course Objectives**:
+1. To study the image fundamentals and mathematical transforms necessary for expert systems.
+2. To study expert system techniques.
+3. To study different protocol procedures.
+4. To study image segmentation and representation techniques.
+
+**Course Outcomes**:
+By the end of the course, students should be able to:
+1. Review the fundamental concepts of expert systems.
+2. Analyze images in the frequency domain using various transforms.
+3. Evaluate techniques for fuzzy logic.
+4. Categorize various compression techniques.
+5. Interpret image compression standards.
+
+---
+
+**MANAGEMENT INFORMATION SYSTEM**
+
+- **Course Code**: IT320  
+- **Course Credits**: 3  
+- **Course Category**: E4  
+- **Course Year**: 4U  
+- **Course Semester**: 6U  
+- **Lectures/Tutorials**: 03 + 00 hours/week  
+- **Mid Sem. Exam**: 1 hour  
+- **Total No. of Lectures**: 45  
+- **End Sem. Exam**: 3 hours  
+
+**Course Objectives**:
+1. To study the image fundamentals and mathematical transforms necessary for expert systems.
+2. To study expert system techniques.
+3. To study different protocol procedures.
+4. To understand image segmentation and representation techniques.
+
+**Course Outcomes**:
+By the end of the course, students should be able to:
+1. Review the fundamental concepts of expert systems.
+2. Analyze images in the frequency domain using various transforms.
+3. Evaluate fuzzy logic techniques.
+4. Categorize various compression techniques.
+5. Interpret image compression standards.
+
+---
+
+**EVOLUTIONARY COMPUTING**
+
+- **Course Code**: IT322  
+- **Course Credits**: 3  
+- **Course Category**: E4  
+- **Course Year**: 4U  
+- **Course Semester**: 7U  
+- **Lectures/Tutorials**: 03 + 00 hours/week  
+- **Mid Sem. Exam**: 1 hour  
+- **Total No. of Lectures**: 45  
+- **End Sem. Exam**: 3 hours  
+
+**Course Objectives**:
+1. To study the image fundamentals and mathematical transforms necessary for expert systems.
+2. To study expert system techniques.
+3. To study different protocol procedures.
+4. To understand image segmentation and representation techniques.
+
+**Course Outcomes**:
+By the end of the course, students should be able to:
+1. Review the fundamental concepts of expert systems.
+2. Analyze images in the frequency domain using various transforms.
+3. Evaluate fuzzy logic techniques.
+4. Categorize various compression techniques.
+5. Interpret image compression standards.
+
+---
+
+**INFORMATION RETRIEVAL & MANAGEMENT**
+
+- **Course Code**: IT324  
+- **Course Credits**: 3  
+- **Course Category**: E4  
+- **Course Year**: 4U  
+- **Course Semester**: 6U  
+- **Lectures/Tutorials**: 03 + 00 hours/week  
+- **Mid Sem. Exam**: 1 hour  
+- **Total No. of Lectures**: 45  
+- **End Sem. Exam**: 3 hours  
+
+**Course Objectives**:
+1. To study the image fundamentals and mathematical transforms necessary for expert systems.
+2. To study expert system techniques.
+3. To study different protocol procedures.
+4. To understand image segmentation and representation techniques.
+
+**Course Outcomes**:
+By the end of the course, students should be able to:
+1. Review the fundamental concepts of expert systems.
+2. Analyze images in the frequency domain using various transforms.
+3. Evaluate fuzzy logic techniques.
+4. Categorize various compression techniques.
+5. Interpret image compression standards.
+
+---
+
+**GRAPH THEORY & ALGORITHMS**
+
+- **Course Code**: IT407  
+- **Course Credits**: 3  
+- **Course Category**: E5  
+- **Course Year**: 4U  
+- **Course Semester**: 7U  
+- **Lectures/Tutorials**: 03 + 00 hours/week  
+- **Mid Sem. Exam**: 1 hour  
+- **Total No. of Lectures**: 45  
+- **End Sem. Exam**: 3 hours  
+
+**Course Objectives**:
+1. To understand the concept of vertex and edge connectivity in graphs.
+2. To develop an understanding of geometric duals in planar graphs.
+3. To understand digraphs, Euler digraphs, and Hamiltonian digraphs.
+4. To study matrices in graphs like incidence matrix, adjacency matrix, cycle matrix, etc.
+5. To introduce graph coloring concepts.
+
+**Course Outcomes**:
+By the end of the course, students should be able to:
+1. Understand and explain basic graph theory concepts.
+2. Apply basic mathematical logic concepts.
+3. Compute maximum flow in networks and understand its applications.
+4. Understand connectivity and edge connectivity.
+5. Identify maximum matching in bipartite graphs.
+
+---
+
+**MOBILE COMPUTING**
+
+- **Course Code**: IT409  
+- **Course Credits**: 3  
+- **Course Category**: E5  
+- **Course Year**: 4U  
+- **Course Semester**: 7U  
+- **Lectures/Tutorials**: 03 + 00 hours/week  
+- **Mid Sem. Exam**: 1 hour  
+- **Total No. of Lectures**: 45  
+- **End Sem. Exam**: 3 hours  
+
+**Course Objectives**:
+1. To study mobile applications, embedded systems, and business drivers for mobile apps.
+2. To study basic and advanced design techniques for mobile applications, focusing on hardware and software constraints.
+3. To understand Android and iOS technologies and platforms for mobile application development.
+
+**Course Outcomes**:
+By the end of the course, students should be able to:
+1. Design and develop mobile applications for different platforms.
+2. Integrate multimedia, GPS, and social media features into applications.
+3. Utilize Android and iOS platforms to create mobile applications.
+
+---
+
+**DATA WAREHOUSING & MINING**
+
+- **Course Code**: IT411  
+- **Course Credits**: 3  
+- **Course Category**: E5  
+- **Course Year**: 4U  
+- **Course Semester**: 7U  
+- **Lectures/Tutorials**: 03 + 00 hours/week  
+- **Mid Sem. Exam**: 1 hour  
+- **Total No. of Lectures**: 45  
+- **End Sem. Exam**: 3 hours  
+
+**Course Objectives**:
+1. To understand data mining principles and techniques.
+2. To explore data warehousing architecture and implementation.
+3. To study web mining, text mining, and ethical aspects of data mining.
+
+**Course Outcomes**:
+By the end of the course, students should be able to:
+1. Preprocess data and apply mining techniques.
+2. Identify association rules, classification, and clusters in large datasets.
+3. Use data analysis tools for real-world business and scientific problems.
+
+---

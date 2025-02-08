@@ -1,0 +1,164 @@
+---
+
+**UNIVERSITY SCHOOL OF INFORMATION AND COMMUNICATION TECHNOLOGY**  
+**DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING**
+
+**PROGRAMME STRUCTURE**  
+**BACHELOR OF COMPUTER APPLICATIONS (BCA)**  
+**3 YEAR PROGRAMME (2019-2022)**  
+**GAUTAM BUDDHA UNIVERSITY**  
+**GAUTAM BUDH NAGAR, GREATER NOIDA, UP, INDIA**
+
+---
+
+### Bachelor of Computer Applications (BCA)
+
+**Effective from 2019 (Batch 2019-22)**
+
+---
+
+#### **SEMESTER I**
+
+| S.No. | Course Code | Course Name                              | L | T | P | Credits | Types          |
+|-------|-------------|------------------------------------------|---|---|---|---------|----------------|
+| 1     | BCA101      | Computer Fundamentals                    | 3 | 0 | 0 | 3       | CC1 / FC       |
+| 2     | BCA103      | Computer Application & Office Automation | 3 | 0 | 0 | 3       | CC2 / FC       |
+| 3     | BCA105      | Introduction to Internet Technology      | 3 | 0 | 0 | 3       | CC3 / SEC      |
+| 4     | BCA107      | Logical Organization of Computer         | 3 | 0 | 0 | 3       | CC4            |
+| 5     | MA151       | Mathematical Foundation of Computer Science-I | 3 | 1 | 0 | 4       | GE1            |
+| 6     | EN101       | English Proficiency                      | 2 | 0 | 0 | 2       | OE1 / AECC     |
+| 7     | BCA181      | Internet Technology Lab                  | 0 | 0 | 3 | 2       | CC-L1 / SEC    |
+| 8     | BCA183      | Computer Fundamental Lab                 | 0 | 0 | 3 | 2       | CC-L2          |
+| 9     | GP          | General Proficiency                      | - | - | - | Non-Credit | -              |
+
+**Total Hours and Credits**: 17 L, 6 T, 22 Credits
+
+---
+
+#### **SEMESTER II**
+
+| S.No. | Course Code | Course Name                              | L | T | P | Credits | Types          |
+|-------|-------------|------------------------------------------|---|---|---|---------|----------------|
+| 1     | BCA102      | Problem Solving Using C                  | 3 | 0 | 0 | 3       | CC5 / SEC      |
+| 2     | BCA104      | System Analysis and Design               | 3 | 0 | 0 | 3       | CC6            |
+| 3     | BCA106      | Fundamental of Operating System          | 3 | 0 | 0 | 3       | CC7 / FC       |
+| 4     | BCA108      | Digital Logic                            | 3 | 0 | 0 | 3       | CC8            |
+| 5     | MA152       | Mathematical Foundation of Computer Science-II | 3 | 1 | 0 | 4       | GE2            |
+| 6     | ES101       | Environmental Studies                    | 4 | 0 | 0 | 4       | OE2 / AECC     |
+| 7     | BCA182      | C Programming Lab                        | 0 | 0 | 3 | 2       | CC-L3 / SEC    |
+| 8     | BCA184      | Operating System Lab                     | 0 | 0 | 3 | 2       | CC-L4          |
+| 9     | GP          | General Proficiency                      | - | - | - | Non-Credit | -              |
+
+**Total Hours and Credits**: 19 L, 6 T, 24 Credits
+
+---
+
+#### **SEMESTER III**
+
+| S.No. | Course Code | Course Name                              | L | T | P | Credits | Types          |
+|-------|-------------|------------------------------------------|---|---|---|---------|----------------|
+| 1     | BCA201      | Python Programming                       | 3 | 0 | 0 | 3       | CC9 / SEC      |
+| 2     | BCA203      | Software Engineering Fundamentals        | 3 | 0 | 0 | 3       | CC10           |
+| 3     | BCA205      | Introduction to Data Base Management System | 3 | 0 | 0 | 3       | CC11 / FC      |
+| 4     | BCA207      | Data Structure                           | 3 | 0 | 0 | 3       | CC12 / SEC     |
+| 5     | BCA209      | Discrete Structure                       | 3 | 0 | 0 | 3       | CC13           |
+| 6     | BCA211      | Fundamental of Digital Marketing         | 3 | 0 | 0 | 3       | CC14           |
+| 7     | BCA281      | Python Programming Lab                   | 0 | 0 | 3 | 2       | CC-L5 / SEC    |
+| 8     | BCA283      | Data Base Management System Lab         | 0 | 0 | 3 | 2       | CC-L6          |
+| 9     | GP          | General Proficiency                      | - | - | - | Non-Credit | -              |
+
+**Total Hours and Credits**: 18 L, 6 T, 22 Credits
+
+---
+
+#### **SEMESTER IV**
+
+| S.No. | Course Code | Course Name                              | L | T | P | Credits | Types          |
+|-------|-------------|------------------------------------------|---|---|---|---------|----------------|
+| 1     | BCA202      | Fundamentals of Java Programming         | 3 | 0 | 0 | 3       | CC15 / SEC     |
+| 2     | BCA204      | Basics of Artificial Intelligence        | 3 | 0 | 0 | 3       | CC16           |
+| 3     | BCA206      | Introduction to Information Security     | 3 | 0 | 0 | 3       | CC17           |
+| 4     | BCA208      | Theory of Computation                    | 3 | 0 | 0 | 3       | CC18           |
+| 5     | BCA210      | Data Analytics                           | 3 | 0 | 0 | 3       | CC19 / SEC     |
+| 6     | BCA212      | Basics of Soft Computing                 | 2 | 0 | 0 | 2       | -              |
+| 7     | BCA282      | Java Programming Lab                     | 0 | 0 | 3 | 2       | CC-L7 / SEC    |
+| 8     | BCA292      | Minor Project                            | 0 | 0 | 10| 5       | MP1 / E        |
+| 9     | GP          | General Proficiency                      | - | - | - | Non-Credit | -              |
+
+**Total Hours and Credits**: 17 L, 13 T, 24 Credits
+
+---
+
+#### **SEMESTER V**
+
+| S.No. | Course Code | Course Name                              | L | T | P | Credits | Types          |
+|-------|-------------|------------------------------------------|---|---|---|---------|----------------|
+| 1     | BCA301      | PHP                                      | 3 | 0 | 0 | 3       | CC21 / SEC     |
+| 2     | BCA303      | Introduction to Compiler Design          | 3 | 0 | 0 | 3       | CC22           |
+| 3     | BCA305      | Basics of Computer Graphics              | 3 | 0 | 0 | 3       | CC23           |
+| 4     | BCA307      | Computer Networks Fundamentals           | 3 | 0 | 0 | 3       | CC24           |
+| 5     | Elective 1  | -                                        | 3 | 0 | 0 | 3       | E1 / DSE       |
+| 6     | Elective 2  | -                                        | 3 | 0 | 0 | 3       | E2 / DSE       |
+| 7     | BCA381      | PHP Lab                                  | 0 | 0 | 3 | 2       | CC-L8 / SEC    |
+| 8     | BCA383      | Compiler Design Lab                      | 0 | 0 | 3 | 2       | CC-L9          |
+| 9     | GP          | General Proficiency                      | - | - | - | Non-Credit | -              |
+
+**Total Hours and Credits**: 18 L, 6 T, 22 Credits
+
+---
+
+#### **SEMESTER VI**
+
+| S.No. | Course Code | Course Name                              | L | T | P | Credits | Types          |
+|-------|-------------|------------------------------------------|---|---|---|---------|----------------|
+| 1     | BCA302      | .NET Technology                          | 3 | 0 | 0 | 3       | CC25           |
+| 2     | BCA304      | Basics of Internet of Things             | 3 | 0 | 0 | 3       | CC26           |
+| 3     | BCA382      | .NET Technology Lab                      | 0 | 0 | 3 | 2       | CC-L10 / SEC   |
+| 4     | BCA384      | Internet of Things Lab                   | 0 | 0 | 3 | 2       | CC-L11 / SEC   |
+| 5     | BCA392      | Major Project                            | 0 | 0 | 16| 8       | MP2 / E        |
+| 6     | GP          | General Proficiency                      | - | - | - | Non-Credit | -              |
+
+**Total Hours and Credits**: 12 L, 22 Credits
+
+---
+
+**GRAND TOTAL OF CREDITS**: 138 Credits
+
+---
+
+### **ELECTIVES FROM DCSE**
+
+| S.No. | Course Code | Course Name                              | Credits |
+|-------|-------------|------------------------------------------|---------|
+| 1     | BCA309      | Fundamentals of Cloud Computing          | 3       |
+| 2     | BCA311      | Introduction to Fuzzy Logic              | 3       |
+| 3     | BCA313      | Basics of Natural Language Processing    | 3       |
+| 4     | BCA315      | Fundamentals of Cyber Security           | 3       |
+| 5     | BCA317      | Basics of Expert Systems                 | 3       |
+| 6     | BCA319      | Introduction to Multimedia System        | 3       |
+| 7     | BCA321      | Information Security Fundamentals        | 3       |
+| 8     | BCA323      | Fundamentals of Evolutionary Computing   | 3       |
+| 9     | BCA306      | Computer Network Security                | 3       |
+| 10    | BCA308      | Concepts of Mobile Computing             | 3       |
+| 11    | BCA310      | Basics of Blockchain                     | 3       |
+| 12    | BCA312      | Introduction to Wireless Technology      | 3       |
+| 13    | BCA314      | Fundamentals of Optimization Techniques  | 3       |
+| 14    | BCA316      | Introduction to Computer Vision          | 3       |
+| 15    | BCA318      | Basics of Data Science                   | 3       |
+| 16    | BCA320      | Fundamentals of Digital Image Processing | 3       |
+
+---
+
+**Minor and Major Project will be in a group and will be evaluated as per University Examination Rules.**  
+**USICT will provide a mentor/supervisor for minor and major projects.**
+
+--- 
+
+**Course Types:**
+- **DSE**: Discipline Specific Course
+- **CC**: Core Course
+- **SEC**: Skill Enhancement Course
+- **GE**: General Elective
+- **OE**: Open Elective
+- **MP**: Minor / Major Project
+

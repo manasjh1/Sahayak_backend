@@ -10,3 +10,4 @@ langchain_openai
 langchain_experimental
 groq
 -e .
+pymongo[srv]==3.11

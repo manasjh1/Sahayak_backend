@@ -1,0 +1,928 @@
+# **University School of Information and Communication Technology**  
+## **Department of Information Technology**  
+### **Programme Structure**  
+**B.Tech. in Information Technology (4-Year Programme)**  
+
+---
+
+## **Gautam Buddha University**  
+Gautam Budh Nagar, Greater Noida, Uttar Pradesh 201308  
+
+---
+
+## **Semester I**  
+
+| S.No. | Course Code | Course Name                         | L | T | P | Credits | Type         |
+|-------|------------|------------------------------------|---|---|---|---------|-------------|
+| 1     | CS101      | Fundamentals of Computer Programming | 3 | 1 | 0 | 4       | CC1 / FC    |
+| 2     | MA101      | Engineering Mathematics-I          | 3 | 1 | 0 | 4       | GE1         |
+| 3     | EE102      | Basic Electrical Engineering       | 3 | 1 | 0 | 4       | GE2         |
+| 4     | ME101      | Engineering Mechanics             | 3 | 1 | 0 | 4       | GE3         |
+| 5     | ES101      | Environmental Studies             | 3 | 1 | 0 | 4       | OE1 / AECC  |
+| 6     | EN151      | Language Lab                      | 0 | 0 | 2 | 1       | OE L1 / AECC |
+| 7     | CS181      | Computer Programming Lab          | 0 | 0 | 2 | 1       | CC-L1 / SEC |
+| 8     | EE104      | Basic Electrical Engineering Lab  | 0 | 0 | 2 | 1       | GE-L1       |
+| 9     | ME102      | Workshop Practice                 | 1 | 0 | 2 | 2       | GE-L2 / SEC |
+| 10    | GP         | General Proficiency               | - | - | - | Non-Credit | -         |
+
+**Total Hours and Credits:** 16 (L) + 5 (T) + 8 (P) = **25 Credits**  
+
+---
+
+## **Course Details: Fundamentals of Computer Programming (CS101)**  
+
+**Course Code:** CS101  
+**Credits:** 4  
+**Category:** Core Course (CC)  
+**Semester:** 1st Year, 1st Semester  
+**Lecture Hours:** 03 per week  
+**Tutorial Hours:** 02 per week  
+**Mid-Semester Exam Duration:** 1 Hour  
+**End-Semester Exam Duration:** 3 Hours  
+
+### **Course Objectives:**  
+1. To develop a fundamental understanding of computers, their components, and the programming environment.  
+2. To introduce programming logic and concepts of the C language.  
+3. To design and develop algorithms and programs with different data types, initialization, and related operations.  
+4. To learn function definition, arrays, structures, pointers, etc., based on program objectives.  
+5. To understand and develop C programs for file handling and perform various file operations.  
+
+### **Course Outcomes:**  
+Upon completing this course, students will be able to:  
+1. Understand basic computer fundamentals.  
+2. Use various programming concepts and techniques.  
+3. Apply C programming fundamentals to real-world applications.  
+4. Use arrays, functions, structures, and unions effectively in C.  
+5. Develop C programs using advanced features like pointers and file handling.  
+
+---
+
+### **Unit I: Introduction to Computers and Programming Concepts**  
+- Definition, characteristics, and generations of computers  
+- Basic components of a computer system  
+- Memory, input/output, and storage units  
+- High-level and low-level languages  
+- Software types: system software, application software, hardware, firmware  
+- Overview of operating systems, compilers, interpreters, assemblers, linkers, loaders, debuggers, and IDEs  
+- Algorithm and flowchart representation, pseudo-code, characteristics of good algorithms  
+
+### **Unit II: Introduction to C Programming Language**  
+- Overview of C language and its features  
+- Variable declaration, preprocessor statements  
+- Arithmetic operators, programming style  
+- Keyboard input and relational operators  
+- Control flow statements: `if`, `while`, `for`, `do-while`, `switch`  
+
+### **Unit III: Data Types and Structures**  
+- Bitwise operators  
+- Predefined and user-defined data types  
+- Arrays: declaration, operations, searching, and sorting  
+- 2D arrays and functions  
+- Structures, unions, and arrays of structures  
+- Function declaration, parameter passing, recursion  
+
+### **Unit IV: Fundamentals of Pointers**  
+- Pointer concepts, declaration, and usage  
+- Operations on pointers  
+- Parameter passing using pointers: call by value vs. call by reference  
+- Pointers with arrays and characters  
+- Dynamic memory allocation  
+
+### **Unit V: File Handling in C and Enumerations**  
+- File handling basics and operations  
+- Defining, opening, reading, and closing files  
+- Input/output operations on files  
+- Counting characters, tabs, and spaces in a file  
+- File opening modes and error handling  
+- Enumerated data types (`enum`), declaration and usage  
+
+---
+
+### **Recommended Textbooks:**  
+1. **C Programming** – Herbert Schildt  
+2. **The C Programming Language (2nd Edition)** – Brian W. Kernighan, Dennis M. Ritchie  
+
+### **Reference Books:**  
+1. **Programming in ANSI C** – E. Balagurusamy (Tata McGraw Hill)  
+2. **C Puzzle Book: Puzzles for the C Programming Language** – Alan R. Feuer (Prentice Hall)  
+3. **Expert C Programming: Deep C Secrets** – Peter Van Der Linden (Dorling Kindersley India)  
+4. **Introduction to UNIX Systems** – Morgan Rachel (Tata McGraw Hill Education)  
+5. **C: A Reference Manual (5th Edition)** – Samuel P. Harbison  
+6. **Programming Using the C Language** – R.C. Hutchison (McGraw Hill)  
+7. **Fundamentals of Computers and Programming with C** – A.K. Sharma  
+
+---
+
+### **Key Notations:**  
+- **L (Lecture Hours)** – Theoretical classes per week  
+- **T (Tutorial Hours)** – Problem-solving and discussion sessions per week  
+- **P (Practical Hours)** – Laboratory or hands-on sessions per week  
+- **CC (Core Course)** – Mandatory courses from the department  
+- **GE (General Elective)** – Elective courses from related disciplines  
+- **SEC (Skill Enhancement Course)** – Practical or lab-based skills  
+- **OE (Open Elective)** – Courses from other departments  
+
+---
+# **Gautam Buddha University**  
+**University School of Information and Communication Technology**  
+**Department of Information Technology**  
+**B.Tech (IT) - 4-Year Programme**  
+
+---
+
+## **Semester I - Course Structure**  
+
+| S.No | Course Code | Course Name                          | L  | T  | P  | Credits | Type         |
+|------|------------|-------------------------------------|----|----|----|---------|--------------|
+| 1    | CS101      | Fundamentals of Computer Programming | 3  | 1  | 0  | 4       | CC1 / FC     |
+| 2    | MA101      | Engineering Mathematics-I           | 3  | 1  | 0  | 4       | GE1          |
+| 3    | EE102      | Basic Electrical Engineering        | 3  | 1  | 0  | 4       | GE2          |
+| 4    | ME101      | Engineering Mechanics               | 3  | 1  | 0  | 4       | GE3          |
+| 5    | ES101      | Environmental Studies               | 3  | 1  | 0  | 4       | OE1 / AECC   |
+| 6    | EN151      | Language Lab                        | 0  | 0  | 2  | 1       | OE L1 / AECC |
+| 7    | CS181      | Computer Programming Lab            | 0  | 0  | 2  | 1       | CC-L1 / SEC  |
+| 8    | EE104      | Basic Electrical Engineering Lab    | 0  | 0  | 2  | 1       | GE-L1        |
+| 9    | ME102      | Workshop Practice                   | 1  | 0  | 2  | 2       | GE-L2 / SEC  |
+| 10   | GP         | General Proficiency (Non-Credit)    | -  | -  | -  | -       | -            |
+
+**Total Hours & Credits: 16 (L) + 5 (T) + 8 (P) = 25 Credits**  
+
+---
+
+## **Course: Fundamentals of Computer Programming (CS101)**  
+**Credits:** 4  
+**Category:** Core Course (CC)  
+**Year/Semester:** 1st Year, 1st Semester  
+**Lectures + Tutorials:** 3+2 Hours per Week  
+**Mid-Sem Exam Duration:** 1 Hour  
+**End-Sem Exam Duration:** 3 Hours  
+
+### **Course Objectives**  
+1. Develop an understanding of computers, their components, and the programming environment.  
+2. Learn logic-building and fundamental C programming concepts.  
+3. Design and implement algorithms with proper data declarations and initialization.  
+4. Understand and apply functions, arrays, structures, and pointers in programming.  
+5. Learn file handling in C and perform various file operations.  
+
+### **Course Outcomes**  
+Upon completion, students will be able to:  
+1. Understand basic computer fundamentals.  
+2. Apply programming concepts and techniques effectively.  
+3. Utilize C programming fundamentals for real-world applications.  
+4. Work with arrays, functions, structures, and unions.  
+5. Develop advanced C programs using pointers and file handling.  
+
+### **Course Units**  
+- **Unit I:** Introduction to Computers & Programming Concepts  
+- **Unit II:** Basics of C Programming  
+- **Unit III:** Data Types, Arrays, and Structures  
+- **Unit IV:** Fundamentals of Pointers  
+- **Unit V:** File Handling in C  
+
+### **Textbooks & References**  
+- **Textbooks:**  
+  1. *C Programming* – Herbert Schildt  
+  2. *The C Programming Language (2nd Edition)* – Brian W. Kernighan & Dennis M. Ritchie  
+- **Reference Books:**  
+  1. *Programming in ANSI C* – E. Balagurusamy  
+  2. *C Puzzle Book* – Alan Feuer  
+  3. *Expert C Programming: Deep C Secrets* – Peter Van Der Linden  
+
+---
+
+## **Course: Computer Programming Lab (CS181)**  
+**Credits:** 1  
+**Category:** Core Course Lab (CCL)  
+**Year/Semester:** 1st Year, 1st Semester  
+**Lab Hours per Week:** 2  
+**End-Sem Exam Duration:** 2 Hours  
+
+### **Course Objectives**  
+1. Develop hands-on experience with the C programming environment.  
+2. Strengthen logic-building and problem-solving skills in C.  
+3. Implement programs with functions, arrays, structures, and pointers.  
+4. Gain experience in file handling operations.  
+
+### **Course Outcomes**  
+By the end of this lab, students will:  
+1. Understand fundamental C programming concepts.  
+2. Work with various data types and operators.  
+3. Implement logic-based programming solutions.  
+4. Use pointers, structures, and unions effectively.  
+5. Perform file handling operations in C.  
+
+### **List of Experiments**  
+1. Program to find the sum of digits of a number.  
+2. Factorial calculation using recursion.  
+3. Reverse a given number.  
+4. Check if a given year is a leap year.  
+5. Program to calculate student grades based on marks.  
+6. Implement grade calculation using switch-case.  
+7. Compute the roots of a quadratic equation.  
+8. Find the length of a string using a while loop.  
+9. Print pattern-based outputs.  
+10. Multiply two matrices.  
+11. Demonstrate call by value and call by reference.  
+12. Check if a given string is a palindrome.  
+13. Create a structure for student details and compute its size.  
+14. Compute the length of a string using pointers.  
+15. File creation, input handling, and displaying file content.  
+
+---
+
+## **Semester III - Course Structure**  
+
+| S.No | Course Code | Course Name                        | L  | T  | P  | Credits | Type        |
+|------|------------|----------------------------------|----|----|----|---------|-------------|
+| 1    | IT201      | Animation & Computer Graphics    | 3  | 0  | 0  | 3       | CC4         |
+| 2    | IT203      | Operating System                 | 3  | 0  | 0  | 3       | CC5         |
+| 3    | IT205      | Software Engineering             | 3  | 0  | 0  | 3       | CC6 / SEC   |
+| 4    | IT207      | System Design & Analysis         | 3  | 0  | 0  | 3       | CC7         |
+| 5    | IT209      | Web Technologies                 | 3  | 0  | 0  | 3       | CC8         |
+| 6    | MA201      | Engineering Mathematics-III      | 3  | 1  | 0  | 4       | GE7         |
+| 7    | IT281      | Animation & Computer Graphics Lab | 0  | 0  | 3  | 2       | CC-L3       |
+| 8    | IT283      | Operating System Lab             | 0  | 0  | 3  | 2       | CC-L4 / SEC |
+| 9    | IT285      | Web Technologies Lab I           | 0  | 0  | 3  | 2       | CC-L5 / SEC |
+| 10   | GP         | General Proficiency (Non-Credit) | -  | -  | -  | -       | -           |
+
+**Total Hours & Credits: 18 (L) + 1 (T) + 9 (P) = 25 Credits**  
+
+---
+
+## **Course: Animation & Computer Graphics (IT201)**  
+**Credits:** 3  
+**Category:** Core Course (CC)  
+**Year/Semester:** 2nd Year, 3rd Semester  
+**Lectures per Week:** 3  
+**Mid-Sem Exam Duration:** 1 Hour  
+**End-Sem Exam Duration:** 3 Hours  
+
+### **Course Objectives & Outcomes**  
+- Learn graphics applications, algorithms, transformations, and rendering.  
+- Understand image fundamentals, multimedia tools, and animation techniques.  
+
+### **Course Units**  
+- **Unit I:** Introduction to Computer Graphics  
+- **Unit II:** 2D Geometrical Transformations  
+- **Unit III:** Representation & Transformation  
+- **Unit IV:** Visible Surface Detection Methods  
+- **Unit V:** Computer Animation  
+
+### **Reference Books**  
+1. *Computer Graphics: Principles and Practice* – Foley, van Dam, Feiner, Hughes  
+2. *Mathematical Elements of Graphics* – Rogers  
+3. *Computer Graphics* – Donald Hearn & M. Pauline Baker  
+
+---
+
+**Operating System (IT203)**
+
+**Course Details:**
+- **Course Credits:** 3
+- **Category:** CC
+- **Course Level:** Undergraduate (U)
+- **Year:** 2U
+- **Semester:** 3U
+- **Lecture + Tutorial Hours/Week:** 3 + 0
+- **Total Lectures:** 45
+- **Mid-Sem Exam Duration:** 1 Hour
+- **End-Sem Exam Duration:** 3 Hours
+
+### **Course Objectives:**
+1. Understand the importance of an Operating System in a computer system.
+2. Learn about different types of Operating Systems and their services.
+3. Study various process scheduling algorithms and synchronization techniques.
+4. Explore virtual memory concepts and secondary memory management.
+5. Gain an understanding of security and protection in Operating Systems.
+
+### **Course Outcomes:**
+By the end of the course, students should be able to:
+1. Understand various services provided by the Operating System.
+2. Learn real-life applications of Operating Systems.
+3. Apply different process scheduling algorithms and synchronization techniques.
+4. Implement memory management techniques like paging and segmentation.
+5. Understand and implement protection mechanisms in an OS.
+
+### **Course Units:**
+- **Unit I:** Introduction to OS - Basics, memory management, processor and device management, information management functions.
+- **Unit II:** Process Management - Process scheduling, synchronization, deadlocks, semaphores.
+- **Unit III:** Memory & Storage Management - Virtual memory, paging, segmentation, page replacement policies.
+- **Unit IV:** UNIX/Linux OS - Kernel functions, system calls, shell programming, administration.
+- **Unit V:** Security & Protection - Security principles, authentication, access control mechanisms.
+
+**Textbooks:**
+1. Galvin, Wiley - Operating Systems Concepts (8th edition, 2009)
+2. James L. Peterson - Operating Systems Concept (6th edition, 2007)
+
+---
+
+**Software Engineering (IT205)**
+
+**Course Details:**
+- **Course Credits:** 3
+- **Category:** CC
+- **Course Level:** Undergraduate (U)
+- **Year:** 2U
+- **Semester:** 3U
+- **Lecture + Tutorial Hours/Week:** 3 + 0
+- **Total Lectures:** 45
+- **Mid-Sem Exam Duration:** 1 Hour
+- **End-Sem Exam Duration:** 3 Hours
+
+### **Course Objectives:**
+1. Learn basic software engineering methods and practices.
+2. Understand software process models.
+3. Study software requirements and the Software Requirements Specification (SRS) document.
+4. Explore the software design process.
+5. Gain knowledge of software coding, testing, and maintenance.
+
+### **Course Outcomes:**
+By the end of the course, students should be able to:
+1. Analyze and design complex systems.
+2. Apply software engineering principles.
+3. Develop and maintain large-scale software systems.
+4. Build efficient and cost-effective software solutions.
+5. Perform independent research and analysis in software engineering.
+
+### **Course Units:**
+- **Unit I:** Introduction to Software Engineering - Definitions, principles, and activities.
+- **Unit II:** Requirement Analysis & Design - SRS, IEEE standards, functional and non-functional requirements.
+- **Unit III:** Software Design Process - Architectural design, interface design, data flow models, E-R diagrams.
+- **Unit IV:** Software Life Cycle Models - Waterfall, Prototype, Spiral, RAD models, maintenance.
+- **Unit V:** Coding, Testing & Maintenance - Unit testing, integration testing, white-box and black-box testing, defect prevention.
+
+**Textbooks:**
+1. Pankaj Jalote - An Integrated Approach to Software Engineering
+2. Ian Sommerville - Software Engineering (2009)
+
+---
+
+**System Design & Analysis Techniques (IT207)**
+
+**Course Details:**
+- **Course Credits:** 3
+- **Category:** CC
+- **Course Level:** Undergraduate (U)
+- **Year:** 2U
+- **Semester:** 3U
+- **Lecture + Tutorial Hours/Week:** 3 + 0
+- **Total Lectures:** 45
+- **Mid-Sem Exam Duration:** 1 Hour
+- **End-Sem Exam Duration:** 3 Hours
+
+### **Course Objectives:**
+1. Understand system development and design methodologies.
+2. Learn the phases of the system development life cycle.
+3. Explore the role of a systems analyst.
+4. Use process and data modeling tools.
+5. Develop structured system proposals for business applications.
+
+### **Course Outcomes:**
+By the end of the course, students should be able to:
+1. Understand system life cycle concepts.
+2. Develop information system models.
+3. Create system project documentation.
+4. Analyze business problems and design structured solutions.
+5. Apply object-oriented modeling using UML.
+
+### **Course Units:**
+- **Unit I:** Data & Information - Types, management requirements, small case study.
+- **Unit II:** Systems Analysis & Design Life Cycle - Feasibility analysis, system design, system evaluation.
+- **Unit III:** Information Gathering - Requirements classification and specification.
+- **Unit IV:** Feasibility Analysis - Cost-benefit analysis, proposal documentation.
+- **Unit V:** Tools for System Analysts - Data flow diagrams (DFDs), decision tables, structured modeling techniques.
+
+**Textbooks:**
+1. Elias M. Awad - System Analysis and Design
+2. Perry Edwards - System Analysis and Design
+
+---
+
+**Web Technologies (IT209)**
+
+**Course Details:**
+- **Course Credits:** 3
+- **Category:** CC
+- **Course Level:** Undergraduate (U)
+- **Year:** 2U
+- **Semester:** 3U
+- **Lecture + Tutorial Hours/Week:** 3 + 0
+- **Total Lectures:** 45
+- **Mid-Sem Exam Duration:** 1 Hour
+- **End-Sem Exam Duration:** 3 Hours
+
+### **Course Objectives:**
+1. Understand the history and concepts of the internet.
+2. Learn web programming and application development.
+3. Explore HTML and CSS for web design.
+4. Study client-side scripting with JavaScript.
+5. Understand web hosting and SEO basics.
+
+### **Course Outcomes:**
+By the end of the course, students should be able to:
+1. Develop dynamic webpages using JavaScript and HTML.
+2. Understand JavaScript concepts.
+3. Build interactive web applications using CSS.
+4. Learn website development fundamentals.
+5. Deploy real-time web applications.
+
+### **Course Units:**
+- **Unit I:** Introduction - Web development principles, planning, responsive design.
+- **Unit II:** HTML Basics - Markup tags, hyperlinks, multimedia, forms.
+- **Unit III:** CSS - Styling, box model, formatting.
+- **Unit IV:** Client-Side Scripting - JavaScript, events, arrays, functions, form validation.
+- **Unit V:** Web Hosting & SEO - Hosting basics, domain registration, SEO fundamentals.
+
+**Textbooks:**
+1. Uttam Roy - Web Technologies (Oxford University Press)
+2. Jon Duckett - Web Programming with HTML, XHTML, and CSS
+3. Steven M. Schafer - HTML, XHTML, and CSS Bible (5th Edition)
+4. Peter Kent - SEO for Dummies (6th Edition)
+
+---
+
+
+# ANIMATION & COMPUTER GRAPHICS LAB
+
+**Course Details:**
+- **Course Code:** IT 281
+- **Course Credits:** 2
+- **Course Category:** CCL
+- **Course Level:** Undergraduate (U)
+- **Year/Semester:** 2U / 3U
+- **Lecture + Tutorial Hours per Week:** 3 (03 + 00)
+- **Total Lectures (L + T):** 10 (10 + 00)
+- **Mid Sem. Exam Hours:** N/A
+- **End Sem. Exam Hours:** 3
+
+### **Course Objectives**
+This course will enable students to:
+1. Develop algorithms for graphical primitives like lines, circles, and polygons.
+2. Understand the representation and transformation of graphical images and pictures.
+3. Gain familiarity with different animation techniques and methods.
+
+### **Course Outcomes**
+By the end of the course, students will:
+1. Understand fundamental concepts in computer graphics, including geometrical transformations, illumination models, hidden surface removal, and rendering.
+2. Analyze and evaluate fundamental computer graphics algorithms.
+3. Compare various 2D and 3D graphics algorithms.
+4. Understand image fundamentals and animation techniques.
+5. Apply algorithms to model real-world engineering problems.
+
+### **List of Experiments**
+1. Create an animation representing the growing moon.
+2. Develop an animation of a ball bouncing on steps.
+3. Simulate cloud movement.
+4. Draw fan blades and animate them properly.
+5. Display the background image (tulip.jpg) through a name.
+6. Display the background (garden.jpg) through a name using masking.
+7. Animate the word "WELCOME" with letters appearing one by one and changing colors.
+8. Simulate a ball hitting another ball.
+9. Design a visiting card with at least one graphic and text information.
+10. Edit a photographic image: add a title, border, names, and institution details.
+11. Create a cover page for a subject-related book with a custom design.
+12. Extract a flower from a given image and place it on a chosen background.
+
+---
+
+# OPERATING SYSTEM LAB
+
+**Course Details:**
+- **Course Code:** IT 283
+- **Course Credits:** 2
+- **Course Category:** CCL
+- **Course Level:** Undergraduate (U)
+- **Year/Semester:** 2U / 3U
+- **Lecture + Tutorial Hours per Week:** 3 (03 + 00)
+- **Total Lectures (L + T):** 10 (10 + 00)
+- **Mid Sem. Exam Hours:** N/A
+- **End Sem. Exam Hours:** 3
+
+### **Course Objectives**
+1. Learn file management and permission setup.
+2. Understand system processes and their management.
+3. Implement different Operating System algorithms.
+4. Apply concepts of deadlock prevention.
+5. Develop real-world applications using OS concepts.
+
+### **Course Outcomes**
+By the end of the course, students will:
+1. Implement and analyze various OS algorithms such as CPU scheduling, page replacement, and deadlock avoidance/detection.
+2. Design and develop a project with a positive impact on society or the environment.
+3. Demonstrate various file system operations.
+4. Apply memory allocation and page replacement techniques.
+5. Implement process synchronization concepts using message queues, shared memory, semaphores, and Dekker's algorithm.
+
+### **List of Experiments**
+1. Program for file handling.
+2. Implement the Dining Philosophers Problem.
+3. Implement the Producer-Consumer Problem.
+4. Program for First Come First Serve Scheduling.
+5. Implement the Shortest Job First Scheduling Algorithm.
+6. Develop the Round Robin Scheduling Method.
+7. Implement Priority Scheduling Algorithm.
+8. Demonstrate fragmentation and defragmentation concepts.
+9. Simulate Banker's Algorithm for Deadlock Avoidance.
+10. Simulate Banker's Algorithm for Deadlock Prevention.
+
+---
+
+# WEB TECHNOLOGIES LAB
+
+**Course Details:**
+- **Course Code:** IT 285
+- **Course Credits:** 2
+- **Course Category:** CCL
+- **Course Level:** Undergraduate (U)
+- **Year/Semester:** 2U / 3U
+- **Lab + Tutorial Hours per Week:** 3 (03 + 00)
+- **Total Labs (L):** 10
+- **Mid Sem. Exam Hours:** N/A
+- **End Sem. Exam Hours:** 3
+
+### **Course Objectives**
+1. Analyze web pages and identify elements and attributes.
+2. Create web pages using XHTML and CSS.
+3. Learn ordered and unordered lists in HTML.
+4. Understand inline, internal, and external CSS.
+5. Develop a login form using HTML.
+
+### **Course Outcomes**
+By the end of the course, students will:
+1. Display attributes and their values using HTML.
+2. Embed images into web pages.
+3. Create registration and login forms.
+4. Apply different types of CSS (inline, internal, external).
+5. Build a functional website.
+
+### **List of Experiments**
+1. Create an HTML page to display education details.
+2. Develop an HTML page to show element attributes and values.
+3. Create a webpage with website links.
+4. Embed images in a web page using HTML.
+5. Design a Registration Form and redirect users to a login page after submission.
+6. Create a login form and navigate users to a profile page upon submission.
+7. Demonstrate ordered and unordered lists in HTML.
+8. Develop a frameset with a header, navigation, and content section.
+9. Build a basic website for an institute or department.
+10. Demonstrate inline CSS usage in a webpage.
+11. Implement internal CSS in an HTML document.
+12. Implement external CSS in an HTML document.
+13. Create and validate a student record form.
+14. Develop a student entry form.
+
+---
+
+**SEMESTER V**
+
+| S.No. | Course Code | Course Name | L | T | P | Credits | Type |
+|-------|------------|-------------|---|---|---|---------|------|
+| 1 | IT301 | Theory of Automata | 3 | 0 | 0 | 3 | CC11 |
+| 2 | IT303 | Computer Networks | 3 | 0 | 0 | 3 | CC12 |
+| 3 | IT305 | Compiler Design | 3 | 1 | 0 | 4 | CC13 |
+| 4 | IT307 | Soft Computing Techniques | 3 | 0 | 0 | 3 | CC14 / SEC |
+| 5 | IT315 | Elective 1 | 3 | 0 | 0 | 3 | E1 / DSE |
+| 6 | IT319 | Elective 2 | 3 | 0 | 0 | 3 | E2 / DSE |
+| 7 | IT381 | Computer Networks Lab | 0 | 0 | 3 | 2 | CC-L9 |
+| 8 | IT383 | Compiler Design Lab | 0 | 0 | 3 | 2 | CC-L10 |
+| 9 | IT385 | Soft Computing Techniques Lab | 0 | 0 | 3 | 2 | CC-L11 / SEC |
+| 10 | GP | General Proficiency | Non-Credit | - | - | - | - |
+
+**Total Hours and Credits: 18 (L) + 1 (T) + 9 (P) = 25 Credits**
+
+---
+
+### **Theory of Automata (IT301)**
+**Course Credit:** 3  
+**Category:** CC  
+**No. of Lectures + Tutorials:** 3+0  
+**Mid-Sem Exam:** 1 Hr  
+**End-Term Exam:** 3 Hrs  
+
+#### **Course Objectives:**
+1. Introduce students to the foundation of computability theory.
+2. Apply mathematical techniques and logical reasoning to computational problems.
+3. Develop a strong understanding of finite state automata and formal languages.
+4. Explore theoretical foundations of formal languages and computational models.
+5. Study basic computation theories like automata, grammars, and Turing machines.
+
+#### **Course Outcomes:**
+1. Understand regular grammar properties and automata design.
+2. Learn DFA (Deterministic Finite Automata) and NDFA (Non-Deterministic Finite Automata).
+3. Understand Regular Expressions, Kleene Closure, RE to FA conversion, and vice versa.
+4. Study closure properties and decidability of different languages.
+5. Define language grammars in the Chomsky hierarchy and variants of Turing Machines.
+
+#### **Course Units:**
+- **Unit I:** Automata Theory - alphabets, strings, DFA, NFA, Myhill-Nerode Theorem.
+- **Unit II:** Regular Expressions - Kleene’s theorem, Pumping Lemma, FA with Output.
+- **Unit III:** Context-Free Grammar - derivation trees, simplification, Chomsky Normal Form.
+- **Unit IV:** Push Down Automata - definition, PDA to CFG conversion, two-stack PDA.
+- **Unit V:** Turing Machines - models, universal TM, undecidability, PCP problem.
+
+**Textbooks:**
+1. Hopcroft, Ullman - "Introduction to Automata Theory, Languages, and Computation" (Pearson)
+2. K.L.P. Mishra & N. Chandrasekaran - "Theory of Computer Science" (PHI)
+
+---
+
+### **Computer Networks (IT303)**
+**Course Credit:** 3  
+**Category:** CC  
+**No. of Lectures + Tutorials:** 3+0  
+**Mid-Sem Exam:** 1 Hr  
+**End-Term Exam:** 3 Hrs  
+
+#### **Course Objectives:**
+1. Understanding computer networks and their components.
+2. Learn about switching and OSI layers.
+3. Understand network congestion and its control.
+4. Study protocols used in networking.
+5. Understand network addressing and IP allocation.
+
+#### **Course Outcomes:**
+1. Understand network scenarios and protocols.
+2. Learn OSI and TCP/IP layers.
+3. Understand congestion control techniques.
+4. Learn about various network layer protocols.
+5. Implement networking concepts using IP addressing.
+
+#### **Course Units:**
+- **Unit I:** Introduction to networking - transmission media, network topology, OSI model.
+- **Unit II:** Switching techniques - circuit switching, packet switching, multiplexing.
+- **Unit III:** Network Layer - IPv4/IPv6, subnetting, routing protocols, ICMP, VLANs.
+- **Unit IV:** Transport Layer - TCP/UDP, congestion control, NAT, socket programming.
+- **Unit V:** Application Layer - DNS, HTTP, FTP, SMTP, multimedia over IP, security.
+
+**Textbooks:**
+1. Tanenbaum - "Computer Networks" (Prentice Hall)
+2. Forouzan - "Data Communication and Networking" (McGraw-Hill)
+
+---
+
+### **Compiler Design (IT305)**
+**Course Credit:** 4  
+**Category:** CC  
+**No. of Lectures + Tutorials:** 3+1  
+**Mid-Sem Exam:** 1 Hr  
+**End-Term Exam:** 3 Hrs  
+
+#### **Course Objectives:**
+1. Understand compiler design and its phases.
+2. Learn the relation between architecture and compilers.
+3. Implement compiler algorithms efficiently.
+4. Study translation techniques for high-level languages.
+5. Optimize code for better execution.
+
+#### **Course Outcomes:**
+1. Learn compiler phases and tools like LEX and YACC.
+2. Construct parsing tables (LL, SLR, CLR, LALR).
+3. Use syntax-directed translation techniques.
+4. Implement symbol tables and storage allocation.
+5. Optimize and generate target code efficiently.
+
+#### **Course Units:**
+- **Unit I:** Compiler phases, lexical analysis, token generation, LEX & YACC.
+- **Unit II:** Parsing - Shift Reduce, Operator Precedence, LL(1), LR(0), SLR, LALR.
+- **Unit III:** Syntax-Directed Translation - Parse trees, three-address code, control flow.
+- **Unit IV:** Symbol Table & Error Handling - data structures, storage allocation.
+- **Unit V:** Code Generation & Optimization - DAG, loop optimization, basic block optimization.
+
+**Textbooks:**
+1. Aho, Sethi, Ullman - "Compilers: Principles, Techniques, and Tools" (Pearson)
+2. K. Muneeswaran - "Compiler Design" (Oxford)
+
+---
+
+### **Soft Computing Techniques (IT307)**
+**Course Credit:** 3  
+**Category:** CC  
+**No. of Lectures + Tutorials:** 3+0  
+**Mid-Sem Exam:** 1 Hr  
+**End-Term Exam:** 3 Hrs  
+
+#### **Course Objectives:**
+1. Introduce neural networks and fuzzy logic.
+2. Understand artificial neural networks.
+3. Learn different learning paradigms.
+4. Apply soft computing techniques in problem-solving.
+5. Study genetic algorithms and their applications.
+
+#### **Course Outcomes:**
+1. Understand fuzzy logic and its applications.
+2. Learn fuzzy sets and inference systems.
+3. Study neural networks and their architectures.
+4. Implement learning algorithms and genetic algorithms.
+5. Apply soft computing models in engineering problems.
+
+#### **Course Units:**
+- **Unit I:** Fuzzy Logic - Fuzzy sets, membership functions, fuzzy operations.
+- **Unit II:** Fuzzy Arithmetic - Linguistic variables, uncertainty measurement.
+- **Unit III:** Neural Networks - ANN models, activation functions, learning paradigms.
+- **Unit IV:** Learning Fundamentals - Backpropagation, Hopfield networks.
+- **Unit V:** Genetic Algorithms - Selection, crossover, mutation, applications.
+
+**Textbooks:**
+1. Braspenning - "Artificial Neural Networks" (PHI)
+2. Zadeh - "Fuzzy Logic and Soft Computing" (Pearson)
+
+---
+
+# **COMPUTER-BASED NUMERICAL & STATISTICAL TECHNIQUES**  
+
+### **Course Details**  
+- **Course Code:** IT315  
+- **Credits:** 3  
+- **Category:** E1  
+- **Level:** Undergraduate (U)  
+- **Year:** 3rd Year  
+- **Semester:** 5th Semester  
+- **Lectures per Week:** 3  
+- **Total Lectures:** 45  
+- **Mid-Sem Exam Duration:** 1 hour  
+- **End-Sem Exam Duration:** 3 hours  
+
+---
+
+### **Course Objectives**  
+1. Introduce the basics of Computer-Based Numerical & Statistical Techniques.  
+2. Provide a step-by-step learning approach.  
+3. Develop an understanding of various numerical and statistical methods.  
+4. Learn the process and practical applications of these techniques.  
+5. Gain knowledge of computational techniques used in numerical and statistical analysis.  
+
+---
+
+### **Course Outcomes**  
+By the end of this course, students will:  
+1. Have a fundamental understanding of numerical and statistical techniques.  
+2. Be able to apply various computational methods.  
+3. Learn and utilize different numerical techniques.  
+4. Develop a practical approach to solving numerical problems.  
+
+---
+
+### **Course Units**  
+
+#### **Unit I: Floating Point Arithmetic & Iterative Methods**  
+- Representation of floating point numbers, operations, and normalization.  
+- Pitfalls in floating point representation and errors in numerical computation.  
+- Iterative methods:  
+  - Bisection Method  
+  - Iteration Method  
+  - Regula-Falsi Method  
+  - Newton-Raphson Method  
+  - Secant Method  
+- Rate of convergence of iterative methods.  
+
+#### **Unit II: Simultaneous Linear Equations & Interpolation**  
+- Solutions of system of linear equations:  
+  - Gauss Elimination (direct method and pivoting).  
+  - Ill-conditioned systems and refinement of solutions.  
+  - Gauss-Seidel iterative method and its rate of convergence.  
+- Interpolation and approximation:  
+  - Finite Differences and Difference Tables.  
+  - Polynomial Interpolation: Newton’s Forward & Backward Formula.  
+  - Central Difference Formulae: Gauss, Stirling’s, Bessel’s, and Everett’s formulas.  
+  - Interpolation with unequal intervals: Lagrange’s and Newton Divided Difference formulas.  
+  - Function Approximation: Taylor’s series and Chebyshev polynomials.  
+
+#### **Unit III: Numerical Differentiation & Integration**  
+- Introduction to numerical differentiation and integration.  
+- Methods:  
+  - Trapezoidal Rule  
+  - Simpson’s Rules  
+  - Boole’s Rule  
+  - Weddle’s Rule  
+- Differential equation solutions:  
+  - Picard’s Method  
+  - Euler’s Method  
+  - Taylor’s Method  
+  - Runge-Kutta Methods  
+  - Predictor-Corrector Method  
+- Error monitoring and solution stability.  
+
+#### **Unit IV: Curve Fitting & Regression Analysis**  
+- Least Squares Method: Fitting of straight lines, polynomials, and exponential curves.  
+- Frequency Charts: Histograms, Frequency Curves, Pie Charts.  
+- Regression Analysis: Linear, Non-Linear, and Multiple Regression.  
+
+#### **Unit V: Time Series & Statistical Quality Control**  
+- Time Series Analysis & Forecasting: Moving Averages, Curve Smoothing.  
+- Statistical Quality Control Methods.  
+- Hypothesis Testing:  
+  - Test of Significance  
+  - Chi-Square Test  
+  - t-Test  
+  - ANOVA  
+  - F-Test  
+- Applications in medicine, agriculture, etc.  
+
+---
+
+### **Reference Books**  
+1. Rajaraman V., *Computer Oriented Numerical Methods*, PHI  
+2. Gerald & Wheatley, *Applied Numerical Analyses*, AW  
+3. Jain, Iyengar & Jain, *Numerical Methods for Scientific and Engineering Computations*, New Age International  
+4. Grewal B. S., *Numerical Methods in Engineering and Science*, Khanna Publishers, Delhi  
+5. T. Veerarajan & T. Ramachandran, *Theory and Problems in Numerical Methods*, TMH  
+6. Pradip Niyogi, *Numerical Analysis and Algorithms*, TMH  
+7. Francis Scheld, *Numerical Analysis*, TMH  
+8. Gupta S. P., *Statistical Methods*, Sultan and Sons  
+
+---
+
+# **SOFTWARE PROJECT MANAGEMENT**  
+
+### **Course Details**  
+- **Course Code:** IT319  
+- **Credits:** 3  
+- **Category:** E2  
+- **Level:** Undergraduate (U)  
+- **Year:** 3rd Year  
+- **Semester:** 5th Semester  
+- **Lectures per Week:** 3  
+- **Total Lectures:** 45  
+- **Mid-Sem Exam Duration:** 1 hour  
+- **End-Sem Exam Duration:** 3 hours  
+
+---
+
+### **Course Objectives**  
+1. Introduce the fundamentals of software project management.  
+2. Provide a structured, step-by-step approach.  
+3. Develop an understanding of various management methods.  
+4. Learn the processes and applications of project management techniques.  
+5. Explore different paradigms of software project management.  
+
+---
+
+### **Course Outcomes**  
+By the end of this course, students will:  
+1. Have a basic understanding of software project management.  
+2. Be able to apply project management methods.  
+3. Learn various project management techniques.  
+4. Develop a practical approach to managing software projects.  
+
+---
+
+### **Course Units**  
+
+#### **Unit I: Introduction & Software Project Planning**  
+- Fundamentals of Software Project Management (SPM).  
+- Need Identification, Vision, and Scope Document.  
+- Project Management Cycle and its objectives.  
+- Management Spectrum and SPM Framework.  
+- Software Project Planning: Objectives, Types, and Structure.  
+- Software Project Estimation: Methods, Models, and Decision Process.  
+
+#### **Unit II: Project Organization & Scheduling**  
+- Work Breakdown Structure (WBS): Types, Functions, Activities, and Tasks.  
+- Project Lifecycle & Product Lifecycle.  
+- Organizing Project Personnel.  
+- Project Scheduling: Objectives, Techniques, and Terminology.  
+- Scheduling Methods:  
+  - Network Diagrams (PERT, CPM)  
+  - Bar Charts (Milestone Charts, Gantt Charts)  
+
+#### **Unit III: Project Monitoring & Control**  
+- Dimensions of Project Monitoring and Control.  
+- Earned Value Analysis (EVA) and its indicators:  
+  - Budgeted Cost for Work Scheduled (BCWS)  
+  - Cost Variance (CV)  
+  - Schedule Variance (SV)  
+  - Cost Performance Index (CPI)  
+  - Schedule Performance Index (SPI)  
+- Software Reviews: Inspections, Desk Checks, Walkthroughs, Code Reviews, Pair Programming.  
+
+#### **Unit IV: Software Quality Assurance & Testing**  
+- Testing: Objectives, Principles, Plans, Cases, Strategies, and Levels.  
+- Program Verification & Validation.  
+- Testing Automation & Tools.  
+- Software Quality: Attributes, Metrics, Indicators.  
+- SEI Capability Maturity Model (CMM).  
+- Formal SQA Approaches: Proof of Correctness, Statistical QA, Cleanroom Process.  
+
+#### **Unit V: Project Management & Tools**  
+- Software Configuration Management (SCM): Items, Tasks, Baselines, Change Control.  
+- Risk Management:  
+  - Risk Types & Breakdown Structure (RBS)  
+  - Risk Management Process: Identification, Analysis, Planning, Monitoring.  
+- Cost-Benefit Analysis.  
+- Software Project Management Tools:  
+  - CASE Tools  
+  - Planning & Scheduling Tools  
+  - MS Project  
+
+---
+
+### **Textbooks**  
+1. M. Cotterell, *Software Project Management*, Tata McGraw-Hill  
+2. Royce, *Software Project Management*, Pearson Education  
+
+### **Reference Books**  
+3. Kieron Conway, *Software Project Management*, Dreamtech Press  
+4. S. A. Kelkar, *Software Project Management*, PHI  
+5. Harold R. Kerzner, *Project Management: A Systems Approach to Planning, Scheduling, and Controlling*, Wiley  
+
+---

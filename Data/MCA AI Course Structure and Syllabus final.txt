@@ -1,0 +1,1505 @@
+Here’s a well-structured and readable version of your **MCA (AI Specialization) 2-Year Programme (2021-23) Curriculum**:
+
+---
+
+# **GAUTAM BUDDHA UNIVERSITY**  
+**University School of Information and Communication Technology**  
+**Department of Computer Science and Engineering**  
+
+### **Programme Structure**  
+## **Master of Computer Applications (MCA) with Specialization in Artificial Intelligence**  
+**Duration: 2 Years (2021-23)**  
+
+---
+
+## **Eligibility Criteria**  
+
+1. **Pathway 1:**  
+   - Passed **B.Sc./B.Com./B.A.** with Mathematics at **10+2 level or at Graduation level**.  
+   - Must have at least **50% marks** in aggregate (**45% for SC/ST candidates of Haryana only**).  
+   - Students admitted through this pathway must undertake an additional **Bridge Course** in the first semester as prescribed by the University.  
+   - **Note:** It is compulsory to pass the **Bridge Course** (three additional theory papers and one practical). The **MCA degree will be awarded only after completing the Bridge Course.**  
+
+2. **Pathway 2:**  
+   - Passed **BCA / B.Sc. (Hons.) Computer Science / B.E. or B.Tech. (CSE/IT) / B.Voc. (Software Development/IT)** or an equivalent degree.  
+   - Must have at least **50% marks** in aggregate (**45% for SC/ST candidates of Haryana only**).  
+
+---
+
+## **Bridge Course (For Non-CS Background Students)**  
+
+| S.No. | Course Code | Course Name                         | L  | T  | P  | Credits | Type  |
+|-------|------------|------------------------------------|----|----|----|---------|------|
+| 1     | MCB001     | Computer Fundamentals & Programming | 3  | 1  | 0  | 4       | BC1  |
+| 2     | MCB003     | Introduction to Internet Technology | 3  | 0  | 0  | 3       | BC2  |
+| 3     | MCB005     | Fundamentals of Operating Systems  | 3  | 0  | 0  | 3       | BC3  |
+| 4     | MCB081     | Operating System Lab               | 0  | 0  | 3  | 2       | BC-L1 |
+| 5     | MCB083     | Internet Technology Lab            | 0  | 0  | 3  | 2       | BC-L2 |
+| **Total Hours and Credits** | **9** | **1** | **6** | **14** | |
+
+---
+
+## **Semester I**  
+
+| S.No. | Course Code | Course Name                         | L  | T  | P  | Credits | Type  |
+|-------|------------|------------------------------------|----|----|----|---------|------|
+| 1     | MAI101     | Computer Fundamentals & C Programming | 3  | 0  | 0  | 3       | CC1 / FC |
+| 2     | MAI103     | Software Engineering               | 3  | 0  | 0  | 3       | CC2  |
+| 3     | MAI105     | Artificial Intelligence            | 3  | 0  | 0  | 3       | CC3 / FC |
+| 4     | MAI107     | Discrete Mathematics              | 3  | 0  | 0  | 3       | CC4  |
+| 5     | MAI109     | Theory of Automata                | 3  | 0  | 0  | 3       | CC5  |
+| 6     | MAI111     | Operating System                  | 3  | 0  | 0  | 3       | CC6  |
+| 7     | MAI113     | Database Management System        | 3  | 0  | 0  | 3       | CC7  |
+| 8     | ES401      | Fundamentals of Environmental Science | 3  | 0  | 0  | 3       | OE1 / AECC |
+| 9     | MAI181     | C Programming Lab                 | 0  | 0  | 3  | 2       | CC-L1 / SEC |
+| 10    | MAI183     | Database Management System Lab    | 0  | 0  | 3  | 2       | CC-L2 / SEC |
+| 11    | GP         | General Proficiency               | **Non-Credit** | |
+| **Total Hours and Credits** | **24** | **0** | **6** | **28** | |
+
+---
+
+Here’s a well-structured and readable version of your **MCA (AI Specialization) 2-Year Programme** curriculum for **Semesters II to IV**, including electives and other essential details.
+
+---
+
+# **GAUTAM BUDDHA UNIVERSITY**  
+**University School of Information and Communication Technology**  
+**Department of Computer Science and Engineering**  
+
+### **Programme Structure**  
+## **Master of Computer Applications (MCA) with Specialization in Artificial Intelligence**  
+**Duration: 2 Years (2021-23)**  
+
+---
+
+## **Semester II**  
+
+| S.No. | Course Code | Course Name                         | L  | T  | P  | Credits | Type  |
+|-------|------------|------------------------------------|----|----|----|---------|------|
+| 1     | MAI102     | JAVA Programming                   | 3  | 0  | 0  | 3       | CC8 / SEC |
+| 2     | MAI104     | Data Structure and Algorithms      | 3  | 0  | 0  | 3       | CC9 / SEC |
+| 3     | MAI106     | Compiler Design                    | 3  | 0  | 0  | 3       | CC10 |
+| 4     | MAI108     | Expert System Design               | 3  | 0  | 0  | 3       | CC11 |
+| 5     | MAI110     | Natural Language Processing        | 3  | 0  | 0  | 3       | CC12 |
+| 6     | **Elective-1** | (Choose from Elective List)   | 3  | 0  | 0  | 3       | E1 / DSE |
+| 7     | **Elective-2** | (Choose from Elective List)   | 3  | 0  | 0  | 3       | E2 / DSE |
+| 8     | EN532      | Fundamentals of Language Science   | 3  | 0  | 0  | 3       | OE2 / AECC |
+| 9     | MAI182     | Data Structure and Algorithms Lab  | 0  | 0  | 3  | 2       | CC-L3 / SEC |
+| 10    | MAI184     | JAVA Programming Lab               | 0  | 0  | 3  | 2       | CC-L4 / SEC |
+| 11    | GP         | General Proficiency                | **Non-Credit** | |
+| **Total Hours and Credits** | **24** | **0** | **6** | **28** | |
+
+---
+
+## **Semester III**  
+
+| S.No. | Course Code | Course Name                         | L  | T  | P  | Credits | Type  |
+|-------|------------|------------------------------------|----|----|----|---------|------|
+| 1     | MAI201     | Analysis and Design of Algorithms  | 3  | 0  | 0  | 3       | CC13 |
+| 2     | MAI203     | Machine Learning                   | 2  | 0  | 0  | 2       | CC14 |
+| 3     | MAI205     | Soft Computing Techniques          | 3  | 0  | 0  | 3       | CC15 |
+| 4     | MAI207     | Python Programming                 | 2  | 0  | 0  | 2       | CC16 / SEC |
+| 5     | **Elective-3 (MOOC)** | (Choose from Elective List) | 3  | 0  | 0  | 3       | E3 / DSE |
+| 6     | **Elective-4** | (Choose from Elective List)     | 3  | 0  | 0  | 3       | E4 / DSE |
+| 7     | MA209      | Numerical Algorithms for ML        | 3  | 0  | 0  | 3       | GE1 |
+| 8     | MAI291     | Minor Project                      | 0  | 0  | 10 | 5       | MP1 / E |
+| 9     | MAI281     | Analysis & Design of Algorithm Lab | 0  | 0  | 3  | 2       | CC-L5 / SEC |
+| 10    | MAI283     | Machine Learning using Python Lab  | 0  | 0  | 3  | 2       | CC-L6 / SEC |
+| 11    | GP         | General Proficiency                | **Non-Credit** | |
+| **Total Hours and Credits** | **19** | **0** | **16** | **28** | |
+
+---
+
+## **Semester IV**  
+
+| S.No. | Course Code | Course Name                         | L  | T  | P  | Credits | Type  |
+|-------|------------|------------------------------------|----|----|----|---------|------|
+| 1     | MAI290     | Seminar                            | 0  | 0  | 3  | 2       | S / E |
+| 2     | MAI292     | Major Project                      | 0  | 0  | 20 | 10      | MP2 / E |
+| 3     | MAI294     | Internship                         | 0  | 0  | 32 | 16      | I / E |
+| 4     | GP         | General Proficiency                | **Non-Credit** | |
+| **Total Hours and Credits** | **0** | **0** | **55** | **28** | |
+
+---
+
+# **Total Program Credits: 112**
+
+## **Additional Guidelines**  
+
+- **Swayam/NPTEL Courses:**  
+  - Offered as **Discipline-Specific Electives** (DSE) in **Semester II and III**.  
+  - The list will be provided by the department.  
+  - Students can either complete the course via **Swayam/NPTEL** or through **regular classes at USICT**.  
+  - Evaluated as per **University Examination Rules**.  
+
+- **Seminar:**  
+  - Students will study and present an **individual research paper** in their specialized area.  
+  - Evaluated as per **University Examination Rules**.  
+
+- **Internship:**  
+  - Conducted **individually during the 4th semester**.  
+  - Duration: **4-6 months**.  
+  - Evaluated as per **University Examination Rules**.  
+
+- **Minor & Major Projects:**  
+  - Conducted in **groups**.  
+  - Evaluated as per **University Examination Rules**.  
+  - USICT will **assign mentors/supervisors** for **Seminar, Internship, and Projects**.  
+
+---
+
+## **Elective Courses (USICT Offerings)**  
+
+### **Elective 1**  
+- **MAI112** - Pattern Matching  
+- **MAI114** - Robot Kinematics  
+- **MAI116** - Knowledge Engineering  
+- **MAI118** - Computer Vision  
+
+### **Elective 2**  
+- **MAI120** - Fuzzy Logic  
+- **MAI122** - Evolutionary Computing  
+- **MAI124** - Speech Processing  
+- **MAI126** - Convex Optimization  
+
+### **Elective 3**  
+- **MAI209** - Computational Intelligence  
+- **MAI211** - Parallel Distributed Systems  
+- **MAI213** - AI-Enabled Cybersecurity  
+- **MAI215** - Deep Learning & Reinforcement Learning  
+
+### **Elective 4**  
+- **MAI217** - Pattern Matching  
+- **MAI219** - Neural Networks  
+- **MAI221** - Brain & Neuroscience  
+- **MAI223** - Speech Analysis & Systems  
+
+---
+
+## **Elective Categories**  
+
+| **Code** | **Category** |
+|----------|-------------|
+| **SEC**  | Skill Enhancement Course |
+| **CC**   | Core Course (USICT) |
+| **FC**   | Foundation Course |
+| **DSE**  | Discipline-Specific Elective |
+| **BC**   | Bridge Course |
+| **GE**   | General Elective (Other Departments) |
+| **MP**   | Minor/Major Project |
+| **AECC** | Ability Enhancement Compulsory Course |
+| **OE**   | Open Elective (Other Disciplines) |
+| **I**    | Industrial Training/Internship |
+| **S**    | Seminar |
+
+---
+
+# **GAUTAM BUDDHA UNIVERSITY**
+## **Master of Computer Applications (MCA) - Semester I**
+
+### **Course Structure**
+
+| S.No. | Course Code | Course Name                         | L | T | P | Credits | Type |
+|-------|------------|------------------------------------|---|---|---|---------|------|
+| 1     | MAI101     | Computer Fundamentals & C Programming | 3 | 0 | 0 | 3       | CC1 / FC |
+| 2     | MAI103     | Software Engineering               | 3 | 0 | 0 | 3       | CC2 |
+| 3     | MAI105     | Artificial Intelligence            | 3 | 0 | 0 | 3       | CC3 / FC |
+| 4     | MAI107     | Discrete Mathematics               | 3 | 0 | 0 | 3       | CC4 |
+| 5     | MAI109     | Theory of Automata                 | 3 | 0 | 0 | 3       | CC5 |
+| 6     | MAI111     | Operating System                   | 3 | 0 | 0 | 3       | CC6 |
+| 7     | MAI113     | Database Management System (DBMS)  | 3 | 0 | 0 | 3       | CC7 |
+| 8     | ES401      | Fundamentals of Environmental Science | 3 | 0 | 0 | 3       | OE1 / AECC |
+| 9     | MAI181     | C Programming Lab                  | 0 | 0 | 3 | 2       | CC-L1 / SEC |
+| 10    | MAI183     | Database Management System Lab     | 0 | 0 | 3 | 2       | CC-L2 / SEC |
+| 11    | GP         | General Proficiency                | Non-Credit |  |
+| **Total Hours & Credits** | **24** | **0** | **6** | **28** |  |
+
+---
+
+## **Course Details**
+
+### **1. Computer Fundamentals & C Programming (MAI101)**
+**Credits:** 3 | **Category:** Core (CC) | **Semester:** 1 | **Lecture Hours:** 3 per week | **Exam Duration:** Mid: 1.5 hrs, End: 3 hrs
+
+#### **Course Objectives:**
+- Understand computers, components, and programming environments.
+- Develop programming logic and learn C language programming.
+- Design and implement algorithms and various data operations.
+- Use functions, arrays, structures, pointers, and file handling in C.
+
+#### **Course Outcomes:**
+- Gain fundamental knowledge of computers.
+- Learn various problem-solving techniques.
+- Understand C programming concepts including arrays, functions, structures, and unions.
+- Develop C programs using advanced features.
+
+#### **Course Units:**
+**Unit I:** Introduction to Computers & Programming Concepts
+- Components, memory, input/output devices, software & hardware.
+- Algorithms, flowcharts, pseudo-code, programming paradigms.
+
+**Unit II:** Introduction to C Programming Language
+- Variables, operators, control flow statements (if, while, for, switch).
+
+**Unit III:** Data Types & Structures
+- Arrays, searching & sorting, structures, functions, recursion.
+
+**Unit IV:** Pointers
+- Pointer notations, parameter passing, memory allocation.
+
+**Unit V:** File Handling & Enumerations
+- File operations, error handling, enumerated data types.
+
+#### **Textbooks & References:**
+- "C Programming" – Herbert Schildt
+- "C Programming Language (2nd Edition)" – Brian W. Kernighan, Pearson Education
+- "Programming in ANSI C" – E. Balagurusamy, Tata McGraw Hill
+- "Expert C Programming" – Peter Van Der Linden
+
+---
+
+### **2. Software Engineering (MAI103)**
+**Credits:** 3 | **Category:** Core (CC) | **Semester:** 1 | **Lecture Hours:** 3 per week | **Exam Duration:** Mid: 1.5 hrs, End: 3 hrs
+
+#### **Course Objectives:**
+- Learn software engineering methods and best practices.
+- Understand software process models.
+- Gain knowledge of software requirements, SRS documents, design processes, and coding/testing methods.
+
+#### **Course Outcomes:**
+- Develop skills in software analysis, design, and development.
+- Understand SDLC models and their applications.
+- Gain knowledge of software maintenance and testing techniques.
+- Learn software project management methodologies.
+
+#### **Course Units:**
+**Unit I:** Introduction to Software Engineering
+- Definitions, software engineering principles, process paradigms, development strategies.
+
+**Unit II:** Software Life Cycle Models
+- SDLC models (Waterfall, Prototype, Spiral, RAD), software project management.
+
+**Unit III:** Requirement Analysis & Design
+- Software Requirement Specification (SRS), functional & non-functional requirements.
+
+**Unit IV:** Software Design Process
+- Architectural design, UML modeling (use-case diagrams, sequence diagrams), modular design principles.
+
+**Unit V:** Software Coding, Testing & Maintenance
+- Coding techniques, testing types (unit, integration, system), maintenance models.
+
+#### **Textbooks & References:**
+- "An Integrated Approach to Software Engineering" – Pankaj Jalote
+- "Software Engineering" – Ian Sommerville, Pearson Education
+- "Software Engineering: Practitioner's Approach" – Roger S. Pressman
+- "Software Reliability, Testing & Quality Assurance" – Nasib S. Gill
+---
+
+# **Artificial Intelligence**  
+
+### **Course Details**  
+- **Course Code:** MAI105  
+- **Credits:** 3  
+- **Category:** Core Course (CC)  
+- **Program Level:** Postgraduate (P)  
+- **Year & Semester:** 1st Year, 1st Semester  
+- **Lecture + Tutorial Hours/Week:** 3 + 0  
+- **Total Lectures (L + T):** 45 + 0  
+- **Mid-Semester Exam Duration:** 1.5 Hours  
+- **End-Semester Exam Duration:** 3 Hours  
+
+### **Course Objectives**  
+- Gain a historical perspective of AI and its foundations.  
+- Learn basic principles of AI, including problem-solving, inference, perception, knowledge representation, and learning.  
+- Explore applications of AI techniques in intelligent agents, expert systems, and machine learning models.  
+- Work with AI development tools like AI languages, expert system shells, and data mining tools.  
+- Understand the scope, potential, limitations, and implications of intelligent systems.  
+
+### **Course Outcomes**  
+By the end of the course, students should be able to:  
+- Explain the building blocks of AI using intelligent agents.  
+- Represent and analyze problems using state-space search, graph theory, heuristics, and game-based techniques.  
+- Develop intelligent algorithms for constraint satisfaction problems and game-playing applications.  
+- Use logic-based techniques to model real-life problem domains for inference and planning.  
+- Implement reasoning mechanisms using Expert Systems.  
+
+### **Course Content**  
+
+#### **Unit I: Introduction to AI**  
+- AI concepts, history, and consciousness  
+- Weak vs. Strong AI, Turing Test, Mind-Body Problem  
+- Physical symbol system hypothesis  
+- Comparison of human and computer skills  
+- AI applications and logic development  
+- Chinese Room Experiment  
+- Parallel and Distributed AI  
+
+#### **Unit II: Problem Solving Through AI**  
+- Problem representation in AI  
+- State-space search and problem analysis  
+- Production system and production rules  
+- Problem-solving algorithms in AI  
+
+#### **Unit III: Search Techniques**  
+- Blind search, heuristic search, heuristic functions  
+- Generate and Test, Best-First Search, AND-OR Graph  
+- Local search techniques: Hill Climbing, Simulated Annealing  
+- Constraint Satisfaction, Means-Ends Analysis  
+- Examples: Tic-Tac-Toe, Water Jug, Chess, Tower of Hanoi, Travelling Salesman  
+
+#### **Unit IV: Introduction to Logic**  
+- Propositional and predicate logic  
+- Well-formed formulas, truth tables, resolution  
+- Skolemization and types of resolution  
+
+#### **Unit V: AI Techniques & Applications**  
+- Introduction to Machine Learning and Deep Learning  
+- Expert Systems, Natural Language Processing  
+- AI in Social Media, Finance, Healthcare, Smart Homes, Drones, E-Commerce, Education  
+
+### **Textbooks**  
+1. **Artificial Intelligence** – Elaine Rich, Tata McGraw Hill, 2008.  
+2. **Artificial Intelligence** – Peterson, Tata McGraw Hill, 2008.  
+3. **Artificial Intelligence: A Modern Approach** – Russell & Norvig, Pearson Prentice Hall, 2006.  
+4. **Artificial Intelligence** – Winston, PHI, 2006.  
+
+---
+
+# **Discrete Mathematics**  
+
+### **Course Details**  
+- **Course Code:** MAI107  
+- **Credits:** 3  
+- **Category:** Core Course (CC)  
+- **Program Level:** Postgraduate (P)  
+- **Year & Semester:** 1st Year, 1st Semester  
+- **Lecture + Tutorial Hours/Week:** 3 + 0  
+- **Total Lectures (L + T):** 45 + 0  
+- **Mid-Semester Exam Duration:** 1.5 Hours  
+- **End-Semester Exam Duration:** 3 Hours  
+
+### **Course Objectives**  
+- Understand and evaluate logical statements using truth tables and properties of logic.  
+- Express logic sentences with predicates, quantifiers, and logical connectives.  
+- Apply set operations and solve problems using Venn diagrams and the inclusion-exclusion principle.  
+- Understand functions, their composition, and inverse functions.  
+- Apply inference rules, proof techniques, mathematical induction, and Boolean Algebra.  
+
+### **Course Outcomes**  
+By the end of the course, students should be able to:  
+- Express logical statements using predicates and quantifiers.  
+- Apply proof techniques, including contradiction and mathematical induction.  
+- Evaluate Boolean functions and simplify expressions using Boolean algebra.  
+- Use graph and tree algorithms for problem-solving.  
+
+### **Course Content**  
+
+#### **Unit I: Mathematical Logic**  
+- Statements, connectives, truth tables, tautologies  
+- Predicate logic, inference rules, theorem proving  
+
+#### **Unit II: Set Theory**  
+- Set operations, ordered pairs, multi-sets  
+- Binary relations, equivalence, partial ordering  
+- Functions and recursive functions  
+- Algebraic structures: Groups, Monads, Homomorphism, Isomorphism  
+
+#### **Unit III: Elementary Combinatorics**  
+- Counting principles, permutations & combinations  
+- Binomial & multinomial theorems  
+- Inclusion-exclusion principle, pigeonhole principle  
+
+#### **Unit IV: Recurrence Relations**  
+- Generating functions, recurrence relations  
+- Substitution method, characteristic roots  
+
+#### **Unit V: Graph Theory**  
+- Graph representations, trees, binary trees  
+- DFS, BFS, spanning trees, planar graphs  
+- Euler circuits, Hamiltonian graphs, chromatic numbers  
+
+### **Textbooks**  
+1. **Discrete and Combinatorial Mathematics** – Ralph P. Grimaldi, Pearson Education.  
+2. **Discrete Mathematical Structures with Applications to Computer Science** – Tremblay & Manohar, TMH.  
+3. **Discrete Mathematics and Its Applications** – Kenneth H. Rosen, TMH.  
+4. **Discrete Mathematical Structures: Theory and Application** – Malik & Sen.  
+5. **Discrete Mathematics for Computer Science** – Garry Haggard et al., Thomson.  
+6. **Logic and Discrete Mathematics** – Grassmann & Tremblay, Pearson Education.  
+
+---
+
+# **Theory of Automata**  
+
+### **Course Details**  
+- **Course Code:** MAI109  
+- **Credits:** 3  
+- **Category:** Core Course (CC)  
+- **Program Level:** Postgraduate (P)  
+- **Year & Semester:** 1st Year, 1st Semester  
+- **Lecture + Tutorial Hours/Week:** 3 + 0  
+- **Total Lectures (L + T):** 45 + 0  
+- **Mid-Semester Exam Duration:** 1.5 Hours  
+- **End-Semester Exam Duration:** 3 Hours  
+
+### **Course Objectives**  
+- Understand various types of automata (DFA, NFA, Turing Machines).  
+- Learn different language categories and grammars in the Chomsky hierarchy.  
+- Study computability and decidability concepts.  
+- Identify problems reducible to well-known decidable/undecidable problems.  
+
+### **Course Outcomes**  
+By the end of the course, students should be able to:  
+- Understand core concepts in automata theory and formal languages.  
+- Design grammars and recognizers for various language classes.  
+- Analyze language membership properties.  
+- Prove theorems about formal languages and automata.  
+
+### **Course Content**  
+
+#### **Unit I: Introduction**  
+- Alphabets, strings, languages  
+- DFA, NFA, NFA with epsilon transitions  
+- Myhill-Nerode Theorem, FA minimization  
+
+#### **Unit II: Regular Expressions**  
+- Regular expressions, Kleene’s Theorem  
+- DFA to Regular Expression conversion  
+- Pumping Lemma, closure properties  
+
+#### **Unit III: Context-Free Grammars (CFGs)**  
+- CFGs, derivation trees, ambiguity  
+- CNF and GNF, closure properties  
+
+#### **Unit IV: Pushdown Automata (PDA)**  
+- PDA and its language acceptance  
+- PDA and CFG equivalence  
+
+#### **Unit V: Turing Machines (TM)**  
+- Turing Machines, Universal TM  
+- Halting problem, undecidability  
+
+### **Textbooks**  
+1. **Introduction to Automata Theory, Languages, and Computation** – Hopcroft & Ullman, Pearson.  
+2. **Theory of Computer Science: Automata, Languages, and Computation** – Mishra & Chandrasekaran, PHI.  
+3. **Introduction to Languages and Theory of Computation** – Martin J.C., TMH.  
+4. **Elements of the Theory of Computation** – Papadimitrou & Lewis, PHI.  
+---
+
+## **OPERATING SYSTEM**  
+**Course Code:** MAI111  
+**Credits:** 3  
+**Category:** CC  
+**Course Type:** Practical (P)  
+**Year:** 1P  
+**Semester:** 1P  
+**Lecture + Tutorial Hours per Week:** 3 + 0  
+**Mid-Sem Exam Duration:** 1.5 Hours  
+**Total Lectures:** 45  
+**End-Sem Exam Duration:** 3 Hours  
+
+### **Course Objectives**  
+- Introduce different types of operating systems.  
+- Understand synchronization algorithms and semaphores.  
+- Learn about conditional critical regions and continuous allocation.  
+- Study file system organization and disk scheduling.  
+- Understand security, protection, and virtual memory concepts.  
+
+### **Course Outcomes**  
+Students will be able to:  
+- Understand different types of operating systems and scheduling algorithms.  
+- Analyze synchronization algorithms and semaphores.  
+- Evaluate memory allocation techniques.  
+- Appreciate file system organization, I/O management, and disk scheduling.  
+- Understand interprocess communication and deadlock handling.  
+
+### **Course Content**  
+
+#### **Unit I: Introduction to Operating Systems**  
+- Types of OS, different views, design principles.  
+- Processes and threads, scheduling, and Linux OS overview.  
+
+#### **Unit II: Process Synchronization**  
+- Mutual exclusion algorithms, hardware support, semaphores.  
+- Concurrent programming using semaphores.  
+
+#### **Unit III: Deadlocks & Interprocess Communication**  
+- Conditional critical regions, monitors, messages, pipes.  
+- Deadlock prevention, avoidance, detection, and recovery.  
+
+#### **Unit IV: Memory Management**  
+- Contiguous and non-contiguous allocation.  
+- Paging, segmentation, virtual memory, and hardware support.  
+
+#### **Unit V: File System & I/O Management**  
+- File abstraction, naming, organization, optimization, reliability.  
+- Security, protection, I/O management, and disk scheduling.  
+
+### **Textbooks**  
+1. Gary, *Operating Systems: A Modern Perspective*, Addison Wesley, 2000.  
+2. M. Milenkovic, *Operating Systems: Concepts and Design*, McGraw Hill, 1992.  
+
+### **Reference Books**  
+1. C. Crowley, *Operating Systems*, Irwin, 1997.  
+2. J.L. Peterson & A.S. Chatz, *Operating System Concepts*, Addison Wesley, 1985.  
+3. W. Stallings, *Operating Systems*, Prentice Hall, 1995.  
+4. Mattuck, A., *Introduction to Analysis*, Prentice-Hall, 1998.  
+5. Recent literature in Operating Systems.  
+
+---
+
+## **DATABASE MANAGEMENT SYSTEM**  
+**Course Code:** MAI113  
+**Credits:** 3  
+**Category:** CC  
+**Course Type:** Practical (P)  
+**Year:** 1P  
+**Semester:** 1P  
+**Lecture + Tutorial Hours per Week:** 3 + 0  
+**Mid-Sem Exam Duration:** 1.5 Hours  
+**Total Lectures:** 45  
+**End-Sem Exam Duration:** 3 Hours  
+
+### **Course Objectives**  
+- Understand database concepts, structures, and query languages.  
+- Learn ER and relational models.  
+- Design and implement a simple DBMS.  
+- Understand functional dependency and normalization.  
+- Execute SQL queries and optimize queries.  
+- Learn about storage structure and recovery management.  
+
+### **Course Outcomes**  
+Students will:  
+- Gain knowledge of system analysis and design.  
+- Apply software engineering techniques to databases.  
+- Develop and maintain large-scale software systems.  
+- Implement efficient and reliable database solutions.  
+- Perform independent research and analysis in database management.  
+
+### **Course Content**  
+
+#### **Unit I: Database System Overview**  
+- Difference between database and file systems.  
+- Data models, ER model, relational model, DB languages.  
+- Database users, administrators, transaction management.  
+
+#### **Unit II: Relational Model & Algebra**  
+- Integrity constraints, enforcing constraints, querying relational data.  
+- Relational algebra, selection, projection, set operations, joins, and division.  
+
+#### **Unit III: SQL Queries**  
+- Basic queries, nested and correlated queries, aggregate operators.  
+- NULL values, logical operators, outer joins, integrity constraints, triggers.  
+
+#### **Unit IV: Normalization**  
+- Problems due to redundancy, functional dependencies.  
+- Normal forms (1NF to 5NF), lossless join decomposition.  
+
+#### **Unit V: Transaction Management**  
+- ACID properties, concurrency control, locking techniques.  
+- Crash recovery, serializability, and recovery techniques.  
+
+### **Textbooks**  
+1. Elmasri & Navrate, *Database Management System*, Pearson Education, 2008.  
+2. Raghurama Krishnan & Johannes Gehrke, *Database Management Systems*, TMH, 2008.  
+
+### **Reference Books**  
+1. C.J. Date, *Introduction to Database Systems*, Pearson Education, 2009.  
+2. Silberschatz & Korth, *Database System Concepts*, McGraw Hill, 2005.  
+3. Rob, Coronel & Thomson, *Database Systems Design*, 2009.  
+
+---
+
+## **C PROGRAMMING LAB**  
+**Course Code:** MAI181  
+**Credits:** 2  
+**Category:** CC-L  
+**Course Type:** Practical (P)  
+**Year:** 1P  
+**Semester:** 1P  
+**Lab Hours per Week:** 3  
+**End-Sem Exam Duration:** 3 Hours  
+
+### **Course Objectives**  
+1. Develop fundamental understanding of C programming.  
+2. Learn programming logic and C language concepts.  
+3. Design and develop algorithms and programs.  
+4. Manage functions, arrays, structures, and pointers.  
+5. Handle computer files and perform operations on them.  
+
+### **Course Outcomes**  
+Students will:  
+1. Understand C programming fundamentals.  
+2. Learn programming concepts and techniques.  
+3. Apply data types and operators effectively.  
+4. Use arrays, functions, structures, and unions in C.  
+5. Develop advanced C programs.  
+
+### **List of Experiments**  
+1. Sum of digits of a number.  
+2. Factorial using recursion.  
+3. Reverse a given number.  
+4. Check for leap year.  
+5. Student grade calculation based on marks:  
+   - **Marks < 40:** FAIL  
+   - **40 - 59:** GOOD  
+   - **60 - 79:** EXCELLENT  
+   - **≥ 80:** OUTSTANDING  
+6. Implement grading using switch case.  
+7. Compute roots of a quadratic equation.  
+8. Find string length using a while loop.  
+9. Print patterns:  
+   - A)  
+     ```  
+     *  
+     **  
+     ***  
+     ****  
+     ```  
+   - B)  
+     ```  
+     *  
+     * *  
+     *  * *  
+     *  *  * *  
+     ```  
+   - C)  
+     ```  
+     0  
+     1 2  
+     3 4 5  
+     6 7 8 9  
+     ```  
+10. Multiply two matrices.  
+11. Difference between call by value and call by reference.  
+12. Check if a string is palindrome.  
+13. Create a structure **STUDENT** (name, reg no., class) and compute size.  
+14. Find string length using pointers.  
+15. Create a file, input data, and display its content.  
+
+---
+
+**DATABASE MANAGEMENT SYSTEM LAB**
+
+**Course Code:** MAI183  
+**Course Credits:** 2  
+**Course Category:** CC-L  
+**Course Type:** Practical  
+**Course Year:** 1P  
+**Course Semester:** 1P  
+**Lecture + Tutorial + Lab Hours/Week:** 0 + 0 + 3  
+**End Sem. Exam Hours:** 3  
+
+### **Course Objectives**
+- Understand the basics and functions of MS Excel.
+- Gain a clear understanding of data validations and templates.
+- Learn the purpose of sorting and filtering features.
+- Understand the use of reports in business organizations.
+- Learn the purpose and advantages of charts for top management.
+
+### **Course Outcomes**
+By the end of the course, students should be able to:
+- Understand and use functions in Excel.
+- Apply data validation techniques.
+- Create reports in Excel.
+- Work with pivot tables.
+- Create and manipulate charts in MS Excel.
+
+### **List of Experiments**
+1. Write SQL queries for Data Manipulation and Data Definition Language.
+2. Write SQL queries using logical operations and operators.
+3. Write SQL queries using GROUP BY function.
+4. Write SQL queries for subqueries and nested queries.
+5. Write SQL queries to create views.
+6. Write an SQL query to implement JOINS.
+7. Write a query to extract data from multiple tables.
+8. Write a query to understand ROLL BACK, COMMIT & CHECKPOINTS.
+9. Create tables with the following definitions:
+   ```sql
+   CREATE TABLE deposit (actno VARCHAR2(5), cname VARCHAR2(18), bname VARCHAR2(18), amount NUMBER(8,2), adate DATE);
+   CREATE TABLE branch (bname VARCHAR2(18), city VARCHAR2(18));
+   CREATE TABLE customers (cname VARCHAR2(19), city VARCHAR2(18));
+   CREATE TABLE borrow (loanno VARCHAR2(5), cname VARCHAR2(18), bname VARCHAR2(18), amount NUMBER(8,2));
+   ```
+10. Retrieve specific data:
+    - Account details and deposited amounts for customers with accounts opened between '01-01-06' and '25-07-06'.
+    - Display all jobs with a minimum salary greater than 4000.
+    - Display employee names and salaries for department 20, with an alias for employee names.
+    - Display employee numbers, names, and department details for employees in departments (10,20).
+
+---
+
+## **SEMESTER II COURSES**
+
+| S.No. | Course Code | Course Name | L | T | P | Credits | Type |
+|-------|------------|-------------|---|---|---|---------|------|
+| 1     | MAI102     | JAVA Programming | 3 | 0 | 0 | 3 | CC8 / SEC |
+| 2     | MAI104     | Data Structure and Algorithms | 3 | 0 | 0 | 3 | CC9 / SEC |
+| 3     | MAI106     | Compiler Design | 3 | 0 | 0 | 3 | CC10 |
+| 4     | MAI108     | Expert System Design | 3 | 0 | 0 | 3 | CC11 |
+| 5     | MAI110     | Natural Language Processing | 3 | 0 | 0 | 3 | CC12 |
+| 6     | Elective-1 | Elective Course | 3 | 0 | 0 | 3 | E1 / DSE |
+| 7     | Elective-2 | Elective Course | 3 | 0 | 0 | 3 | E2 / DSE |
+| 8     | EN532 | Fundamental of Language Science | 3 | 0 | 0 | 3 | OE2 / AECC |
+| 9     | MAI182 | Data Structure and Algorithms Lab | 0 | 0 | 3 | 2 | CC-L3 / SEC |
+| 10    | MAI184 | JAVA Programming Lab | 0 | 0 | 3 | 2 | CC-L4 / SEC |
+| 11    | GP | General Proficiency | - | - | - | Non Credit | - |
+| **Total Hours and Credits** | 24 | 0 | 6 | **28** | |
+
+---
+
+## **JAVA PROGRAMMING (MAI102)**
+**Course Credits:** 3  
+**Course Category:** CC  
+**Course Type:** Practical  
+**Course Year:** 1P  
+**Course Semester:** 2P  
+**Lecture + Tutorial Hours/Week:** 3 + 0  
+**Mid Sem. Exam Hours:** 1.5  
+**Total Lectures:** 45  
+**End Sem. Exam Hours:** 3  
+
+### **Course Objectives**
+- Understand object-oriented programming (OOP) principles: abstraction, encapsulation, inheritance, and polymorphism.
+- Learn Java fundamentals, including classes, methods, and libraries.
+- Explore inheritance and class hierarchies.
+- Understand Java packages and interfaces.
+- Learn event-driven programming for GUI applications.
+
+### **Course Outcomes**
+Upon completion, students will:
+- Understand GUI programming, multithreading, and event-driven programming.
+- Analyze the need for OOP over structured programming.
+- Design Java programs using OOP principles.
+- Develop UML diagrams for Java systems.
+- Implement multithreading and applet-based programming.
+
+### **Key Topics**
+1. **Object-Oriented Programming** - Java history, features, JVM, data types, control statements.
+2. **Operators & Control Structures** - Arithmetic, logical, bitwise operators, loops, branching.
+3. **Classes & Methods** - Object creation, method overloading, inheritance, visibility control.
+4. **Interfaces & Packages** - Defining and implementing interfaces, package structure.
+5. **Multithreading & Applets** - Thread management, synchronization, applet lifecycle.
+
+**Textbooks:**
+- E. Balagurusamy, *Programming with Java*, Tata McGraw Hill, 1998.
+- Herbert Schildt, *Java Beginner's Guide*, Tata McGraw Hill, 2007.
+- Deitel & Deitel, *Java How to Program*, Prentice-Hall, 1999.
+
+---
+
+## **DATA STRUCTURE AND ALGORITHMS (MAI104)**
+**Course Credits:** 3  
+**Course Category:** CC  
+**Lecture + Tutorial Hours/Week:** 3 + 0  
+**Total Lectures:** 45  
+
+### **Course Objectives**
+- Understand various data structures: arrays, stacks, queues, linked lists, trees, and graphs.
+- Analyze the efficiency of algorithms.
+- Solve problems using graph and tree-based algorithms.
+
+### **Course Outcomes**
+- Implement basic static and dynamic data structures.
+- Select and optimize data structures for problem-solving.
+- Analyze algorithm efficiency in terms of time and space complexity.
+
+### **Key Topics**
+1. **Introduction to Data Structures** - Arrays, pointers, recursion, hashing.
+2. **Stack, Queue & Linked List** - Implementation, priority queues, doubly linked lists.
+3. **Trees** - Binary trees, traversal, tree representation.
+4. **Sorting & Searching** - Bubble sort, quicksort, heap sort, binary search.
+5. **Graphs** - Graph traversal, shortest path algorithms, spanning trees.
+
+**Textbooks:**
+- Aaron M. Tenenbaum, *Data Structures Using C*, Pearson Education.
+- E. Balagurusamy, *Programming in ANSI C*, TMH.
+- Robert L. Kruse, *Data Structures and Program Design in C*, Pearson Education.
+
+---
+
+**EXPERT SYSTEM DESIGN**
+
+**Course Details:**  
+- **Course Code:** MAI108  
+- **Credits:** 3  
+- **Category:** CC  
+- **Level:** Postgraduate (P)  
+- **Year & Semester:** 1st Year, 2nd Semester  
+- **Lecture Hours per Week:** 3  
+- **Mid-Sem Exam Duration:** 1.5 Hours  
+- **End-Sem Exam Duration:** 3 Hours  
+- **Total Lectures:** 45  
+
+### **Course Objectives:**  
+- Understand the concept of intelligent agents and search methods.  
+- Learn about knowledge representation.  
+- Explore reasoning and decision-making in uncertain environments.  
+- Develop strategies for generating knowledge.  
+- Study expert system concepts.  
+
+### **Course Outcomes:**  
+By the end of the course, students will be able to:  
+- Understand AI fundamentals and search techniques.  
+- Analyze knowledge representation using forward and backward chaining.  
+- Design semantic networks.  
+- Evaluate Truth Maintenance Systems using ML algorithms.  
+- Develop real-time AI and expert systems through case studies.  
+
+### **Syllabus:**  
+#### **Unit I: Introduction to Expert Systems**  
+- Definition, problem domain, knowledge domain.  
+- Advantages, development stages, and characteristics.  
+- Rule-based expert systems, procedural vs. nonprocedural paradigms.  
+- Basics of artificial neural networks and logic.  
+
+#### **Unit II: Knowledge Representation and Inference**  
+- Semantic nets, PROLOG translation, schemas, frames.  
+- Propositional and predicate logic, inference methods.  
+- Trees, lattices, graphs, Markov decision processes.  
+
+#### **Unit III: Uncertainty and Probabilities**  
+- Theories of uncertainty, probability concepts.  
+- Induction errors, temporal reasoning, backward induction.  
+
+#### **Unit IV: Advanced Expert Systems**  
+- Markov chains, evidence combination, inference nets.  
+- Uncertainty handling using fuzzy logic and Dempster-Shafer theory.  
+- Selecting problems for expert systems.  
+
+#### **Unit V: Development & Life Cycle**  
+- Development stages, error types, role of knowledge engineers.  
+- Life cycle modeling of expert systems.  
+
+### **Textbooks:**  
+1. J. Giarratano & G. Riley, "Expert Systems -- Principles and Programming," 4th Ed., PWS Publishing, 2004.  
+2. J. Durkin, "Expert Systems Design and Development," Macmillan, 1994.  
+
+---
+
+**NATURAL LANGUAGE PROCESSING**
+
+**Course Details:**  
+- **Course Code:** MAI110  
+- **Credits:** 3  
+- **Category:** CC  
+- **Level:** Postgraduate (P)  
+- **Year & Semester:** 1st Year, 2nd Semester  
+- **Lecture Hours per Week:** 3  
+- **Mid-Sem Exam Duration:** 1.5 Hours  
+- **End-Sem Exam Duration:** 3 Hours  
+- **Total Lectures:** 45  
+
+### **Course Objectives:**  
+- Understand the basics of NLP and its key steps.  
+- Learn fundamental NLP algorithms.  
+- Explore challenges in NLP and information retrieval.  
+- Study real-world applications of NLP.  
+
+### **Course Outcomes:**  
+By the end of the course, students will be able to:  
+- Grasp fundamental NLP concepts.  
+- Design NLP algorithms.  
+- Build language processing systems.  
+- Learn machine translation techniques.  
+- Conduct independent research in NLP.  
+
+### **Syllabus:**  
+#### **Unit I: Introduction**  
+- NLP tasks in syntax, semantics, and pragmatics.  
+- Machine learning in NLP, probability basics, collocations.  
+- N-gram models, smoothing, and evaluation.  
+
+#### **Unit II: Word & Syntactic Analysis**  
+- Regular expressions, finite-state automata, morphological parsing.  
+- Spelling error detection, POS tagging, constituency, and probabilistic parsing.  
+
+#### **Unit III: Semantic Analysis & Discourse Processing**  
+- Meaning representation, word sense disambiguation.  
+- Reference resolution, discourse coherence, and structure.  
+
+#### **Unit IV: Natural Language Generation & Machine Translation**  
+- NLG architecture, generation tasks, translation approaches.  
+- Machine translation challenges, Indian language translation.  
+
+#### **Unit V: Information Retrieval & Lexical Resources**  
+- IR models, evaluation methods.  
+- WordNet, FrameNet, POS tagging, research corpora.  
+
+### **Textbooks:**  
+1. Daniel Jurafsky & James H. Martin, "Speech & Language Processing," Pearson.  
+2. Allen, James, "Natural Language Understanding," Pearson, 1995.  
+
+---
+
+**COMPUTER VISION**
+
+**Course Details:**  
+- **Course Code:** MAI118  
+- **Credits:** 3  
+- **Category:** Elective (E1/DSE)  
+- **Level:** Postgraduate (P)  
+- **Year & Semester:** 1st Year, 2nd Semester  
+- **Lecture Hours per Week:** 3  
+- **Mid-Sem Exam Duration:** 1.5 Hours  
+- **End-Sem Exam Duration:** 3 Hours  
+- **Total Lectures:** 45  
+
+### **Course Objectives:**  
+- Learn fundamental graphics and vision algorithms.  
+- Understand visual processing methods.  
+- Study image transformations and pattern recognition.  
+- Explore real-world applications like face detection.  
+- Learn object detection and motion analysis.  
+
+### **Course Outcomes:**  
+By the end of the course, students will be able to:  
+- Break down visual tasks into structured analysis processes.  
+- Evaluate the performance of computer vision techniques.  
+- Understand biological vision systems.  
+- Implement biological vision strategies in machine vision.  
+- Gain industry-relevant skills in computer vision.  
+
+### **Syllabus:**  
+#### **Unit I: Digital Image Formation & Processing**  
+- Image formation, transformations, filtering, histogram processing.  
+
+#### **Unit II: Depth Estimation & Multi-Camera Views**  
+- Perspective, stereo vision, homography, 3D reconstruction.  
+
+#### **Unit III: Feature Extraction**  
+- Edge, line, and corner detection techniques.  
+- Scale-space analysis, Gabor filters, wavelets.  
+
+#### **Unit IV: Image Segmentation & Pattern Analysis**  
+- Region growing, graph-cut, texture segmentation.  
+- Object detection, clustering, classification, dimensionality reduction.  
+
+#### **Unit V: Motion Analysis & Shape from X**  
+- Background subtraction, optical flow, motion estimation.  
+- Shape recovery using light, texture, and motion.  
+
+### **Textbooks:**  
+1. Richard Szeliski, "Computer Vision: Algorithms and Applications," Springer, 2011.  
+2. D.A. Forsyth & J. Ponce, "Computer Vision: A Modern Approach," Pearson, 2003.  
+3. R.C. Gonzalez & R.E. Woods, "Digital Image Processing," Addison-Wesley, 1992.  
+
+---
+
+# **DATA STRUCTURE AND ALGORITHMS LAB**  
+**Course Code:** MAI182  
+**Credits:** 2  
+**Category:** CC-L  
+**Year:** 1P  
+**Semester:** 2P  
+**Lab Hours per Week:** 3  
+**Total Labs:** 10  
+**End Sem. Exam Hours:** 3  
+
+## **Course Objectives**  
+1. Introduce the concept of data structures through ADT, including List, Stack, and Queues.  
+2. Design and implement various data structure algorithms.  
+3. Introduce techniques for representing data in real-world scenarios.  
+4. Develop applications using data structure algorithms.  
+5. Compute the complexity of various algorithms.  
+
+## **Course Outcomes**  
+By the end of this course, students should be able to:  
+1. Select appropriate data structures for specific problem definitions.  
+2. Implement operations like searching, insertion, deletion, and traversal on various data structures.  
+3. Implement both Linear and Non-Linear data structures.  
+4. Choose and apply appropriate sorting/searching techniques.  
+5. Design advanced data structures using Non-Linear techniques.  
+
+## **List of Experiments**  
+1. Run-time analysis of the Fibonacci Series.  
+2. Study and Application of various Data Structures.  
+3. Implementation of Array-based Programs:  
+   - Searching: Linear Search, Binary Search.  
+   - Sorting: Bubble, Insertion, Selection, Quick, Merge Sort.  
+   - Merging.  
+4. Implementation of Linked Lists:  
+   - Singly and Doubly Linked Lists.  
+   - Concatenation, Insertion, and Deletion in Linked Lists.  
+   - Splitting a Linked List.  
+5. Implementation of Stack and Queue using:  
+   - Arrays.  
+   - Linked Lists.  
+6. Implementation of Binary Tree, Binary Search Tree, and Height Balanced Tree.  
+7. Writing programs for various tree traversal techniques.  
+8. Graph Representation and Implementation:  
+   - Depth First Search (DFS).  
+   - Breadth First Search (BFS).  
+   - Prim’s Algorithm.  
+   - Kruskal's Algorithm.  
+   - Hash Table Implementation.  
+
+---
+
+# **JAVA PROGRAMMING LAB**  
+**Course Code:** MAI184  
+**Credits:** 2  
+**Category:** CC-L2  
+**Year:** 1P  
+**Semester:** 1P  
+**Lab Hours per Week:** 3  
+**Total Labs:** 10  
+**End Sem. Exam Hours:** 3  
+
+## **Course Objectives**  
+- Understanding Object-Oriented Programming (OOP) concepts and their applications.  
+- Learning about classes, objects, and methods.  
+- Implementing real-world problem-solving using Java.  
+- Writing Java programs that interact with databases.  
+- Creating Graphical User Interfaces (GUIs) using Applets and AWT Components.  
+
+## **Course Outcomes**  
+By the end of this course, students should be able to:  
+- Understand OOP principles.  
+- Apply OOP concepts to real-life problems.  
+- Design, develop, and maintain large-scale software systems.  
+- Create efficient, reliable, and robust software solutions using Java.  
+- Conduct independent research and analysis.  
+
+## **List of Experiments**  
+1. Implementing basic Java concepts: Classes, Command Line Arguments, and Keyboard Input.  
+2. Java programs for:  
+   - Variables, Constants, Arrays, Strings, Vectors, Wrapper Classes, and Type Casting.  
+3. Using various Java operators:  
+   - Arithmetic, Relational, Logical, Assignment, Increment/Decrement, Conditional, Bitwise, and Ternary operators.  
+4. Implementing Control Statements:  
+   - Decision Statements, Looping, and Branching.  
+5. Sorting Algorithms: Bubble, Selection, Insertion, Merge Sort.  
+6. Implementing OOP Concepts:  
+   - Classes, Objects, Constructors, Methods, Method Overloading & Overriding.  
+7. Advanced OOP Features:  
+   - Final Variables, Abstract Classes, and Concrete Methods.  
+8. Implementing Core OOP Concepts:  
+   - Abstraction, Polymorphism, Encapsulation, and Inheritance.  
+9. Exception Handling:  
+   - Try, Catch, Throws, Finally, and handling specific exceptions (ArithmeticException, ArrayOutOfBoundsException, etc.).  
+10. Implementing Java Interfaces and Importing Packages.  
+
+---
+
+# **SEMESTER III COURSES**  
+
+| S.No. | Course Code | Course Name | L | T | P | Credits | Type |
+|-------|------------|-------------|---|---|---|---------|------|
+| 1 | MAI201 | Analysis and Design of Algorithm | 3 | 0 | 0 | 3 | CC13 |
+| 2 | MAI203 | Machine Learning | 2 | 0 | 0 | 2 | CC14 |
+| 3 | MAI205 | Soft Computing Techniques | 3 | 0 | 0 | 3 | CC15 |
+| 4 | MAI207 | Python Programming | 2 | 0 | 0 | 2 | CC16/SEC |
+| 5 | Elective-3 | - | 3 | 0 | 0 | 3 | E3/DSE |
+| 6 | Elective-4 | - | 3 | 0 | 0 | 3 | E4/DSE |
+| 7 | MA033 | Numerical Algorithms for Machine Learning | 3 | 0 | 0 | 3 | GE1 |
+| 8 | MAI291 | Minor Project | 0 | 0 | 10 | 5 | MP1/E |
+| 9 | MAI281 | Analysis and Design of Algorithm Lab | 0 | 0 | 3 | 2 | CC-L5/SEC |
+| 10 | MAI283 | Machine Learning using Python Lab | 0 | 0 | 3 | 2 | CC-L6/SEC |
+| 11 | GP | General Proficiency | - | - | - | Non-Credit | - |
+
+### **Total Hours and Credits:** 19 (L) + 0 (T) + 16 (P) = **28 Credits**  
+
+---
+
+# **ANALYSIS AND DESIGN OF ALGORITHM**  
+**Course Code:** MAI201  
+**Credits:** 3  
+**Category:** CC  
+**Year:** 2P  
+**Semester:** 3P  
+**Lecture Hours per Week:** 3  
+**Total Lectures:** 45  
+**Mid Sem. Exam:** 1.5 Hours  
+**End Sem. Exam:** 3 Hours  
+
+## **Course Objectives**  
+1. Analyze the asymptotic performance of algorithms.  
+2. Write rigorous correctness proofs for algorithms.  
+3. Understand major algorithms and data structures.  
+4. Apply algorithmic design paradigms and methods of analysis.  
+5. Design efficient algorithms for real-world applications.  
+
+## **Course Outcomes**  
+By the end of the course, students should be able to:  
+1. Argue the correctness of algorithms using inductive proofs.  
+2. Understand and analyze graph algorithms.  
+3. Explain the divide-and-conquer paradigm and apply it.  
+4. Utilize dynamic programming techniques.  
+5. Perform asymptotic analysis of algorithms.  
+
+## **Syllabus**  
+
+### **Unit I: Basic Concepts**  
+- Introduction to algorithms, mathematical fundamentals.  
+- Asymptotic notation, control statements, loop invariants, and correctness proofs.  
+
+### **Unit II: Mathematical Analysis**  
+- Analysis of recursive and non-recursive algorithms.  
+- Empirical analysis and algorithm visualization.  
+
+### **Unit III: Sorting and Searching**  
+- Sorting: Bubble, Selection, Insertion, Shell, Heap, Bucket, Radix, and Counting Sort.  
+- Searching: Sequential search, Binary search, Brute-force matching.  
+- Graph traversal: BFS, DFS.  
+
+### **Unit IV: Algorithm Techniques**  
+- Presorting, Balanced Search Trees, AVL Trees, Heaps, Dynamic Programming.  
+- Warshall's and Floyd's algorithms, Greedy Techniques, Dijkstra’s, Prim’s, Kruskal’s algorithms.  
+
+### **Unit V: Algorithm Design Methods**  
+- Backtracking: N-Queens, Hamiltonian Circuit, Subset-Sum.  
+- Branch and Bound: Assignment, Knapsack, Traveling Salesman Problem.  
+
+### **Reference Books**  
+1. Anany Levitin, *Introduction to the Design and Analysis of Algorithm*, Pearson Education.  
+2. Cormen et al., *Introduction to Algorithms*, PHI.  
+3. Sara Baase & Allen Van Gelder, *Computer Algorithms*, Pearson.  
+4. Aho, Hopcroft, Ullman, *The Design and Analysis of Computer Algorithms*, Pearson.  
+
+---
+
+**MACHINE LEARNING**
+
+**Course Details:**
+- **Course Code:** MAI203
+- **Credits:** 2
+- **Category:** CC
+- **Year:** 2P
+- **Semester:** 3P
+- **Lectures + Tutorials (Hrs/Week):** 03
+- **Mid Sem. Exam Hours:** 1.5
+- **Total Lectures:** 45
+- **End Sem. Exam Hours:** 3
+
+### **Course Objectives:**
+1. Introduce students to fundamental Machine Learning concepts and techniques.
+2. Develop skills in using modern machine learning software for real-world problems.
+3. Encourage independent study and research.
+4. Enhance understanding of Python programming and its libraries.
+5. Provide insights into deep learning concepts.
+
+### **Course Outcomes:**
+By the end of the course, students will be able to:
+1. Understand the fundamentals of learning models from data.
+2. Comprehend various learning algorithms.
+3. Apply algorithms to solve real-world problems and optimize models.
+4. Evaluate machine learning models.
+5. Understand ML model functionalities and applications.
+
+### **Course Content:**
+
+#### **Unit I: Introduction**
+- What is Machine Learning?
+- Types: Supervised, Unsupervised, Reinforcement Learning
+- Applications: Stock Price Prediction, Face Recognition, Image Recognition, Medical Diagnosis, Fraud Detection
+
+#### **Unit II: Supervised Learning (Regression & Classification)**
+- Distance-based methods: Nearest-Neighbors, Decision Trees, Naive Bayes
+- Linear Models: Linear Regression, Logistic Regression, Generalized Linear Models
+- Support Vector Machines, Kernel Methods
+
+#### **Unit III: Unsupervised Learning**
+- Clustering: K-means, Kernel K-means, Self-Organizing Maps
+- Dimensionality Reduction: PCA, Kernel PCA
+- Matrix Factorization, Generative Models (Mixture Models, Latent Factor Models)
+
+#### **Unit IV: Artificial Neural Networks**
+- Biological vs Artificial Neurons
+- Types of Neural Networks, Perceptron, Learning Rules
+- Activation Functions: ReLU, Sigmoid, Softmax
+- Multilayer Perceptrons, Backpropagation, Feed-Forward Networks
+
+#### **Unit V: Selected Topics**
+- Ensemble Methods (Boosting, Bagging, Random Forests)
+- Sparse Modeling, Time-Series Data Modeling
+- Deep Learning, Feature Representation Learning
+- Recent Trends and Case Studies
+
+### **Reference Books:**
+1. *Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow* - Aurélien Géron
+2. *An Introduction to Statistical Learning with Applications in R* - Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani
+3. *Python Machine Learning* - Packt Publishing
+4. *Machine Learning: The Absolute Beginner's Guide* - Steven Samelson
+
+---
+
+**SOFT COMPUTING TECHNIQUES**
+
+**Course Details:**
+- **Course Code:** MAI205
+- **Credits:** 3
+- **Category:** CC
+- **Year:** 2P
+- **Semester:** 3P
+- **Lectures + Tutorials (Hrs/Week):** 03
+- **Mid Sem. Exam Hours:** 1.5
+- **Total Lectures:** 45
+- **End Sem. Exam Hours:** 3
+
+### **Course Objectives:**
+1. Introduction to the principles, techniques, and applications of Soft Computing.
+2. Understanding Artificial Neural Networks, Fuzzy Logic, and Genetic Algorithms.
+3. Mathematical background for neural network optimization.
+4. Exposure to research problems in Soft Computing.
+5. Understanding Genetic Algorithms and their applications.
+
+### **Course Outcomes:**
+By the end of the course, students will be able to:
+1. Apply Fuzzy Logic and Neural Networks.
+2. Utilize Fuzzy Sets and Logic in problem-solving.
+3. Understand Genetic Algorithms for optimization.
+4. Engage with current research in Soft Computing.
+5. Use Neural Networks for inference and decision-making.
+
+### **Course Content:**
+
+#### **Unit I: Introduction**
+- Definition, necessity, and applications of Soft Computing
+- Evolutionary Algorithms, Fuzzy Logic, Neural Networks
+
+#### **Unit II: Fuzzy Sets and Logic**
+- Difference between Classical and Fuzzy Sets
+- Membership Functions, Operations on Fuzzy Sets
+
+#### **Unit III: Fuzzy Relations and Systems**
+- Classical vs Fuzzy Relations, Reasoning in Fuzzy Logic
+- Fuzzification and Defuzzification, Inference Systems
+
+#### **Unit IV: Neural Networks**
+- Biological Neurons, Perceptron Model, Learning Laws
+- Single & Multilayer Architectures, Feedforward and Feedback Networks
+
+#### **Unit V: Learning Fundamentals**
+- Supervised, Unsupervised, Reinforcement Learning
+- Backpropagation Algorithm, Competitive Learning
+
+#### **Unit VI: Evolutionary Algorithms**
+- Genetic Algorithms, Selection Methods, Fitness Functions
+- Convergence Issues, Parallel Implementations
+
+### **Reference Books:**
+1. *Artificial Neural Networks: Theory and Practice* - Peteus J. Braspenning
+2. *Fuzzy Logic: Theoretical and Practical Issues* - Paul P. Wang
+3. *An Introduction to Genetic Algorithms* - Milanie Mitchell
+
+---
+
+**PYTHON PROGRAMMING**
+
+**Course Details:**
+- **Course Code:** MAI207
+- **Credits:** 2
+- **Category:** CC
+- **Year:** 2P
+- **Semester:** 3P
+- **Lectures + Tutorials (Hrs/Week):** 02
+- **Mid Sem. Exam Hours:** 1.5
+- **Total Lectures:** 30
+- **End Sem. Exam Hours:** 3
+
+### **Course Objectives:**
+1. Master the fundamentals of Python programming.
+2. Learn Python scripting elements.
+3. Work with lists and sequence data.
+4. Develop reusable Python functions.
+5. Read and write files using Python.
+
+### **Course Outcomes:**
+By the end of the course, students will be able to:
+1. Enhance problem-solving skills in Python.
+2. Explain Python programming principles.
+3. Implement database and GUI applications.
+4. Apply Object-Oriented Programming concepts.
+5. Use built-in data structures like lists and dictionaries.
+
+### **Course Content:**
+
+#### **Unit I: Python Basics, Conditionals & Loops**
+- Installation, Python Objects, Operators
+- Conditionals (if-else), Loops (for, while), Range Functions
+
+#### **Unit II: Strings and Lists**
+- String Basics, Methods, Formatting
+- List Methods, List as Stacks and Queues, Comprehensions
+
+#### **Unit III: Tuples, Sets, Dictionaries & Functions**
+- Dictionary Methods, Iterators, Generators, Lambda Functions
+- Functional Programming: Map, Reduce, Filter
+
+#### **Unit IV: OOPs & File Handling**
+- Classes, Objects, Inheritance, Multiple Inheritance
+- File Handling: Reading/Writing, Buffered Operations
+
+#### **Unit V: Modules, Exception Handling & Database Programming**
+- Standard & Custom Modules, Exception Handling
+- Database Operations: CRUD, Pandas for Data Analysis
+
+### **Reference Books:**
+1. *Head First Python* - Paul Barry
+2. *Python: The Complete Reference* - Martin C. Brown
+3. *Let Us Python* - Yashavant Kanetkar
+4. *Python Programming: A Modular Approach* - Taneja Sheetal & Kumar Naveen
+
+---
+# **ALGORITHMS FOR MACHINE LEARNING**  
+
+### **Course Details**  
+- **Course Code:** MA033  
+- **Credits:** 3  
+- **Course Category:** GE1  
+- **Course Type:** P  
+- **Year:** 2P  
+- **Semester:** 3P  
+- **Lecture Hours per Week:** 3  
+- **Total Lectures:** 45  
+- **Mid-Semester Exam Duration:** 1.5 hours  
+- **End-Semester Exam Duration:** 3 hours  
+
+### **Course Objectives**  
+1. Explain how patterns and concepts can be learned from data without explicit programming in IoT nodes.  
+2. Design and analyze various machine learning algorithms with a focus on recent advancements.  
+3. Explore supervised and unsupervised learning paradigms.  
+4. Understand deep learning techniques and feature extraction strategies.  
+5. Acquire data analysis skills and create AI/ML solutions for business problems.  
+
+### **Course Outcomes**  
+By the end of the course, students should be able to:  
+1. Recognize the real-world applications of machine learning.  
+2. Compare and contrast different machine learning techniques and determine their appropriate use cases.  
+3. Mathematically analyze various machine learning approaches.  
+4. Categorize machine learning algorithms as supervised, semi-supervised, and unsupervised.  
+5. Understand the fundamentals of neural networks.  
+
+### **Course Content**  
+
+#### **Unit I: Introduction to Learning Techniques**  
+- Supervised Learning (Regression/Classification)  
+- Basic methods: Distance-based methods, Nearest Neighbors, Decision Trees, Naïve Bayes  
+- Linear Models: Linear Regression, Logistic Regression, Generalized Linear Models  
+- Support Vector Machines, Kernel Methods, Multi-class classification, Ranking  
+
+#### **Unit II: Unsupervised Learning**  
+- Clustering: K-means, Kernel K-means  
+- Dimensionality Reduction: PCA, Kernel PCA  
+- Matrix Factorization, Generative Models (Mixture models, Latent factor models)  
+
+#### **Unit III: Model Evaluation & Advanced Techniques**  
+- Evaluating ML algorithms and model selection  
+- Statistical Learning Theory  
+- Ensemble Methods: Boosting, Bagging, Random Forests  
+- Sparse Modeling, Time-Series Data, Deep Learning, Feature Learning  
+
+#### **Unit IV: Neural Networks & Deep Learning**  
+- Neurons and biological motivation  
+- Perceptrons, Multilayer Networks, Backpropagation  
+- Overfitting, Network Structure, Recurrent Networks  
+
+#### **Unit V: Scalable & Advanced Machine Learning**  
+- Online & Distributed Learning  
+- Semi-supervised Learning, Active Learning, Reinforcement Learning  
+- Inference in Graphical Models, Bayesian Learning & Inference  
+- ML Simulation Tools (WEKA, R, MATLAB)  
+- Recent trends in learning techniques and classification methods  
+
+### **Textbooks & References**  
+1. **Kevin Murphy** – *Machine Learning: A Probabilistic Perspective*, MIT Press  
+2. **Trevor Hastie, Robert Tibshirani, Jerome Friedman** – *The Elements of Statistical Learning*, Springer  
+3. **Christopher Bishop** – *Pattern Recognition and Machine Learning*, Springer  
+4. **Shai Shalev-Shwartz, Shai Ben-David** – *Understanding Machine Learning: From Theory to Algorithms*, Cambridge University Press  
+
+---
+
+# **ANALYSIS AND DESIGN OF ALGORITHMS LAB**  
+
+### **Course Details**  
+- **Course Code:** MAI281  
+- **Credits:** 2  
+- **Category:** CC-P  
+- **Year:** 2P  
+- **Semester:** 3P  
+- **Lab Hours per Week:** 3  
+- **Total Labs:** 10  
+- **End-Semester Exam Duration:** 3 hours  
+
+### **Course Objectives**  
+1. Implement sorting algorithms using Divide-and-Conquer techniques.  
+2. Find minimum spanning trees and shortest paths using Greedy techniques.  
+3. Construct DFS, BFS, and topological ordering using Decrease-and-Conquer methods.  
+4. Implement Knapsack and Traveling Salesperson problems.  
+5. Design and analyze searching & sorting algorithms.  
+
+### **Course Outcomes**  
+Students will be able to:  
+1. Implement Quick Sort and Merge Sort and analyze their runtime complexity.  
+2. Solve Topological Ordering, Traveling Salesperson, and Knapsack problems.  
+3. Check graph connectivity using BFS and DFS methods.  
+4. Apply Divide-and-Conquer and Decrease-and-Conquer techniques.  
+5. Implement Prim's Algorithm (MST) and Dijkstra’s Algorithm (Shortest Path).  
+
+### **List of Practicals**  
+(Note: Use C/Java/Python for implementation.)  
+1. Quick Sort implementation and runtime analysis.  
+2. Merge Sort implementation and runtime analysis.  
+3. Topological Ordering of a Directed Graph.  
+4. Traveling Salesperson Problem and 0/1 Knapsack Problem.  
+5. BFS for finding reachable nodes in a graph.  
+6. DFS to check graph connectivity.  
+7. Binary Search implementation using Divide-and-Conquer.  
+8. Insertion Sort using Decrease-and-Conquer.  
+9. Prim’s Algorithm for Minimum Spanning Tree.  
+10. Dijkstra’s Algorithm for Shortest Paths.  
+
+---
+
+# **MACHINE LEARNING USING PYTHON LAB**  
+
+### **Course Details**  
+- **Course Code:** MAI283  
+- **Credits:** 2  
+- **Category:** CC  
+- **Year:** 2P  
+- **Semester:** 3P  
+- **Lab Hours per Week:** 3  
+- **Total Labs:** 10  
+- **End-Semester Exam Duration:** 3 hours  
+
+### **Course Objectives**  
+1. Introduce students to fundamental ML concepts and techniques.  
+2. Provide a general understanding of ML process models.  
+3. Teach Python programming and its modules.  
+4. Explore Deep Learning concepts.  
+
+### **Course Outcomes**  
+Students will be able to:  
+1. Install and use Python and Jupyter Notebook.  
+2. Apply Python principles to ML.  
+3. Design ML models and train/test datasets.  
+4. Work with TensorFlow.  
+5. Implement Deep Learning algorithms.  
+
+### **List of Practicals**  
+1. Install Python and Jupyter Notebook.  
+2. Work with Data Types and Containers in Python.  
+3. Create Scatter Plots for data visualization.  
+4. Implement Regression to find variable relationships.  
+5. Train and evaluate ML models.  
+6. Apply Polynomial Regression for predictive modeling.  
+7. Implement Decision Trees.  
+8. Connect Python with MySQL Database.  
+9. Introduction to Deep Learning (TensorFlow, Keras).  
+10. Optimize ML models using TensorBoard.  
+
+---
+
+# **SEMESTER IV - COURSE STRUCTURE**  
+
+| S.No. | Course Code | Course Name         | L | T | P  | Credits | Type  |
+|-------|------------|---------------------|---|---|----|---------|-------|
+| 1     | MAI390    | Seminar             | 0 | 0 | 3  | 2       | S/E   |
+| 2     | MAI392    | Major Project        | 0 | 0 | 20 | 10      | MP2/E |
+| 3     | MAI394    | Internship           | 0 | 0 | 32 | 16      | I/E   |
+| 4     | GP        | General Proficiency  | - | - | -  | Non-Credit | - |
+
+### **Grand Total of Credits: 112**  
+
+---

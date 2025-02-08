@@ -1,0 +1,88 @@
+**Gautam Buddha University**  
+**University School of Information and Communication Technology**  
+**Department of Computer Science and Engineering**  
+
+## **B.Tech. Information Technology (2018-2022)**  
+
+### **Programme Structure**  
+
+---
+
+## **Semester I**  
+| S.No | Course Code | Course Name | L | T | P | Credits | Type |
+|------|------------|-------------|---|---|---|---------|------|
+| 1 | MA101 | Engineering Mathematics-I | 3 | 1 | 0 | 4 | GE1 |
+| 2 | PH102 | Engineering Physics | 3 | 1 | 0 | 4 | GE2 |
+| 3 | EE102 | Basic Electrical Engineering | 3 | 1 | 0 | 4 | GE3 |
+| 4 | ME101 | Engineering Mechanics | 3 | 1 | 0 | 4 | GE4 |
+| 5 | ES101 | Environmental Studies | 2 | 0 | 0 | 2 | OE1 / AECC |
+| 6 | EN101 | English Proficiency | 2 | 0 | 0 | 2 | OE2 / AECC |
+| 7 | EN151 | Language Lab | 0 | 0 | 2 | 1 | OE-L1 / AECC |
+| 8 | EE104 | Basic Electrical Engineering Lab | 0 | 0 | 2 | 1 | GE-L1 |
+| 9 | PH104 | Engineering Physics Lab | 0 | 0 | 2 | 1 | GE-L2 |
+| 10 | ME102 | Workshop Practice | 1 | 0 | 2 | 2 | GE-L2 / SEC |
+| 11 | GP | General Proficiency | Non Credit |  |  |  |
+
+**Total Hours and Credits:** 17 (L) + 4 (T) + 8 (P) = **25 Credits**
+
+---
+
+## **Semester II**  
+| S.No | Course Code | Course Name | L | T | P | Credits | Type |
+|------|------------|-------------|---|---|---|---------|------|
+| 1 | MA102 | Engineering Mathematics-II | 3 | 1 | 0 | 4 | GE5 |
+| 2 | CY101 | Engineering Chemistry | 3 | 1 | 0 | 4 | GE6 |
+| 3 | CS101 | Fundamentals of Computer Programming | 3 | 1 | 0 | 4 | CC1 / SEC |
+| 4 | EC101 | Basic Electronics Engineering | 3 | 1 | 0 | 4 | GE7 |
+| 5 | BS101 | Human Values & Buddhist Ethics | 2 | 0 | 0 | 2 | OE2 / AECC |
+| 6 | CE103 | Engineering Graphics Lab | 1 | 0 | 2 | 2 | GE-L3 |
+| 7 | CY103 | Engineering Chemistry Lab | 0 | 0 | 2 | 1 | GE-L4 |
+| 8 | CS181 | Computer Programming Lab | 0 | 0 | 2 | 1 | CC-L1 / SEC |
+| 9 | EC181 | Basic Electronics Engineering Lab | 0 | 0 | 2 | 1 | GE-L5 |
+| 10 | GP | General Proficiency | Non Credit |  |  |  |
+
+**Total Hours and Credits:** 15 (L) + 4 (T) + 8 (P) = **23 Credits**
+
+---
+
+## **Semester III - VIII Summary**  
+Due to the document's length, only key highlights are presented below:
+- **Semester III:** Focuses on Animation, Operating Systems, Data Structures, and System Design.
+- **Semester IV:** Covers Software Engineering, Discrete Structures, DBMS, and Digital Electronics.
+- **Semester V:** Includes Theory of Automata, Computer Networks, Compiler Design, Machine Learning, and Electives.
+- **Semester VI:** Topics include Cloud Computing, Algorithm Design, Computer Organization, and Security.
+- **Semester VII:** Advanced subjects like IoT, Soft Computing, Big Data Analytics, and a Minor Project.
+- **Semester VIII:** Primarily focused on a Major Project, Internship, and Seminar.
+
+**Total Credits Required for Graduation: 196**
+
+---
+
+## **Elective Courses**  
+A variety of electives are available, including but not limited to:
+- **IT Forensics, Advanced Communication Systems, Bioinformatics, Data Compression, Android Development, Distributed Databases, Robotics, and Data Mining.**
+
+---
+
+### **Additional Requirements**  
+- **Industrial Training:** Minimum of 4 weeks after the third year.
+- **Minor and Major Projects:** Evaluated as per university examination rules.
+- **Internship in Industry:** Minimum of 4-6 months in the eighth semester.
+
+---
+
+## **Key Abbreviations**  
+| Code | Meaning |
+|------|---------|
+| CC | Core Course |
+| GE | General Elective |
+| SEC | Skill Enhancement Course |
+| AECC | Ability Enhancement Compulsory Course |
+| MP | Minor/Major Project |
+| IT1 | Industrial Training |
+| DSE | Discipline Specific Elective |
+| OE | Open Elective |
+| S | Seminar |
+| I | Internship |
+
+---

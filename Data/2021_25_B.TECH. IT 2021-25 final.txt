@@ -1,0 +1,128 @@
+
+# **Gautam Buddha University**  
+**University School of Information and Communication Technology**  
+**Department of Computer Science and Engineering**  
+
+### **B.Tech in Information Technology (2021-2025) – Programme Structure**  
+
+---
+
+## **Semester I**  
+| S.No | Course Code | Course Name | L | T | P | Credits | Type |
+|------|------------|-------------|---|---|---|---------|------|
+| 1 | CS101 | Fundamentals of Computer Programming | 3 | 1 | 0 | 4 | CC1 / FC |
+| 2 | MA101 | Engineering Mathematics-I | 3 | 1 | 0 | 4 | GE1 |
+| 3 | EE102 | Basic Electrical Engineering | 3 | 1 | 0 | 4 | GE2 |
+| 4 | ME101 | Engineering Mechanics | 3 | 1 | 0 | 4 | GE3 |
+| 5 | ES101 | Environmental Studies | 3 | 1 | 0 | 4 | OE1 / AECC |
+| 6 | EN151 | Language Lab | 0 | 0 | 2 | 1 | OE L1 / AECC |
+| 7 | CS181 | Computer Programming Lab | 0 | 0 | 2 | 1 | CC-L1 / SEC |
+| 8 | EE104 | Basic Electrical Engineering Lab | 0 | 0 | 2 | 1 | GE-L1 |
+| 9 | ME102 | Workshop Practice | 1 | 0 | 2 | 2 | GE-L2 / SEC |
+| 10 | GP | General Proficiency | Non-Credit |
+
+**Total Hours and Credits:** 16 (L) + 5 (T) + 8 (P) = **25 Credits**  
+
+---
+
+## **Semester II**  
+| S.No | Course Code | Course Name | L | T | P | Credits | Type |
+|------|------------|-------------|---|---|---|---------|------|
+| 1 | IT102 | Object-Oriented Programming | 3 | 1 | 0 | 4 | CC2 / SEC |
+| 2 | IT104 | AI Enabled Information Technology | 2 | 0 | 0 | 2 | CC3 / FC |
+| 3 | MA102 | Engineering Mathematics-II | 3 | 1 | 0 | 4 | GE4 |
+| 4 | PH102 | Engineering Physics | 3 | 1 | 0 | 4 | GE5 |
+| 5 | EC101 | Basic Electronics Engineering | 3 | 1 | 0 | 4 | GE6 |
+| 6 | EN101 | English Proficiency | 2 | 0 | 0 | 2 | OE2 / AECC |
+| 7 | CE103 | Engineering Graphics | 1 | 0 | 2 | 2 | GE-L3 |
+| 8 | IT181 | Object-Oriented Programming Lab | 0 | 0 | 2 | 1 | CC-L2 / SEC |
+| 9 | PH104 | Engineering Physics Lab | 0 | 0 | 2 | 1 | GE-L4 |
+| 10 | EC181 | Basic Electronics Engineering Lab | 0 | 0 | 2 | 1 | GE-L5 |
+| 11 | GP | General Proficiency | Non-Credit |
+
+**Total Hours and Credits:** 17 (L) + 4 (T) + 8 (P) = **25 Credits**  
+
+---
+
+## **Semester III**  
+| S.No | Course Code | Course Name | L | T | P | Credits | Type |
+|------|------------|-------------|---|---|---|---------|------|
+| 1 | IT201 | Animation and Computer Graphics | 3 | 0 | 0 | 3 | CC4 |
+| 2 | IT203 | Operating System | 3 | 0 | 0 | 3 | CC5 |
+| 3 | IT205 | Software Engineering | 3 | 0 | 0 | 3 | CC6 / SEC |
+| 4 | IT207 | System Design & Analysis Techniques | 3 | 0 | 0 | 3 | CC7 |
+| 5 | IT209 | Web Technologies | 3 | 0 | 0 | 3 | CC8 |
+| 6 | MA201 | Engineering Mathematics-III | 3 | 1 | 0 | 4 | GE7 |
+| 7 | IT281 | Animation & Computer Graphics Lab | 0 | 0 | 3 | 2 | CC-L3 |
+| 8 | IT283 | Operating System Data Structures Lab | 0 | 0 | 3 | 2 | CC-L4 / SEC |
+| 9 | IT285 | Web Technologies Lab I | 0 | 0 | 3 | 2 | CC-L5 / SEC |
+| 10 | GP | General Proficiency | Non-Credit |
+
+**Total Hours and Credits:** 18 (L) + 1 (T) + 9 (P) = **25 Credits**  
+
+---
+
+## **Industrial Training**  
+- **Conducted after the third year (minimum 4 weeks during the summer break).**  
+- **Evaluation in the VII Semester as per University Examination Rules.**  
+
+---
+
+## **Semester VII**  
+| S.No | Course Code | Course Name | L | T | P | Credits | Type |
+|------|------------|-------------|---|---|---|---------|------|
+| 1 | MA402 | Modeling and Simulation | 3 | 1 | 0 | 4 | GE8 |
+| 2 | IT401 | Sensor Networks and IoT | 3 | 0 | 0 | 3 | CC25 |
+| 3 | IT403 | Machine Learning | 3 | 0 | 0 | 3 | CC26 |
+| 4 | IT405 | Big Data Analytics | 2 | 0 | 0 | 2 | CC27 / SEC |
+| 5 | Elective 5 | 3 | 0 | 0 | 3 | E5 / DSE |
+| 6 | IT481 | Sensor Networks and IoT Lab | 0 | 0 | 3 | 2 | CC-L16 |
+| 7 | IT491 | Minor Project | 0 | 0 | 6 | 3 | MP1 / E |
+| 8 | IT493 | Industrial Training | 0 | 0 | 10 | 5 | IT1 / E |
+| 9 | GP | General Proficiency | Non-Credit |
+
+**Total Hours and Credits:** 14 (L) + 1 (T) + 19 (P) = **25 Credits**  
+
+---
+
+## **Semester VIII**  
+| S.No | Course Code | Course Name | L | T | P | Credits | Type |
+|------|------------|-------------|---|---|---|---------|------|
+| 1 | IT490 | Seminar | 0 | 0 | 3 | 2 | S / E |
+| 2 | IT492 | Major Project | 0 | 0 | 16 | 8 | MP2 / E |
+| 3 | IT494 | Internship | 0 | 0 | 30 | 15 | I / E |
+| 4 | GP | General Proficiency | Non-Credit |
+
+**Total Hours and Credits:** 0 (L) + 0 (T) + 49 (P) = **25 Credits**  
+
+---
+
+## **Grand Total of Credits**  
+**200 Credits**  
+
+- **Seminar**: Students must study and present a research paper in their specialized area.  
+- **Internship**: Conducted individually during the 8th semester (minimum 4–6 months).  
+- **Minor & Major Projects**: Conducted in groups, evaluated as per University Examination Rules.  
+
+---
+
+### **Electives (DCSE)**  
+A list of available elective courses such as IT Forensics, Advanced Communication Systems, Bio-Informatics, Data Compression, Mobile Computing, etc.  
+
+---
+
+### **Abbreviations**  
+- **SEC** – Skill Enhancement Course  
+- **CC** – Core Course  
+- **E** – Elective  
+- **GE** – General Elective  
+- **CC-L** – Core Course Lab  
+- **IT1** – Industrial Training  
+- **OE** – Open Elective  
+- **MP** – Minor / Major Project  
+- **AECC** – Ability Enhancement Compulsory Course  
+- **DSE** – Discipline Specific Course  
+- **I** – Internship  
+
+---
+

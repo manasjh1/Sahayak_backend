@@ -1,0 +1,92 @@
+**GAUTAM BUDDHA UNIVERSITY**  
+**UNIVERSITY SCHOOL OF INFORMATION AND COMMUNICATION TECHNOLOGY**  
+**DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING**  
+
+## **PROGRAMME STRUCTURE**  
+### **B.Tech. Information Technology (2019-2023)**  
+
+---
+
+## **SEMESTER I**  
+| S.No. | Course Code | Course Name | L | T | P | Credits | Type |
+|--------|-------------|-----------------------------|---|---|---|---------|------|
+| 1 | MA101 | Engineering Mathematics-I | 3 | 1 | 0 | 4 | GE1 |
+| 2 | PH102 | Engineering Physics | 3 | 1 | 0 | 4 | GE2 |
+| 3 | EE102 | Basic Electrical Engineering | 3 | 1 | 0 | 4 | GE3 |
+| 4 | ME101 | Engineering Mechanics | 3 | 1 | 0 | 4 | GE4 |
+| 5 | ES101 | Environmental Studies | 3 | 1 | 0 | 4 | OE1 / AECC |
+| 6 | EN151 | Language Lab | 0 | 0 | 2 | 1 | OE-L1 / AECC |
+| 7 | EE104 | Basic Electrical Engineering Lab | 0 | 0 | 2 | 1 | GE-L1 |
+| 8 | PH104 | Engineering Physics Lab | 0 | 0 | 2 | 1 | GE-L2 / SEC |
+| 9 | ME102 | Workshop Practice | 1 | 0 | 2 | 2 | GE-L3 / SEC |
+| 10 | GP | General Proficiency | Non Credit |  
+**Total Hours and Credits:** 16 (L) + 5 (T) + 8 (P) = **25 Credits**  
+
+---
+
+## **SEMESTER II**  
+| S.No. | Course Code | Course Name | L | T | P | Credits | Type |
+|--------|-------------|-----------------------------|---|---|---|---------|------|
+| 1 | MA102 | Engineering Mathematics-II | 3 | 1 | 0 | 4 | GE5 |
+| 2 | CY101 | Engineering Chemistry | 3 | 1 | 0 | 4 | GE6 |
+| 3 | CS101 | Fundamentals of Computer Programming | 3 | 1 | 0 | 4 | CC1 / SEC |
+| 4 | EC101 | Basic Electronics Engineering | 3 | 1 | 0 | 4 | GE7 |
+| 5 | BS101 | Human Values & Buddhist Ethics | 2 | 0 | 0 | 2 | OE2 / AECC |
+| 6 | EN101 | English Proficiency | 2 | 0 | 0 | 2 | OE3 / AECC |
+| 7 | CE103 | Engineering Graphics Lab | 1 | 0 | 2 | 2 | GE-L4 |
+| 8 | CY103 | Engineering Chemistry Lab | 0 | 0 | 2 | 1 | GE-L5 |
+| 9 | CS181 | Computer Programming Lab | 0 | 0 | 2 | 1 | CC-L1 / SEC |
+| 10 | EC181 | Basic Electronics Engineering Lab | 0 | 0 | 2 | 1 | GE-L6 |
+| 11 | GP | General Proficiency | Non Credit |  
+**Total Hours and Credits:** 17 (L) + 4 (T) + 8 (P) = **25 Credits**  
+
+---
+
+## **SEMESTER III - VIII**  
+(Similarly structured tables for each semester with course details, labs, electives, projects, and credits)
+
+---
+
+## **INDUSTRIAL TRAINING**  
+- The student must complete a **minimum of 4 weeks** of Industrial Training after the third year during the summer break.  
+- It will be evaluated in **Semester VII** as per University Examination Rules.  
+
+---
+
+## **ELECTIVES FROM DCSE**  
+| S.No. | Course Code | Course Name | L | T | P | Credits | Type |
+|--------|-------------|-----------------------------|---|---|---|---------|------|
+| 1 | IT309 | IT Forensics | 3 | 0 | 0 | 3 | E1 |
+| 2 | IT311 | Advanced Communication Systems | 3 | 0 | 0 | 3 | E1 |
+| 3 | IT313 | Bio-Informatics | 3 | 0 | 0 | 3 | E1 |
+| 4 | IT315 | Computer-Based Numerical & Statistical Techniques | 3 | 0 | 0 | 3 | E1 |
+| 5 | IT317 | Data Compression | 3 | 0 | 0 | 3 | E2 |
+| 6 | IT319 | Software Project Management | 3 | 0 | 0 | 3 | E2 |
+| ... | ... | ... | ... | ... | ... | ... | ... |
+
+---
+
+## **EXPLANATION OF COURSE TYPES**  
+- **IT** - Information Technology  
+- **SEC** - Skill Enhancement Course  
+- **CC** - Core Course from USICT  
+- **GE** - General Elective from other departments/schools  
+- **CC-L** - Core Course Lab from USICT  
+- **IT1** - Industrial Training  
+- **OE** - Open Elective from other disciplines  
+- **MP** - Minor / Major Project  
+- **AECC** - Ability Enhancement Compulsory Course  
+- **S** - Seminar  
+- **DSE** - Discipline-Specific Elective  
+- **I** - Internship  
+
+---
+
+### **Total Credits for B.Tech. IT (2019-2023):** **200 Credits**  
+
+- The **Seminar** requires students to present a latest topic in their specialization and will be evaluated as per University Examination Rules.  
+- The **Internship** will be undertaken during the **8th semester** for a minimum of **4-6 months** and evaluated as per University Examination Rules.  
+- **Minor and Major Projects** will be group-based and supervised by the university faculty.  
+
+---
+

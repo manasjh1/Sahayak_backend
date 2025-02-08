@@ -1,0 +1,1958 @@
+﻿Bachelor of Computer Applications (BCA) program structure for Gautam Buddha University:
+
+---
+
+### **Bachelor of Computer Applications (BCA)**  
+**University School of Information and Communication Technology**  
+**Department of Information Technology**  
+**3-Year Programme 2020-2023**
+
+Gautam Buddha University  
+Gautam Budh Nagar, Greater Noida, Uttar Pradesh 201308
+
+---
+
+### **Course Structure**
+
+#### **Semester I**
+
+| **S.No.** | **Course Code** | **Course Name**                             | **L** | **T** | **P** | **Credits** | **Types**   |
+|-----------|-----------------|---------------------------------------------|-------|-------|-------|-------------|-------------|
+| 1         | BCA101          | Computer Fundamentals and Programming       | 3     | 0     | 0     | 3           | CC1 / FC    |
+| 2         | BCA103          | Fundamentals of Operating Systems           | 3     | 0     | 0     | 3           | CC2 / FC    |
+| 3         | BCA105          | Introduction to Internet Technology         | 3     | 0     | 0     | 3           | CC3 / SEC   |
+| 4         | BCA107          | Logical Organization of Computer           | 3     | 0     | 0     | 3           | CC4         |
+| 5         | MA151           | Mathematical Foundation of Computer Science-I | 3   | 1     | 0     | 4           | GE1         |
+| 6         | EN101           | English Proficiency                         | 2     | 0     | 0     | 2           | OE1 / AECC  |
+| 7         | BCA181          | Operating System Lab                       | 0     | 0     | 3     | 2           | CC-L1 / SEC |
+| 8         | BCA183          | Internet Technology Lab                    | 0     | 0     | 3     | 2           | CC-L2       |
+| 9         | GP              | General Proficiency                         | -     | -     | -     | Non Credit  | -           |
+
+**Total Hours and Credits**: 17 hours, 22 credits
+
+---
+
+#### **Semester II**
+
+| **S.No.** | **Course Code** | **Course Name**                             | **L** | **T** | **P** | **Credits** | **Types**   |
+|-----------|-----------------|---------------------------------------------|-------|-------|-------|-------------|-------------|
+| 1         | BCA102          | Problem Solving Using C                    | 3     | 0     | 0     | 3           | CC5 / SEC   |
+| 2         | BCA104          | Basics of Artificial Intelligence          | 3     | 0     | 0     | 3           | CC6         |
+| 3         | BCA106          | System Analysis and Design                 | 3     | 0     | 0     | 3           | CC7 / FC    |
+| 4         | BCA108          | Digital Logic                               | 3     | 0     | 0     | 3           | CC8         |
+| 5         | MA152           | Mathematical Foundation of Computer Science-II | 3  | 1     | 0     | 4           | GE2         |
+| 6         | ES101           | Environmental Studies                       | 4     | 0     | 0     | 4           | OE2 / AECC  |
+| 7         | BCA182          | C Programming Lab                          | 0     | 0     | 3     | 2           | CC-L3 / SEC |
+| 8         | BCA184          | ProLog Lab                                  | 0     | 0     | 3     | 2           | CC-L4       |
+| 9         | GP              | General Proficiency                         | -     | -     | -     | Non Credit  | -           |
+
+**Total Hours and Credits**: 19 hours, 24 credits
+
+---
+
+#### **Semester III**
+
+| **S.No.** | **Course Code** | **Course Name**                             | **L** | **T** | **P** | **Credits** | **Types**   |
+|-----------|-----------------|---------------------------------------------|-------|-------|-------|-------------|-------------|
+| 1         | BCA201          | Python Programming                          | 3     | 0     | 0     | 3           | CC9 / SEC   |
+| 2         | BCA203          | Software Engineering Fundamentals           | 3     | 0     | 0     | 3           | CC10        |
+| 3         | BCA205          | Introduction to Data Base Management System | 3     | 0     | 0     | 3           | CC11 / FC   |
+| 4         | BCA207          | Fundamentals of Data Structures             | 3     | 0     | 0     | 3           | CC12 / SEC  |
+| 5         | BCA209          | Discrete Structures                         | 3     | 0     | 0     | 3           | CC13        |
+| 6         | BCA211          | Basics of Digital Marketing                 | 3     | 0     | 0     | 3           | CC14        |
+| 7         | BCA281          | Python Programming Lab                      | 0     | 0     | 3     | 2           | CC-L5 / SEC |
+| 8         | BCA283          | Data Base Management System Lab            | 0     | 0     | 3     | 2           | CC-L6       |
+| 9         | GP              | General Proficiency                         | -     | -     | -     | Non Credit  | -           |
+
+**Total Hours and Credits**: 18 hours, 22 credits
+
+---
+
+#### **Semester IV**
+
+| **S.No.** | **Course Code** | **Course Name**                             | **L** | **T** | **P** | **Credits** | **Types**   |
+|-----------|-----------------|---------------------------------------------|-------|-------|-------|-------------|-------------|
+| 1         | BCA202          | Fundamentals of Java Programming            | 3     | 0     | 0     | 3           | CC15 / SEC  |
+| 2         | BCA204          | Fundamentals of Machine Learning            | 3     | 0     | 0     | 3           | CC16        |
+| 3         | BCA206          | Introduction to Information Security        | 3     | 0     | 0     | 3           | CC17        |
+| 4         | BCA208          | Basics of Theory of Computation             | 3     | 0     | 0     | 3           | CC18        |
+| 5         | BCA210          | Data Analytics Fundamentals                 | 3     | 0     | 0     | 3           | CC19 / SEC  |
+| 6         | BCA212          | Introduction to Soft Computing              | 2     | 0     | 0     | 2           | CC20        |
+| 7         | BCA282          | Java Programming Lab                        | 0     | 0     | 3     | 2           | CC-L7 / SEC |
+| 8         | BCA292          | Minor Project                               | 0     | 0     | 10    | 5           | MP1 / E     |
+| 9         | GP              | General Proficiency                         | -     | -     | -     | Non Credit  | -           |
+
+**Total Hours and Credits**: 17 hours, 24 credits
+
+---
+
+#### **Semester V**
+
+| **S.No.** | **Course Code** | **Course Name**                             | **L** | **T** | **P** | **Credits** | **Types**   |
+|-----------|-----------------|---------------------------------------------|-------|-------|-------|-------------|-------------|
+| 1         | BCA301          | PHP                                         | 3     | 0     | 0     | 3           | CC21 / SEC  |
+| 2         | BCA303          | Introduction to Compiler Design            | 3     | 0     | 0     | 3           | CC22        |
+| 3         | BCA305          | Basics of Computer Graphics                 | 3     | 0     | 0     | 3           | CC23        |
+| 4         | BCA307          | Computer Networks Fundamentals              | 3     | 0     | 0     | 3           | CC24        |
+| 5         | BCA315          | Elective 1: Fundamentals of Cyber Security  | 3     | 0     | 0     | 3           | E1 / DSE    |
+| 6         | BCA319          | Elective 2: Introduction to Multimedia Systems | 3   | 0     | 0     | 3           | E2 / DSE    |
+| 7         | BCA381          | PHP Lab                                     | 0     | 0     | 3     | 2           | CC-L8 / SEC |
+| 8         | BCA383          | Compiler Design Lab                         | 0     | 0     | 3     | 2           | CC-L9       |
+| 9         | GP              | General Proficiency                         | -     | -     | -     | Non Credit  | -           |
+
+**Total Hours and Credits**: 18 hours, 22 credits
+
+---
+
+#### **Semester VI**
+
+| **S.No.** | **Course Code** | **Course Name**                             | **L** | **T** | **P** | **Credits** | **Types**   |
+|-----------|-----------------|---------------------------------------------|-------|-------|-------|-------------|-------------|
+| 1         | BCA302          | .NET Technology                             | 3     | 0     | 0     | 3           | CC25        |
+| 2         | BCA304          | Basics of Internet of Things                | 3     | 0     | 0     | 3           | CC26        |
+| 3         | Elective-3      | Elective 3                                  | 3     | 0     | 0     | 3           | E3 / DSE    |
+| 4         | Elective-4      | Elective 4                                  | 3     | 0     | 0     | 3           | E4 / DSE    |
+| 5         | BCA382          | .NET Technology Lab                         | 0     | 0     | 3     | 2           | CC-L10 / SEC|
+| 6         | BCA384          | Internet of Things Lab                     | 0     | 0     | 3     | 2           | CC-L11 / SEC|
+| 7         | BCA392          | Major Project                               | 0     | 0     | 16    | 8           | MP2 / E     |
+| 8         | GP              | General Proficiency                         | -     | -     | -     | Non Credit  | -           |
+
+**Total Hours and Credits**: 12 hours, 24 credits
+
+---
+
+### **Electives**  
+Elective options include topics like Cloud Computing, Fuzzy Logic, Natural Language Processing, Cyber Security, Blockchain, Wireless Technology, etc.
+
+---
+
+**Grand Total Credits**: 144	
+
+Sure, here's the content formatted for readability:
+
+---
+
+### SEMESTER I
+
+#### COMPUTER FUNDAMENTALS AND PROGRAMMING
+
+**Course Code**: BCA 101  
+**Course Credits**: 3  
+**Course Category**: CC1  
+**Course (U / P)**: U  
+**Course Year (U / P)**: 1U  
+**Course Semester**: 1U  
+**No. of Lectures + Tutorials (Hrs/Week)**: 03 + 00  
+**Mid Sem. Exam Hours**: 1  
+**Total No. of Lectures (L + T)**: 45 + 00  
+**End Sem. Exam Hours**: 3  
+
+---
+
+#### COURSE OBJECTIVES
+1. Knowledge of basics of computers
+2. General understanding of I/O Devices
+3. Understanding of operating system including memory management
+4. Understanding of computer generations and languages
+5. Understanding of coding fundamentals
+
+---
+
+#### COURSE OUTCOMES
+At the end of the course, students should be able to:
+1. Understand the fundamental concepts of computers.
+2. Understand the concept of Computer Organization.
+3. Understand the concept of Memory and data processing.
+4. Understand Analog and Digital Computers.
+5. Understand basic terminologies used in computer programming.
+
+---
+
+#### Unit I: Basics of Computer
+- Computer System Characterization & Capabilities
+- Computer Hardware & Software, I/O Devices, Types of Software
+- Types of Computers: Analog, Digital & Hybrid
+- Computer Generations of Computers
+- Introduction to PC, Types of PC Systems
+
+#### Unit II: Computer Organization
+- Operating System, Booting, Functions of OS, Types of OS
+- Storage Fundamentals, Primary and Secondary Storage, Data Storage and Retrieval Methods
+- Tape Storage and Retrieval Methods, Characteristics & Limitations
+- Direct Access Storage for Microcomputers (Hard Disks, Disk Cartridge)
+- Direct Access Storage Devices for Large Computer Systems
+- Mass Storage Systems and Optical Disks (CD ROM)
+
+#### Unit III: Data Processing
+- Data, Data Processing System, Storing and Processing Data
+- Central Processing Unit: Microprocessor Control Unit, ALU, Register, Buses, Main Memory
+- Main Memory (RAM) for Microcomputers, Read-Only Memory
+- Computer Output: Hardcopy Output Devices, Impact Printers, Non-Impact Printers, Plotters
+- Computer Output Microfilm/Microfiche System, Softcopy Output Devices, CRT and Flat Screen Technologies
+
+#### Unit IV: Computer & System Software
+- System Software vs Application Software
+- Types of System Software
+- Operating System Programs: Booting Loader, Diagnostic Tests, BIOS, Utility Programs
+- File Maintenance, Language Processors: Assembler, Compiler, Interpreter
+- Application Software: Microcomputer Software, Trends in PC Software
+
+#### Unit V: Computer Languages
+- Types of Programming Languages: Low-Level vs High-Level
+- Machine Code (Machine Language), Advantages and Disadvantages
+- Assembly Language: Advantages and Limitations
+- High-Level Languages: Machine Independence, Portability, Advantages, Problem-Oriented Languages
+- Procedure-Oriented Languages, Compilers and Interpreters
+- Object-Oriented Programming and Fourth-Generation Languages
+
+---
+
+**Text Books**:
+1. William Stallings, "Computer Organization and Architecture", PHI
+
+**Reference Books**:
+1. Computer Fundamentals by P.K. Sinha
+2. Fundamentals of Computers - V. Rajaraman, B.P.B. Publications
+3. Unix Concepts and Application - Sumitabha Das
+4. MS-Office 2000(For Windows) - Steve Sagman
+5. Computer Today by S.K. Bansandra, Galgotia Publications Pvt. Ltd.
+
+---
+
+#### Fundamentals of Operating System
+
+**Course Code**: BCA 103  
+**Course Credits**: 3  
+**Course Category**: CC2  
+**Course (U / P)**: U  
+**Course Year (U / P)**: 1U  
+**Course Semester (U / P)**: 1U  
+**No. of Lectures + Tutorials (Hrs/Week)**: 03 + 00  
+**Mid Sem. Exam Hours**: 1  
+**Total No. of Lectures (L + T)**: 45 + 00  
+**End Sem. Exam Hours**: 3  
+
+---
+
+#### COURSE OBJECTIVES
+1. Study and apply concepts relating to operating systems.
+2. Understand process management.
+3. Learn memory management and mapping.
+4. Study deadlock and methods to avoid it.
+5. Understand various device and disk management.
+
+---
+
+#### COURSE OUTCOMES
+At the end of the course, students should be able to:
+1. Understand the basics of Operating System, different types of OS, and their importance.
+2. Describe the working of processes, CPU scheduling, and deadlock management.
+3. Understand memory management policies and virtual memory.
+4. Understand OS working as a resource manager, including file system, process management, memory management, and I/O management.
+5. Understand file management, data storage, and transmission in computer systems.
+
+---
+
+#### Unit I: Introduction to Operating System
+- Introduction to OS, Its need, and services
+- OS Classification: Single user, Multi user, Simple batch Processing, Multiprogramming, Multitasking, Parallel systems, Distributed systems & Real-time systems
+
+#### Unit II: Process Management
+- Process Concept, Interprocessor communication, Race conditions, Critical Sections, Mutual Exclusion, Semaphores, Threads
+- Process Scheduling & CPU Scheduling: Round Robin, Priority Scheduling, Shortest Job First, Guaranteed Scheduling, Two-level Scheduling
+
+#### Unit III: Memory Management
+- Logical vs Physical Address Space
+- Memory Management Methods: Fixed & Variable Partitions, Bit Maps, Linked Lists, Buddy System
+- Virtual Memory: Paging, Segmentation, Page Tables, Inverted Page Tables
+- Allocation & Page Replacement Algorithms, Thrashing
+
+#### Unit IV: File System
+- File Systems and I/O files, Directories, Security and Protection mechanisms
+- I/O hardware principles, Device controllers, DMA
+- Disk Scheduling: FCFS, SSTF, SCAN, C-SCAN Scheduling
+
+#### Unit V: Deadlock
+- Deadlock Conditions, Detection and Recovery
+- Deadlock Avoidance and Prevention, Resource Trajectories, Safe and Unsafe States
+- Banker's Algorithm, Two-phase locking, Starvation
+
+---
+
+**Text Books**:
+1. Milenekovie, "Operating System Concepts", McGraw Hill
+2. Abraham Silberschatz, Peter Baer Galvin, Greg Gagne, "Operating System Concepts", John Wiley & Sons
+
+**Reference Books**:
+1. Harvey M. Deitel, Paul J. Deitel, David R. Choffnes, "Operating Systems", Prentice Hall
+2. Petersons, "Operating Systems", Addison Wesley
+
+---
+
+#### INTRODUCTION TO INTERNET TECHNOLOGY
+
+**Course Code**: BCA 105  
+**Course Credits**: 3  
+**Course Category**: CC3  
+**Course (U / P)**: U  
+**Course Year (U / P)**: 1U  
+**Course Semester (U / P)**: 1U  
+**No. of Lectures + Tutorials (Hrs/Week)**: 03 + 00  
+**Mid Sem. Exam Hours**: 1  
+**Total No. of Lectures (L + T)**: 45 + 00  
+**End Sem. Exam Hours**: 3  
+
+---
+
+#### COURSE OBJECTIVES
+1. Overview of Internet and Web technology.
+2. Introduction to Web Designing.
+3. Understanding Browsing tools and technologies.
+4. Significance of JavaScript for Internet and Web technology.
+5. Learning XML and its functionalities.
+
+---
+
+#### COURSE OUTCOMES
+At the end of the course, students should be able to:
+1. Understand the basics of Internet and web technology.
+2. Understand the role and significance of Internet and web technologies.
+3. Apply Internet technology in web applications.
+4. Design web applications using various web languages.
+
+---
+
+#### Unit I: Overview of Internet and Web
+- Introduction to Internet, History of the Internet and Web
+- Internet Services, Accessibility, Internet Standards, and Protocols (IP, TCP, UDP)
+- Web Servers, Proxy Servers, Browsers, Firewalls, Data Security
+
+#### Unit II: Web Design
+- Key Issues in Website Design
+- HTML, SGML, XHTML, XML
+- Structuring Data, XML Schema, Document Object Model
+- Security and Management Issues in Website Creation
+
+#### Unit III: Browsing Systems
+- Web Searching Techniques, Web Servers, and Features
+- Browsing Tricks, Web Crawlers (scalable, parallel, incremental, focused)
+- Internet Chat, Browsing Software and Hardware Requirements
+
+#### Unit IV: JavaScript
+- Introduction to JavaScript, Language Elements, JavaScript Objects
+- Other JavaScript Objects: Data, Math, String, Regular Expressions, Arrays
+
+#### Unit V: XML
+- Origins and Motivation for XML
+- Advantages of XML, XML for Data Storage and E-publishing
+- Well-formed XML Documents, Valid XML Documents
+
+---
+
+**Reference Books**:
+1. Raj Kamal, "Internet and Web Technologies", TMH, 2005
+2. Monica D'Souza, "Web Publishing", TMH, 2001
+3. David Crowder & Rhonda Crowder, "Web Design", IDG Books India, 2001
+4. Musciano C., "HTML and XHTML: The Definitive Guide", O'Reilly, 2006
+5. Deitel H., Deitel P., "Internet and World Wide Web: How to Program", PHI
+
+---
+
+Here’s the content formatted for readability:
+
+---
+
+### Logical Organization of Computer
+
+**Course Code:** BCA107  
+**Course Credits:** 4  
+**Course Category:** CC4  
+**Course (U / P):** U  
+**Course Year (U / P):** 1U  
+**Course Semester (U / P):** 1U  
+**No. of Lectures + Tutorials (Hrs/Week):** 03 + 01  
+**Mid Sem. Exam Hours:** 1  
+**Total No. of Lectures (L + T):** 45 + 15  
+**End Sem. Exam Hours:** 3  
+
+#### COURSE OBJECTIVES
+1. Understanding digital representation of data in a computer system.
+2. Understanding digital logic design and logic elements.
+3. Understanding combinational and sequential logic circuit design.
+4. Understanding computer arithmetic, formulation, and problem-solving.
+5. Understanding the performance requirements of systems.
+
+#### COURSE OUTCOMES
+By the end of the course, students should be able to:
+1. Understand combinational and sequential circuits.
+2. Understand register transfer and micro operations.
+3. Learn various types of memories used in computers.
+4. Understand processor design and its architectures.
+5. Learn processor design and its architectures.
+
+#### UNIT I: Introduction
+- **Types of computers:** Analog, Digital, and Hybrid Computers, Modern Digital Computers.
+- **Digital logic circuits and Components:** Logic gates, Boolean Algebra, K-map simplification, Half Adder, Full Adder, Decoder, Encoders, Multiplexers, Demultiplexer, Flip Flops, Registers, Binary Counters.
+
+#### UNIT II: Register Transfer & Micro operation
+- **Register Transfer Language, Bus and Memory Transfer, Bus Architecture.**
+- **Arithmetic Micro operations:** Binary Adder, Binary Subtractor, Binary Adder Subtractor, Binary Increment, and Binary Decrement.
+
+#### UNIT III: Memory Organization
+- **Memory Hierarchy:** Main Memory (RAM and ROM), Associative Memory, Cache Memory, Auxiliary Memory.
+- **I/O Organization:** I/O Interface, Modes of Transfer, Interrupt Handling, Direct Memory Access, Input/Output Processor, Serial Communication.
+
+#### UNIT IV: Processor Design
+- **General Register Organization, Stack Organization.**
+- **Addressing Modes, Instruction Formats, Data Transfer & Manipulation, Program Control.**
+- **RISC and CISC Architectures.**
+
+#### UNIT V: Parallel Processing
+- **Introduction to Linear and Nonlinear Pipeline Processors.**
+- **Super Scalar and Super Pipeline Design, Vector Processing, Array Processors, Super Computers.**
+
+**Text Books:**
+1. Mano M., *Computer System Architecture.*
+2. William Stallings, *Computer Organization and Architecture*, PHI.
+
+**Reference Books:**
+1. Mano M., *Digital Logic and Computer Design.*
+2. Kai Hwang, *Advanced Computer Architecture*, McGraw Hill.
+
+---
+
+### Operating System Lab
+
+**Course Code:** BCA181  
+**Course Credits:** 02  
+**Course Category:** CC-L  
+**Course (U / P):** U  
+**No. of Lab (Hrs/Week):** 03  
+**Mid Semester Exam Hours:** 1  
+**Total No. of Lab (L + T):** 10  
+**End Term Exam Hours:** 3  
+
+#### COURSE OBJECTIVES
+1. Introduction to the foundation of operating systems.
+2. Understanding process management.
+3. Working knowledge of memory management.
+4. Understanding contiguous memory allocation techniques.
+5. Knowledge of deadlock and disk scheduling.
+
+#### COURSE OUTCOMES
+By the end of the course, students should be able to:
+1. Simulate Banker’s Algorithm for Deadlock Avoidance and Prevention.
+2. Simulate MVT and MFT memory management techniques.
+3. Simulate contiguous memory allocation.
+4. Simulate file organization techniques.
+5. Simulate paging techniques of memory management.
+
+**Lab Exercises:**
+1. Write a C program to simulate non-preemptive CPU scheduling algorithms (FCFS, SJF).
+2. Write a C program to simulate multi-level queue scheduling algorithm.
+3. Write a C program to simulate file allocation strategies (Sequential, Indexed).
+4. Simulate MVT and MFT memory management.
+5. Simulate contiguous memory allocation (Worst-fit, Best-fit).
+6. Simulate paging technique of memory management.
+7. Simulate file organization techniques (Single level, Two-level, Hierarchical).
+8. Simulate Banker’s Algorithm for deadlock avoidance.
+9. Simulate disk scheduling algorithms (FCFS, SCAN).
+
+---
+
+### Internet Technology Lab
+
+**Course Code:** BCA 183  
+**Course Credits:** 2  
+**Course Category:** CC-L1  
+**Course (U / P):** U  
+**Course Year (U / P):** 1U  
+**Course Semester (U / P):** 1U  
+**No. of Lectures + Tutorials (Hrs/Week):** 3  
+**Mid Sem. Exam Hours:** 1  
+**Total No. of Lectures (L + T):** 10  
+**End Sem. Exam Hours:** 3  
+
+#### COURSE OBJECTIVES
+1. Learn HTML fundamentals.
+2. Understand graphic production and web-specific graphics.
+3. Introduction to programming and scripting.
+4. Explore web publishing tools and applications.
+
+#### COURSE OUTCOMES
+By the end of the course, students should be able to:
+1. Analyze a web page and identify its elements and attributes.
+2. Create web pages using XHTML and CSS.
+3. Build dynamic web pages using Javascript.
+4. Create XML documents and Schemas.
+
+**Lab Exercises:**
+1. Write an HTML code to display your education details in a table.
+2. Create an HTML code to display your CV.
+3. Design a homepage with links: About Us, Our Services, and Contact Us (separate pages for each).
+4. Design a login form with redirection to a profile page.
+5. Design a registration form and ask the user to log in with new credentials.
+6. Design websites for your institute, department, and tutorials.
+7. Illustrate the usage of ordered, unordered, and definition lists in HTML.
+8. Design a frameset in HTML with header, navigation, and content sections.
+9. Demonstrate the usage of inline, internal, and external CSS.
+10. Design a student record form using HTML.
+11. Design a student entry form and store it in a database server.
+12. Write an XML program to display products.
+
+---
+
+### Problem Solving Using C
+
+**Course Code:** BCA 102  
+**Course Credits:** 3  
+**Course Category:** CC  
+**Course (U / P):** P  
+**Course Year (U / P):** 1P  
+**Course Semester (U / P):** 2P  
+**No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+**Mid Sem. Exam Hours:** 1  
+**Total No. of Lectures (L + T):** 45 + 00  
+**End Sem. Exam Hours:** 3  
+
+#### COURSE OBJECTIVES
+1. Understand the concept of a program.
+2. Learn about loops and control structures.
+3. Understand algorithms and their application.
+4. Break problems into smaller, modular parts.
+5. Use arrays and structures for data storage.
+
+#### COURSE OUTCOMES
+By the end of the course, students should be able to:
+1. Understand programming concepts.
+2. Apply loops and control structures.
+3. Break down problems using stepwise refinement.
+4. Use functions, control structures, and arrays.
+5. Solve problems using C programming.
+
+**Units:**
+1. **Introduction to C Programming**: Basic structure, data types, operators, expressions, and formatted I/O.
+2. **Control Structures**: Decision making and loop control.
+3. **Arrays and Functions**: Operations on arrays, user-defined functions, recursion, and passing arrays/strings to functions.
+4. **Pointers and Structures**: Basics of pointers, pointer arithmetic, memory allocation, and structures.
+5. **File Handling and Applications in C**: Handling text and binary files, file I/O operations, and error handling.
+
+**Text Books:**
+1. Byron Gottfried, *Programming with C*, McGraw Hill, 3rd Edition.
+2. Reema Thareja, *Programming in C*, Oxford University Press, 2nd Edition.
+
+**Reference Books:**
+1. W. Kernighan, *The C Programming Language*, PHI, 2nd Edition.
+2. Yashavant Kanetkar, *Exploring C*, BPB Publishers.
+3. Schildt Herbert, *C: The Complete Reference*, McGraw Hill, 4th Edition.
+
+**Web References:**
+1. [Calvin.edu](https://www.calvin.edu/~pribeiro/courses/engr315/EMFT_Book.pdf)
+2. [MIT.edu](https://www.web.mit.edu/viz/EM/visualizations/coursenotes/modules/guide02.pdf)
+
+**E-Text Books:**
+1. [Free C Programming Books](http://www.freebookcentre.net/Language/Free-C-Programming-Books-Download.htm)
+
+---
+
+Here’s the cleaned-up and readable version of the content:
+
+---
+
+### BASICS OF ARTIFICIAL INTELLIGENCE
+
+**Course Code:** BCA104  
+**Course Credits:** 3  
+**Course Category:** CC  
+**Course (U / P):** U  
+**Course Year (U / P):** 1U  
+**Course Semester (U / P):** 2U  
+**No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+**Mid Sem. Exam Hours:** 1  
+**Total No. of Lectures (L + T):** 45 + 00  
+**End Sem. Exam Hours:** 3  
+
+#### COURSE OBJECTIVES
+1. Introduce students to artificial intelligence.
+2. Introduce key concepts in AI.
+3. Familiarize students with the flow of AI projects.
+4. Explore different domains and applications of AI.
+5. Enable students to implement AI projects.
+
+#### COURSE OUTCOMES
+At the end of the course, students should be able to:
+1. Understand the evolution of AI.
+2. Grasp significant AI concepts.
+3. Understand the flow of AI projects.
+4. Be aware of AI application areas.
+5. Implement AI projects.
+
+#### UNIT 1: Introduction
+- Introduction to AI, Components of AI, Goals of AI, Types of AI
+- History of AI, Turing Test, Advantages and Disadvantages of AI
+- Intelligence, Intelligent Systems, Weak AI vs. Strong AI
+- Mind-Body Problem, Chinese Room Experiment, Parallel and Distributed AI.
+
+#### UNIT 2: Agents in AI
+- Intelligent Agents: Types, Simple Reflex Agent, Goal-based agents, etc.
+- Knowledge Engineering: Knowledge-based Systems, Techniques, Principles, and Methodology.
+
+#### UNIT 3: Searching Techniques and AI Problems
+- AI Search algorithms: Breadth-First Search, Depth-First Search, etc.
+- Problems: Tic-Tac-Toe, Water Jug, Chess, Tower of Hanoi, Traveling Salesman, etc.
+
+#### UNIT 4: Knowledge Representation
+- Knowledge types: Declarative, Procedural, Heuristic, etc.
+- Knowledge Cycle and Storage, AI’s Relation to Intelligence.
+
+#### UNIT 5: AI Techniques and Applications
+- Machine Learning, Deep Learning, Expert Systems, Natural Language Processing
+- AI applications in social media, entertainment, drones, finance, healthcare, smart devices, etc.
+
+**Textbooks**:  
+1. *Artificial Intelligence* by Elaine Reich  
+2. *Artificial Intelligence* by Ela Kumar  
+3. *Artificial Intelligence* by Russel & Norvig  
+4. *Artificial Intelligence: A Modern Approach* by Stuart Russell & Peter Norvig  
+
+---
+
+### SYSTEM ANALYSIS & DESIGN
+
+**Course Code:** BCA 106  
+**Course Credits:** 3  
+**Course Category:** CC  
+**Course (U / P):** P  
+**Course Year (U / P):** 1P  
+**Course Semester (U / P):** 2P  
+**No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+**Mid Sem. Exam Hours:** 1  
+**Total No. of Lectures (L + T):** 45 + 00  
+**End Sem. Exam Hours:** 3  
+
+#### COURSE OBJECTIVES
+1. Identify system needs.
+2. Discuss different approaches for system development.
+3. Evaluate tools and techniques for system design.
+4. Use methods for designing information systems.
+5. Analyze the tradeoff between system components.
+
+#### COURSE OUTCOMES
+At the end of the course, students should be able to:
+1. Describe system analysis and design principles.
+2. Understand SDLC phases and conduct feasibility analysis.
+3. Develop system project strategy and apply tools for organizational design.
+
+#### UNIT 1: Basic Concepts of Systems
+- Definition and types of systems: Physical, Abstract, Open, and Closed Systems.
+- Information categories and systems characteristics.
+
+#### UNIT 2: System Development Life Cycle (SDLC)
+- Phases of SDLC: Study, Design, Development, Testing, etc.
+- Importance of system documentation.
+
+#### UNIT 3: Feasibility Study & Tools for System Analysis
+- Feasibility study types and importance.
+- Data Flow Diagrams (DFD), System Flowcharts.
+
+#### UNIT 4: Detailed Design and Testing
+- Module specification, File Design, Database Design.
+- Testing types and quality assurance.
+
+#### UNIT 5: System Implementation, Maintenance, and Security
+- System testing, conversion, and performance evaluation.
+- Security threats, control measures, and disaster recovery planning.
+
+**Textbooks**:  
+1. *Analysis and Design of Information Systems* by James A. S.  
+2. *Effective Methods for Software Testing* by William E. Perry  
+
+---
+
+### DIGITAL LOGIC
+
+**Course Code:** BCA 108  
+**Course Credits:** 3  
+**Course Category:** CC  
+**Course (U / P):** P  
+**Course Year (U / P):** 1P  
+**Course Semester (U / P):** 2P  
+**No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+**Mid Sem. Exam Hours:** 2  
+**Total No. of Lectures (L + T):** 45 + 00  
+**End Sem. Exam Hours:** 3  
+
+#### COURSE OBJECTIVES
+1. Understand digital systems and logic circuits.
+2. Learn combinational and sequential logic circuits.
+3. Understand memory organization and types.
+
+#### COURSE OUTCOMES
+At the end of the course, students should be able to:
+1. Understand digital system concepts and logic gates.
+2. Design combinational and sequential logic circuits.
+3. Understand and design memory organization and structures.
+
+#### UNIT 1: Introduction
+- Number systems and binary arithmetic.
+- Boolean algebra: Theorems, simplification methods (e.g., Karnaugh map).
+
+#### UNIT 2: Combinational Logic Circuits
+- Design of adders, subtractors, BCD adders, multiplexers, etc.
+
+#### UNIT 3: Flip-Flops
+- Types of flip-flops and their conversion.
+
+#### UNIT 4: Shift Registers and Counters
+- Analysis and design of synchronous and asynchronous counters.
+
+#### UNIT 5: Semiconductor Memory
+- Types of memory: ROM, PROM, EPROM, EEPROM.
+
+**Textbooks**:  
+1. *Digital Logic and Computer Design* by M. Mano  
+2. *Digital Electronics* by R.P. Jain  
+
+---
+
+### C PROGRAMMING LAB
+
+**Course Code:** BCA182  
+**Course Credits:** 2  
+**Course Category:** C  
+**Course (U / P):** U  
+**Course Year (U / P):** 1U  
+**Course Semester (U / P):** 1U  
+**No. of Lectures + Tutorials (Hrs/Week):** 03  
+**Mid Sem. Exam Hours:** --  
+**Total No. of Lectures (L + T):** 15  
+**End Sem. Exam Hours:** 3  
+
+#### COURSE OBJECTIVES
+1. Develop an understanding of C programming.
+2. Learn to design and implement algorithms and programs.
+3. Understand file handling in C programming.
+
+#### COURSE OUTCOMES
+At the end of the course, students should be able to:
+1. Develop programs using C fundamentals and structures.
+2. Work with files and apply advanced C features like pointers and structures.
+
+**Experiments**:  
+1. Sum of two integers.
+2. Loop demonstrations.
+3. Compute simple and compound interest.
+4. Factorial calculation using recursion.
+5. Palindrome check for strings, etc.
+
+---
+
+Here's a more readable version of the course details:
+
+---
+
+### **Introduction to Database Management System**
+- **Course Code:** BCA205
+- **Course Credits:** 3
+- **Category:** CC11
+- **Level:** Undergraduate
+- **Semester:** 3rd
+- **Lectures + Tutorials (Hrs/Week):** 3 + 0
+- **Mid Sem. Exam Hours:** 1
+- **Total No. of Lectures (L + T):** 45 + 0
+- **End Sem. Exam Hours:** 3
+
+#### **Course Objectives:**
+1. Understand the basic concepts and applications of database systems.
+2. Master SQL basics and construct queries.
+3. Learn relational database design principles.
+4. Familiarize with transaction processing and concurrency control.
+5. Understand database storage structures and access techniques.
+
+#### **Course Outcomes:**
+By the end of this course, students will be able to:
+1. Describe the fundamental elements of relational database management systems.
+2. Design ER-models for database applications.
+3. Convert ER-models to relational tables and formulate SQL queries.
+4. Improve database design through normalization.
+5. Explain transaction management, concurrency control, and recovery algorithms.
+
+#### **Units:**
+- **Unit I:** Database Systems – Data abstraction, ER model, relational model, DDL, DML, and entity-relationship diagrams.
+- **Unit II:** Relational Database Model – Integrity constraints, relational algebra, querying relational data.
+- **Unit III:** SQL Query – Basic and nested queries, aggregation, logical connectivity, and outer joins.
+- **Unit IV:** Normal Forms – Redundancy problems, decomposition, normal forms, BCNF, lossless join decomposition.
+- **Unit V:** Transaction Management – ACID properties, transactions, concurrency control, lock management.
+
+#### **Textbooks:**
+1. Elmasri Navrate, Data Base Management System, Pearson Education, 2008.
+2. Raghurama Krishnan, Data Base Management Systems, TMH, 2008.
+3. C. J. Date, Introduction to Database Systems, Pearson Education, 2009.
+4. Silberschatz, Database System Concepts, McGraw Hill, 2005.
+
+---
+
+### **Introduction to Data Structure**
+- **Course Code:** BCA207
+- **Course Credits:** 3
+- **Category:** CC12
+- **Level:** Undergraduate
+- **Semester:** 3rd
+- **Lectures + Tutorials (Hrs/Week):** 3 + 0
+- **Mid Sem. Exam Hours:** 1
+- **Total No. of Lectures (L + T):** 45 + 0
+- **End Sem. Exam Hours:** 3
+
+#### **Course Objectives:**
+1. Understand basic concepts of data structures and algorithms.
+2. Learn sorting and searching techniques.
+3. Study stacks, queues, linked lists, trees, and graphs.
+4. Write algorithms and problem-solving techniques using data structures.
+5. Understand applications of various data structures.
+
+#### **Course Outcomes:**
+By the end of this course, students will be able to:
+1. Analyze algorithms and their correctness.
+2. Apply hashing and collision resolution techniques.
+3. Describe operations on stacks, queues, and linked lists.
+4. Understand trees and graphs.
+5. Summarize sorting and searching techniques.
+
+#### **Units:**
+- **Unit I:** Data types in C, pointers, arrays, hashing, recursion.
+- **Unit II:** Stack, queue, linked list operations.
+- **Unit III:** Binary trees, tree traversal, expression tree.
+- **Unit IV:** Sorting techniques – bubble sort, quick sort, heap sort.
+- **Unit V:** Graph theory – depth-first and breadth-first traversal, minimum spanning tree.
+
+#### **Textbooks:**
+1. Aaron M. Tenenbaum, Data Structures Using C, Pearson Education, 2004.
+2. E. Balagurusamy, Programming in Ansi C, TMH, 2003.
+
+---
+
+### **Discrete Structure**
+- **Course Code:** BCA209
+- **Course Credits:** 3
+- **Category:** CC13
+- **Level:** Undergraduate
+- **Semester:** 3rd
+- **Lectures + Tutorials (Hrs/Week):** 3 + 0
+- **Mid Sem. Exam Hours:** 1
+- **Total No. of Lectures (L + T):** 45 + 0
+- **End Sem. Exam Hours:** 3
+
+#### **Course Objectives:**
+1. Write and evaluate logical proofs.
+2. Understand and apply set theory, relations, functions, and induction.
+3. Solve recurrence relations.
+4. Apply principles of counting.
+
+#### **Course Outcomes:**
+By the end of this course, students will be able to:
+1. Use logical notation and perform logical proofs.
+2. Apply recursive functions and solve recurrence relations.
+3. Use counting techniques.
+
+#### **Units:**
+- **Unit 1:** Set theory, relations, functions, mathematical induction.
+- **Unit 2:** Lattices, Hasse diagram.
+- **Unit 3:** Boolean algebra, logic gates, and Karnaugh maps.
+- **Unit 4:** Propositional and predicate logic, inference theory.
+- **Unit 5:** Recurrence relations, combinatorics.
+
+---
+
+### **Basics of Digital Marketing**
+- **Course Code:** BCA211
+- **Course Credits:** 3
+- **Category:** CC14
+- **Level:** Undergraduate
+- **Semester:** 3rd
+- **Lectures + Tutorials (Hrs/Week):** 3 + 0
+- **Mid Sem. Exam Hours:** 1
+- **Total No. of Lectures (L + T):** 45 + 0
+- **End Sem. Exam Hours:** 3
+
+#### **Course Objectives:**
+1. Understand digital marketing and its importance for business success.
+2. Apply knowledge to create digital marketing plans.
+3. Make business decisions based on digital marketing metrics.
+4. Understand mobile marketing measurement and analytics.
+
+#### **Course Outcomes:**
+By the end of this course, students will be able to:
+1. Understand digital marketing concepts.
+2. Identify digital marketing channels and their advantages.
+3. Manage customer relationships across digital channels.
+
+#### **Units:**
+- **Unit I:** Introduction to digital marketing, importance of digital marketing.
+- **Unit II:** Social media marketing, blogging, content planning.
+- **Unit III:** Digital channels – SEM, mobile marketing, content marketing.
+- **Unit IV:** SEO and SEM techniques, Google Ads, PPC.
+- **Unit V:** Digital marketing budgeting, cost estimation, and trends.
+
+#### **Textbooks:**
+1. Moutsy Maiti, Internet Marketing, Oxford University Press.
+2. Eric Greenberg, Strategic Digital Marketing, McGraw-Hill.
+3. Damian Ryan, Understanding Digital Marketing, Kogan Page.
+
+---
+
+### **Python Programming Lab**
+- **Course Code:** BCA281
+- **Course Credits:** 2
+- **Category:** CC-L
+- **Level:** Undergraduate
+- **Semester:** 3rd
+- **Lectures + Tutorials (Hrs/Week):** 3
+- **Mid Sem. Exam Hours:** 1
+- **Total No. of Lectures (L + T):** 10
+- **End Sem. Exam Hours:** 3
+
+#### **Course Objectives:**
+1. Learn Python fundamentals, operations, and control flow.
+2. Understand string, list, tuple, and set functions.
+3. Work with files, object-oriented programming (OOP), and database interaction.
+
+#### **Course Outcomes:**
+By the end of this course, students will be able to:
+1. Work with Python operators, loops, and functions.
+2. Use strings, lists, dictionaries, and sets.
+3. Work with files and OOP concepts.
+
+#### **Sample Exercises:**
+1. Print the largest/smallest of two numbers.
+2. Write a program to compute the distance between two points.
+3. Count the number of vowels in a string.
+
+---
+
+### **Database Management System Lab**
+- **Course Code:** BCA283
+- **Course Credits:** 2
+- **Category:** CC-L
+- **Level:** Undergraduate
+- **Semester:** 3rd
+- **Lectures + Tutorials (Hrs/Week):** 2
+- **Mid Sem. Exam Hours:** 1
+- **Total No. of Lectures (L + T):** 10
+- **End Sem. Exam Hours:** 3
+
+#### **Course Objectives:**
+1. Understand database concepts and relational operations.
+2. Practice SQL queries and database design.
+
+#### **Course Outcomes:**
+By the end of this course, students will be able to:
+1. Construct SQL queries for database creation and interaction.
+2. Develop and evaluate database applications.
+
+#### **Sample Exercises:**
+1. Write SQL queries for data manipulation.
+2. Create a library management system using SQL.
+
+---
+
+Here's a more readable version of the information provided:
+
+---
+
+### SEMESTER IV
+
+---
+
+#### **FUNDAMENTALS OF JAVA PROGRAMMING**  
+**Course Code:** BCA202  
+**Course Credits:** 3  
+**Course Category:** CC  
+**Course (U/P):** U  
+**Course Year (U/P):** 2U  
+**Course Semester (U/P):** 4U  
+**No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+**Mid Sem. Exam Hours:** 1  
+**Total No. of Lectures (L + T):** 45 + 00  
+**End Sem. Exam Hours:** 3  
+
+---
+
+**COURSE OBJECTIVES:**
+1. To teach the principles of object-oriented programming (OOP), including abstraction, encapsulation, inheritance, and polymorphism.
+2. To impart the fundamentals of object-oriented programming in Java, including defining classes, invoking methods, and using class libraries.
+3. To familiarize students with packages and interfaces.
+4. To facilitate students in handling exceptions.
+5. To demonstrate event handling in GUI.
+
+**COURSE OUTCOMES:**
+Upon completion of the course, students should be able to:
+1. Understand the need for OOP over structured programming and become familiar with fundamental concepts like encapsulation, inheritance, and polymorphism.
+2. Design and develop Java programs and interpret object-oriented data.
+3. Design object-oriented systems and multithreaded processes.
+4. Participate and succeed in competitive exams like GATE and recruitment interviews.
+5. Plan a career in Java-based technologies like HADOOP.
+
+---
+
+**UNIT I: OBJECT-ORIENTED PROGRAMMING**
+- Concepts: OOP, benefits, applications, Java history, features, streaming, Java applets, security, portability.
+- Java Environment: JVM architecture, JIT compiler.
+- OOP concepts: abstraction, encapsulation, inheritance, polymorphism.
+- Java class and OOP implementation.
+
+**UNIT II: DATA TYPE, OPERATORS, AND CONTROL STATEMENTS**
+- Data types, keywords, identifiers, variables, type casting.
+- Operators: arithmetic, relational, logical, bitwise.
+- Program control: if, if...else, switch, loops (while, do-while, for).
+
+**UNIT III: CLASSES, OBJECTS, AND METHODS**
+- Java class libraries, object methods, constructors.
+- Method overloading, overriding, final variables/methods.
+- Abstract methods and exception handling.
+
+**UNIT IV: INTERFACES AND PACKAGES**
+- Creating and implementing interfaces.
+- Package access control and class path management.
+
+**UNIT V: MULTITHREADING AND APPLET PROGRAMMING**
+- Threads: creation, methods, lifecycle, communication.
+- Applet programming: structure, lifecycle, execution.
+
+**References:**
+1. "Programming with Java" by E. Balagurusawamy
+2. "Java Beginner’s Guide" by Herbert Schildt
+3. "Java How to Program" by Deitel & Deitel
+
+---
+
+#### **FUNDAMENTALS OF MACHINE LEARNING**  
+**Course Code:** BCA204  
+**Course Credits:** 3  
+**Course Category:** CC  
+**Course (U/P):** U  
+**Course Year (U/P):** 2U  
+**Course Semester (U/P):** 4U  
+**No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+**Mid Sem. Exam Hours:** 1  
+**Total No. of Lectures (L + T):** 45 + 00  
+**End Sem. Exam Hours:** 3  
+
+---
+
+**COURSE OBJECTIVES:**
+1. Explain how to learn patterns and concepts from data.
+2. Design and analyze machine learning algorithms.
+3. Explore supervised and unsupervised learning paradigms.
+4. Discuss dimensionality reduction and feature extraction.
+5. Develop Data Analysis skills and create ML solutions.
+
+**COURSE OUTCOMES:**
+Upon completion of the course, students should be able to:
+1. Recognize machine learning characteristics for real-world problems.
+2. Compare and analyze different machine learning techniques.
+3. Mathematically analyze various machine learning approaches.
+4. Understand supervised, semi-supervised, and unsupervised learning.
+5. Understand neural networks.
+
+---
+
+**UNIT I: INTRODUCTION TO MACHINE LEARNING**
+- Types of learning: Supervised, Unsupervised, Semi-supervised, Reinforcement.
+- Data, training, validation, and test sets.
+- Learning theory: error, noise, bias, variance.
+
+**UNIT II: SUPERVISED LEARNING ALGORITHMS**
+- Classification and Regression problems.
+- Linear and Logistic Regression, Neural Networks, Decision Trees, SVM.
+
+**UNIT III: COMPUTATIONAL LEARNING THEORY & INSTANCE-BASED LEARNING**
+- Sample complexity, probability theory, Bayesian Networks, K-NN.
+
+**UNIT IV: UNSUPERVISED LEARNING & DIMENSIONALITY REDUCTION**
+- Clustering (K-means), dimensionality reduction (PCA).
+
+**UNIT V: GENETIC ALGORITHMS & ENSEMBLE LEARNING**
+- Genetic Algorithms, Random Forests, Classification accuracy metrics.
+
+**References:**
+1. "Machine Learning" by Tom M. Mitchell
+2. "Introduction to Machine Learning" by Ethem Alpaydin
+3. "Machine Learning: An Algorithmic Perspective" by Stephen Marsland
+
+---
+
+#### **INTRODUCTION TO INFORMATION SECURITY**  
+**Course Code:** BCA206  
+**Course Credits:** 3  
+**Course Category:** C  
+**Course (U/P):** U  
+**Course Year (U/P):** 2U  
+**Course Semester (U/P):** 4U  
+**No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+**Mid Sem. Exam Hours:** 1  
+**Total No. of Lectures (L + T):** 45  
+**End Sem. Exam Hours:** 3  
+
+---
+
+**COURSE OBJECTIVES:**
+1. Develop a fundamental understanding of data, information, and security.
+2. Awareness of security principles, assets, and risk management.
+3. Learn cryptographic algorithms.
+4. Understand network and web security protocols.
+5. Learn about security policies, cybercrimes, and laws.
+
+**COURSE OUTCOMES:**
+Upon completion, students should be able to:
+1. Understand information security fundamentals.
+2. Apply security principles and risk management.
+3. Understand cryptographic algorithms.
+4. Understand network and web security protocols.
+5. Understand cybersecurity laws and standards.
+
+---
+
+**UNIT I: INTRODUCTION TO INFORMATION SECURITY**
+- Information, data, and security fundamentals.
+- CIA, Risk management, Asset classification, Attacks, Services, and Mechanisms.
+
+**UNIT II: CRYPTOGRAPHY**
+- Classical encryption, DES, AES, RSA, DHKE algorithms.
+
+**UNIT III: AUTHENTICATION**
+- Human and machine authentication, MAC, SHA, Digital Signatures, Key management.
+
+**UNIT IV: WEB SECURITY**
+- Kerberos, Email security (PGP, S/MIME), IP Security, SSL, SET, Firewalls.
+
+**UNIT V: LEGAL PERSPECTIVES**
+- Security policies, standards (ISO 27001), cybercrimes, IT Act 2000.
+
+**Text Books:**
+1. "Cryptography and Network Security" by William Stallings
+2. "Cryptography and Network Security" by Behrouz A. Frouzan
+
+**Reference Books:**
+1. "Information Security Principles & Practices" by Merkow
+2. "Applied Cryptography" by Bruce Schneier
+
+---
+
+#### **BASICS OF THEORY OF COMPUTATION**  
+**Course Code:** BCA208  
+**Course Credits:** 3  
+**Course Category:** CC  
+**Course (U/P):** U  
+**Course Year (U/P):** 2U  
+**Course Semester (U/P):** 4U  
+**No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+**Mid Sem. Exam Hours:** 1  
+**Total No. of Lectures (L + T):** 45 + 00  
+**End Sem. Exam Hours:** 3  
+
+---
+
+**COURSE OBJECTIVES:**
+1. Understand the basic concepts of computation theory.
+2. Learn about regular expressions and context-free grammars (CFG).
+3. Understand Pushdown Automata and Turing Machines.
+
+**COURSE OUTCOMES:**
+Upon completion, students should be able to:
+1. Understand the basics of Toc.
+2. Understand regular expressions and CFG.
+3. Understand Pushdown Automata and Turing Machines.
+
+---
+
+**UNIT I: INTRODUCTION**
+- Alphabets, strings, languages, DFA, NFA, transitions, language acceptance.
+
+**UNIT II: REGULAR EXPRESSIONS**
+- RE definition, operations, algebraic laws, pumping lemma.
+
+**UNIT III: CONTEXT-FREE GRAMMAR (CFG)**
+- CFG and CFL, simplification, ambiguity, normal forms.
+
+**UNIT IV: PUSHDOWN AUTOMATA (PDA)**
+- PDA description, language acceptance, equivalence with CFG.
+
+**UNIT V: TURING MACHINES**
+- Basic model, language acceptance, variants of TMs, halting problem.
+
+**References:**
+1. "Introduction to Automata Theory, Languages and Computation" by Hopcroft & Ullman
+2. "Theory of Computer Science: Automata, Languages and Computation" by K.L.P. Mishra
+
+---
+
+#### **INTRODUCTION TO SOFT COMPUTING**  
+**Course Code:** BCA212  
+**Course Credits:** 2  
+**Course Category:** CC  
+**Course (U/P):** U  
+**Course Year (U/P):** 2U  
+**Course Semester (U/P):** 4U  
+**No. of Lectures + Tutorials (Hrs/Week):** 02 + 00  
+**Mid Sem. Exam Hours:** 1  
+**Total No. of Lectures (L + T):** 30 + 00  
+**End Sem. Exam Hours:** 3  
+
+---
+
+**COURSE OBJECTIVES:**
+1. Introduction to soft computing principles and techniques.
+2. Understanding neural network and fuzzy logic theory.
+3. Learning optimization in neural networks.
+4. Familiarity with current research problems in soft computing.
+
+**COURSE OUTCOMES:**
+Upon completion, students should be able to:
+1. Describe human intelligence and AI.
+2. Apply fuzzy logic and neural network basics.
+3. Understand genetic algorithms.
+
+---
+
+**UNIT IV: LEARNING FUNDAMENTALS**
+
+**UNIT I: INTRODUCTION TO SOFT COMPUTING**
+- Soft computing techniques: Fuzzy Logic, Neural Networks, Evolutionary computing.
+
+**UNIT II: FUZZY LOGIC**
+- Classical vs fuzzy sets, membership functions, fuzzy rule generation.
+
+**UNIT III: ARTIFICIAL NEURAL NETWORKS**
+- Biological neurons, computational neurons, architectures, single and multilayer networks.
+-
+
+Here’s a formatted, easy-to-read version of the course details you provided:
+
+---
+
+### **SEMESTER V**
+
+---
+
+#### **PHP**
+
+- **Course Code:** BCA301  
+- **Course Credits:** 3  
+- **Course Category:** CC21  
+- **Course Year:** 3U  
+- **Course Semester:** 5U  
+- **No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+- **Mid Sem. Exam Hours:** 1  
+- **Total No. of Lectures (L + T):** 45 + 00  
+- **End Sem. Exam Hours:** 3
+
+**Course Objectives:**
+1. Knowledge of PHP
+2. General understanding of data types and a PHP page
+3. Understanding of web page forms
+4. Understanding sessions and cookies
+5. Design dynamic web pages
+
+**Course Outcomes:**  
+By the end of the course, students should be able to:
+1. Learn the environment of Server Side Script
+2. Use control structures and native data types with methods
+3. Create forms and understand file & directory handling
+4. Connect front-end with back-end databases
+5. Develop dynamic websites that interact with databases
+
+**Units Overview:**
+- **Unit 1:** Introduction to PHP, Basic syntax, Variables & constants, Operators & expressions, Decisions & loops
+- **Unit 2:** Functions, Recursive functions, Strings, Arrays, Useful library functions
+- **Unit 3:** Handling HTML forms with PHP, File handling (uploading, renaming, deleting)
+- **Unit 4:** Sessions & Cookies: Session functionality, cookie management, destroying variables
+- **Unit 5:** Database Connectivity with MySQL: Basic operations (Insert, Delete, Update, Select), Exception handling
+
+**Text & Reference Books:**
+1. *Learning PHP, MySQL* by O'Reilly Press
+2. *Teach Yourself PHP in 24 Hours* by Matt Zandstra
+
+---
+
+#### **Introduction to Compiler Design**
+
+- **Course Code:** BCA303  
+- **Course Credits:** 3  
+- **Course Category:** CC22  
+- **Course Year:** 3U  
+- **Course Semester:** 5U  
+- **No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+- **Mid Sem. Exam Hours:** 1  
+- **Total No. of Lectures (L + T):** 45 + 00  
+- **End Sem. Exam Hours:** 3
+
+**Course Objectives:**
+1. Learn the process of translating high-level languages into executable code
+2. Understand compiler functions and complexities
+3. Apply code generation algorithms for optimized machine code
+4. Represent target code in different formats
+5. Use optimization techniques for better code generation
+
+**Course Outcomes:**  
+By the end of the course, students should be able to:
+1. Understand compilation phases and tools like Lex and YAAC
+2. Develop parsers manually and understand parsing techniques
+3. Construct intermediate code representations
+4. Convert source code into machine code
+5. Apply optimization techniques for code and data flow analysis
+
+**Units Overview:**
+- **Unit 1:** Introduction to Compiler, Lexical analysis, Regular expressions, Lex tool
+- **Unit 2:** Parsing techniques: Top-down and Bottom-up parsing, Error recovery
+- **Unit 3:** Syntax-directed translation, Intermediate code representations
+- **Unit 4:** Code optimization: Local and global optimizations, Data flow analysis
+- **Unit 5:** Code generation: Object code, Register allocation
+
+**Text Books:**
+1. *Compilers: Principles, Techniques, and Tools* by Aho, Sethi, Ullman
+
+**Reference Books:**
+1. *Compiler Design in C* by Allen I. Holub
+2. *Crafting a Compiler with C* by Fischer and LeBlanc
+
+---
+
+#### **Basics of Computer Graphics**
+
+- **Course Code:** BCA305  
+- **Course Credits:** 3  
+- **Course Category:** CC23  
+- **Course Year:** 3U  
+- **Course Semester:** 5U  
+- **No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+- **Mid Sem. Exam Hours:** 1  
+- **Total No. of Lectures (L + T):** 45 + 00  
+- **End Sem. Exam Hours:** 3
+
+**Course Objectives:**
+1. Introduce basic computer graphics concepts
+2. Provide theoretical background on graphics
+3. Enable students to develop programming skills in graphics
+4. Teach 2D image transformations
+5. Explain 2D/3D transformations
+
+**Course Outcomes:**
+By the end of the course, students should be able to:
+1. Understand computer graphics basics
+2. Understand graphics systems and applications
+3. Use algorithms for scan conversion and object filling
+4. Apply geometric transformations to graphics objects
+5. Utilize illumination models for 2D projections
+
+**Units Overview:**
+- **Unit 1:** Introduction to Computer Graphics, Video devices, Raster scan systems
+- **Unit 2:** Line drawing algorithms, Polygon fill, 2D geometrical transformations
+- **Unit 3:** 2D viewing, Clipping algorithms (Cohen-Sutherland, Sutherland-Hodgeman)
+- **Unit 4:** 3D object representation, Illumination models
+- **Unit 5:** 3D transformations, View volume, Projection transforms
+
+**Text & Reference Books:**
+1. *Computer Graphics* by Donald Hearn & M. Pauline Baker
+2. *Interactive Computer Graphics* by Foley & Van Dam
+
+---
+
+#### **Computer Networks Fundamentals**
+
+- **Course Code:** BCA307  
+- **Course Credits:** 3  
+- **Course Category:** CC24  
+- **Course Year:** 3U  
+- **Course Semester:** 5U  
+- **No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+- **Mid Sem. Exam Hours:** 1  
+- **Total No. of Lectures (L + T):** 45 + 00  
+- **End Sem. Exam Hours:** 3
+
+**Course Objectives:**
+1. Understand computer networks and components
+2. Learn switching and OSI layers
+3. Explore network congestion concepts
+4. Understand protocols used in computer networks
+5. Study addressing and network design
+
+**Course Outcomes:**
+By the end of the course, students should be able to:
+1. Understand network models (OSI, TCP/IP)
+2. Learn about congestion and routing
+3. Implement network layer protocols
+4. Analyze protocols at the transport and application layers
+5. Design networks with IP addressing
+
+**Units Overview:**
+- **Unit 1:** Network basics, OSI/TCP-IP models, guided transmission media
+- **Unit 2:** Data link layer, error detection, HDLC protocols, wireless LAN
+- **Unit 3:** Routing algorithms, IPv4/IPv6 addressing, quality of service
+- **Unit 4:** Transport layer: UDP, TCP, Internet protocols
+- **Unit 5:** Application layer: DNS, HTTP, FTP, email protocols
+
+**Text & Reference Books:**
+1. *Computer Networks* by A.S. Tanenbaum
+2. *Data Communication and Networking* by Behrouz A. Forouzan
+
+---
+
+#### **Fundamentals of Cyber Security**
+
+- **Course Code:** BCA315  
+- **Course Credits:** 3  
+- **Course Category:** E1  
+- **Course Year:** 3U  
+- **Course Semester:** 5U  
+- **No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+- **Mid Sem. Exam Hours:** 1  
+- **Total No. of Lectures (L + T):** 45 + 00  
+- **End Sem. Exam Hours:** 3
+
+**Course Objectives:**
+1. Understand cyber security and data protection
+2. Learn cryptography, governance, and compliance
+3. Design and implement security solutions
+4. Explore web security and network monitoring
+
+**Course Outcomes:**
+By the end of the course, students should be able to:
+1. Analyze organizational cyber security needs
+2. Troubleshoot cyber security systems
+3. Implement security solutions and forensics
+4. Design security architectures for organizations
+5. Develop operational cyber security strategies
+
+**Units Overview:**
+- **Unit 1:** Introduction to Cyber Security, Cyber threats and challenges
+- **Unit 2:** Vulnerabilities, Cryptography, Access control, Ethical hacking
+- **Unit 3:** Cyber security regulations, Law, National policy
+- **Unit 4:** Cyber forensics: investigation and analysis techniques
+- **Unit 5:** Securing web applications, Identity management
+
+**Reference Books:**
+1. *Cyber Threat Intelligence* by Jon Friedman & Mark Bouchard
+2. *Intelligence-Driven Incident Response* by Scott J. Roberts & Rebekah Brown
+
+---
+
+#### **Introduction to Multimedia Systems**
+
+- **Course Code:** BCA319  
+- **Course Credits:** 3  
+- **Course Category:** E2  
+- **Course Year:** 3U  
+- **Course Semester:** 5U  
+- **No. of Lectures + Tutorials (Hrs/Week):** 03 + 00  
+- **Mid Sem. Exam Hours:** 1  
+- **Total No. of Lectures (L + T):** 45 + 00  
+- **End Sem. Exam Hours:** 3
+
+**Course Objectives:**
+1. Understand multimedia elements and technologies
+2. Learn multimedia applications and representations
+3. Explore technologies behind multimedia software
+4. Understand images, sounds, and video in multimedia contexts
+
+**Course Outcomes:**
+By the end of the course, students should be able to:
+1. Summarize multimedia technology concepts
+2. Create multimedia software titles
+3. Digitize and manage text, sound, images, and video
+4. Integrate multimedia data into projects
+
+**Units Overview:**
+- **Unit 1:** Introduction to multimedia, text usage, font families, and hypertext
+- **Unit 2:** Audio fundamentals, file formats, compression, and applications
+- **Unit 3:** Image processing, compression formats (JPEG, PNG, etc.)
+- **Unit 4:** Video and animation fundamentals, video compression
+- **Unit 5:** Multimedia authoring tools (Macromedia Director, Flash)
+
+**Text Books & Reference Books:**
+1. *Multimedia: Sound & Video* by Lozano
+2. *Making It Work* by Tay Vaughan
+
+--- 
+Here’s a clearer, more structured format for the content you provided:
+
+---
+
+### **PHP Lab (BCA381)**
+
+- **Course Credits**: 3  
+- **Course Category**: CC-L  
+- **Course Type**: U  
+- **Course Year**: 3U  
+- **Course Semester**: 5U  
+- **No. of Lectures + Tutorials (Hrs/Week)**: 03 + 00  
+- **Mid Sem. Exam Hours**: 1  
+- **Total No. of Lectures (L + T)**: 45 + 00  
+- **End Sem. Exam Hours**: 3  
+
+#### **Course Objectives**:
+1. Introduction to the open-source web scripting language PHP.
+2. Build dynamic web applications, including PHP syntax, and solving practical problems.
+3. Write server-side, cross-platform HTML-embedded scripts to implement dynamic web pages that interact with databases and files.
+
+#### **Course Outcomes**:
+By the end of this course, students should be able to:
+1. Write PHP scripts to handle HTML forms.
+2. Write regular expressions with modifiers, operators, and metacharacters.
+3. Create PHP programs using various library functions and manipulating files and directories.
+4. Analyze and solve database tasks using PHP.
+5. Write PHP programs to solve common web application tasks.
+
+#### **List of Experiments** (not exhaustive):
+1. Study of Web Standards & Web-Based Architecture.
+2. Study of Basic Computer Languages & Design Student Sign-Up Form Using HTML, JavaScript, HTML5 & CSS.
+3. Introduction to PHP programming, XAMPP Tool, and Dreamweaver Editor.
+4. Write a Simple Hello Program in PHP by Installing & Configuring XAMPP with Dreamweaver.
+5. Study of Basic Building Blocks in PHP & Write a Program for Type Casting.
+6. Study of Control Structures & Loops in PHP (e.g., Displaying a Multiplication Table).
+7. Study of Arrays and Functions in PHP (e.g., Sorting an Array Using Bubble Sort).
+8. Study of Form Handling in PHP (e.g., Submit & Retrieve Data Using `$_GET()`, `$_POST()`, and `$_REQUEST()`).
+9. Study of Server-Side Validation and Page Redirection in PHP (e.g., Login Form Validation).
+10. Write a Program for Image Uploading in a Form and Display in PHP.
+11. Study of Cookies and Sessions in PHP (e.g., Admin Login and Logout).
+12. Study of MySQL DDL, DML, and DCL Commands; Installation of MySQL 5.5 on Windows.
+13. Study of PHP Database Connectivity with MySQL (e.g., Database Connection, Table Creation, and CRUD Operations).
+
+---
+
+### **Introduction to Compiler Design Lab (BCA383)**
+
+- **Course Credits**: 2  
+- **Course Category**: CC-L  
+- **Course Type**: U  
+- **Course Year**: 3U  
+- **Course Semester**: 5U  
+- **No. of Lectures + Tutorials (Hrs/Week)**: 03 + 00  
+- **Mid Sem. Exam Hours**: No  
+- **Total No. of Lectures (L + T)**: 10 + 00  
+- **End Sem. Exam Hours**: 3  
+
+#### **Course Objectives**:
+1. Realize the basics of compiler design and apply them to real-time applications.
+2. Introduce different translation languages.
+3. Learn about compiler generation tools and techniques.
+4. Understand the working of compilers and non-compiler applications.
+5. Design a simple compiler for a programming language.
+
+#### **Course Outcomes**:
+By the end of this course, students should be able to:
+1. Understand major phases of compilation and work with Lex and YACC tools.
+2. Write code using YACC and Lex.
+3. Understand different parsing techniques.
+4. Convert source code for a novel language into machine code.
+5. Apply optimization techniques for data flow analysis.
+
+#### **List of Experiments** (not exhaustive):
+1. Define LEX and YACC tools.
+2. Write a program to check if a string belongs to a grammar.
+3. Write a program to generate a parse tree.
+4. Write a program to convert a regular expression into NFA.
+5. Write a program to generate tokens for a given grammar.
+6. Write programs to compute `FIRST` and `FOLLOW` of non-terminals.
+7. Remove left recursion and left factoring in grammars.
+8. Implement a Push Down Automata.
+9. Implement Thomson’s construction.
+
+---
+
+### **.NET Technology (BCA302)**
+
+- **Course Credits**: 3  
+- **Course Category**: CC  
+- **Course Type**: U  
+- **Course Year**: 3U  
+- **Course Semester**: 6U  
+- **No. of Lectures + Tutorials (Hrs/Week)**: 03 + 00  
+- **Mid Sem. Exam Hours**: 1  
+- **Total No. of Lectures (L + T)**: 45 + 00  
+- **End Sem. Exam Hours**: 3  
+
+#### **Course Objectives**:
+1. Introduction to the .NET framework.
+2. Build multi-tier enterprise applications.
+3. Learn ASP.NET Web services and web service security.
+4. Understand client/server programming and 3-tier architecture.
+5. Learn SOAP and Web Services.
+
+#### **Course Outcomes**:
+By the end of this course, students should be able to:
+1. Understand the development and deployment of enterprise applications.
+2. Utilize the .NET framework for building distributed enterprise applications.
+3. Develop ASP.NET web services and secure them.
+4. Understand 3-tier architecture and develop multi-tier applications.
+5. Develop web applications using client-side and server-side technologies.
+
+#### **Units Overview**:
+- **Unit I**: Introduction to .NET Framework (Architecture, CLR, and more).
+- **Unit II**: Visual Studio IDE, Windows Forms, and user interface elements.
+- **Unit III**: Introduction to VB.NET, data types, methods, and user interfaces.
+- **Unit IV**: ADO.NET and database connectivity (connecting to databases, manipulating data).
+
+---
+
+### **Basics of Internet of Things (BCA304)**
+
+- **Course Credits**: 3  
+- **Course Category**: CC  
+- **Course Type**: U  
+- **Course Year**: 3U  
+- **Course Semester**: 6U  
+- **No. of Lectures + Tutorials (Hrs/Week)**: 03 + 00  
+- **Mid Sem. Exam Hours**: 1  
+- **Total No. of Lectures (L + T)**: 45 + 00  
+- **End Sem. Exam Hours**: 3  
+
+#### **Course Objectives**:
+1. Understand IoT and how it works.
+2. Recognize factors that contributed to the emergence of IoT.
+3. Design and program IoT devices.
+4. Use IoT protocols for communication.
+5. Transfer IoT data to the cloud.
+
+#### **Course Outcomes**:
+By the end of this course, students should be able to:
+1. Understand IoT concepts and infrastructure.
+2. Design IoT systems and use IoT protocols.
+3. Build IoT applications and work with cloud providers.
+
+#### **Units Overview**:
+- **Unit I**: Introduction to IoT, architecture, applications, and security.
+- **Unit II**: IoT protocols, standardization, and network layers.
+- **Unit III**: Web of Things, cloud computing integration, and IoT middleware.
+- **Unit IV**: IoT business models, network dynamics, and resource management.
+- **Unit V**: IoT applications (e.g., smart grids, vehicle charging).
+
+---
+
+
+Here’s a more readable version of the course details for **Computer Vision**, **Wireless Technology**, **Cloud Computing**, **Information Security**, and **Computer Network Security**:
+
+---
+
+### Computer Vision
+**Course Code**: BCA 316  
+**Credits**: 3  
+**Category**: CC  
+**Year**: 4U  
+**Semester**: 7U  
+**Lectures/Tutorials**: 3 hours/week  
+**Mid Sem Exam**: 1 hour  
+**End Sem Exam**: 3 hours  
+**Total Lectures**: 45
+
+#### Course Objectives:
+1. Understand the camera model and image formation in computer vision.
+2. Explore various filters and feature extraction techniques.
+3. Learn clustering, grouping, and model fitting.
+4. Study object registration.
+5. Understand machine learning techniques in computer vision.
+
+#### Course Outcomes:
+By the end of the course, students should be able to:
+1. Describe how camera models work and color shading.
+2. Apply various filters and features for image processing.
+3. Implement clustering, grouping, and model fitting techniques.
+4. Register rigid and deformable objects.
+5. Use machine learning in computer vision tasks.
+
+#### Units:
+1. **Introduction to Computer Vision**: Overview, low-level to high-level vision applications (e.g., object recognition, biometrics).
+2. **Image Formation Models**: Monocular and binocular systems, camera calibration, depth from defocus, structure from shading.
+3. **Feature Extraction**: Image preprocessing, edge detection, motion estimation, stereo vision.
+4. **Shape Representation & Segmentation**: Contour and region-based representation, snakes, active contours, and level set methods.
+5. **Object Recognition**: Hough transform, shape matching, PCA, HMM, GMM, EM methods.
+6. **Applications**: Face detection, tracking, human gait analysis, surveillance systems.
+
+#### Reference Books:
+- *Computer Vision: A Modern Approach* by D. Forsyth & J. Ponce
+- *Digital Image Processing* by R.C. Gonzalez
+- *Computer Vision: Algorithms and Applications* by Richard Szeliski
+
+---
+
+### Introduction to Wireless Technology
+**Course Code**: BCA 312  
+**Credits**: 3  
+**Category**: CC  
+**Year**: 3U  
+**Semester**: 5U  
+**Lectures/Tutorials**: 3 hours/week  
+**Mid Sem Exam**: 1 hour  
+**End Sem Exam**: 3 hours  
+**Total Lectures**: 45
+
+#### Course Objectives:
+1. Acquire knowledge in wireless communication technology.
+2. Analyze problems and provide optimal solutions in wireless systems.
+3. Conduct research on wireless communication systems.
+4. Manage wireless projects efficiently.
+5. Develop communication and presentation skills.
+
+#### Course Outcomes:
+By the end of the course, students should be able to:
+1. Independently conduct research and solve practical wireless communication problems.
+2. Prepare technical reports and presentations.
+3. Apply wireless communication techniques effectively.
+4. Evaluate the performance of wireless technologies.
+5. Manage wireless methodologies.
+
+#### Units:
+1. **Introduction to Wireless Communication Systems**: Satellite communication, GPS, RFID, cordless phones, and standards like AMPS, GSM, LTE, 5G.
+2. **Cellular Fundamentals**: Cellular system architecture, frequency reuse, interference, power control.
+3. **Signal Propagation**: Mobile cellular environment, multipath propagation, fading models, path loss.
+4. **Wireless Networks**: Bluetooth, ZigBee, Wi-Fi, WiMAX, ad-hoc networks.
+5. **Multiple Access Schemes**: FDMA, TDMA, CDMA, OFDMA, ALOHA.
+
+#### Reference Books:
+- *Wireless Communications* by Andrea Goldsmith
+- *Mobile Communication* by J. Schiller
+- *Wireless Communications and Networks* by Vijay K. Garg
+
+---
+
+### Cloud Computing
+**Course Code**: BCA 319  
+**Credits**: 3  
+**Category**: E5/DSE  
+**Year**: 4U  
+**Semester**: 7U  
+**Lectures/Tutorials**: 3 hours/week  
+**Mid Sem Exam**: 1 hour  
+**End Sem Exam**: 3 hours  
+**Total Lectures**: 45
+
+#### Course Objectives:
+1. Learn fundamental cloud computing concepts and architectures.
+2. Understand technologies and applications in cloud computing.
+3. Explore cloud computing models like SaaS, PaaS, and IaaS.
+4. Study cloud security fundamentals.
+5. Get hands-on experience with cloud platforms.
+
+#### Course Outcomes:
+By the end of the course, students should be able to:
+1. Define cloud computing principles and models.
+2. Understand the role of virtualization in cloud computing.
+3. Analyze cloud performance and security challenges.
+4. Learn cloud infrastructure and deployment models.
+
+#### Units:
+1. **Introduction to Cloud Computing**: Cloud providers, SaaS, PaaS, IaaS, and differences between them.
+2. **Cloud Technologies**: Hypervisors, SOAP vs REST, AJAX, virtualization, multi-tenant software.
+3. **Data in the Cloud**: Map-Reduce, cloud security fundamentals, privacy concerns.
+4. **Cloud Security**: Vulnerability assessments, security architecture, and identity management.
+5. **Cloud Platforms**: Installing and evaluating cloud platforms like Xen, OpenNebula, and Eucalyptus.
+
+#### Reference Books:
+- *Cloud Computing for Dummies* by Judith Hurwitz
+- *Enterprise Cloud Computing* by Gautam Shroff
+- *Cloud Security* by Ronald Krutz
+
+---
+
+### Information Security
+**Course Code**: BCA 321  
+**Credits**: 4  
+**Category**: C  
+**Year**: 3U  
+**Semester**: 3U  
+**Lectures/Tutorials**: 3 hours/week  
+**Mid Sem Exam**: 1 hour  
+**End Sem Exam**: 3 hours  
+**Total Lectures**: 45
+
+#### Course Objectives:
+1. Understand the fundamental security requirements for data and information.
+2. Explore information security principles, vulnerabilities, and threats.
+3. Learn encryption algorithms and cryptographic operations.
+4. Study authentication and web security protocols.
+5. Gain knowledge of policies, laws, and cybercrime prevention.
+
+#### Course Outcomes:
+By the end of the course, students should be able to:
+1. Understand security fundamentals, encryption techniques, and network protocols.
+2. Learn public-key cryptography, RSA, and network security.
+3. Apply cryptographic algorithms in real-world scenarios.
+4. Understand network and web security protocols.
+5. Study laws and cybercrime regulations.
+
+#### Units:
+1. **Security Fundamentals**: Terminology, encryption methods, modular arithmetic, GCD.
+2. **Cryptography**: Symmetric and asymmetric encryption algorithms like AES, RSA.
+3. **Message Digest & Key Management**: Hashing algorithms (SHA-1, MD5), digital certificates.
+4. **Network Security**: IPSEC, SSL, IKE, intrusion detection systems.
+5. **Cyber Security**: Types of cybercrimes, social engineering, and security issues in wireless networks.
+
+#### Text Books:
+- *Applied Cryptography* by Bruce Schneier
+- *Cyber Security* by Nina Godbole
+- *Network Security and Cryptography* by Bernard Menezes
+
+---
+
+### Computer Network Security
+**Course Code**: BCA 306  
+**Credits**: 4  
+**Category**: C  
+**Year**: 3U  
+**Semester**: 3U  
+**Lectures/Tutorials**: 3 hours/week  
+**Mid Sem Exam**: 1 hour  
+**End Sem Exam**: 3 hours  
+**Total Lectures**: 45
+
+#### Course Objectives:
+1. Develop an understanding of data security and cryptographic techniques.
+2. Learn about network security protocols to protect against threats.
+3. Study confidentiality, integrity, and availability in securing data.
+4. Understand and apply various network security methods.
+
+#### Course Outcomes:
+By the end of the course, students should be able to:
+1. Design and analyze encryption techniques and protocols.
+2. Understand data encryption standards and public-key cryptography.
+3. Implement network and web security protocols.
+4. Study and apply key management methods.
+
+#### Units:
+1. **Security Fundamentals**: Terminology, attacks, cipher techniques.
+2. **Cryptography**: Symmetric algorithms (DES, AES), public-key algorithms (RSA).
+3. **Message Digest & Key Management**: Hash algorithms, key generation, and distribution.
+4. **Network Security**: IPSEC, SSL, intrusion detection systems.
+5. **Cybersecurity**: Types of cybercrimes, cloud computing, phishing, and password cracking.
+
+#### Text Books:
+- *Applied Cryptography* by Bruce Schneier
+- *Cyber Security* by Nina Godbole
+- *Network Security and Cryptography* by Bernard Menezes
+
+--- 
+Here's the course information you provided in a more readable form:
+
+---
+
+### **Fundamentals of Digital Image Processing**
+
+- **Course Code**: BCA 320  
+- **Course Credits**: 4  
+- **Course Category**: C  
+- **Course (U/P)**: U  
+- **Course Year (U/P)**: 3U  
+- **Course Semester (U/P)**: 3U  
+- **No. of Lectures + Tutorials (Hrs/Week)**: 3  
+- **Mid Sem. Exam Hours**: 1  
+- **Total No. of Lectures (L+T)**: 45  
+- **End Sem. Exam Hours**: 3  
+
+#### **Course Objectives**:
+1. To study the image fundamentals and mathematical transforms necessary for image processing.
+2. To study image enhancement techniques.
+3. To study image restoration procedures.
+4. To study image compression procedures.
+
+#### **Course Outcomes**:
+By the end of the course, students should be able to:
+1. Understand the need for image transforms, their types, and their properties.
+2. Develop image processing applications.
+3. Understand the rapid advances in Machine Vision.
+4. Learn techniques employed for the enhancement of images.
+5. Learn causes for image degradation and an overview of restoration techniques.
+
+#### **Unit Breakdown**:
+- **Unit I**: Review of Signals and Systems, Z Transforms, Digital filter design (FIR/IIR), Linear phase FIR filters, and IIR filters.
+- **Unit II**: DSP Transforms, including Fourier, Discrete Sine/Cosine Transform, Wavelet, and Hilbert Transforms.
+- **Unit III**: Multi-rate DSP, Decimators and Interpolators, Sampling rate conversion, Polyphase filters, Digital filter banks.
+- **Unit IV**: Linear prediction and optimum linear filters, including Wiener filters.
+- **Unit V**: Power spectrum estimation and algorithms for spectrum estimation.
+
+#### **Textbooks**:
+1. Proakis, J.G. & Manolakis, D.G. "Digital Signal Processing: Principles, Algorithms, and Applications" (4th Edition).
+2. Fliege, N. J. "Multirate Digital Signal Processing" (1st Edition).
+3. Haykin, S. & Kailath, T. "Adaptive Filter Theory" (4th Edition).
+
+---
+
+### **Concepts of Mobile Computing**
+
+- **Course Code**: BCA 308  
+- **Course Credits**: 4  
+- **Course Category**: C  
+- **Course (U/P)**: U  
+- **Course Year (U/P)**: 3U  
+- **Course Semester (U/P)**: 3U  
+- **No. of Lectures + Tutorials (Hrs/Week)**: 3  
+- **Mid Sem. Exam Hours**: 1  
+- **Total No. of Lectures (L+T)**: 45  
+- **End Sem. Exam Hours**: 3  
+
+#### **Course Objectives**:
+1. To understand the mobile computing paradigm, applications, and limitations.
+2. To explore mobile networking infrastructure and GSM protocol.
+3. To understand issues and solutions across mobile network layers.
+4. To learn about ad hoc networks, platforms, and protocols.
+
+#### **Course Outcomes**:
+By the end of the course, students should be able to:
+1. Understand mobile communication concepts.
+2. Analyze next-generation mobile communication systems.
+3. Understand network and transport layers.
+4. Analyze protocols for mobile and ad hoc wireless networks.
+5. Understand IP and TCP layers.
+
+#### **Unit Breakdown**:
+- **Unit I**: Introduction to Mobile Computing, Device types, Mobility Management, and Handoff Strategies.
+- **Unit II**: GSM System Overview, Mobility Management, VLR.
+- **Unit III**: GSM Services including SMS, International Roaming, Mobile Number Portability, Prepaid services.
+- **Unit IV**: GSM Data Layer including GPRS, WAP, 3G Services.
+- **Unit V**: Mobile Application Architectures, Security, and Future Trends (4G, 5G).
+
+#### **Textbooks**:
+1. Yi Bang Lin, "Wireless and Mobile Network Architectures", Wiley Publications.
+2. Martyn Mallick, "Mobile and Wireless Design Essentials", Wiley Publications.
+
+---
+
+### **Fundamentals of Optimization Techniques**
+
+- **Course Code**: BCA 314  
+- **Course Credits**: 4  
+- **Course Category**: C  
+- **Course (U/P)**: U  
+- **Course Year (U/P)**: 3U  
+- **Course Semester (U/P)**: 3U  
+- **No. of Lectures + Tutorials (Hrs/Week)**: 3  
+- **Mid Sem. Exam Hours**: 1  
+- **Total No. of Lectures (L+T)**: 45  
+- **End Sem. Exam Hours**: 3  
+
+#### **Course Objectives**:
+1. To study optimization techniques applied to engineering mathematics, focusing on minimization and maximization.
+2. To learn linear programming, dynamic programming, game theory, and queuing models.
+3. To study stochastic models for inventory control and simulation in production decision-making.
+4. To form mathematical models for quantitative analysis in industry.
+
+#### **Course Outcomes**:
+By the end of the course, students should be able to:
+1. Formulate real-world problems as linear programming models.
+2. Solve linear programming problems using simplex and graphical methods.
+3. Identify the appropriate optimization methods for complex industry problems.
+4. Solve allocation problems using the right optimization algorithms.
+
+#### **Unit Breakdown**:
+- **Unit I**: Introduction to optimization and classification of optimization problems.
+- **Unit II**: Linear Programming, Simplex Method, Transportation Problem, Assignment Problem.
+- **Unit III**: Queuing Theory, Poison and Exponential distributions.
+- **Unit IV**: Unconstrained Optimization, Convex functions, Descent methods.
+- **Unit V**: Constrained Optimization, Kuhn-Tucker conditions, Gradient projection methods.
+
+#### **Textbooks**:
+1. Rao, S.S. "Optimization – Theory and Applications", Wiley Easter Ltd.
+   
+#### **Reference Books**:
+1. Luerbeggan, D.G. "Introduction to Linear and Non-Linear Programming", Addison Wesley.
+2. Hadley, G. "Nonlinear and Dynamic Programming", Addison Wesley.
+
+---
