@@ -11,3 +11,5 @@ langchain_experimental
 groq
 -e .
 pymongo[srv]==3.11
+flask-bcrypt
+flask-session
