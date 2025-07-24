@@ -8,8 +8,9 @@ langchain-pinecone
 langchain_community
 langchain_openai
 langchain_experimental
-groq
 -e .
 pymongo[srv]==3.11
 flask-bcrypt
 flask-session
+google-genai
+google-generativeai
