@@ -1,16 +1,19 @@
-sentence-transformers==3.4.1
-langchain
-flask
-pypdf
+fastapi
+uvicorn[standard]
+jinja2
 python-dotenv
-pinecone[grpc]
-langchain-pinecone
+pymongo[srv]==3.11
+sentence-transformers==3.4.1
+
+langchain
 langchain_community
 langchain_openai
 langchain_experimental
+langchain-pinecone
+pinecone[grpc]
+
+groq
+
+# Local editable install if you have a local package
 -e .
-pymongo[srv]==3.11
-flask-bcrypt
-flask-session
-google-genai
-google-generativeai
+pypdf
