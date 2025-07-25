@@ -11,9 +11,9 @@ langchain_openai
 langchain_experimental
 langchain-pinecone
 pinecone[grpc]
-
+python-multipart
 groq
-
+requests
 # Local editable install if you have a local package
--e .
+
 pypdf

@@ -26,7 +26,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://sahayak-chi.vercel.app/"],
+    allow_origins=["https://sahayak-cizr.vercel.app/"],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE"],
     allow_headers=["*"],
