@@ -16,6 +16,23 @@ from pinecone.grpc import PineconeGRPC as Pinecone
 # ----------------------------
 # Load Environment
 # ----------------------------
+<<<<<<< HEAD
+=======
+app = FastAPI()
+
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://sahayak-cizr.vercel.app/"],
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["*"],
+)
+
+templates = Jinja2Templates(directory="templates")
+app.mount("/static", StaticFiles(directory="static"), name="static")
+>>>>>>> bfcdded (change in cors link)
 load_dotenv()
 
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
