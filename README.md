@@ -201,7 +201,7 @@ Our advanced Retrieval-Augmented Generation system combines:
 - 🚧 **Custom Image-to-Video Model** in final testing phase
 - 🚧 **50+ Image Generation Pipeline** with educational optimization  
 - 🚧 **Advanced Voice Synthesis** with Indian accent support
-- 🎯 **Finals Exclusive**: Live demonstration to judges
+- 🎯 **Finals Exclusive**: Live demonstration to judges at grand final
 
 #### 🌟 **Phase 3: Production Deployment** *(Post-Finals)*
 - 🚀 **Proprietary Model Deployment** replacing Veo 3 dependency
