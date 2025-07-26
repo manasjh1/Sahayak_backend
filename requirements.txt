@@ -4,7 +4,7 @@ jinja2
 python-dotenv
 pymongo[srv]==3.11
 sentence-transformers==3.4.1
-
+google-generativeai
 langchain
 langchain_community
 langchain_openai
