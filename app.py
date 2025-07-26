@@ -18,11 +18,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",                    
-        "http://127.0.0.1:3000",                   # Alternative localhost
-        "https://sahayak-dyd9.vercel.app/",         # Production (removed trailing slash)
-    ],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],  # Added OPTIONS
     allow_headers=["*"],
@@ -41,18 +37,18 @@ COLLECTION_NAME = os.getenv("COLLECTION_NAME")
 os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
 os.environ["GROQ_API_KEY"] = GROQ_API_KEY
 
-@app.options("/{path:path}")
-async def options_handler(request: Request):
-    """Handle OPTIONS requests for all paths"""
-    return JSONResponse(
-        content={},
-        headers={
-            "Access-Control-Allow-Origin": "https://sahayak-dyd9.vercel.app",
-            "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-            "Access-Control-Allow-Headers": "*",
-            "Access-Control-Allow-Credentials": "true"
-        }
-    )
+#@app.options("/{path:path}")
+#async def options_handler(request: Request):
+ #   """Handle OPTIONS requests for all paths"""
+  #  return JSONResponse(
+    #    content={},
+    #    headers={
+     #       "Access-Control-Allow-Origin": "*",
+     #       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+     #       "Access-Control-Allow-Headers": "*",
+     #       "Access-Control-Allow-Credentials": "true"
+     #   }
+   # )
 
 
 genai.configure(api_key=GEMINI_API_KEY)
