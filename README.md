@@ -311,20 +311,6 @@ MONGO_DB_NAME=sahayak_production
 
 ---
 
-## 🏅 Awards & Recognition
-
-<div align="center">
-
-### 🌟 **Industry Recognition**
-
-</div>
-
-- 🥇 **Best AI Innovation** - EdTech Summit India 2024
-- 🏆 **Social Impact Award** - Google for Startups
-- 🌟 **Technical Excellence** - Microsoft AI for Good Challenge  
-- 📈 **Scalability Recognition** - AWS Startup Spotlight
-
----
 
 ## 🤝 Contributing & Community
 
