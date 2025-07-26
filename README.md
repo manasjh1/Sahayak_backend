@@ -11,7 +11,7 @@
 
 ### 🚀 Transforming Education for 260 Million Students Across India
 
-**[🌟 Live Demo](https://front-eight-murex.vercel.app)** | **[📖 API Docs](https://rag-bot-53xj.onrender.com/docs)** | **[🎥 Video Demo](#)**
+**[🌟 Live Demo](https://front-eight-murex.vercel.app)** | **[📖 API Docs](https://rag-bot-53xj.onrender.com/docs)** | **[💻 Frontend Code](https://github.com/manasjh1/Sahayak)** | **[🎥 Video Demo](https://youtu.be/qn0a7Kqn-J0)**
 
 ---
 
@@ -275,21 +275,6 @@ Python 3.8+          MongoDB 4.4+          Pinecone Account
 Groq API Access      Google Gemini Key     FastAPI Knowledge
 ```
 
-#### 🚀 **Installation Steps**
-```bash
-# 1. Clone the repository  
-git clone https://github.com/manasjh1/sahayak-backend.git
-
-# 2. Install dependencies  
-pip install -r requirements.txt
-
-# 3. Configure environment
-cp .env.example .env
-# Add your API keys to .env file
-
-# 4. Launch the platform
-uvicorn app:app --host 0.0.0.0 --port 8000
-```
 
 #### ⚠️ **Repository Note**
 **🔒 Proprietary Technology**: Our advanced image-to-video generation model is currently under development and not included in this public repository due to:
@@ -299,17 +284,6 @@ uvicorn app:app --host 0.0.0.0 --port 8000
 - **🎯 Finals Exclusive**: Will be demonstrated live to judges
 
 **📦 Current Repository**: Contains production-ready Veo 3 integration, RAG system, and all educational APIs.
-
-#### 🔑 **Environment Configuration**
-```
-PINECONE_API_KEY=your_pinecone_key
-GROQ_API_KEY=your_groq_key  
-GEMINI_API_KEY=your_gemini_key
-MONGO_URI=your_mongodb_connection
-MONGO_DB_NAME=sahayak_production
-```
-
----
 
 
 ## 🤝 Contributing & Community
