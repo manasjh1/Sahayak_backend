@@ -16,8 +16,7 @@ from pinecone.grpc import PineconeGRPC as Pinecone
 # ----------------------------
 # Load Environment
 # ----------------------------
-<<<<<<< HEAD
-=======
+
 app = FastAPI()
 
 from fastapi.middleware.cors import CORSMiddleware
@@ -29,10 +28,6 @@ app.add_middleware(
     allow_methods=["GET", "POST", "PUT", "DELETE"],
     allow_headers=["*"],
 )
-
-templates = Jinja2Templates(directory="templates")
-app.mount("/static", StaticFiles(directory="static"), name="static")
->>>>>>> bfcdded (change in cors link)
 load_dotenv()
 
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
@@ -45,9 +40,6 @@ COLLECTION_NAME = os.getenv("COLLECTION_NAME")
 os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
 os.environ["GROQ_API_KEY"] = GROQ_API_KEY
 
-# ----------------------------
-# FastAPI App
-# ----------------------------
 app = FastAPI()
 
 app.add_middleware(
@@ -62,9 +54,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# ----------------------------
-# Improved Gemini Embedding Wrapper
-# ----------------------------
 genai.configure(api_key=GEMINI_API_KEY)
 
 class GeminiEmbedding:
@@ -103,9 +92,6 @@ class GeminiEmbedding:
         
         return embeddings
 
-# ----------------------------
-# Setup: Pinecone + Embeddings + Groq + Mongo
-# ----------------------------
 embedding = GeminiEmbedding(GEMINI_API_KEY)
 docsearch = PineconeVectorStore.from_existing_index(index_name="bot", embedding=embedding)
 retriever = docsearch.as_retriever(search_type="similarity", search_kwargs={"k": 3})
@@ -116,9 +102,6 @@ mongo_client = MongoClient(MONGO_URI)
 db = mongo_client[MONGO_DB_NAME]
 collection = db[COLLECTION_NAME]
 
-# ----------------------------
-# Utility Functions
-# ----------------------------
 def generate_completion(prompt_template, user_message: str):
     """Generate completion using Groq API"""
     try:
@@ -163,9 +146,6 @@ def save_to_database(entry_type: str, user_message: str, bot_response: str):
     except Exception as e:
         print(f"Database save error: {e}")
 
-# ----------------------------
-# ROUTES
-# ----------------------------
 @app.get("/")
 async def root():
     """Root endpoint"""
@@ -176,9 +156,6 @@ async def health_check():
     """Health check endpoint"""
     return {"status": "healthy", "timestamp": datetime.utcnow().isoformat()}
 
-# ----------------------------
-# Worksheet Generation Endpoint
-# ----------------------------
 @app.post("/worksheet")
 async def generate_worksheet(msg: str = Form(...), difficulty: str = Form("Medium")):
     """Generate educational worksheet based on topic and difficulty level"""
@@ -221,11 +198,8 @@ Context: {context}
             status_code=500
         )
 
-# ----------------------------
-# Video Script Generation Endpoint
-# ----------------------------
-@app.post("/video-script")
-async def generate_video_script(msg: str = Form(...)):
+#@app.post("/video-script")
+#async def generate_video_script(msg: str = Form(...)):
     """Generate 30-second video script for educational content"""
     print(f"Video Script Topic: {msg}")
     
@@ -264,9 +238,6 @@ Context: {context}
             status_code=500
         )
 
-# ----------------------------
-# Chat History Endpoint
-# ----------------------------
 @app.get("/history")
 async def chat_history(limit: int = 10):
     """Retrieve chat history from database"""
@@ -290,9 +261,6 @@ async def chat_history(limit: int = 10):
             status_code=500
         )
 
-# ----------------------------
-# Q/A Endpoint
-# ----------------------------
 class QARequest(BaseModel):
     question: str
 
@@ -330,9 +298,6 @@ Context: {context}
             status_code=500
         )
 
-# ----------------------------
-# Database Management Endpoints
-# ----------------------------
 @app.delete("/history")
 async def clear_history():
     """Clear all chat history"""
@@ -372,9 +337,6 @@ async def get_stats():
             status_code=500
         )
 
-# ----------------------------
-# Run the application
-# ----------------------------
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
