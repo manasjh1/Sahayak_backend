@@ -3,7 +3,6 @@ uvicorn[standard]
 jinja2
 python-dotenv
 pymongo[srv]==3.11
-sentence-transformers==3.4.1
 google-generativeai
 langchain
 langchain_community
@@ -14,6 +13,4 @@ pinecone[grpc]
 python-multipart
 groq
 requests
-# Local editable install if you have a local package
-
 pypdf
