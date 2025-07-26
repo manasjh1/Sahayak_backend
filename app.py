@@ -13,21 +13,20 @@ from src.helper import load_pdf_file, text_split
 from src.prompt import system_prompt, qa_prompt, video_script_prompt
 from pinecone.grpc import PineconeGRPC as Pinecone
 
-# ----------------------------
-# Load Environment
-# ----------------------------
-
 app = FastAPI()
-
-from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://sahayak-cizr.vercel.app/"],
+    allow_origins=[
+        "http://localhost:3000",                    
+        "http://127.0.0.1:3000",                   # Alternative localhost
+        "https://sahayak-cizr.vercel.app",         # Production (removed trailing slash)
+    ],
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],  # Added OPTIONS
     allow_headers=["*"],
 )
+
 load_dotenv()
 
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
