@@ -9,6 +9,7 @@ from langchain_pinecone import PineconeVectorStore
 from pymongo import MongoClient
 from groq import Groq
 import google.generativeai as genai
+import uvicorn
 from src.helper import load_pdf_file, text_split
 from src.prompt import system_prompt, qa_prompt, video_script_prompt
 from pinecone.grpc import PineconeGRPC as Pinecone
