@@ -16,11 +16,17 @@ from pinecone.grpc import PineconeGRPC as Pinecone
 
 app = FastAPI()
 
+# FIXED CORS CONFIGURATION
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[""],
+    allow_origins=[
+        "http://localhost:3000",                     # Local development
+        "http://127.0.0.1:3000",                    # Alternative localhost
+        "https://front-eight-murex.vercel.app",     # Your current frontend URL
+        "https://sahayak-cizr.vercel.app",          # Keep old one just in case
+    ],
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],  # Added OPTIONS
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
     expose_headers=["*"]
 )
@@ -36,20 +42,6 @@ COLLECTION_NAME = os.getenv("COLLECTION_NAME")
 
 os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
 os.environ["GROQ_API_KEY"] = GROQ_API_KEY
-
-#@app.options("/{path:path}")
-#async def options_handler(request: Request):
- #   """Handle OPTIONS requests for all paths"""
-  #  return JSONResponse(
-    #    content={},
-    #    headers={
-     #       "Access-Control-Allow-Origin": "*",
-     #       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-     #       "Access-Control-Allow-Headers": "*",
-     #       "Access-Control-Allow-Credentials": "true"
-     #   }
-   # )
-
 
 genai.configure(api_key=GEMINI_API_KEY)
 
@@ -195,8 +187,8 @@ Context: {context}
             status_code=500
         )
 
-#@app.post("/video-script")
-#async def generate_video_script(msg: str = Form(...)):
+@app.post("/video-script")
+async def generate_video_script(msg: str = Form(...)):
     """Generate 30-second video script for educational content"""
     print(f"Video Script Topic: {msg}")
     
