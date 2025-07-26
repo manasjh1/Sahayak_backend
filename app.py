@@ -40,19 +40,6 @@ COLLECTION_NAME = os.getenv("COLLECTION_NAME")
 os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
 os.environ["GROQ_API_KEY"] = GROQ_API_KEY
 
-app = FastAPI()
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=[
-        "https://sahayak-cizr.vercel.app",
-        "http://localhost:3000",
-        "http://127.0.0.1:8000"
-    ],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 genai.configure(api_key=GEMINI_API_KEY)
 
