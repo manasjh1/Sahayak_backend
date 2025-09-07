@@ -21,7 +21,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",                     # Local development
-        "http://127.0.0.1:3000",                    # Alternative localhost
+        "http://127.0.0.1:3000",
+        "https://sahayak.me/",
         "https://front-eight-murex.vercel.app",     # Your current frontend URL
         "https://sahayak-cizr.vercel.app",          # Keep old one just in case
     ],
