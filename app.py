@@ -35,6 +35,7 @@ app.add_middleware(
         "https://sahayak.me",
         "https://front-eight-murex.vercel.app",
         "https://sahayak-cizr.vercel.app",
+        "https://www.sahayak.me"
     ],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
