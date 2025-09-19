@@ -1,5 +1,3 @@
-# src/video_generator.py - Fixed with better error handling
-
 import os
 import io
 import base64
@@ -18,6 +16,8 @@ from pymongo import MongoClient
 import google.generativeai as genai
 from groq import Groq
 from dotenv import load_dotenv
+import ffmpeg
+
 
 # Optional imports with error handling
 try:
@@ -44,13 +44,15 @@ except ImportError:
     SUPABASE_AVAILABLE = False
     print("⚠️ Supabase not available - using local storage")
 
+# --- START: MODIFIED TTS SECTION ---
 try:
-    import pyttsx3
-    TTS_AVAILABLE = True
-    print("✅ TTS available")
+    import azure.cognitiveservices.speech as speechsdk
+    AZURE_TTS_AVAILABLE = True
+    print("✅ Azure Speech SDK available")
 except ImportError:
-    TTS_AVAILABLE = False
-    print("⚠️ TTS not available - audio generation disabled")
+    AZURE_TTS_AVAILABLE = False
+    print("⚠️ Azure Speech SDK not available")
+# --- END: MODIFIED TTS SECTION ---
 
 load_dotenv()
 
@@ -159,38 +161,35 @@ class VideoGenerationService:
             print("⚠️ MONGO_URI not found in environment")
             self.video_jobs_collection = None
         
-        # Initialize TTS if available
-        if TTS_AVAILABLE:
-            try:
-                self.tts_engine = pyttsx3.init()
-                self._configure_tts()
-                print("✅ TTS engine configured")
-            except Exception as e:
-                print(f"⚠️ TTS configuration failed: {e}")
-                self.tts_engine = None
+        # --- START: MODIFIED TTS INITIALIZATION ---
+        self.tts_engine = None
+        if AZURE_TTS_AVAILABLE:
+            self.speech_key = os.getenv("AZURE_SPEECH_KEY")
+            self.service_region = os.getenv("AZURE_SPEECH_REGION")
+            if self.speech_key and self.service_region:
+                try:
+                    self.tts_config = speechsdk.SpeechConfig(
+                        subscription=self.speech_key, 
+                        region=self.service_region
+                    )
+                    self.tts_config.set_speech_synthesis_output_format(speechsdk.SpeechSynthesisOutputFormat.Riff24Khz16BitMonoPcm)
+                    self.tts_engine = "azure"
+                    print("✅ Azure TTS configured")
+                except Exception as e:
+                    print(f"⚠️ Azure TTS configuration failed: {e}")
+            else:
+                print("⚠️ Azure TTS not configured - missing AZURE_SPEECH_KEY or AZURE_SPEECH_REGION")
         else:
-            self.tts_engine = None
+            print("⚠️ Azure Speech SDK is not installed")
+
+        # Removed the old pyttsx3 initialization block.
+        # --- END: MODIFIED TTS INITIALIZATION ---
         
         print("🎯 Video Generation Service initialization complete!")
 
-    def _configure_tts(self):
-        """Configure text-to-speech settings"""
-        if not self.tts_engine:
-            return
-            
-        try:
-            voices = self.tts_engine.getProperty('voices')
-            if voices:
-                # Try to find a female voice
-                for voice in voices:
-                    if any(keyword in voice.name.lower() for keyword in ['female', 'zira', 'sophia', 'samantha']):
-                        self.tts_engine.setProperty('voice', voice.id)
-                        break
-            
-            self.tts_engine.setProperty('rate', 160)
-            self.tts_engine.setProperty('volume', 0.9)
-        except Exception as e:
-            print(f"TTS configuration warning: {e}")
+    # --- START: REMOVED OLD METHOD ---
+    # The _configure_tts method is no longer needed.
+    # --- END: REMOVED OLD METHOD ---
 
     def check_dependencies(self) -> Dict[str, bool]:
         """Check which dependencies are available"""
@@ -198,7 +197,7 @@ class VideoGenerationService:
             "moviepy": MOVIEPY_AVAILABLE,
             "pillow": PIL_AVAILABLE,
             "supabase": SUPABASE_AVAILABLE and self.supabase is not None,
-            "tts": TTS_AVAILABLE and self.tts_engine is not None,
+            "tts": self.tts_engine == "azure",  # Check for the new Azure TTS engine
             "gemini": self.gemini_api_key is not None,
             "groq": self.groq_client is not None,
             "mongodb": hasattr(self, 'video_jobs_collection') and self.video_jobs_collection is not None
@@ -215,7 +214,7 @@ class VideoGenerationService:
             status["gemini"] = "❌ Missing GEMINI_API_KEY"
         
         # Groq status
-        if self.groq_client:
+        if self.groq_api_key:
             status["groq"] = "✅ Configured"
         else:
             status["groq"] = "❌ Missing GROQ_API_KEY"
@@ -238,13 +237,14 @@ class VideoGenerationService:
         else:
             status["mongodb"] = "❌ Missing MONGO_URI or connection failed"
         
-        # TTS status
-        if self.tts_engine:
+        # --- START: MODIFIED STATUS CHECK ---
+        if self.tts_engine == "azure":
             status["tts"] = "✅ Ready"
-        elif not TTS_AVAILABLE:
-            status["tts"] = "❌ Install: pip install pyttsx3"
+        elif not AZURE_TTS_AVAILABLE:
+            status["tts"] = "❌ Install: pip install azure-cognitiveservices-speech"
         else:
             status["tts"] = "❌ Initialization failed"
+        # --- END: MODIFIED STATUS CHECK ---
         
         # MoviePy status
         if MOVIEPY_AVAILABLE:
@@ -459,10 +459,11 @@ Return ONLY the JSON object."""
             print(f"Image upload error: {e}")
             return None
 
+    # --- START: REPLACED OLD METHOD ---
     def generate_audio(self, text: str, segment_number: int) -> Optional[str]:
-        """Generate audio using available TTS"""
-        if not self.tts_engine:
-            print(f"⚠️ TTS not available, returning text for segment {segment_number}")
+        """Generate audio using Azure TTS"""
+        if not self.tts_engine == "azure":
+            print(f"⚠️ Azure TTS not available, returning text for segment {segment_number}")
             return f"Audio script: {text}"
         
         try:
@@ -470,37 +471,41 @@ Return ONLY the JSON object."""
             audio_filename = f"audio_segment_{segment_number}_{uuid.uuid4().hex[:8]}.wav"
             audio_path = os.path.join(temp_dir, audio_filename)
             
-            self.tts_engine.save_to_file(text, audio_path)
-            self.tts_engine.runAndWait()
+            # Create a speech synthesizer object
+            audio_config = speechsdk.audio.AudioOutputConfig(filename=audio_path)
+            synthesizer = speechsdk.SpeechSynthesizer(
+                speech_config=self.tts_config, 
+                audio_config=audio_config
+            )
             
-            time.sleep(0.5)  # Wait for file creation
+            # Synthesize the text
+            result = synthesizer.speak_text_async(text).get()
             
-            if os.path.exists(audio_path):
+            if result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:
+                print(f"✅ Audio generated for segment {segment_number} and saved to {audio_path}")
+                
+                # Upload to Supabase if configured
                 if self.supabase:
                     try:
                         with open(audio_path, 'rb') as audio_file:
                             audio_data = audio_file.read()
                         
                         audio_url = self._upload_audio_to_supabase(audio_data, f"segment_{segment_number}")
-                        
-                        try:
-                            os.remove(audio_path)
-                        except:
-                            pass
-                        
+                        os.remove(audio_path)
                         return audio_url
                     except Exception as e:
                         print(f"Audio upload failed, using local path: {e}")
                         return audio_path
                 else:
-                    print(f"📁 Using local audio storage: {audio_path}")
                     return audio_path
-            
-            return None
-            
+            else:
+                print(f"❌ Azure TTS failed for segment {segment_number}: {result.reason}")
+                return None
+                
         except Exception as e:
-            print(f"Audio generation error: {e}")
+            print(f"❌ Audio generation error with Azure: {e}")
             return None
+    # --- END: REPLACED OLD METHOD ---
 
     def _upload_audio_to_supabase(self, audio_data: bytes, filename: str) -> str:
         """Upload audio to Supabase storage"""
@@ -527,10 +532,52 @@ Return ONLY the JSON object."""
             return None
 
     async def create_video_from_segments(self, segments: List[VideoSegment], job_id: str) -> Optional[str]:
-        """Create video or return segment information"""
-        if not MOVIEPY_AVAILABLE:
-            print("⚠️ MoviePy not available - returning segment information instead of video")
+        """Create video using ffmpeg-python"""
+        if not self.ffmpeg_available:
+            print("⚠️ ffmpeg-python not available - returning segment information")
             return self._create_video_info_json(segments, job_id)
+
+        try:
+            temp_dir = tempfile.gettempdir()
+            video_filename = f"final_video_{job_id}.mp4"
+            video_path = os.path.join(temp_dir, video_filename)
+
+            # Create a list of image and audio inputs for ffmpeg
+            inputs = []
+            for segment in segments:
+                image_path = segment.image_path
+                audio_path = segment.audio_path
+                duration = segment.duration
+
+                if not image_path or not audio_path:
+                    print(f"❌ Missing image or audio for segment {segment.segment_number}")
+                    continue
+
+                # Input stream for the image (loop for the duration of the audio)
+                image_stream = ffmpeg.input(image_path, loop=1, t=duration)
+
+                # Input stream for the audio
+                audio_stream = ffmpeg.input(audio_path)
+
+                inputs.append(image_stream)
+                inputs.append(audio_stream)
+
+            # Merge all image and audio streams and concatenate them
+            video_stream = ffmpeg.concat(*inputs, v=1, a=1).node
+            
+            # Use the concat video and audio to create the final output
+            (
+                ffmpeg
+                .output(video_stream[0], video_stream[1], video_path)
+                .run(overwrite_output=True)
+            )
+
+            print(f"✅ Video created successfully: {video_path}")
+            return video_path
+
+        except Exception as e:
+            print(f"❌ Video assembly error with ffmpeg-python: {e}")
+            return None
         
         # MoviePy video creation would go here
         print("🎬 MoviePy available but video assembly not implemented yet")

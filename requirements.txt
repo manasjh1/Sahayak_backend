@@ -1,8 +1,3 @@
-# requirements.txt - Complete Sahayak Video Generation System
-
-# ===============================================
-# CORE FASTAPI & WEB FRAMEWORK
-# ===============================================
 fastapi>=0.104.0
 uvicorn[standard]>=0.24.0
 jinja2>=3.1.0
@@ -39,15 +34,15 @@ pinecone[grpc]>=2.2.4
 # ===============================================
 # VIDEO GENERATION CORE
 # ===============================================
-moviepy>=1.0.3
 Pillow>=10.0.0
 numpy>=1.24.0
 opencv-python-headless>=4.8.0
+ffmpeg-python>=0.2.0
 
 # ===============================================
 # AUDIO PROCESSING
 # ===============================================
-pyttsx3>=2.90
+azure-cognitiveservices-speech>=1.35.0
 
 # ===============================================
 # GOOGLE CLOUD SERVICES (Optional)

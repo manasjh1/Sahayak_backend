@@ -24,6 +24,7 @@ from src.video_generator import video_service
 from src.video_tasks import create_video_task_manager
 
 
+
 app = FastAPI()
 
 # FIXED CORS CONFIGURATION
