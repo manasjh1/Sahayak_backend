@@ -1,8 +1,17 @@
+# Core FastAPI and server dependencies (your existing)
 fastapi
 uvicorn[standard]
 jinja2
 python-dotenv
+python-multipart
+groq
+requests
+pypdf
+
+# Database dependencies (keep your existing pymongo version)
 pymongo[srv]==3.11
+
+# AI and ML dependencies (your existing)
 google-generativeai
 langchain
 langchain_community
@@ -10,7 +19,17 @@ langchain_openai
 langchain_experimental
 langchain-pinecone
 pinecone[grpc]
-python-multipart
-groq
-requests
-pypdf
+
+# NEW: Authentication and security dependencies
+PyJWT==2.8.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.1.2
+
+# NEW: 2FA and OTP dependencies
+pyotp==2.9.0
+qrcode[pil]==7.4.2
+
+# Optional: Development and testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
