@@ -103,7 +103,7 @@ user_profiles = db["user_profiles"]  # New collection for user data
 def generate_completion(prompt_template, user_message: str):
     try:
         completion = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="openai/gpt-oss-120b",
             messages=[
                 prompt_template,
                 {"role": "user", "content": user_message}
