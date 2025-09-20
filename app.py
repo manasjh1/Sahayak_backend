@@ -14,28 +14,24 @@ from src.helper import load_pdf_file, text_split
 from src.prompt import system_prompt, qa_prompt, video_script_prompt
 from pinecone.grpc import PineconeGRPC as Pinecone
 from fastapi import BackgroundTasks
-from pydantic import BaseModel
 from typing import Optional
 import asyncio
 import uuid
 
-# Add these imports for video generation
-from src.video_generator import video_service
-from src.video_tasks import create_video_task_manager
+# Load environment variables first
+load_dotenv()
 
+app = FastAPI(title="Sahayak API", description="AI-Powered Educational Platform", version="1.0.0")
 
-
-app = FastAPI()
-
-# FIXED CORS CONFIGURATION
+# CORS Configuration
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",                     # Local development
+        "http://localhost:3000",
         "http://127.0.0.1:3000",
         "https://sahayak.me",
-        "https://front-eight-murex.vercel.app",     # Your current frontend URL
-        "https://sahayak-cizr.vercel.app",          # Keep old one just in case
+        "https://front-eight-murex.vercel.app",
+        "https://sahayak-cizr.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
@@ -43,8 +39,7 @@ app.add_middleware(
     expose_headers=["*"]
 )
 
-load_dotenv()
-
+# Environment Variables
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
@@ -52,16 +47,53 @@ MONGO_URI = os.getenv("MONGO_URI")
 MONGO_DB_NAME = os.getenv("MONGO_DB_NAME")
 COLLECTION_NAME = os.getenv("COLLECTION_NAME")
 
-os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
-os.environ["GROQ_API_KEY"] = GROQ_API_KEY
+# Validate required environment variables
+if not PINECONE_API_KEY:
+    print("⚠️ PINECONE_API_KEY not found in environment")
+if not GROQ_API_KEY:
+    print("⚠️ GROQ_API_KEY not found in environment")
+if not GEMINI_API_KEY:
+    print("⚠️ GEMINI_API_KEY not found in environment")
+if not MONGO_URI:
+    print("⚠️ MONGO_URI not found in environment")
 
-genai.configure(api_key=GEMINI_API_KEY)
+# Set environment variables
+os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY or ""
+os.environ["GROQ_API_KEY"] = GROQ_API_KEY or ""
 
-video_task_manager = create_video_task_manager(video_service)
+# Configure AI services
+if GEMINI_API_KEY:
+    genai.configure(api_key=GEMINI_API_KEY)
+    print("✅ Gemini configured")
+else:
+    print("❌ Gemini not configured - GEMINI_API_KEY missing")
+
+# Initialize video generation service with error handling
+try:
+    from src.video_generator import video_service
+    from src.video_tasks import create_video_task_manager
+    
+    if video_service:
+        video_task_manager = create_video_task_manager(video_service)
+        VIDEO_GENERATION_AVAILABLE = True
+        print("✅ Video generation service loaded")
+    else:
+        VIDEO_GENERATION_AVAILABLE = False
+        video_task_manager = None
+        print("⚠️ Video service is None")
+except ImportError as e:
+    VIDEO_GENERATION_AVAILABLE = False
+    video_task_manager = None
+    print(f"⚠️ Video generation not available: {e}")
+except Exception as e:
+    VIDEO_GENERATION_AVAILABLE = False
+    video_task_manager = None
+    print(f"❌ Video service error: {e}")
 
 class GeminiEmbedding:
     def __init__(self, api_key):
-        genai.configure(api_key=api_key)
+        if api_key:
+            genai.configure(api_key=api_key)
     
     def embed_documents(self, texts):
         """For document embedding during indexing"""
@@ -95,25 +127,47 @@ class GeminiEmbedding:
         
         return embeddings
 
-embedding = GeminiEmbedding(GEMINI_API_KEY)
-docsearch = PineconeVectorStore.from_existing_index(index_name="bot", embedding=embedding)
-retriever = docsearch.as_retriever(search_type="similarity", search_kwargs={"k": 3})
-
-client = Groq(api_key=GROQ_API_KEY)
-
-mongo_client = MongoClient(MONGO_URI)
-db = mongo_client[MONGO_DB_NAME]
-collection = db[COLLECTION_NAME]
+# Initialize services with error handling
+try:
+    if GEMINI_API_KEY and PINECONE_API_KEY:
+        embedding = GeminiEmbedding(GEMINI_API_KEY)
+        docsearch = PineconeVectorStore.from_existing_index(index_name="bot", embedding=embedding)
+        retriever = docsearch.as_retriever(search_type="similarity", search_kwargs={"k": 3})
+        print("✅ Pinecone and embeddings configured")
+    else:
+        retriever = None
+        print("❌ Pinecone/Embeddings not configured - missing API keys")
+except Exception as e:
+    retriever = None
+    print(f"❌ Pinecone setup error: {e}")
 
 try:
-    from src.video_generator import video_service
-    VIDEO_GENERATION_AVAILABLE = True
-    print("✅ Video generation service loaded")
-except ImportError as e:
-    VIDEO_GENERATION_AVAILABLE = False
-    print(f"⚠️ Video generation not available: {e}")
+    if GROQ_API_KEY:
+        client = Groq(api_key=GROQ_API_KEY)
+        print("✅ Groq client configured")
+    else:
+        client = None
+        print("❌ Groq not configured")
+except Exception as e:
+    client = None
+    print(f"❌ Groq setup error: {e}")
 
-# Add these models after your existing Pydantic models
+try:
+    if MONGO_URI and MONGO_DB_NAME and COLLECTION_NAME:
+        mongo_client = MongoClient(MONGO_URI)
+        db = mongo_client[MONGO_DB_NAME]
+        collection = db[COLLECTION_NAME]
+        # Test connection
+        collection.count_documents({})
+        print("✅ MongoDB configured")
+    else:
+        collection = None
+        print("❌ MongoDB not configured - missing connection details")
+except Exception as e:
+    collection = None
+    print(f"❌ MongoDB setup error: {e}")
+
+# Pydantic Models
 class VideoGenerationRequest(BaseModel):
     topic: str
     duration: int = 30
@@ -130,255 +184,15 @@ class VideoStatusResponse(BaseModel):
     created_at: Optional[str] = None
     learning_objective: Optional[str] = None
 
-# Add these endpoints after your existing endpoints
+class QARequest(BaseModel):
+    question: str
 
-@app.get("/check-video-dependencies")
-async def check_video_dependencies():
-    """Check which video generation dependencies are available"""
-    if not VIDEO_GENERATION_AVAILABLE:
-        return JSONResponse(content={
-            "video_generation_available": False,
-            "error": "Video generation service not loaded",
-            "install_commands": [
-                "pip install moviepy>=1.0.3",
-                "pip install Pillow>=9.0.0", 
-                "pip install supabase>=1.0.0",
-                "pip install pyttsx3>=2.90"
-            ]
-        })
-    
-    try:
-        dependencies = video_service.check_dependencies()
-        
-        missing_deps = []
-        if not dependencies["moviepy"]:
-            missing_deps.append("pip install moviepy>=1.0.3")
-        if not dependencies["pillow"]:
-            missing_deps.append("pip install Pillow>=9.0.0")
-        if not dependencies["supabase"]:
-            missing_deps.append("pip install supabase>=1.0.0")
-        if not dependencies["tts"]:
-            missing_deps.append("pip install pyttsx3>=2.90")
-        
-        return JSONResponse(content={
-            "video_generation_available": VIDEO_GENERATION_AVAILABLE,
-            "dependencies": dependencies,
-            "missing_dependencies": missing_deps,
-            "ready_for_video_generation": all(dependencies.values()),
-            "can_generate_scripts": dependencies["gemini"],
-            "can_create_images": dependencies["pillow"],
-            "can_generate_audio": dependencies["tts"],
-            "can_assemble_video": dependencies["moviepy"],
-            "has_storage": dependencies["supabase"],
-            "has_database": dependencies["mongodb"]
-        })
-        
-    except Exception as e:
-        return JSONResponse(
-            content={"error": f"Dependency check failed: {str(e)}"},
-            status_code=500
-        )
-
-@app.post("/generate-video")
-async def generate_video(request: VideoGenerationRequest):
-    """Generate educational video (with graceful degradation)"""
-    if not VIDEO_GENERATION_AVAILABLE:
-        return JSONResponse(
-            content={
-                "error": "Video generation not available",
-                "install_command": "pip install moviepy Pillow supabase pyttsx3"
-            },
-            status_code=503
-        )
-    
-    print(f"🎬 Video generation request: {request.topic}")
-    
-    try:
-        # Check what's available
-        dependencies = video_service.check_dependencies()
-        
-        # Retrieve context from your existing RAG
-        context = retrieve_context(request.topic)
-        
-        if not context:
-            return JSONResponse(
-                content={"error": "No relevant educational content found for this topic"},
-                status_code=404
-            )
-        
-        # Generate script (this should work even with missing dependencies)
-        script_data = await video_service.generate_video_script(request.topic, context)
-        
-        if not script_data:
-            return JSONResponse(
-                content={"error": "Failed to generate video script"},
-                status_code=500
-            )
-        
-        # Create job ID
-        job_id = str(uuid.uuid4())
-        
-        # Save to your existing database
-        save_to_database("video_generation", request.topic, f"Script generated with ID: {job_id}")
-        
-        response_data = {
-            "job_id": job_id,
-            "status": "script_generated",
-            "topic": request.topic,
-            "video_title": script_data.get("video_title"),
-            "learning_objective": script_data.get("learning_objective"),
-            "segments_count": len(script_data.get("segments", [])),
-            "timestamp": datetime.utcnow().isoformat(),
-            "available_features": dependencies
-        }
-        
-        # Add warnings for missing features
-        warnings = []
-        if not dependencies["moviepy"]:
-            warnings.append("Video assembly disabled - install moviepy")
-        if not dependencies["pillow"]:
-            warnings.append("Image generation disabled - install Pillow")
-        if not dependencies["tts"]:
-            warnings.append("Audio generation disabled - install pyttsx3")
-        if not dependencies["supabase"]:
-            warnings.append("Cloud storage disabled - configure Supabase")
-        
-        if warnings:
-            response_data["warnings"] = warnings
-            response_data["install_commands"] = [
-                "pip install moviepy>=1.0.3",
-                "pip install Pillow>=9.0.0",
-                "pip install pyttsx3>=2.90",
-                "pip install supabase>=1.0.0"
-            ]
-        
-        return JSONResponse(content=response_data)
-        
-    except Exception as e:
-        print(f"Video generation error: {e}")
-        return JSONResponse(
-            content={"error": f"Video generation failed: {str(e)}"},
-            status_code=500
-        )
-
-@app.post("/test-video-pipeline")
-async def test_video_pipeline():
-    """Test video generation pipeline with current dependencies"""
-    if not VIDEO_GENERATION_AVAILABLE:
-        return JSONResponse(content={
-            "status": "service_unavailable",
-            "message": "Video generation service not loaded",
-            "fix": "Install missing dependencies and restart"
-        })
-    
-    try:
-        # Test basic functionality
-        test_topic = "photosynthesis"
-        test_context = "Photosynthesis is the process by which plants make food using sunlight, water, and carbon dioxide."
-        
-        # Check dependencies
-        dependencies = video_service.check_dependencies()
-        
-        # Test script generation
-        script = await video_service.generate_video_script(test_topic, test_context)
-        
-        result = {
-            "status": "partial_success" if script else "failed",
-            "dependencies_status": dependencies,
-            "script_generation": "✅ Working" if script else "❌ Failed",
-            "services_available": {
-                "gemini_api": "✅ Working" if dependencies["gemini"] else "❌ Not configured",
-                "image_processing": "✅ Ready" if dependencies["pillow"] else "❌ Install Pillow",
-                "audio_generation": "✅ Ready" if dependencies["tts"] else "❌ Install pyttsx3", 
-                "video_assembly": "✅ Ready" if dependencies["moviepy"] else "❌ Install MoviePy",
-                "cloud_storage": "✅ Ready" if dependencies["supabase"] else "⚠️ Local storage only",
-                "database": "✅ Working" if dependencies["mongodb"] else "⚠️ Limited functionality"
-            },
-            "next_steps": []
-        }
-        
-        if script:
-            result["script_preview"] = {
-                "title": script.get("video_title"),
-                "segments_count": len(script.get("segments", [])),
-                "learning_objective": script.get("learning_objective")
-            }
-        
-        # Add recommendations
-        if not dependencies["moviepy"]:
-            result["next_steps"].append("Install MoviePy: pip install moviepy>=1.0.3")
-        if not dependencies["pillow"]:
-            result["next_steps"].append("Install Pillow: pip install Pillow>=9.0.0")
-        if not dependencies["tts"]:
-            result["next_steps"].append("Install TTS: pip install pyttsx3>=2.90")
-        if not dependencies["supabase"]:
-            result["next_steps"].append("Configure Supabase for cloud storage")
-        
-        if not result["next_steps"]:
-            result["next_steps"].append("All dependencies ready! Try generating a full video.")
-            result["status"] = "fully_ready"
-        
-        return JSONResponse(content=result)
-        
-    except Exception as e:
-        return JSONResponse(
-            content={
-                "status": "error",
-                "error": f"Pipeline test failed: {str(e)}",
-                "fix": "Check your environment variables and dependencies"
-            },
-            status_code=500
-        )
-
-@app.get("/video-status/{job_id}")
-async def get_video_status(job_id: str):
-    """Get the current status of video generation job"""
-    if not VIDEO_GENERATION_AVAILABLE:
-        return JSONResponse(
-            content={"error": "Video generation service not available"},
-            status_code=503
-        )
-    
-    try:
-        job_data = video_service.get_video_job(job_id)
-        
-        if not job_data:
-            return JSONResponse(
-                content={"error": "Job not found"},
-                status_code=404
-            )
-        
-        # Check dependencies for current status
-        dependencies = video_service.check_dependencies()
-        
-        response = {
-            "job_id": job_data.get("job_id"),
-            "status": job_data.get("status", "unknown"),
-            "progress_percentage": job_data.get("progress_percentage", 0),
-            "topic": job_data.get("topic"),
-            "video_title": job_data.get("video_title"),
-            "final_video_url": job_data.get("final_video_url"),
-            "error_message": job_data.get("error_message"),
-            "created_at": job_data.get("created_at"),
-            "learning_objective": job_data.get("learning_objective"),
-            "available_features": dependencies
-        }
-        
-        # Add helpful messages based on status and dependencies
-        if response["status"] == "script_generated" and not dependencies["moviepy"]:
-            response["message"] = "Script ready! Install MoviePy to continue with video generation."
-            response["install_command"] = "pip install moviepy>=1.0.3"
-        
-        return JSONResponse(content=response)
-        
-    except Exception as e:
-        print(f"Status check error: {e}")
-        return JSONResponse(
-            content={"error": "Failed to get job status"},
-            status_code=500
-        )
+# Utility Functions
 def generate_completion(prompt_template, user_message: str):
     """Generate completion using Groq API"""
+    if not client:
+        return "Groq API not configured. Please check your GROQ_API_KEY."
+    
     try:
         completion = client.chat.completions.create(
             model="llama-3.3-70b-versatile",
@@ -398,6 +212,9 @@ def generate_completion(prompt_template, user_message: str):
 
 def retrieve_context(query: str) -> str:
     """Retrieve relevant context from Pinecone using Gemini embeddings"""
+    if not retriever:
+        return "Context retrieval not available. Please configure Pinecone and Gemini."
+    
     try:
         docs = retriever.invoke(query)
         if not docs:
@@ -409,6 +226,10 @@ def retrieve_context(query: str) -> str:
 
 def save_to_database(entry_type: str, user_message: str, bot_response: str):
     """Save interaction to MongoDB"""
+    if not collection:
+        print(f"Database not available - would save: {entry_type}")
+        return
+    
     try:
         chat_entry = {
             "type": entry_type,
@@ -421,23 +242,232 @@ def save_to_database(entry_type: str, user_message: str, bot_response: str):
     except Exception as e:
         print(f"Database save error: {e}")
 
+# API Endpoints
 @app.get("/")
 async def root():
     """Root endpoint"""
-    return {"message": "Sahayak API is running", "status": "healthy"}
+    return {
+        "message": "Sahayak API is running", 
+        "status": "healthy",
+        "version": "1.0.0",
+        "timestamp": datetime.utcnow().isoformat()
+    }
 
 @app.get("/health")
 async def health_check():
-    """Health check endpoint"""
-    return {"status": "healthy", "timestamp": datetime.utcnow().isoformat()}
+    """Health check endpoint with service status"""
+    services = {
+        "gemini": GEMINI_API_KEY is not None,
+        "groq": client is not None,
+        "mongodb": collection is not None,
+        "pinecone": retriever is not None,
+        "video_generation": VIDEO_GENERATION_AVAILABLE
+    }
+    
+    return {
+        "status": "healthy",
+        "timestamp": datetime.utcnow().isoformat(),
+        "services": services,
+        "all_services_ready": all(services.values())
+    }
+
+@app.get("/check-video-dependencies")
+async def check_video_dependencies():
+    """Check video generation dependencies - UPDATED for FFmpeg"""
+    if not VIDEO_GENERATION_AVAILABLE or not video_service:
+        return JSONResponse(content={
+            "video_generation_available": False,
+            "error": "Video generation service not loaded",
+            "install_commands": [
+                "pip install Pillow>=9.0.0", 
+                "pip install azure-cognitiveservices-speech>=1.35.0",
+                "sudo apt-get install ffmpeg"  # Changed from MoviePy to FFmpeg
+            ]
+        })
+    
+    try:
+        dependencies = video_service.check_dependencies()
+        
+        missing_deps = []
+        install_commands = []
+        
+        if not dependencies.get("ffmpeg", False):  # Changed from moviepy to ffmpeg
+            missing_deps.append("FFmpeg")
+            install_commands.append("sudo apt-get install ffmpeg")
+        if not dependencies.get("pillow", False):
+            missing_deps.append("Pillow")
+            install_commands.append("pip install Pillow>=9.0.0")
+        if not dependencies.get("tts", False):
+            missing_deps.append("Azure TTS")
+            install_commands.append("pip install azure-cognitiveservices-speech>=1.35.0")
+        if not dependencies.get("supabase", False):
+            missing_deps.append("Supabase configuration")
+            install_commands.append("Configure SUPABASE_URL and SUPABASE_KEY in .env")
+        
+        return JSONResponse(content={
+            "video_generation_available": VIDEO_GENERATION_AVAILABLE,
+            "dependencies": dependencies,
+            "missing_dependencies": missing_deps,
+            "install_commands": install_commands,
+            "ready_for_video_generation": dependencies.get("ffmpeg", False) and dependencies.get("pillow", False),
+            "system_info": {
+                "video_engine": "FFmpeg",
+                "can_generate_scripts": dependencies.get("gemini", False),
+                "can_create_images": dependencies.get("pillow", False),
+                "can_generate_audio": dependencies.get("tts", False),
+                "can_assemble_video": dependencies.get("ffmpeg", False),
+                "has_cloud_storage": dependencies.get("supabase", False),
+                "has_database": dependencies.get("mongodb", False)
+            }
+        })
+        
+    except Exception as e:
+        return JSONResponse(
+            content={"error": f"Dependency check failed: {str(e)}"},
+            status_code=500
+        )
+
+@app.post("/test-video-pipeline")
+async def test_video_pipeline():
+    """Test video generation pipeline"""
+    if not VIDEO_GENERATION_AVAILABLE or not video_task_manager:
+        return JSONResponse(content={
+            "status": "service_unavailable",
+            "message": "Video generation service not loaded",
+            "fix": "Install missing dependencies and restart"
+        })
+    
+    try:
+        result = await video_task_manager.test_video_pipeline("photosynthesis")
+        return JSONResponse(content=result)
+        
+    except Exception as e:
+        return JSONResponse(
+            content={
+                "status": "error",
+                "error": f"Pipeline test failed: {str(e)}",
+                "fix": "Check your environment variables and dependencies"
+            },
+            status_code=500
+        )
+
+@app.post("/generate-video")
+async def generate_video(request: VideoGenerationRequest, background_tasks: BackgroundTasks):
+    """Generate educational video"""
+    if not VIDEO_GENERATION_AVAILABLE or not video_task_manager:
+        return JSONResponse(
+            content={
+                "error": "Video generation not available",
+                "install_commands": [
+                    "pip install Pillow azure-cognitiveservices-speech",
+                    "sudo apt-get install ffmpeg"
+                ]
+            },
+            status_code=503
+        )
+    
+    print(f"🎬 Video generation request: {request.topic}")
+    
+    try:
+        # Retrieve context from RAG
+        context = retrieve_context(request.topic)
+        
+        if not context:
+            return JSONResponse(
+                content={"error": "No relevant educational content found for this topic"},
+                status_code=404
+            )
+        
+        # Start video generation in background
+        def start_video_generation():
+            try:
+                import asyncio
+                loop = asyncio.new_event_loop()
+                asyncio.set_event_loop(loop)
+                job_id = loop.run_until_complete(
+                    video_task_manager.generate_full_video(request.topic, context)
+                )
+                loop.close()
+                return job_id
+            except Exception as e:
+                print(f"Background video generation error: {e}")
+                return None
+        
+        # Start in background
+        background_tasks.add_task(start_video_generation)
+        
+        # Create job ID for immediate response
+        job_id = str(uuid.uuid4())
+        
+        # Save to database
+        save_to_database("video_generation", request.topic, f"Job started with ID: {job_id}")
+        
+        return JSONResponse(content={
+            "job_id": job_id,
+            "status": "processing",
+            "message": "Video generation started successfully",
+            "topic": request.topic,
+            "estimated_time": "3-5 minutes",
+            "timestamp": datetime.utcnow().isoformat(),
+            "pipeline": "FFmpeg-based video assembly"
+        })
+        
+    except Exception as e:
+        print(f"Video generation error: {e}")
+        return JSONResponse(
+            content={"error": f"Video generation failed: {str(e)}"},
+            status_code=500
+        )
+
+@app.get("/video-status/{job_id}")
+async def get_video_status(job_id: str):
+    """Get video generation job status"""
+    if not VIDEO_GENERATION_AVAILABLE or not video_service:
+        return JSONResponse(
+            content={"error": "Video generation service not available"},
+            status_code=503
+        )
+    
+    try:
+        job_data = video_service.get_video_job(job_id)
+        
+        if not job_data:
+            return JSONResponse(
+                content={"error": "Job not found"},
+                status_code=404
+            )
+        
+        dependencies = video_service.check_dependencies()
+        
+        response = {
+            "job_id": job_data.get("job_id"),
+            "status": job_data.get("status", "unknown"),
+            "progress_percentage": job_data.get("progress_percentage", 0),
+            "topic": job_data.get("topic"),
+            "video_title": job_data.get("video_title"),
+            "final_video_url": job_data.get("final_video_url"),
+            "error_message": job_data.get("error_message"),
+            "created_at": job_data.get("created_at"),
+            "learning_objective": job_data.get("learning_objective"),
+            "available_features": dependencies,
+            "pipeline": "FFmpeg-based"
+        }
+        
+        return JSONResponse(content=response)
+        
+    except Exception as e:
+        print(f"Status check error: {e}")
+        return JSONResponse(
+            content={"error": "Failed to get job status"},
+            status_code=500
+        )
 
 @app.post("/worksheet")
 async def generate_worksheet(msg: str = Form(...), difficulty: str = Form("Medium")):
-    """Generate educational worksheet based on topic and difficulty level"""
+    """Generate educational worksheet"""
     print(f"Worksheet Topic: {msg}, Difficulty: {difficulty}")
     
     try:
-        # Retrieve context from vector store
         context = retrieve_context(msg)
         
         if not context:
@@ -446,17 +476,13 @@ async def generate_worksheet(msg: str = Form(...), difficulty: str = Form("Mediu
                 status_code=404
             )
         
-        # Format the prompt
         user_prompt = f"""
 Topic: {msg}
 Difficulty Level: {difficulty}
 Context: {context}
 """
         
-        # Generate worksheet
         response = generate_completion(system_prompt, user_prompt)
-        
-        # Save to database
         save_to_database("worksheet", f"{msg} ({difficulty})", response)
         
         return JSONResponse(content={
@@ -475,11 +501,10 @@ Context: {context}
 
 @app.post("/video-script")
 async def generate_video_script(msg: str = Form(...)):
-    """Generate 30-second video script for educational content"""
+    """Generate video script"""
     print(f"Video Script Topic: {msg}")
     
     try:
-        # Retrieve context from vector store
         context = retrieve_context(msg)
         
         if not context:
@@ -488,16 +513,12 @@ async def generate_video_script(msg: str = Form(...)):
                 status_code=404
             )
         
-        # Format the prompt
         user_prompt = f"""
 Topic: {msg}
 Context: {context}
 """
         
-        # Generate video script
         response = generate_completion(video_script_prompt, user_prompt)
-        
-        # Save to database
         save_to_database("video_script", msg, response)
         
         return JSONResponse(content={
@@ -513,13 +534,48 @@ Context: {context}
             status_code=500
         )
 
+@app.post("/qa")
+async def generate_answer(data: QARequest):
+    """Generate answer using RAG"""
+    print(f"Q/A Question: {data.question}")
+    
+    try:
+        context = retrieve_context(data.question)
+        
+        user_prompt = f"""
+Question: {data.question}
+Context: {context}
+"""
+        
+        response = generate_completion(qa_prompt, user_prompt)
+        save_to_database("qa", data.question, response)
+        
+        return JSONResponse(content={
+            "answer": response,
+            "question": data.question,
+            "timestamp": datetime.utcnow().isoformat()
+        })
+        
+    except Exception as e:
+        print(f"Q/A generation error: {e}")
+        return JSONResponse(
+            content={"error": "Failed to generate answer"},
+            status_code=500
+        )
+
 @app.get("/history")
 async def chat_history(limit: int = 10):
-    """Retrieve chat history from database"""
+    """Get chat history"""
+    if not collection:
+        return JSONResponse(content={
+            "history": [],
+            "count": 0,
+            "message": "Database not configured"
+        })
+    
     try:
         history = list(collection.find().sort("timestamp", -1).limit(limit))
         
-        # Convert ObjectId and datetime to string for JSON serialization
         for h in history:
             h["_id"] = str(h["_id"])
             h["timestamp"] = h["timestamp"].isoformat()
@@ -536,46 +592,15 @@ async def chat_history(limit: int = 10):
             status_code=500
         )
 
-class QARequest(BaseModel):
-    question: str
-
-@app.post("/qa")
-async def generate_answer(data: QARequest):
-    """Generate answer for user questions using RAG"""
-    print(f"Q/A Question: {data.question}")
-    
-    try:
-        # Retrieve relevant context
-        context = retrieve_context(data.question)
-        
-        # Format the prompt
-        user_prompt = f"""
-Question: {data.question}
-Context: {context}
-"""
-        
-        # Generate answer
-        response = generate_completion(qa_prompt, user_prompt)
-        
-        # Save to database
-        save_to_database("qa", data.question, response)
-        
-        return JSONResponse(content={
-            "answer": response,
-            "question": data.question,
-            "timestamp": datetime.utcnow().isoformat()
-        })
-        
-    except Exception as e:
-        print(f"Q/A generation error: {e}")
-        return JSONResponse(
-            content={"error": "Failed to generate answer"},
-            status_code=500
-        )
-
 @app.delete("/history")
 async def clear_history():
-    """Clear all chat history"""
+    """Clear chat history"""
+    if not collection:
+        return JSONResponse(content={
+            "message": "Database not configured",
+            "timestamp": datetime.utcnow().isoformat()
+        })
+    
     try:
         result = collection.delete_many({})
         return JSONResponse(content={
@@ -591,7 +616,17 @@ async def clear_history():
 
 @app.get("/stats")
 async def get_stats():
-    """Get database statistics"""
+    """Get statistics"""
+    if not collection:
+        return JSONResponse(content={
+            "total_interactions": 0,
+            "worksheets_generated": 0,
+            "questions_answered": 0,
+            "video_scripts_generated": 0,
+            "message": "Database not configured",
+            "timestamp": datetime.utcnow().isoformat()
+        })
+    
     try:
         total_interactions = collection.count_documents({})
         worksheet_count = collection.count_documents({"type": "worksheet"})
@@ -612,251 +647,19 @@ async def get_stats():
             status_code=500
         )
 
-# @app.post("/generate-video")
-# async def generate_video(request: VideoGenerationRequest, background_tasks: BackgroundTasks):
-#     """
-#     Generate educational video from topic using RAG + AI
-#     Returns immediately with job_id for status tracking
-#     """
-#     print(f"🎬 Video generation request: {request.topic}")
-    
-#     try:
-#         # Retrieve context from RAG
-#         context = retrieve_context(request.topic)
-        
-#         if not context:
-#             return JSONResponse(
-#                 content={"error": "No relevant educational content found for this topic"},
-#                 status_code=404
-#             )
-        
-#         # Start video generation in background
-#         job_id = await video_task_manager.generate_full_video(request.topic, context)
-        
-#         # Save initial request to your existing database
-#         save_to_database("video_generation", request.topic, f"Job started with ID: {job_id}")
-        
-#         return JSONResponse(content={
-#             "job_id": job_id,
-#             "status": "processing",
-#             "message": "Video generation started successfully",
-#             "topic": request.topic,
-#             "estimated_time": "2-3 minutes",
-#             "timestamp": datetime.utcnow().isoformat()
-#         })
-        
-#     except Exception as e:
-#         print(f"Video generation request error: {e}")
-#         return JSONResponse(
-#             content={"error": "Failed to start video generation"},
-#             status_code=500
-#         )
-
-# @app.get("/video-status/{job_id}")
-# async def get_video_status(job_id: str):
-#     """
-#     Get the current status of video generation job
-#     """
-#     try:
-#         job_data = video_service.get_video_job(job_id)
-        
-#         if not job_data:
-#             return JSONResponse(
-#                 content={"error": "Job not found"},
-#                 status_code=404
-#             )
-        
-#         response = VideoStatusResponse(
-#             job_id=job_data["job_id"],
-#             status=job_data["status"],
-#             progress_percentage=job_data.get("progress_percentage", 0),
-#             topic=job_data["topic"],
-#             video_title=job_data.get("video_title"),
-#             final_video_url=job_data.get("final_video_url"),
-#             error_message=job_data.get("error_message"),
-#             created_at=job_data.get("created_at"),
-#             learning_objective=job_data.get("learning_objective")
-#         )
-        
-#         return JSONResponse(content=response.dict())
-        
-#     except Exception as e:
-#         print(f"Status check error: {e}")
-#         return JSONResponse(
-#             content={"error": "Failed to get job status"},
-#             status_code=500
-#         )
-
-# @app.get("/video-history")
-# async def get_video_history(limit: int = 10):
-#     """
-#     Get recent video generation history
-#     """
-#     try:
-#         videos = list(
-#             video_service.video_jobs_collection
-#             .find()
-#             .sort("created_at", -1)
-#             .limit(limit)
-#         )
-        
-#         # Convert ObjectId and datetime to string
-#         for video in videos:
-#             video["_id"] = str(video["_id"])
-#             if "created_at" in video:
-#                 video["created_at"] = video["created_at"].isoformat()
-#             if "updated_at" in video:
-#                 video["updated_at"] = video["updated_at"].isoformat()
-        
-#         return JSONResponse(content={
-#             "videos": videos,
-#             "count": len(videos)
-#         })
-        
-#     except Exception as e:
-#         print(f"Video history error: {e}")
-#         return JSONResponse(
-#             content={"error": "Failed to retrieve video history"},
-#             status_code=500
-#         )
-
-# @app.delete("/video-job/{job_id}")
-# async def delete_video_job(job_id: str):
-#     """
-#     Delete a video generation job and its assets
-#     """
-#     try:
-#         # Get job data first
-#         job_data = video_service.get_video_job(job_id)
-        
-#         if not job_data:
-#             return JSONResponse(
-#                 content={"error": "Job not found"},
-#                 status_code=404
-#             )
-        
-#         # Delete from database
-#         result = video_service.video_jobs_collection.delete_one({"job_id": job_id})
-        
-#         # TODO: Also delete associated files from Supabase storage
-#         # This would require additional cleanup logic
-        
-#         if result.deleted_count > 0:
-#             return JSONResponse(content={
-#                 "message": f"Video job {job_id} deleted successfully",
-#                 "timestamp": datetime.utcnow().isoformat()
-#             })
-#         else:
-#             return JSONResponse(
-#                 content={"error": "Job not found"},
-#                 status_code=404
-#             )
-        
-#     except Exception as e:
-#         print(f"Video deletion error: {e}")
-#         return JSONResponse(
-#             content={"error": "Failed to delete video job"},
-#             status_code=500
-#         )
-
-# @app.get("/video-stats")
-# async def get_video_stats():
-#     """
-#     Get video generation statistics
-#     """
-#     try:
-#         total_jobs = video_service.video_jobs_collection.count_documents({})
-#         completed_jobs = video_service.video_jobs_collection.count_documents({"status": "completed"})
-#         failed_jobs = video_service.video_jobs_collection.count_documents({"status": "failed"})
-#         processing_jobs = video_service.video_jobs_collection.count_documents({
-#             "status": {"$in": ["processing", "initializing", "generating_assets", "creating_video"]}
-#         })
-        
-#         # Get recent activity
-#         recent_completed = list(
-#             video_service.video_jobs_collection
-#             .find({"status": "completed"})
-#             .sort("created_at", -1)
-#             .limit(5)
-#         )
-        
-#         for job in recent_completed:
-#             job["_id"] = str(job["_id"])
-#             if "created_at" in job:
-#                 job["created_at"] = job["created_at"].isoformat()
-        
-#         return JSONResponse(content={
-#             "total_video_jobs": total_jobs,
-#             "completed_videos": completed_jobs,
-#             "failed_videos": failed_jobs,
-#             "processing_videos": processing_jobs,
-#             "success_rate": round((completed_jobs / total_jobs * 100) if total_jobs > 0 else 0, 2),
-#             "recent_completed": recent_completed,
-#             "timestamp": datetime.utcnow().isoformat()
-#         })
-        
-#     except Exception as e:
-#         print(f"Video stats error: {e}")
-#         return JSONResponse(
-#             content={"error": "Failed to retrieve video statistics"},
-#             status_code=500
-#         )
-
-# # Add this route for testing the video generation system
-# @app.post("/test-video-pipeline")
-# async def test_video_pipeline():
-#     """
-#     Test endpoint to verify video generation pipeline
-#     """
-#     try:
-#         test_topic = "photosynthesis"
-#         test_context = """
-#         Photosynthesis is the process by which plants make their own food using sunlight, water, and carbon dioxide.
-#         The process occurs in the chloroplasts of plant cells, specifically in the chlorophyll.
-#         The equation is: 6CO2 + 6H2O + sunlight → C6H12O6 + 6O2
-#         This process is essential for life on Earth as it produces oxygen and glucose.
-#         """
-        
-#         # Test script generation
-#         script = await video_service.generate_video_script(test_topic, test_context)
-        
-#         if script:
-#             return JSONResponse(content={
-#                 "status": "success",
-#                 "message": "Video pipeline test completed successfully",
-#                 "script_preview": {
-#                     "title": script.get("video_title"),
-#                     "segments_count": len(script.get("segments", [])),
-#                     "learning_objective": script.get("learning_objective")
-#                 },
-#                 "services_status": {
-#                     "gemini_api": "✅ Working",
-#                     "supabase": "✅ Connected" if video_service.supabase else "❌ Not configured",
-#                     "tts_engine": "✅ Ready",
-#                     "mongodb": "✅ Connected"
-#                 }
-#             })
-#         else:
-#             return JSONResponse(
-#                 content={"error": "Script generation failed"},
-#                 status_code=500
-#             )
-            
-#     except Exception as e:
-#         return JSONResponse(
-#             content={
-#                 "error": f"Pipeline test failed: {str(e)}",
-#                 "services_status": {
-#                     "gemini_api": "❌ Error",
-#                     "supabase": "❓ Unknown",
-#                     "tts_engine": "❓ Unknown",
-#                     "mongodb": "❓ Unknown"
-#                 }
-#             },
-#             status_code=500
-#         )
-
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
-    uvicorn.run("app:app", host="0.0.0.0", port=port, reload=True)
-
+    print(f"🚀 Starting Sahayak API on port {port}")
+    print(f"📍 Access at: http://localhost:{port}")
+    print(f"📋 Health check: http://localhost:{port}/health")
+    print(f"📖 API docs: http://localhost:{port}/docs")
+    
+    try:
+        uvicorn.run("app:app", host="0.0.0.0", port=port, reload=True)
+    except Exception as e:
+        print(f"❌ Failed to start server: {e}")
+        print("💡 Possible solutions:")
+        print(f"   - Check if port {port} is already in use")
+        print("   - Try a different port: PORT=8001 python app.py")
+        print("   - Check your environment variables")
+        

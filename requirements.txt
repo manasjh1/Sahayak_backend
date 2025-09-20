@@ -1,3 +1,6 @@
+# ===============================================
+# CORE WEB FRAMEWORK
+# ===============================================
 fastapi>=0.104.0
 uvicorn[standard]>=0.24.0
 jinja2>=3.1.0
@@ -32,24 +35,15 @@ langchain-pinecone>=0.0.3
 pinecone[grpc]>=2.2.4
 
 # ===============================================
-# VIDEO GENERATION CORE
+# VIDEO GENERATION - FFMPEG BASED
 # ===============================================
 Pillow>=10.0.0
 numpy>=1.24.0
-opencv-python-headless>=4.8.0
-ffmpeg-python>=0.2.0
 
 # ===============================================
-# AUDIO PROCESSING
+# AUDIO PROCESSING - AZURE TTS
 # ===============================================
 azure-cognitiveservices-speech>=1.35.0
-
-# ===============================================
-# GOOGLE CLOUD SERVICES (Optional)
-# ===============================================
-# google-cloud-texttospeech>=2.14.0
-# google-auth>=2.17.0
-# google-cloud-core>=2.3.0
 
 # ===============================================
 # FILE PROCESSING
@@ -58,56 +52,73 @@ requests>=2.31.0
 pypdf>=3.17.0
 
 # ===============================================
-# IMAGE & VIDEO CODECS
-# ===============================================
-imageio>=2.31.0
-imageio-ffmpeg>=0.4.0
-
-# ===============================================
 # ASYNC & PERFORMANCE
 # ===============================================
 aiofiles>=23.0.0
-asyncio-throttle>=1.0.0
 
 # ===============================================
-# DEVELOPMENT & TESTING (Optional)
+# SYSTEM REQUIREMENTS NOTES:
 # ===============================================
-# pytest>=7.4.0
-# pytest-asyncio>=0.21.0
-# black>=23.0.0
-# flake8>=6.0.0
-
-# ===============================================
-# PRODUCTION DEPLOYMENT (Optional)
-# ===============================================
-# gunicorn>=21.0.0
-# supervisor>=4.2.0
-
-# ===============================================
-# ADVANCED AI FEATURES (Optional - For Future)
-# ===============================================
-# transformers>=4.20.0
-# diffusers>=0.15.0
-# torch>=2.0.0
-# accelerate>=0.20.0
-
-# ===============================================
-# MONITORING & LOGGING (Optional)
-# ===============================================
-# loguru>=0.7.0
-# prometheus-client>=0.17.0
-
-# ===============================================
-# SECURITY (Optional)
-# ===============================================
-# python-jose[cryptography]>=3.3.0
-# passlib[bcrypt]>=1.7.4
-
-# ===============================================
-# NOTES:
-# - All core video generation dependencies included
-# - Optional dependencies commented out to reduce install time
-# - Versions pinned for stability
-# - Compatible with Python 3.8+
-# - Total install size: ~500MB for core dependencies
+# 
+# REQUIRED SYSTEM DEPENDENCIES:
+# ------------------------------
+# 1. FFmpeg (for video processing):
+#    Ubuntu/Debian: sudo apt-get install ffmpeg
+#    CentOS/RHEL:   sudo yum install ffmpeg
+#    macOS:         brew install ffmpeg
+#    Windows:       Download from https://ffmpeg.org/download.html
+#
+# 2. System fonts (for text rendering):
+#    Ubuntu/Debian: sudo apt-get install fonts-dejavu-core
+#    CentOS/RHEL:   sudo yum install dejavu-sans-fonts
+#
+# ENVIRONMENT VARIABLES REQUIRED:
+# -------------------------------
+# AZURE_SPEECH_KEY=your_azure_speech_key
+# AZURE_SPEECH_REGION=your_azure_region
+# SUPABASE_URL=https://your-project.supabase.co
+# SUPABASE_KEY=your_supabase_anon_key
+# GEMINI_API_KEY=your_gemini_api_key
+# GROQ_API_KEY=your_groq_api_key
+# PINECONE_API_KEY=your_pinecone_api_key
+# MONGO_URI=your_mongodb_connection_string
+# MONGO_DB_NAME=your_database_name
+# COLLECTION_NAME=your_collection_name
+#
+# VIDEO GENERATION PIPELINE:
+# --------------------------
+# 1. Script Generation: Gemini API
+# 2. Image Creation: PIL with educational templates
+# 3. Audio Generation: Azure Cognitive Services TTS
+# 4. Video Assembly: FFmpeg (system dependency)
+# 5. Storage: Supabase cloud storage or local filesystem
+#
+# INSTALLATION COMMANDS:
+# ---------------------
+# pip install -r requirements.txt
+# sudo apt-get install ffmpeg fonts-dejavu-core  # Ubuntu/Debian
+# 
+# DOCKER SETUP (if using containers):
+# -----------------------------------
+# FROM python:3.9
+# RUN apt-get update && apt-get install -y ffmpeg fonts-dejavu-core
+# COPY requirements.txt .
+# RUN pip install -r requirements.txt
+#
+# PERFORMANCE NOTES:
+# -----------------
+# - FFmpeg provides much better performance than MoviePy
+# - Parallel processing of video segments for maximum speed
+# - Azure TTS provides high-quality audio generation
+# - Supabase handles cloud storage automatically
+# - Total video generation time: 3-5 minutes for 30-second educational videos
+#
+# TROUBLESHOOTING:
+# ---------------
+# 1. FFmpeg not found: Ensure FFmpeg is installed and in PATH
+# 2. Font errors: Install system fonts (dejavu-sans-fonts)
+# 3. Azure TTS errors: Check AZURE_SPEECH_KEY and AZURE_SPEECH_REGION
+# 4. Supabase errors: Verify SUPABASE_URL and SUPABASE_KEY
+# 5. Memory issues: Ensure sufficient RAM for parallel processing
+#
 # ===============================================
