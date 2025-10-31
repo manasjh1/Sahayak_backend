@@ -10,7 +10,7 @@ from typing import List, Dict, Optional
 from datetime import datetime
 from dataclasses import dataclass
 import math
-
+from gtts import gTTS
 import requests
 from pymongo import MongoClient
 import google.generativeai as genai
@@ -169,7 +169,7 @@ class VideoGenerationService:
         self._init_gemini()
         self._init_supabase()
         self._init_mongodb()
-        self._init_azure_tts()
+        self._init_gtts()
         
         print("✅ Enhanced video service initialized")
 
@@ -202,19 +202,19 @@ class VideoGenerationService:
             except Exception as e:
                 print(f"⚠️ MongoDB error: {e}")
 
-    def _init_azure_tts(self):
-        self.tts_engine = None
-        if AZURE_TTS_AVAILABLE:
-            speech_key = os.getenv("AZURE_SPEECH_KEY")
-            service_region = os.getenv("AZURE_SPEECH_REGION")
-            if speech_key and service_region:
-                try:
-                    self.tts_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
-                    self.tts_config.set_speech_synthesis_output_format(speechsdk.SpeechSynthesisOutputFormat.Riff24Khz16BitMonoPcm)
-                    self.tts_engine = "azure"
-                    print("✅ Azure TTS configured")
-                except Exception as e:
-                    print(f"⚠️ Azure TTS error: {e}")
+    def _init_gtts(self):
+        """Initialize gTTS (Google Text-to-Speech) - Free and working!"""
+        try:
+            # Test gTTS availability
+            from gtts import gTTS
+            self.tts_engine = "gtts"
+            print("✅ gTTS configured (free Google TTS)")
+        except ImportError:
+            print("⚠️ gTTS not available - install with: pip install gtts")
+            self.tts_engine = None
+        except Exception as e:
+            print(f"⚠️ gTTS error: {e}")
+            self.tts_engine = None
 
     def check_dependencies(self) -> Dict[str, bool]:
         """Check available dependencies with detailed status"""
@@ -222,7 +222,7 @@ class VideoGenerationService:
             "ffmpeg": FFMPEG_AVAILABLE,
             "pillow": PIL_AVAILABLE,
             "supabase": self.supabase is not None,
-            "tts": self.tts_engine == "azure",
+            "tts": self.tts_engine == "gtts",
             "gemini": self.gemini_api_key is not None,
             "groq": True,
             "mongodb": self.video_jobs_collection is not None
@@ -642,44 +642,61 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
         return await self.generate_dynamic_educational_image(prompt, topic, segment_number)
 
     def generate_audio(self, text: str, segment_number: int) -> Optional[str]:
-        """Generate high-quality audio with proper duration"""
-        if self.tts_engine != "azure":
-            print(f"⚠️ Azure TTS not available for segment {segment_number}")
-            return None
+        """Generate high-quality audio using working gTTS"""
+        from gtts import gTTS
+        
+        temp_path = os.path.join(tempfile.gettempdir(), 
+                            f"audio_{segment_number}_{uuid.uuid4().hex[:8]}.wav")
         
         try:
-            temp_path = os.path.join(tempfile.gettempdir(), 
-                                   f"audio_{segment_number}_{uuid.uuid4().hex[:8]}.wav")
+            print(f"🎵 Generating audio for segment {segment_number} using gTTS...")
             
-            # Configure audio for better quality
-            audio_config = speechsdk.audio.AudioOutputConfig(filename=temp_path)
-            synthesizer = speechsdk.SpeechSynthesizer(
-                speech_config=self.tts_config, 
-                audio_config=audio_config
+            # Create gTTS object with US female voice
+            tts = gTTS(
+                text=text,
+                lang='en',        # English
+                tld='com',        # US accent (.com)
+                slow=False        # Normal speed
             )
             
-            # Use SSML for better control
-            ssml_text = f"""
-            <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
-                <voice name="en-US-AriaNeural">
-                    <prosody rate="medium" pitch="medium" volume="loud">
-                        {text}
-                    </prosody>
-                </voice>
-            </speak>
-            """
+            # Save to temporary MP3
+            temp_mp3 = temp_path.replace('.wav', '_temp.mp3')
+            tts.save(temp_mp3)
             
-            result = synthesizer.speak_ssml_async(ssml_text).get()
+            if not os.path.exists(temp_mp3) or os.path.getsize(temp_mp3) == 0:
+                print("❌ gTTS failed to generate MP3")
+                return None
             
-            if result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:
-                print(f"✅ High-quality audio generated for segment {segment_number}")
+            print(f"✅ Generated MP3: {os.path.getsize(temp_mp3)} bytes")
+            
+            # Convert MP3 to WAV with VERY LOUD volume and professional audio processing
+            conversion_cmd = [
+                'ffmpeg', '-y',
+                '-i', temp_mp3,
+                '-acodec', 'pcm_s16le',
+                '-ar', '44100',
+                '-ac', '2',
+                # Professional audio enhancement: loud + normalized + compressed
+                '-af', 'volume=6.0,loudnorm=I=-16:LRA=11:TP=-1.5,compand=attacks=0.02:decays=0.1:points=-60/-60|-30/-20|-20/-10|-5/-5:soft-knee=6:gain=0',
+                temp_path
+            ]
+            
+            result = subprocess.run(conversion_cmd, capture_output=True, text=True, timeout=60)
+            
+            # Clean up temp MP3
+            if os.path.exists(temp_mp3):
+                os.remove(temp_mp3)
+            
+            if result.returncode == 0 and os.path.exists(temp_path) and os.path.getsize(temp_path) > 0:
+                file_size = os.path.getsize(temp_path)
+                print(f"✅ Audio ready: {file_size} bytes (ENHANCED & LOUD)")
                 return temp_path
             else:
-                print(f"❌ TTS failed for segment {segment_number}: {result.reason}")
+                print(f"❌ Audio conversion failed: {result.stderr}")
                 return None
                 
         except Exception as e:
-            print(f"Audio generation error: {e}")
+            print(f"❌ TTS generation failed: {e}")
             return None
 
     async def create_video_from_segments(self, segments: List[VideoSegment], job_id: str) -> Optional[str]:
@@ -722,6 +739,7 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
                     audio_duration = 6.0  # Default fallback
                 
                 # IMPROVED FFmpeg command with better sync
+                # In your create_video_from_segments method, update the FFmpeg command:
                 cmd = [
                     'ffmpeg', '-y',
                     '-loop', '1', '-i', segment.image_path,
@@ -734,23 +752,18 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
                     '-pix_fmt', 'yuv420p',
                     '-r', '25',
                     
-                    # Audio encoding  
+                    # LOUDER Audio encoding  
                     '-c:a', 'aac',
-                    '-b:a', '128k',
+                    '-b:a', '192k',
                     '-ar', '44100',
                     '-ac', '2',
+                    '-af', 'volume=4.0,loudnorm',  # Much louder volume + normalization
                     
-                    # Sync and duration
+                    # Rest of your settings...
                     '-shortest',
                     '-t', str(audio_duration),
-                    
-                    # Video scaling and padding
                     '-vf', 'scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2',
-                    
-                    # Output optimization
                     '-movflags', '+faststart',
-                    '-max_muxing_queue_size', '1024',
-                    
                     segment_video
                 ]
                 

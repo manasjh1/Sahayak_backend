@@ -55,4 +55,4 @@ pypdf>=3.17.0
 # ASYNC & PERFORMANCE
 # ===============================================
 aiofiles>=23.0.0
-ffmpeg-python
+gtts>=2.5.4
