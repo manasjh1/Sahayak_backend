@@ -273,95 +273,246 @@ async def health_check():
 
 @app.get("/check-video-dependencies")
 async def check_video_dependencies():
-    """Check video generation dependencies - UPDATED for FFmpeg"""
-    if not VIDEO_GENERATION_AVAILABLE or not video_service:
-        return JSONResponse(content={
-            "video_generation_available": False,
-            "error": "Video generation service not loaded",
-            "install_commands": [
-                "pip install Pillow>=9.0.0", 
-                "pip install azure-cognitiveservices-speech>=1.35.0",
-                "sudo apt-get install ffmpeg"  # Changed from MoviePy to FFmpeg
-            ]
-        })
-    
+    """Check video generation dependencies with enhanced error handling"""
     try:
-        dependencies = video_service.check_dependencies()
+        if not VIDEO_GENERATION_AVAILABLE or not video_service:
+            return JSONResponse(content={
+                "video_generation_available": False,
+                "error": "Video generation service not loaded",
+                "status": "service_unavailable",
+                "install_commands": [
+                    "sudo apt-get update && sudo apt-get install -y ffmpeg",
+                    "pip install Pillow>=9.0.0", 
+                    "pip install azure-cognitiveservices-speech>=1.35.0"
+                ],
+                "next_steps": [
+                    "1. Run the install commands above",
+                    "2. Restart the application",
+                    "3. Test again with this endpoint"
+                ]
+            })
         
-        missing_deps = []
-        install_commands = []
-        
-        if not dependencies.get("ffmpeg", False):  # Changed from moviepy to ffmpeg
-            missing_deps.append("FFmpeg")
-            install_commands.append("sudo apt-get install ffmpeg")
-        if not dependencies.get("pillow", False):
-            missing_deps.append("Pillow")
-            install_commands.append("pip install Pillow>=9.0.0")
-        if not dependencies.get("tts", False):
-            missing_deps.append("Azure TTS")
-            install_commands.append("pip install azure-cognitiveservices-speech>=1.35.0")
-        if not dependencies.get("supabase", False):
-            missing_deps.append("Supabase configuration")
-            install_commands.append("Configure SUPABASE_URL and SUPABASE_KEY in .env")
-        
-        return JSONResponse(content={
-            "video_generation_available": VIDEO_GENERATION_AVAILABLE,
-            "dependencies": dependencies,
-            "missing_dependencies": missing_deps,
-            "install_commands": install_commands,
-            "ready_for_video_generation": dependencies.get("ffmpeg", False) and dependencies.get("pillow", False),
-            "system_info": {
-                "video_engine": "FFmpeg",
-                "can_generate_scripts": dependencies.get("gemini", False),
-                "can_create_images": dependencies.get("pillow", False),
-                "can_generate_audio": dependencies.get("tts", False),
-                "can_assemble_video": dependencies.get("ffmpeg", False),
-                "has_cloud_storage": dependencies.get("supabase", False),
-                "has_database": dependencies.get("mongodb", False)
+        try:
+            dependencies = video_service.check_dependencies()
+            
+            # Get installation help
+            installation_help = {}
+            try:
+                installation_help = video_service.get_installation_help()
+            except Exception as help_error:
+                print(f"Could not get installation help: {help_error}")
+            
+            missing_deps = []
+            install_commands = []
+            
+            # Check each dependency with better error handling
+            deps_to_check = {
+                "ffmpeg": "FFmpeg for video processing",
+                "pillow": "Pillow for image generation", 
+                "tts": "Azure Text-to-Speech",
+                "supabase": "Supabase for cloud storage",
+                "mongodb": "MongoDB for job tracking",
+                "gemini": "Google Gemini for AI features"
             }
-        })
-        
+            
+            for dep_key, dep_name in deps_to_check.items():
+                if not dependencies.get(dep_key, False):
+                    missing_deps.append(dep_name)
+                    
+                    # Add specific install commands
+                    if dep_key == "ffmpeg":
+                        install_commands.extend([
+                            "# Ubuntu/Debian:",
+                            "sudo apt-get update && sudo apt-get install -y ffmpeg",
+                            "# CentOS/RHEL:",
+                            "sudo dnf install -y ffmpeg"
+                        ])
+                    elif dep_key == "pillow":
+                        install_commands.append("pip install Pillow>=9.0.0")
+                    elif dep_key == "tts":
+                        install_commands.extend([
+                            "pip install azure-cognitiveservices-speech>=1.35.0",
+                            "# Set environment variables:",
+                            "# AZURE_SPEECH_KEY=your_key",
+                            "# AZURE_SPEECH_REGION=your_region"
+                        ])
+                    elif dep_key == "supabase":
+                        install_commands.extend([
+                            "pip install supabase",
+                            "# Set environment variables:",
+                            "# SUPABASE_URL=your_url", 
+                            "# SUPABASE_KEY=your_key"
+                        ])
+            
+            # Calculate readiness score
+            total_deps = len(deps_to_check)
+            ready_deps = sum(1 for dep in deps_to_check.keys() if dependencies.get(dep, False))
+            readiness_score = (ready_deps / total_deps) * 100 if total_deps > 0 else 0
+            
+            return JSONResponse(content={
+                "video_generation_available": VIDEO_GENERATION_AVAILABLE,
+                "dependencies": dependencies,
+                "missing_dependencies": missing_deps,
+                "install_commands": install_commands,
+                "installation_help": installation_help,
+                "readiness_score": round(readiness_score, 1),
+                "ready_for_video_generation": dependencies.get("ffmpeg", False) and dependencies.get("pillow", False),
+                "system_info": {
+                    "video_engine": "FFmpeg" if dependencies.get("ffmpeg") else "Not Available",
+                    "can_generate_scripts": dependencies.get("gemini", False),
+                    "can_create_images": dependencies.get("pillow", False),
+                    "can_generate_audio": dependencies.get("tts", False),
+                    "can_assemble_video": dependencies.get("ffmpeg", False),
+                    "has_cloud_storage": dependencies.get("supabase", False),
+                    "has_database": dependencies.get("mongodb", False)
+                },
+                "status": "ready" if readiness_score >= 80 else "needs_setup" if readiness_score >= 40 else "not_ready",
+                "message": f"System is {readiness_score:.1f}% ready for video generation"
+            })
+            
+        except Exception as dep_error:
+            return JSONResponse(
+                content={
+                    "error": f"Dependency check failed: {str(dep_error)}",
+                    "status": "check_failed",
+                    "fix": "Check video service configuration"
+                },
+                status_code=500
+            )
+            
     except Exception as e:
         return JSONResponse(
-            content={"error": f"Dependency check failed: {str(e)}"},
+            content={
+                "error": f"Critical dependency check failure: {str(e)}",
+                "status": "critical_error",
+                "install_commands": [
+                    "sudo apt-get update && sudo apt-get install -y ffmpeg",
+                    "pip install Pillow>=9.0.0",
+                    "pip install azure-cognitiveservices-speech>=1.35.0"
+                ]
+            },
             status_code=500
         )
 
 @app.post("/test-video-pipeline")
 async def test_video_pipeline():
-    """Test video generation pipeline"""
-    if not VIDEO_GENERATION_AVAILABLE or not video_task_manager:
-        return JSONResponse(content={
-            "status": "service_unavailable",
-            "message": "Video generation service not loaded",
-            "fix": "Install missing dependencies and restart"
-        })
-    
+    """Test video generation pipeline with comprehensive error handling"""
     try:
-        result = await video_task_manager.test_video_pipeline("photosynthesis")
-        return JSONResponse(content=result)
+        # Check if video generation is available
+        if not VIDEO_GENERATION_AVAILABLE:
+            return JSONResponse(content={
+                "status": "service_unavailable",
+                "message": "Video generation service not loaded",
+                "fix": "Install missing dependencies and restart",
+                "install_commands": [
+                    "sudo apt-get update && sudo apt-get install -y ffmpeg", 
+                    "pip install Pillow>=9.0.0", 
+                    "pip install azure-cognitiveservices-speech>=1.35.0"
+                ]
+            })
+        
+        # Check if video service exists
+        if not video_service:
+            return JSONResponse(content={
+                "status": "service_error",
+                "message": "Video service instance not available",
+                "fix": "Restart the application after installing dependencies"
+            })
+        
+        # Check if video task manager exists
+        if not video_task_manager:
+            return JSONResponse(content={
+                "status": "task_manager_error", 
+                "message": "Video task manager not initialized",
+                "fix": "Check video service initialization"
+            })
+        
+        # Test the pipeline with proper error handling
+        try:
+            # Check if the test method exists
+            if not hasattr(video_task_manager, 'test_enhanced_pipeline'):
+                # Fallback to basic test
+                if hasattr(video_task_manager, 'test_video_pipeline'):
+                    result = await video_task_manager.test_video_pipeline("photosynthesis")
+                else:
+                    # Create a basic test result
+                    dependencies = video_service.check_dependencies()
+                    result = {
+                        "status": "basic_test",
+                        "message": "Running basic dependency check",
+                        "dependencies": dependencies,
+                        "recommendations": []
+                    }
+                    
+                    if not dependencies.get("ffmpeg", False):
+                        result["recommendations"].append("Install FFmpeg: sudo apt-get install -y ffmpeg")
+                    if not dependencies.get("pillow", False):
+                        result["recommendations"].append("Install Pillow: pip install Pillow>=9.0.0")
+                    if not dependencies.get("tts", False):
+                        result["recommendations"].append("Configure Azure TTS")
+            else:
+                # Use the enhanced test method
+                result = await video_task_manager.test_enhanced_pipeline("photosynthesis")
+            
+            return JSONResponse(content={
+                "status": "success",
+                "pipeline_test": result,
+                "timestamp": datetime.utcnow().isoformat()
+            })
+            
+        except AttributeError as e:
+            return JSONResponse(content={
+                "status": "method_error",
+                "message": f"Test method not found: {str(e)}",
+                "available_methods": [method for method in dir(video_task_manager) if not method.startswith('_')],
+                "fix": "Check video task manager implementation"
+            })
+            
+        except asyncio.TimeoutError:
+            return JSONResponse(content={
+                "status": "timeout_error",
+                "message": "Pipeline test timed out",
+                "fix": "Check system resources and try again"
+            })
+            
+        except Exception as e:
+            return JSONResponse(content={
+                "status": "test_error",
+                "message": f"Pipeline test failed: {str(e)}",
+                "error_type": type(e).__name__,
+                "fix": "Check video service configuration and dependencies"
+            })
         
     except Exception as e:
         return JSONResponse(
             content={
-                "status": "error",
-                "error": f"Pipeline test failed: {str(e)}",
-                "fix": "Check your environment variables and dependencies"
+                "status": "critical_error",
+                "message": f"Critical pipeline test failure: {str(e)}",
+                "error_type": type(e).__name__,
+                "fix": "Restart the service and check all configurations",
+                "install_commands": [
+                    "sudo apt-get update && sudo apt-get install -y ffmpeg",
+                    "pip install Pillow>=9.0.0",
+                    "pip install azure-cognitiveservices-speech>=1.35.0"
+                ]
             },
             status_code=500
         )
 
 @app.post("/generate-video")
 async def generate_video(request: VideoGenerationRequest, background_tasks: BackgroundTasks):
-    """Generate educational video"""
+    """Generate educational video with improved error handling"""
     if not VIDEO_GENERATION_AVAILABLE or not video_task_manager:
         return JSONResponse(
             content={
                 "error": "Video generation not available",
+                "status": "service_unavailable",
                 "install_commands": [
-                    "pip install Pillow azure-cognitiveservices-speech",
-                    "sudo apt-get install ffmpeg"
-                ]
+                    "sudo apt-get update && sudo apt-get install -y ffmpeg",
+                    "pip install Pillow>=9.0.0",
+                    "pip install azure-cognitiveservices-speech>=1.35.0"
+                ],
+                "fix": "Install dependencies and restart the service"
             },
             status_code=503
         )
@@ -374,30 +525,95 @@ async def generate_video(request: VideoGenerationRequest, background_tasks: Back
         
         if not context:
             return JSONResponse(
-                content={"error": "No relevant educational content found for this topic"},
+                content={
+                    "error": "No relevant educational content found for this topic",
+                    "status": "no_content",
+                    "suggestion": "Try a different topic or add more specific terms"
+                },
                 status_code=404
             )
         
-        # Start video generation in background
-        def start_video_generation():
-            try:
-                import asyncio
-                loop = asyncio.new_event_loop()
-                asyncio.set_event_loop(loop)
-                job_id = loop.run_until_complete(
-                    video_task_manager.generate_full_video(request.topic, context)
-                )
-                loop.close()
-                return job_id
-            except Exception as e:
-                print(f"Background video generation error: {e}")
-                return None
-        
-        # Start in background
-        background_tasks.add_task(start_video_generation)
-        
         # Create job ID for immediate response
         job_id = str(uuid.uuid4())
+        
+        # Improved background task function
+        def safe_background_video_generation():
+            try:
+                print(f"🎬 Starting background video generation for: {request.topic}")
+                
+                # Create new event loop for background task
+                import asyncio
+                import logging
+                
+                loop = asyncio.new_event_loop()
+                asyncio.set_event_loop(loop)
+                
+                try:
+                    # Run the video generation with timeout
+                    actual_job_id = loop.run_until_complete(
+                        asyncio.wait_for(
+                            video_task_manager.generate_full_video(request.topic, context),
+                            timeout=600  # 10 minute timeout
+                        )
+                    )
+                    print(f"✅ Background video generation completed: {actual_job_id}")
+                    
+                    # Update the original job_id with the actual job_id
+                    if video_service and video_service.video_jobs_collection:
+                        try:
+                            video_service.video_jobs_collection.update_one(
+                                {"job_id": actual_job_id},
+                                {"$set": {"original_request_id": job_id}}
+                            )
+                        except Exception as db_error:
+                            print(f"Database update error: {db_error}")
+                    
+                    return actual_job_id
+                    
+                except asyncio.TimeoutError:
+                    print(f"❌ Video generation timed out for: {request.topic}")
+                    if video_service:
+                        video_service.update_job_status(
+                            job_id, "failed", 0,
+                            error_message="Video generation timed out"
+                        )
+                    return None
+                    
+                except Exception as generation_error:
+                    print(f"❌ Video generation error: {generation_error}")
+                    logging.error(f"Video generation failed for topic '{request.topic}': {generation_error}")
+                    if video_service:
+                        video_service.update_job_status(
+                            job_id, "failed", 0,
+                            error_message=str(generation_error)
+                        )
+                    return None
+                    
+                finally:
+                    try:
+                        loop.close()
+                    except Exception as loop_error:
+                        print(f"Loop close error: {loop_error}")
+                        
+            except Exception as critical_error:
+                print(f"❌ Critical background task error: {critical_error}")
+                logging.error(f"Critical error in background video generation: {critical_error}")
+                return None
+        
+        # Start video generation in background
+        background_tasks.add_task(safe_background_video_generation)
+        
+        # Initialize job status in database
+        if video_service:
+            try:
+                video_service.update_job_status(
+                    job_id, "queued", 0,
+                    topic=request.topic,
+                    video_title=f"{request.topic} - Educational Video",
+                    created_at=datetime.utcnow().isoformat()
+                )
+            except Exception as db_error:
+                print(f"Database initialization error: {db_error}")
         
         # Save to database
         save_to_database("video_generation", request.topic, f"Job started with ID: {job_id}")
@@ -409,15 +625,22 @@ async def generate_video(request: VideoGenerationRequest, background_tasks: Back
             "topic": request.topic,
             "estimated_time": "3-5 minutes",
             "timestamp": datetime.utcnow().isoformat(),
-            "pipeline": "FFmpeg-based video assembly"
+            "pipeline": "Enhanced with FFmpeg-based video assembly",
+            "note": "Check /video-status/{job_id} for progress updates"
         })
         
     except Exception as e:
         print(f"Video generation error: {e}")
         return JSONResponse(
-            content={"error": f"Video generation failed: {str(e)}"},
+            content={
+                "error": f"Video generation failed: {str(e)}",
+                "status": "generation_error",
+                "error_type": type(e).__name__,
+                "fix": "Check logs and try again"
+            },
             status_code=500
         )
+
 
 @app.get("/video-status/{job_id}")
 async def get_video_status(job_id: str):

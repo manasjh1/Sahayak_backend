@@ -4,6 +4,8 @@ import uuid
 import json
 import tempfile
 import subprocess
+import shutil
+import platform
 from typing import List, Dict, Optional
 from datetime import datetime
 from dataclasses import dataclass
@@ -15,13 +17,83 @@ import google.generativeai as genai
 from groq import Groq
 from dotenv import load_dotenv
 
-# Check FFmpeg availability
+# Enhanced FFmpeg detection
 def check_ffmpeg():
+    """Enhanced FFmpeg detection with multiple fallback methods"""
     try:
-        result = subprocess.run(['ffmpeg', '-version'], capture_output=True, text=True, timeout=5)
-        return result.returncode == 0
-    except:
+        # Method 1: Use shutil.which (most reliable)
+        ffmpeg_path = shutil.which('ffmpeg')
+        if ffmpeg_path:
+            print(f"✅ FFmpeg found at: {ffmpeg_path}")
+            return True
+        
+        # Method 2: Check common installation paths
+        common_paths = [
+            '/usr/bin/ffmpeg',
+            '/usr/local/bin/ffmpeg',
+            '/opt/homebrew/bin/ffmpeg',  # macOS with Homebrew
+            '/snap/bin/ffmpeg',          # Ubuntu with snap
+            'C:\\Program Files\\ffmpeg\\bin\\ffmpeg.exe',  # Windows
+            'C:\\ffmpeg\\bin\\ffmpeg.exe'  # Windows alternative
+        ]
+        
+        for path in common_paths:
+            if os.path.exists(path):
+                print(f"✅ FFmpeg found at: {path}")
+                return True
+        
+        # Method 3: Try running ffmpeg command with timeout
+        result = subprocess.run(['ffmpeg', '-version'], 
+                              capture_output=True, text=True, timeout=10)
+        if result.returncode == 0:
+            print("✅ FFmpeg command executed successfully")
+            return True
+        else:
+            print(f"❌ FFmpeg command failed with code: {result.returncode}")
+            return False
+            
+    except subprocess.TimeoutExpired:
+        print("❌ FFmpeg command timed out")
         return False
+    except FileNotFoundError:
+        print("❌ FFmpeg command not found")
+        return False
+    except Exception as e:
+        print(f"❌ FFmpeg check error: {e}")
+        return False
+
+def install_ffmpeg_suggestions():
+    """Provide installation suggestions based on platform"""
+    system = platform.system().lower()
+    
+    suggestions = {
+        'linux': [
+            "# Ubuntu/Debian:",
+            "sudo apt-get update && sudo apt-get install -y ffmpeg",
+            "",
+            "# CentOS/RHEL/Fedora:",
+            "sudo dnf install -y ffmpeg",
+            "# or: sudo yum install -y ffmpeg",
+            "",
+            "# Arch Linux:",
+            "sudo pacman -S ffmpeg"
+        ],
+        'darwin': [  # macOS
+            "# Using Homebrew (recommended):",
+            "brew install ffmpeg",
+            "",
+            "# Using MacPorts:",
+            "sudo port install ffmpeg"
+        ],
+        'windows': [
+            "# Download from: https://ffmpeg.org/download.html",
+            "# Extract and add to PATH environment variable",
+            "# Or use chocolatey:",
+            "choco install ffmpeg"
+        ]
+    }
+    
+    return suggestions.get(system, ["Check https://ffmpeg.org/download.html for installation instructions"])
 
 # Optional imports with error handling
 try:
@@ -30,7 +102,7 @@ try:
     print("✅ PIL available")
 except ImportError:
     PIL_AVAILABLE = False
-    print("⚠️ PIL not available")
+    print("⚠️ PIL not available - install with: pip install Pillow>=9.0.0")
 
 try:
     from supabase import create_client, Client
@@ -38,7 +110,7 @@ try:
     print("✅ Supabase available")
 except ImportError:
     SUPABASE_AVAILABLE = False
-    print("⚠️ Supabase not available")
+    print("⚠️ Supabase not available - install with: pip install supabase")
 
 try:
     import azure.cognitiveservices.speech as speechsdk
@@ -46,9 +118,15 @@ try:
     print("✅ Azure TTS available")
 except ImportError:
     AZURE_TTS_AVAILABLE = False
-    print("⚠️ Azure TTS not available")
+    print("⚠️ Azure TTS not available - install with: pip install azure-cognitiveservices-speech>=1.35.0")
 
 FFMPEG_AVAILABLE = check_ffmpeg()
+if not FFMPEG_AVAILABLE:
+    print("❌ FFmpeg not available!")
+    print("Installation suggestions:")
+    for suggestion in install_ffmpeg_suggestions():
+        print(f"  {suggestion}")
+
 load_dotenv()
 
 @dataclass
@@ -79,7 +157,7 @@ class VideoJob:
 
 class VideoGenerationService:
     def __init__(self):
-        print("🚀 Initializing Enhanced Video Service with Dynamic Images...")
+        print("🚀 Initializing Enhanced Video Service...")
         
         # API configuration
         self.gemini_api_key = os.getenv("GEMINI_API_KEY")
@@ -87,7 +165,7 @@ class VideoGenerationService:
         self.supabase_key = os.getenv("SUPABASE_KEY")
         self.mongo_uri = os.getenv("MONGO_URI")
         
-        # Initialize services
+        # Initialize services with error handling
         self._init_gemini()
         self._init_supabase()
         self._init_mongodb()
@@ -139,8 +217,8 @@ class VideoGenerationService:
                     print(f"⚠️ Azure TTS error: {e}")
 
     def check_dependencies(self) -> Dict[str, bool]:
-        """Check available dependencies"""
-        return {
+        """Check available dependencies with detailed status"""
+        deps = {
             "ffmpeg": FFMPEG_AVAILABLE,
             "pillow": PIL_AVAILABLE,
             "supabase": self.supabase is not None,
@@ -149,6 +227,36 @@ class VideoGenerationService:
             "groq": True,
             "mongodb": self.video_jobs_collection is not None
         }
+        
+        # Add detailed information
+        deps["ffmpeg_path"] = shutil.which('ffmpeg') if FFMPEG_AVAILABLE else None
+        deps["system"] = platform.system()
+        
+        return deps
+
+    def get_installation_help(self) -> Dict[str, List[str]]:
+        """Get installation help for missing dependencies"""
+        help_info = {}
+        
+        if not FFMPEG_AVAILABLE:
+            help_info["ffmpeg"] = install_ffmpeg_suggestions()
+        
+        if not PIL_AVAILABLE:
+            help_info["pillow"] = ["pip install Pillow>=9.0.0"]
+        
+        if not AZURE_TTS_AVAILABLE:
+            help_info["azure_tts"] = [
+                "pip install azure-cognitiveservices-speech>=1.35.0",
+                "Set AZURE_SPEECH_KEY and AZURE_SPEECH_REGION in environment"
+            ]
+        
+        if not SUPABASE_AVAILABLE:
+            help_info["supabase"] = [
+                "pip install supabase",
+                "Set SUPABASE_URL and SUPABASE_KEY in environment"
+            ]
+        
+        return help_info
 
     async def generate_video_script(self, topic: str, context: str) -> Optional[Dict]:
         """Generate detailed video script with specific visual descriptions"""
@@ -284,7 +392,8 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
     async def generate_dynamic_educational_image(self, prompt: str, topic: str, segment_number: int) -> Optional[str]:
         """Generate dynamic, topic-specific educational images"""
         if not PIL_AVAILABLE:
-            return f"Image: {prompt}"
+            print("⚠️ PIL not available - cannot generate dynamic images")
+            return None
         
         try:
             # Create high-quality educational image
@@ -574,10 +683,10 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
             return None
 
     async def create_video_from_segments(self, segments: List[VideoSegment], job_id: str) -> Optional[str]:
-        """Create synced video with audio using FFmpeg"""
+        """Create synced video with audio using FFmpeg with fallback strategies"""
         if not FFMPEG_AVAILABLE:
             print("❌ FFmpeg not available for video creation")
-            return None
+            return await self._create_fallback_video(segments, job_id)
         
         try:
             temp_dir = tempfile.gettempdir()
@@ -617,7 +726,7 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
                 ]
                 
                 print(f"  Creating segment {segment.segment_number} with {audio_duration}s duration...")
-                result = subprocess.run(cmd, capture_output=True, text=True)
+                result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
                 
                 if result.returncode == 0:
                     segment_videos.append(segment_video)
@@ -627,7 +736,7 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
             
             if not segment_videos:
                 print("❌ No segment videos created successfully")
-                return None
+                return await self._create_fallback_video(segments, job_id)
             
             # Create concat file for FFmpeg
             concat_file = os.path.join(temp_dir, f"concat_{job_id}.txt")
@@ -652,7 +761,7 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
             ]
             
             print("🎬 Combining segments into final synced video...")
-            result = subprocess.run(concat_cmd, capture_output=True, text=True)
+            result = subprocess.run(concat_cmd, capture_output=True, text=True, timeout=180)
             
             if result.returncode == 0:
                 print(f"✅ Final synced video created: {final_video}")
@@ -677,14 +786,86 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
                 return final_video
             else:
                 print(f"❌ Video combination failed: {result.stderr[:100]}")
-                return None
+                return await self._create_fallback_video(segments, job_id)
                 
         except Exception as e:
             print(f"Video creation error: {e}")
+            return await self._create_fallback_video(segments, job_id)
+
+    async def _create_fallback_video(self, segments: List[VideoSegment], job_id: str) -> Optional[str]:
+        """Create fallback when FFmpeg fails"""
+        print("🔄 Creating fallback video solution...")
+        
+        # Strategy 1: Create simple slideshow if PIL is available
+        if PIL_AVAILABLE and segments:
+            try:
+                return await self._create_image_slideshow(segments, job_id)
+            except Exception as e:
+                print(f"Slideshow creation failed: {e}")
+        
+        # Strategy 2: Save individual assets
+        try:
+            return await self._save_individual_assets(segments, job_id)
+        except Exception as e:
+            print(f"Asset saving failed: {e}")
+        
+        return None
+
+    async def _create_image_slideshow(self, segments: List[VideoSegment], job_id: str) -> Optional[str]:
+        """Create image slideshow when video creation fails"""
+        if not segments or not segments[0].image_path:
             return None
+        
+        try:
+            temp_dir = tempfile.gettempdir()
+            slideshow_path = os.path.join(temp_dir, f"slideshow_{job_id}.png")
+            
+            # Just use the first image as fallback
+            import shutil
+            shutil.copy2(segments[0].image_path, slideshow_path)
+            
+            print(f"✅ Created image slideshow fallback: {slideshow_path}")
+            return slideshow_path
+            
+        except Exception as e:
+            print(f"Slideshow creation error: {e}")
+            return None
+
+    async def _save_individual_assets(self, segments: List[VideoSegment], job_id: str) -> Optional[str]:
+        """Save individual assets when video creation fails"""
+        import tempfile
+        import json
+        
+        temp_dir = tempfile.gettempdir()
+        assets_info = {
+            "job_id": job_id,
+            "status": "assets_only",
+            "message": "Video creation failed, individual assets saved",
+            "assets": []
+        }
+        
+        for segment in segments:
+            asset_info = {
+                "segment": segment.segment_number,
+                "image": segment.image_path if segment.image_path else None,
+                "audio": segment.audio_path if segment.audio_path else None,
+                "script": segment.audio_script
+            }
+            assets_info["assets"].append(asset_info)
+        
+        # Save assets info to JSON file
+        assets_file = os.path.join(temp_dir, f"assets_{job_id}.json")
+        with open(assets_file, 'w') as f:
+            json.dump(assets_info, f, indent=2)
+        
+        print(f"✅ Saved individual assets info: {assets_file}")
+        return assets_file
 
     def _get_audio_duration(self, audio_path: str) -> Optional[float]:
         """Get audio file duration using FFprobe"""
+        if not FFMPEG_AVAILABLE:
+            return None
+            
         try:
             cmd = [
                 'ffprobe', 
@@ -693,7 +874,7 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
                 '-of', 'default=noprint_wrappers=1:nokey=1', 
                 audio_path
             ]
-            result = subprocess.run(cmd, capture_output=True, text=True)
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
             if result.returncode == 0:
                 duration = float(result.stdout.strip())
                 print(f"📏 Audio duration: {duration:.2f}s")
@@ -704,6 +885,9 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
 
     def _verify_video_has_audio(self, video_path: str) -> bool:
         """Verify video file has audio track"""
+        if not FFMPEG_AVAILABLE:
+            return False
+            
         try:
             cmd = [
                 'ffprobe', 
@@ -713,7 +897,7 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
                 '-of', 'csv=p=0', 
                 video_path
             ]
-            result = subprocess.run(cmd, capture_output=True, text=True)
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
             return result.returncode == 0 and 'audio' in result.stdout
         except:
             return False
@@ -788,10 +972,10 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
                 print(f"Job retrieval error: {e}")
         return {"job_id": job_id, "status": "not_found", "message": "Database not available"}
 
-# Create service instance
+# Create service instance with error handling
 try:
     video_service = VideoGenerationService()
-    print("✅ Enhanced video service ready with dynamic images and audio sync")
+    print("✅ Enhanced video service ready with improved error handling")
 except Exception as e:
     print(f"❌ Enhanced video service creation failed: {e}")
     video_service = None

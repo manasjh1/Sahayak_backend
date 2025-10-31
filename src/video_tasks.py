@@ -1,7 +1,7 @@
 import asyncio
 import uuid
 from datetime import datetime
-from typing import List, Dict
+from typing import List, Dict, Optional
 from .video_generator import VideoGenerationService, VideoSegment, VideoJob
 
 class VideoGenerationTasks:
@@ -146,13 +146,26 @@ class VideoGenerationTasks:
             return job_id
 
     async def test_enhanced_pipeline(self, test_topic: str = "photosynthesis") -> Dict:
-        """Test the enhanced video generation pipeline with dynamic images"""
+        """Test the enhanced video generation pipeline with comprehensive error handling"""
         try:
             print(f"🧪 Testing enhanced video pipeline with: {test_topic}")
             
-            # Check dependencies
-            dependencies = self.video_service.check_dependencies()
-            print(f"📋 Dependencies: {dependencies}")
+            # Check dependencies first
+            dependencies = {}
+            try:
+                dependencies = self.video_service.check_dependencies()
+                print(f"📋 Dependencies checked: {dependencies}")
+            except Exception as e:
+                print(f"❌ Failed to check dependencies: {e}")
+                dependencies = {
+                    "ffmpeg": False,
+                    "pillow": False,
+                    "supabase": False,
+                    "tts": False,
+                    "gemini": False,
+                    "groq": False,
+                    "mongodb": False
+                }
             
             # Test script generation with detailed prompts
             test_context = """
@@ -161,36 +174,53 @@ class VideoGenerationTasks:
             This process is essential for all life on Earth as it produces oxygen and forms the base of food chains.
             """
             
-            print("📝 Testing script generation...")
-            script = await self.video_service.generate_video_script(test_topic, test_context)
+            script = None
+            try:
+                print("📝 Testing script generation...")
+                script = await self.video_service.generate_video_script(test_topic, test_context)
+                print(f"✅ Script generation: {'Success' if script else 'Failed'}")
+            except Exception as e:
+                print(f"❌ Script generation failed: {e}")
             
             # Test dynamic image generation
             test_image = None
-            if dependencies["pillow"]:
-                print("🎨 Testing dynamic image generation...")
-                test_image = await self.video_service.generate_dynamic_educational_image(
-                    f"Educational diagram showing {test_topic} process with scientific accuracy", 
-                    test_topic, 
-                    1
-                )
+            if dependencies.get("pillow", False):
+                try:
+                    print("🎨 Testing dynamic image generation...")
+                    test_image = await self.video_service.generate_dynamic_educational_image(
+                        f"Educational diagram showing {test_topic} process with scientific accuracy", 
+                        test_topic, 
+                        1
+                    )
+                    print(f"✅ Image generation: {'Success' if test_image else 'Failed'}")
+                except Exception as e:
+                    print(f"❌ Image generation failed: {e}")
+            else:
+                print("⚠️ Skipping image test - PIL not available")
             
             # Test high-quality audio generation
             test_audio = None
-            if dependencies["tts"]:
-                print("🎵 Testing audio generation...")
-                test_audio = self.video_service.generate_audio(
-                    f"Welcome to learning about {test_topic}, an amazing process in nature.", 
-                    1
-                )
+            if dependencies.get("tts", False):
+                try:
+                    print("🎵 Testing audio generation...")
+                    test_audio = self.video_service.generate_audio(
+                        f"Welcome to learning about {test_topic}, an amazing process in nature.", 
+                        1
+                    )
+                    print(f"✅ Audio generation: {'Success' if test_audio else 'Failed'}")
+                except Exception as e:
+                    print(f"❌ Audio generation failed: {e}")
+            else:
+                print("⚠️ Skipping audio test - Azure TTS not available")
             
             # Calculate enhanced readiness score
             ready_components = sum(1 for available in dependencies.values() if available)
             total_components = len(dependencies)
-            readiness_percentage = (ready_components / total_components) * 100
+            readiness_percentage = (ready_components / total_components) * 100 if total_components > 0 else 0
             
             # Test FFmpeg capabilities
             ffmpeg_features = []
-            if dependencies["ffmpeg"]:
+            if dependencies.get("ffmpeg", False):
                 ffmpeg_features = [
                     "✅ Video encoding (H.264)",
                     "✅ Audio encoding (AAC)", 
@@ -198,6 +228,20 @@ class VideoGenerationTasks:
                     "✅ Multiple format support",
                     "✅ Quality optimization"
                 ]
+            else:
+                ffmpeg_features = [
+                    "❌ FFmpeg not available",
+                    "❌ Cannot create videos",
+                    "❌ No audio-video sync",
+                    "❌ Limited functionality"
+                ]
+            
+            # Get installation help
+            installation_help = {}
+            try:
+                installation_help = self.video_service.get_installation_help()
+            except Exception as e:
+                print(f"Warning: Could not get installation help: {e}")
             
             result = {
                 "status": "success",
@@ -207,41 +251,46 @@ class VideoGenerationTasks:
                 "readiness_percentage": round(readiness_percentage, 1),
                 "component_status": {
                     "script_generation": "✅ Working" if script else "❌ Failed",
-                    "dynamic_image_generation": "✅ Working" if test_image else "❌ Failed" if dependencies["pillow"] else "⚠️ PIL not available",
-                    "high_quality_audio": "✅ Working" if test_audio else "❌ Failed" if dependencies["tts"] else "⚠️ Azure TTS not available",
-                    "video_assembly_sync": "✅ Ready" if dependencies["ffmpeg"] else "❌ FFmpeg not available",
-                    "cloud_storage": "✅ Ready" if dependencies["supabase"] else "⚠️ Local storage only",
-                    "database_tracking": "✅ Working" if dependencies["mongodb"] else "⚠️ Limited functionality"
+                    "dynamic_image_generation": "✅ Working" if test_image else "❌ Failed" if dependencies.get("pillow") else "⚠️ PIL not available",
+                    "high_quality_audio": "✅ Working" if test_audio else "❌ Failed" if dependencies.get("tts") else "⚠️ Azure TTS not available",
+                    "video_assembly_sync": "✅ Ready" if dependencies.get("ffmpeg") else "❌ FFmpeg not available",
+                    "cloud_storage": "✅ Ready" if dependencies.get("supabase") else "⚠️ Local storage only",
+                    "database_tracking": "✅ Working" if dependencies.get("mongodb") else "⚠️ Limited functionality"
                 },
                 "enhanced_features": {
-                    "dynamic_images": dependencies["pillow"],
-                    "topic_specific_visuals": dependencies["pillow"] and dependencies["gemini"],
-                    "audio_video_sync": dependencies["ffmpeg"] and dependencies["tts"],
-                    "high_quality_output": dependencies["ffmpeg"],
-                    "scientific_accuracy": dependencies["gemini"]
+                    "dynamic_images": dependencies.get("pillow", False),
+                    "topic_specific_visuals": dependencies.get("pillow", False) and dependencies.get("gemini", False),
+                    "audio_video_sync": dependencies.get("ffmpeg", False) and dependencies.get("tts", False),
+                    "high_quality_output": dependencies.get("ffmpeg", False),
+                    "scientific_accuracy": dependencies.get("gemini", False)
                 },
                 "ffmpeg_capabilities": ffmpeg_features,
+                "installation_help": installation_help,
                 "recommendations": []
             }
             
-            # Add specific recommendations
-            if not dependencies["ffmpeg"]:
-                result["recommendations"].append("🔧 Install FFmpeg: sudo apt-get install ffmpeg")
-            if not dependencies["pillow"]:
-                result["recommendations"].append("🖼️ Install PIL: pip install Pillow")
-            if not dependencies["tts"]:
-                result["recommendations"].append("🔊 Configure Azure TTS: Add AZURE_SPEECH_KEY and AZURE_SPEECH_REGION")
-            if not dependencies["supabase"]:
-                result["recommendations"].append("☁️ Configure Supabase: Add SUPABASE_URL and SUPABASE_KEY")
-            if not dependencies["mongodb"]:
-                result["recommendations"].append("📊 Configure MongoDB: Add MONGO_URI")
+            # Add specific recommendations with error handling
+            try:
+                if not dependencies.get("ffmpeg", False):
+                    result["recommendations"].append("🔧 Install FFmpeg for video creation")
+                if not dependencies.get("pillow", False):
+                    result["recommendations"].append("🖼️ Install PIL for dynamic images")
+                if not dependencies.get("tts", False):
+                    result["recommendations"].append("🔊 Configure Azure TTS for audio")
+                if not dependencies.get("supabase", False):
+                    result["recommendations"].append("☁️ Configure Supabase for cloud storage")
+                if not dependencies.get("mongodb", False):
+                    result["recommendations"].append("📊 Configure MongoDB for job tracking")
+            except Exception as e:
+                print(f"Warning: Error generating recommendations: {e}")
+                result["recommendations"].append("⚠️ Check system configuration")
             
             # Set overall status with enhanced criteria
-            if readiness_percentage >= 85 and dependencies["ffmpeg"] and dependencies["pillow"]:
+            if readiness_percentage >= 85 and dependencies.get("ffmpeg", False) and dependencies.get("pillow", False):
                 result["overall_status"] = "✅ Fully Ready for Enhanced Video Generation"
                 result["message"] = "All systems operational! Ready to create dynamic educational videos with synced audio."
                 result["estimated_quality"] = "High-quality videos with dynamic images and perfect audio sync"
-            elif readiness_percentage >= 60 and dependencies["ffmpeg"]:
+            elif readiness_percentage >= 60 and dependencies.get("ffmpeg", False):
                 result["overall_status"] = "⚠️ Partially Ready"
                 result["message"] = "Basic video generation available. Some enhanced features may be limited."
                 result["estimated_quality"] = "Standard quality videos with basic sync"
@@ -252,12 +301,15 @@ class VideoGenerationTasks:
             
             # Add script preview if available
             if script:
-                result["script_preview"] = {
-                    "title": script.get("video_title"),
-                    "segments_count": len(script.get("segments", [])),
-                    "learning_objective": script.get("learning_objective"),
-                    "enhanced_prompts": True
-                }
+                try:
+                    result["script_preview"] = {
+                        "title": script.get("video_title"),
+                        "segments_count": len(script.get("segments", [])),
+                        "learning_objective": script.get("learning_objective"),
+                        "enhanced_prompts": True
+                    }
+                except Exception as e:
+                    print(f"Warning: Error creating script preview: {e}")
             
             # Add file paths for verification
             test_results = {}
@@ -272,17 +324,37 @@ class VideoGenerationTasks:
             return result
             
         except Exception as e:
+            print(f"❌ Pipeline test critical error: {e}")
             return {
                 "status": "error",
                 "error": f"Enhanced pipeline test failed: {str(e)}",
+                "error_type": type(e).__name__,
                 "dependencies": self.video_service.check_dependencies() if self.video_service else {},
                 "recommendations": [
                     "Check your environment variables",
-                    "Ensure all dependencies are properly installed",
+                    "Ensure all dependencies are properly installed", 
                     "Verify API keys are correctly configured",
                     "Install FFmpeg for video processing",
-                    "Install PIL for dynamic image generation"
+                    "Install PIL for dynamic image generation",
+                    "Restart the service after installing dependencies"
+                ],
+                "critical_fixes": [
+                    "sudo apt-get update && sudo apt-get install -y ffmpeg",
+                    "pip install Pillow>=9.0.0",
+                    "pip install azure-cognitiveservices-speech>=1.35.0",
+                    "Restart the application"
                 ]
+            }
+
+    async def test_video_pipeline(self, test_topic: str = "photosynthesis") -> Dict:
+        """Alternative test method with simpler error handling"""
+        try:
+            return await self.test_enhanced_pipeline(test_topic)
+        except Exception as e:
+            return {
+                "status": "error",
+                "message": f"Video pipeline test failed: {str(e)}",
+                "fix": "Check video service configuration"
             }
 
     async def generate_sample_enhanced_video(self) -> str:
@@ -297,9 +369,14 @@ class VideoGenerationTasks:
         
         print("🎬 Generating enhanced sample video: Photosynthesis")
         print("🎨 Features: Dynamic images, topic-specific visuals, synced audio")
-        job_id = await self.generate_full_video(sample_topic, sample_context)
-        print(f"📋 Enhanced sample video job ID: {job_id}")
-        return job_id
+        
+        try:
+            job_id = await self.generate_full_video(sample_topic, sample_context)
+            print(f"📋 Enhanced sample video job ID: {job_id}")
+            return job_id
+        except Exception as e:
+            print(f"❌ Sample video generation failed: {e}")
+            return f"error_{uuid.uuid4()}"
 
     async def get_generation_stats(self) -> Dict:
         """Get enhanced statistics about video generation"""
@@ -313,30 +390,41 @@ class VideoGenerationTasks:
                     "message": "Database not configured"
                 }
             
-            # Get counts by status
-            total_jobs = self.video_service.video_jobs_collection.count_documents({})
-            completed_jobs = self.video_service.video_jobs_collection.count_documents({"status": "completed"})
-            failed_jobs = self.video_service.video_jobs_collection.count_documents({"status": "failed"})
-            processing_jobs = self.video_service.video_jobs_collection.count_documents({
-                "status": {"$in": ["generating_script", "generating_assets", "creating_video"]}
-            })
+            # Get counts by status with error handling
+            try:
+                total_jobs = self.video_service.video_jobs_collection.count_documents({})
+                completed_jobs = self.video_service.video_jobs_collection.count_documents({"status": "completed"})
+                failed_jobs = self.video_service.video_jobs_collection.count_documents({"status": "failed"})
+                processing_jobs = self.video_service.video_jobs_collection.count_documents({
+                    "status": {"$in": ["generating_script", "generating_assets", "creating_video"]}
+                })
+            except Exception as e:
+                print(f"Database query error: {e}")
+                return {
+                    "error": "Database query failed",
+                    "message": str(e)
+                }
             
             # Get recent jobs with more details
-            recent_jobs = list(
-                self.video_service.video_jobs_collection
-                .find({}, {
-                    "job_id": 1, "topic": 1, "status": 1, "created_at": 1, 
-                    "video_title": 1, "progress_percentage": 1, "total_duration": 1
-                })
-                .sort("created_at", -1)
-                .limit(10)
-            )
-            
-            # Format recent jobs
-            for job in recent_jobs:
-                job["_id"] = str(job["_id"])
-                if "created_at" in job:
-                    job["created_at"] = job["created_at"].isoformat()
+            recent_jobs = []
+            try:
+                recent_jobs = list(
+                    self.video_service.video_jobs_collection
+                    .find({}, {
+                        "job_id": 1, "topic": 1, "status": 1, "created_at": 1, 
+                        "video_title": 1, "progress_percentage": 1, "total_duration": 1
+                    })
+                    .sort("created_at", -1)
+                    .limit(10)
+                )
+                
+                # Format recent jobs
+                for job in recent_jobs:
+                    job["_id"] = str(job["_id"])
+                    if "created_at" in job:
+                        job["created_at"] = job["created_at"].isoformat()
+            except Exception as e:
+                print(f"Recent jobs query error: {e}")
             
             # Calculate average generation time for completed jobs
             avg_generation_time = "N/A"
@@ -363,11 +451,28 @@ class VideoGenerationTasks:
             }
             
         except Exception as e:
+            print(f"Stats generation error: {e}")
             return {
                 "error": f"Failed to get enhanced stats: {str(e)}",
-                "system_status": self.video_service.check_dependencies() if self.video_service else {}
+                "system_status": self.video_service.check_dependencies() if self.video_service else {},
+                "recommendations": [
+                    "Check database connection",
+                    "Verify MongoDB configuration",
+                    "Restart the service"
+                ]
             }
 
-def create_video_task_manager(video_service: VideoGenerationService) -> VideoGenerationTasks:
-    """Factory function to create enhanced video task manager"""
-    return VideoGenerationTasks(video_service)
+def create_video_task_manager(video_service: VideoGenerationService) -> Optional[VideoGenerationTasks]:
+    """Factory function to create enhanced video task manager with error handling"""
+    try:
+        if not video_service:
+            print("❌ Cannot create task manager - video service is None")
+            return None
+        
+        task_manager = VideoGenerationTasks(video_service)
+        print("✅ Video task manager created successfully")
+        return task_manager
+        
+    except Exception as e:
+        print(f"❌ Failed to create video task manager: {e}")
+        return None
