@@ -683,114 +683,170 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
             return None
 
     async def create_video_from_segments(self, segments: List[VideoSegment], job_id: str) -> Optional[str]:
-        """Create synced video with audio using FFmpeg with fallback strategies"""
+        """Create synced video with improved error handling and validation"""
         if not FFMPEG_AVAILABLE:
             print("❌ FFmpeg not available for video creation")
-            return await self._create_fallback_video(segments, job_id)
+            return None
         
         try:
+            # Use a dedicated video output directory instead of temp
+            video_output_dir = "/workspaces/Sahayak_backend/videos"
+            os.makedirs(video_output_dir, exist_ok=True)
+            
             temp_dir = tempfile.gettempdir()
             segment_videos = []
             
             print(f"🎬 Creating synced video from {len(segments)} segments...")
+            print(f"📁 Output directory: {video_output_dir}")
             
-            # Create individual video segments with proper sync
+            # Create individual video segments with validation
             for segment in segments:
                 if not segment.image_path or not segment.audio_path:
                     print(f"⚠️ Segment {segment.segment_number} missing assets")
                     continue
                 
+                # Validate input files
+                if not os.path.exists(segment.image_path) or os.path.getsize(segment.image_path) == 0:
+                    print(f"❌ Invalid image: {segment.image_path}")
+                    continue
+                    
+                if not os.path.exists(segment.audio_path) or os.path.getsize(segment.audio_path) == 0:
+                    print(f"❌ Invalid audio: {segment.audio_path}")
+                    continue
+                
                 segment_video = os.path.join(temp_dir, f"segment_{segment.segment_number}_{job_id}.mp4")
                 
-                # Get audio duration to ensure proper sync
+                # Get precise audio duration
                 audio_duration = self._get_audio_duration(segment.audio_path)
-                if audio_duration is None:
-                    audio_duration = segment.duration
+                if audio_duration is None or audio_duration <= 0:
+                    audio_duration = 6.0  # Default fallback
                 
-                # FFmpeg command with proper audio-video sync
+                # IMPROVED FFmpeg command with better sync
                 cmd = [
-                    'ffmpeg', '-y',  # Overwrite output files
-                    '-loop', '1',    # Loop the image
-                    '-i', segment.image_path,  # Input image
-                    '-i', segment.audio_path,  # Input audio
-                    '-c:v', 'libx264',  # Video codec
-                    '-c:a', 'aac',      # Audio codec
-                    '-b:a', '128k',     # Audio bitrate
-                    '-ar', '44100',     # Audio sample rate
-                    '-t', str(audio_duration),  # Duration matches audio
-                    '-pix_fmt', 'yuv420p',  # Pixel format
-                    '-vf', 'scale=1920:1080',  # Scale to 1080p
-                    '-r', '30',  # Frame rate
-                    '-shortest',  # Stop when shortest input ends
+                    'ffmpeg', '-y',
+                    '-loop', '1', '-i', segment.image_path,
+                    '-i', segment.audio_path,
+                    
+                    # Video encoding
+                    '-c:v', 'libx264',
+                    '-preset', 'medium',
+                    '-crf', '23',
+                    '-pix_fmt', 'yuv420p',
+                    '-r', '25',
+                    
+                    # Audio encoding  
+                    '-c:a', 'aac',
+                    '-b:a', '128k',
+                    '-ar', '44100',
+                    '-ac', '2',
+                    
+                    # Sync and duration
+                    '-shortest',
+                    '-t', str(audio_duration),
+                    
+                    # Video scaling and padding
+                    '-vf', 'scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2',
+                    
+                    # Output optimization
+                    '-movflags', '+faststart',
+                    '-max_muxing_queue_size', '1024',
+                    
                     segment_video
                 ]
                 
                 print(f"  Creating segment {segment.segment_number} with {audio_duration}s duration...")
                 result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
                 
-                if result.returncode == 0:
+                if result.returncode == 0 and os.path.exists(segment_video) and os.path.getsize(segment_video) > 0:
                     segment_videos.append(segment_video)
-                    print(f"  ✅ Segment {segment.segment_number} created successfully")
+                    file_size = os.path.getsize(segment_video)
+                    print(f"  ✅ Segment {segment.segment_number} created: {file_size} bytes")
                 else:
-                    print(f"  ❌ Segment {segment.segment_number} failed: {result.stderr[:100]}")
+                    print(f"  ❌ Segment {segment.segment_number} failed:")
+                    print(f"     Return code: {result.returncode}")
+                    print(f"     Error: {result.stderr[:200]}")
             
             if not segment_videos:
-                print("❌ No segment videos created successfully")
-                return await self._create_fallback_video(segments, job_id)
+                print("❌ No valid segments created")
+                return None
             
-            # Create concat file for FFmpeg
+            # Create concat file with absolute paths
             concat_file = os.path.join(temp_dir, f"concat_{job_id}.txt")
             with open(concat_file, 'w') as f:
                 for video in segment_videos:
-                    f.write(f"file '{video}'\n")
+                    abs_path = os.path.abspath(video).replace('\\', '/')
+                    f.write(f"file '{abs_path}'\n")
             
-            # Combine all segments into final video with proper encoding
-            final_video = os.path.join(temp_dir, f"final_video_{job_id}.mp4")
+            print(f"📝 Created concat file with {len(segment_videos)} segments")
+            
+            # Final video will be stored in persistent location
+            final_video = os.path.join(video_output_dir, f"final_video_{job_id}.mp4")
+            
+            # Combine segments with re-encoding for consistency
             concat_cmd = [
                 'ffmpeg', '-y',
-                '-f', 'concat',
-                '-safe', '0',
-                '-i', concat_file,
-                '-c:v', 'libx264',  # Re-encode for consistency
-                '-c:a', 'aac',      # Re-encode audio
-                '-b:v', '2M',       # Video bitrate
-                '-b:a', '128k',     # Audio bitrate
-                '-r', '30',         # Frame rate
-                '-movflags', '+faststart',  # Optimize for web
+                '-f', 'concat', '-safe', '0', '-i', concat_file,
+                
+                # Re-encode for consistency
+                '-c:v', 'libx264',
+                '-preset', 'medium', 
+                '-crf', '23',
+                '-pix_fmt', 'yuv420p',
+                
+                '-c:a', 'aac',
+                '-b:a', '128k',
+                '-ar', '44100',
+                
+                '-movflags', '+faststart',
                 final_video
             ]
             
-            print("🎬 Combining segments into final synced video...")
-            result = subprocess.run(concat_cmd, capture_output=True, text=True, timeout=180)
+            print("🎬 Combining segments into final video...")
+            print(f"🎯 Final video path: {final_video}")
+            
+            result = subprocess.run(concat_cmd, capture_output=True, text=True, timeout=300)
             
             if result.returncode == 0:
-                print(f"✅ Final synced video created: {final_video}")
-                
-                # Verify the final video has audio
-                if self._verify_video_has_audio(final_video):
-                    print("✅ Video has audio track")
+                if os.path.exists(final_video):
+                    final_size = os.path.getsize(final_video)
+                    if final_size > 0:
+                        print(f"✅ Final synced video created: {final_size} bytes")
+                        print(f"📍 Video location: {final_video}")
+                        
+                        # Verify streams
+                        if self._verify_video_has_audio(final_video):
+                            print("✅ Video has audio track")
+                        else:
+                            print("⚠️ Video may not have audio track")
+                        
+                        # Clean up temporary files
+                        for video in segment_videos:
+                            try:
+                                os.remove(video)
+                            except:
+                                pass
+                        try:
+                            os.remove(concat_file)
+                        except:
+                            pass
+                        
+                        return final_video
+                    else:
+                        print(f"❌ Final video file is empty: {final_size} bytes")
                 else:
-                    print("⚠️ Video may not have audio track")
-                
-                # Clean up temporary segment videos
-                for video in segment_videos:
-                    try:
-                        os.remove(video)
-                    except:
-                        pass
-                try:
-                    os.remove(concat_file)
-                except:
-                    pass
-                
-                return final_video
+                    print("❌ Final video file was not created")
             else:
-                print(f"❌ Video combination failed: {result.stderr[:100]}")
-                return await self._create_fallback_video(segments, job_id)
+                print(f"❌ Video combination failed:")
+                print(f"   Return code: {result.returncode}")
+                print(f"   Error: {result.stderr[:300]}")
+            
+            return None
                 
         except Exception as e:
-            print(f"Video creation error: {e}")
-            return await self._create_fallback_video(segments, job_id)
+            print(f"❌ Video creation error: {e}")
+            import traceback
+            traceback.print_exc()
+            return None
 
     async def _create_fallback_video(self, segments: List[VideoSegment], job_id: str) -> Optional[str]:
         """Create fallback when FFmpeg fails"""

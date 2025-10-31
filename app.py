@@ -870,6 +870,71 @@ async def get_stats():
             status_code=500
         )
 
+@app.get("/download-video/{job_id}")
+async def download_video(job_id: str):
+    """Download generated video file"""
+    try:
+        video_output_dir = "/workspaces/Sahayak_backend/videos"
+        video_path = os.path.join(video_output_dir, f"final_video_{job_id}.mp4")
+        
+        if not os.path.exists(video_path):
+            return JSONResponse(
+                content={"error": "Video file not found"},
+                status_code=404
+            )
+        
+        file_size = os.path.getsize(video_path)
+        if file_size == 0:
+            return JSONResponse(
+                content={"error": "Video file is empty"},
+                status_code=404
+            )
+        
+        from fastapi.responses import FileResponse
+        return FileResponse(
+            path=video_path,
+            filename=f"video_{job_id}.mp4",
+            media_type="video/mp4"
+        )
+        
+    except Exception as e:
+        return JSONResponse(
+            content={"error": f"Download failed: {str(e)}"},
+            status_code=500
+        )
+
+@app.get("/list-videos")
+async def list_videos():
+    """List all generated videos"""
+    try:
+        video_output_dir = "/workspaces/Sahayak_backend/videos"
+        
+        if not os.path.exists(video_output_dir):
+            return JSONResponse(content={"videos": []})
+        
+        videos = []
+        for filename in os.listdir(video_output_dir):
+            if filename.endswith('.mp4'):
+                filepath = os.path.join(video_output_dir, filename)
+                file_size = os.path.getsize(filepath)
+                videos.append({
+                    "filename": filename,
+                    "size_bytes": file_size,
+                    "size_mb": round(file_size / (1024 * 1024), 2),
+                    "download_url": f"/download-video/{filename.replace('final_video_', '').replace('.mp4', '')}"
+                })
+        
+        return JSONResponse(content={
+            "videos": videos,
+            "total_count": len(videos)
+        })
+        
+    except Exception as e:
+        return JSONResponse(
+            content={"error": f"Failed to list videos: {str(e)}"},
+            status_code=500
+        )       
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
     print(f"🚀 Starting Sahayak API on port {port}")
