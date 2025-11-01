@@ -11,6 +11,7 @@ from datetime import datetime
 from dataclasses import dataclass
 import math
 from gtts import gTTS
+from pathlib import Path
 import requests
 from pymongo import MongoClient
 import google.generativeai as genai
@@ -643,61 +644,75 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
 
     def generate_audio(self, text: str, segment_number: int) -> Optional[str]:
         """Generate high-quality audio using working gTTS"""
-        from gtts import gTTS
-        
+    
         temp_path = os.path.join(tempfile.gettempdir(), 
                             f"audio_{segment_number}_{uuid.uuid4().hex[:8]}.wav")
         
         try:
-            print(f"🎵 Generating audio for segment {segment_number} using gTTS...")
+            import pyttsx3
+            print(f"🎵 Generating audio for segment {segment_number} using pyttsx3 (offline)...")
+            engine = pyttsx3.init()
+            engine.setProperty('rate', 190)  # Adjust speed
+            engine.setProperty('volume', 1.0) # Max volume
             
-            # Create gTTS object with US female voice
-            tts = gTTS(
-                text=text,
-                lang='en',        # English
-                tld='com',        # US accent (.com)
-                slow=False        # Normal speed
-            )
+            # Get available voices and try to find a good one
+            voices = engine.getProperty('voices')
+            # Look for a 'Zira' (common good Windows voice) or just use the first one
+            zira_voice = next((v for v in voices if "zira" in v.name.lower()), voices[0])
+            engine.setProperty('voice', zira_voice.id)
             
-            # Save to temporary MP3
+            engine.save_to_file(text, temp_path)
+            engine.runAndWait()
+            
+            if os.path.exists(temp_path) and os.path.getsize(temp_path) > 0:
+                print(f"✅ Audio ready (pyttsx3): {os.path.getsize(temp_path)} bytes")
+                return temp_path
+            else:
+                print("❌ pyttsx3 failed to create file, falling back to gTTS...")
+
+        except Exception as e:
+            print(f"❌ pyttsx3 exception: {e}. Falling back to gTTS...")
+            
+        try:
+            print(f"🎵 Generating audio for segment {segment_number} using gTTS (fallback)...")
+            from gtts import gTTS
+            
+            # 1. Save to temporary MP3
             temp_mp3 = temp_path.replace('.wav', '_temp.mp3')
+            tts = gTTS(text=text, lang='en', tld='com', slow=False)
             tts.save(temp_mp3)
             
             if not os.path.exists(temp_mp3) or os.path.getsize(temp_mp3) == 0:
                 print("❌ gTTS failed to generate MP3")
                 return None
             
-            print(f"✅ Generated MP3: {os.path.getsize(temp_mp3)} bytes")
-            
-            # Convert MP3 to WAV with VERY LOUD volume and professional audio processing
+            print(f"✅ Generated MP3 (gTTS): {os.path.getsize(temp_mp3)} bytes")
+
+            # 2. Convert MP3 to WAV (Simple, correct conversion)
             conversion_cmd = [
                 'ffmpeg', '-y',
                 '-i', temp_mp3,
-                '-acodec', 'pcm_s16le',
+                '-acodec', 'pcm_s16le',  # Standard 
                 '-ar', '44100',
-                '-ac', '2',
-                # Professional audio enhancement: loud + normalized + compressed
-                '-af', 'volume=6.0,loudnorm=I=-16:LRA=11:TP=-1.5,compand=attacks=0.02:decays=0.1:points=-60/-60|-30/-20|-20/-10|-5/-5:soft-knee=6:gain=0',
+                '-ac', '2',             # Stereo audio
                 temp_path
             ]
             
             result = subprocess.run(conversion_cmd, capture_output=True, text=True, timeout=60)
             
-            # Clean up temp MP3
             if os.path.exists(temp_mp3):
                 os.remove(temp_mp3)
             
             if result.returncode == 0 and os.path.exists(temp_path) and os.path.getsize(temp_path) > 0:
-                file_size = os.path.getsize(temp_path)
-                print(f"✅ Audio ready: {file_size} bytes (ENHANCED & LOUD)")
+                print(f"✅ Audio ready (gTTS): {os.path.getsize(temp_path)} bytes")
                 return temp_path
             else:
-                print(f"❌ Audio conversion failed: {result.stderr}")
+                print(f"❌ gTTS audio conversion failed: {result.stderr}")
                 return None
                 
         except Exception as e:
-            print(f"❌ TTS generation failed: {e}")
-            return None
+            print(f"❌ gTTS generation failed: {e}")
+            return None    
 
     async def create_video_from_segments(self, segments: List[VideoSegment], job_id: str) -> Optional[str]:
         """Create synced video with improved error handling and validation"""
@@ -707,7 +722,7 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
         
         try:
             # Use a dedicated video output directory instead of temp
-            video_output_dir = "/workspaces/Sahayak_backend/videos"
+            video_output_dir = Path.cwd() / "videos"
             os.makedirs(video_output_dir, exist_ok=True)
             
             temp_dir = tempfile.gettempdir()
@@ -752,12 +767,11 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
                     '-pix_fmt', 'yuv420p',
                     '-r', '25',
                     
-                    # LOUDER Audio encoding  
+                    # Audio encoding
                     '-c:a', 'aac',
                     '-b:a', '192k',
                     '-ar', '44100',
                     '-ac', '2',
-                    '-af', 'volume=4.0,loudnorm',  # Much louder volume + normalization
                     
                     # Rest of your settings...
                     '-shortest',
