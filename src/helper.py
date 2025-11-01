@@ -31,6 +31,8 @@ class GeminiEmbedding:
         self.timeout = timeout
         self.retry_delay = 2
     
+    
+    # Make embedding to store in vector db by using open source embedding model 
     def embed_documents(self, texts):
         """For document embedding during indexing"""
         print(f"📄 Embedding {len(texts)} documents...")

@@ -18,14 +18,14 @@ import google.generativeai as genai
 from groq import Groq
 from dotenv import load_dotenv
 
-# Enhanced FFmpeg detection
+# Open Source Audio Model for generating audio
 def check_ffmpeg():
     """Enhanced FFmpeg detection with multiple fallback methods"""
     try:
         # Method 1: Use shutil.which (most reliable)
         ffmpeg_path = shutil.which('ffmpeg')
         if ffmpeg_path:
-            print(f"✅ FFmpeg found at: {ffmpeg_path}")
+            print(f"FFmpeg found at: {ffmpeg_path}")
             return True
         
         # Method 2: Check common installation paths
@@ -40,21 +40,21 @@ def check_ffmpeg():
         
         for path in common_paths:
             if os.path.exists(path):
-                print(f"✅ FFmpeg found at: {path}")
+                print(f" FFmpeg found at: {path}")
                 return True
-        
+        # Fall back if the open source model not work 
         # Method 3: Try running ffmpeg command with timeout
         result = subprocess.run(['ffmpeg', '-version'], 
                               capture_output=True, text=True, timeout=10)
         if result.returncode == 0:
-            print("✅ FFmpeg command executed successfully")
+            print(" FFmpeg command executed successfully")
             return True
         else:
-            print(f"❌ FFmpeg command failed with code: {result.returncode}")
+            print(f" FFmpeg command failed with code: {result.returncode}")
             return False
             
     except subprocess.TimeoutExpired:
-        print("❌ FFmpeg command timed out")
+        print(" FFmpeg command timed out")
         return False
     except FileNotFoundError:
         print("❌ FFmpeg command not found")
@@ -649,32 +649,7 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
                             f"audio_{segment_number}_{uuid.uuid4().hex[:8]}.wav")
         
         try:
-            import pyttsx3
-            print(f"🎵 Generating audio for segment {segment_number} using pyttsx3 (offline)...")
-            engine = pyttsx3.init()
-            engine.setProperty('rate', 190)  # Adjust speed
-            engine.setProperty('volume', 1.0) # Max volume
-            
-            # Get available voices and try to find a good one
-            voices = engine.getProperty('voices')
-            # Look for a 'Zira' (common good Windows voice) or just use the first one
-            zira_voice = next((v for v in voices if "zira" in v.name.lower()), voices[0])
-            engine.setProperty('voice', zira_voice.id)
-            
-            engine.save_to_file(text, temp_path)
-            engine.runAndWait()
-            
-            if os.path.exists(temp_path) and os.path.getsize(temp_path) > 0:
-                print(f"✅ Audio ready (pyttsx3): {os.path.getsize(temp_path)} bytes")
-                return temp_path
-            else:
-                print("❌ pyttsx3 failed to create file, falling back to gTTS...")
-
-        except Exception as e:
-            print(f"❌ pyttsx3 exception: {e}. Falling back to gTTS...")
-            
-        try:
-            print(f"🎵 Generating audio for segment {segment_number} using gTTS (fallback)...")
+            print(f"🎵 Generating audio for segment {segment_number} using gTTS...")
             from gtts import gTTS
             
             # 1. Save to temporary MP3
@@ -688,13 +663,14 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
             
             print(f"✅ Generated MP3 (gTTS): {os.path.getsize(temp_mp3)} bytes")
 
-            # 2. Convert MP3 to WAV (Simple, correct conversion)
+            # 2. Convert MP3 to WAV with IMPROVED audio settings
             conversion_cmd = [
                 'ffmpeg', '-y',
                 '-i', temp_mp3,
-                '-acodec', 'pcm_s16le',  # Standard 
-                '-ar', '44100',
-                '-ac', '2',             # Stereo audio
+                '-acodec', 'pcm_s16le',  # Standard format
+                '-ar', '44100',          # Standard sample rate
+                '-ac', '2',              # Stereo audio
+                '-af', 'volume=4.0,loudnorm=I=-16:TP=-1.5:LRA=11',  # Normalize audio and increase volume
                 temp_path
             ]
             
@@ -712,7 +688,7 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
                 
         except Exception as e:
             print(f"❌ gTTS generation failed: {e}")
-            return None    
+            return None
 
     async def create_video_from_segments(self, segments: List[VideoSegment], job_id: str) -> Optional[str]:
         """Create synced video with improved error handling and validation"""
@@ -772,6 +748,7 @@ Make the image prompts very specific to {topic} and scientifically accurate."""
                     '-b:a', '192k',
                     '-ar', '44100',
                     '-ac', '2',
+                    '-af', 'volume=4.0',  # Increase volume
                     
                     # Rest of your settings...
                     '-shortest',
@@ -1062,3 +1039,26 @@ try:
 except Exception as e:
     print(f"❌ Enhanced video service creation failed: {e}")
     video_service = None
+    def fix_video_audio(self, video_path: str, output_path: Optional[str] = None) -> Optional[str]:
+        """Fix video by boosting audio volume"""
+        if output_path is None:
+            output_path = video_path.replace('.mp4', '_fixed.mp4')
+        
+        cmd = [
+            'ffmpeg', '-y',
+            '-i', video_path,
+            '-c:v', 'copy',           # Copy video stream without re-encoding
+            '-c:a', 'aac',            # AAC audio codec
+            '-b:a', '192k',           # Higher bitrate
+            '-af', 'volume=4.0',      # Increase volume
+            output_path
+        ]
+        
+        try:
+            subprocess.run(cmd, capture_output=True, timeout=300)
+            if os.path.exists(output_path):
+                return output_path
+        except Exception as e:
+            print(f"Error fixing video: {e}")
+        
+        return None
