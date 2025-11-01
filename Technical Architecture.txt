@@ -1,0 +1,21 @@
+# Sahayak Video Generation Architecture
+
+## System Components
+- **Orchestration Layer**: Coordinates the entire generation pipeline
+- **Frame Generator**: Creates sequential image frames (1800 frames for 60s video)
+- **Audio Synthesizer**: Generates educational narration
+- **Video Assembler**: Combines frames and audio with FFmpeg
+
+## Data Flow
+1. User request → API endpoint
+2. Content analysis → Educational script generation
+3. Parallel processing:
+   - Image sequence generation (30fps)
+   - Audio narration synthesis
+4. FFmpeg assembly with precise synchronization
+5. Quality verification and delivery
+
+## Performance Optimization
+- Batch image generation for 3x throughput
+- Aggressive caching of common educational elements
+- Multithreaded frame interpolation
