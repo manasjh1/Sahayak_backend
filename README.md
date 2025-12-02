@@ -320,6 +320,6 @@ Groq API Access      Google Gemini Key     FastAPI Knowledge
 
 ---
 
-**© 2024 Sahayak - MIT License**
+**© 2025 Sahayak - MIT License**
 
 </div>
