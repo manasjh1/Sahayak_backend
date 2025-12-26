@@ -11,7 +11,7 @@
 
 ### 🚀 Transforming Education for 260 Million Students Across India
 
-**[🌟 Live Demo](https://front-eight-murex.vercel.app)** | **[📖 API Docs](https://rag-bot-53xj.onrender.com/docs)** | **[💻 Frontend Code](https://github.com/manasjh1/Sahayak)** | **[🎥 Video Demo](https://youtu.be/qn0a7Kqn-J0)**
+**[🌟 Live Demo](https://www.sahayak.me/)** | **[📖 API Docs](https://rag-bot-53xj.onrender.com/docs)** | **[💻 Frontend Code](https://github.com/manasjh1/Sahayak)** | **[🎥 Video Demo](https://youtu.be/qn0a7Kqn-J0)**
 
 ---
 
